@@ -1,0 +1,71 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>{{ 'Update Program' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form">
+
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>{{ 'Program Name:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Program Name' | translate }}" formControlName="program_name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'Program Code:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Program Code' | translate }}" formControlName="program_code" disabled="true"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'No Of Sessions:' | translate }}</ion-label>
+        <ion-input type="number" placeholder="{{ 'No Of Sessions' | translate }}" formControlName="no_of_sessions"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'Months Per Level:' | translate }}</ion-label>
+        <ion-input type="number" placeholder="{{ 'Months Per Level' | translate }}" formControlName="months_per_level"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'Total Levels:' | translate }}</ion-label>
+        <ion-input type="number" placeholder="{{ 'Total Levels' | translate }}" formControlName="total_levels"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'Active:' | translate }}</ion-label>
+        <ion-toggle color="primary" formControlName="active"></ion-toggle>
+      </ion-item>
+    </ion-list>
+
+  </form>
+
+  <ion-grid>
+    <ion-row>
+      <ion-title>{{ 'Registeration Kit:' | translate }}</ion-title>
+      <ion-buttons right>
+        <button ion-button icon-only (click)="addRegisterationKit()" color="success">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row *ngFor="let item of registration_kit; let i = index">
+      <ion-input type="text" placeholder="Kit {{i}}" [(ngModel)]="registration_kit[i]" name="kit_{{i}}"></ion-input>
+        <ion-buttons right>
+          <button ion-button icon-only (click)="removeRegisterationKit(i)" color="danger">
+            <ion-icon name="close"></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar transparent>
+    <button ion-button full (click)="createProgram()" [disabled]="!isReadyToSave">
+      {{ 'SAVE' | translate }}
+    </button>
+  </ion-toolbar>
+</ion-footer>

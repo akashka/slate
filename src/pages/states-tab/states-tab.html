@@ -1,0 +1,30 @@
+<ion-content>
+    <form [formGroup]="form">
+
+        <ion-list>
+            <ion-item>
+                <ion-label fixed>{{ 'State Name:' | translate }}</ion-label>
+                <ion-input type="text" placeholder="{{ 'State Name' | translate }}" formControlName="center_name"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label fixed>{{ 'State Code:' | translate }}</ion-label>
+                <ion-input type="text" placeholder="{{ 'State Code' | translate }}" formControlName="center_id"
+                    (ionChange)="onCodeChange($event)"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label fixed>{{ 'Active:' | translate }}</ion-label>
+                <ion-toggle color="primary" formControlName="active"></ion-toggle>
+            </ion-item>
+        </ion-list>
+
+    </form>
+
+</ion-content>
+
+<ion-footer no-border>
+    <ion-toolbar transparent>
+        <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave || isDuplicate">
+            {{ 'SAVE' | translate }}
+        </button>
+    </ion-toolbar>
+</ion-footer>

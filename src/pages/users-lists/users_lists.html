@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{ 'Users Lists' | translate }}</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="addItem()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'Search Users' | translate }}"></ion-searchbar>
+  <ion-list>
+    <ion-item-sliding class="cssForRoundSLidingItems" *ngFor="let item of currentItems" #slidingItem>
+
+      <ion-item (press)="pressEvent($event)">
+        <ion-avatar item-start>
+          <img src={{item.profile_pic}}>
+        </ion-avatar>
+        <h2>{{item.name}}</h2>
+        <h3>{{item.role}}</h3>
+        <p *ngIf="item.user_state != ''"> <b> State: </b> {{item.user_state}}</p>
+        <p *ngIf="item.user_district != ''"> <b> District: </b> {{item.user_district}}</p>
+        <p *ngIf="item.user_center != ''"> <b> Center: </b> {{item.user_center}}</p>
+      </ion-item>
+
+      <ion-item-options side="left">
+        <button ion-button color="dark" (click)="mailUser(item)" icon-start>
+          <ion-icon name="text"></ion-icon>
+        </button>
+        <button ion-button color="dark" (click)="callUser(item)" icon-start>
+          <ion-icon name="call"></ion-icon>
+        </button>
+      </ion-item-options>
+
+      <ion-item-options side="right">
+        <button ion-button color="dark" (click)="openItem(item)" icon-start>
+          <ion-icon name="ios-more"></ion-icon>
+        </button>
+        <button ion-button color="dark" (click)="editItem(item,slidingItem)" icon-start>
+          <ion-icon name="trash"></ion-icon>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

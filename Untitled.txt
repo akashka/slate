@@ -1,0 +1,32 @@
+*** Login:
+- Reset Password
+- Direct Login in next time
+- CSS for entering email / password
+
+HomePage:
+
+
+*** Program:                                                 Admin Only
+- CSS for create & Update
+
+State:                                                       Admin Only
+- View screen little screening work
+- Edit screen needs to be created
+
+Users:                                                       Admin Only
+
+
+Franchise Enquiry:
+
+
+Instructor Enquiry:
+
+
+Student Enquiry:
+
+
+
+* mark to all required fields
+* Check for multi language feature throughly
+* Filter everywhere based on user role
+* Download / Mail option in all listing screen

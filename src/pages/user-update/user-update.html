@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only (click)="cancel()">
+        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{ 'Update User' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-list>
+
+      <ion-item>
+        <ion-label fixed>{{ 'Full Name' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="account.name" name="name" (ionChange)="onChange($event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'User Name' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'Phone No' | translate }}</ion-label>
+        <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" (ionChange)="onChange($event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'Email' | translate }}</ion-label>
+        <ion-input type="email" [(ngModel)]="account.email" name="email" disabled="true"></ion-input>
+      </ion-item>
+
+      <!-- <ion-item>
+        <ion-label fixed>{{ 'Password' | translate }}</ion-label>
+        <ion-input type="password" [(ngModel)]="account.password" name="password" (ionChange)="onChange($event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'Confirm Password' | translate }}</ion-label>
+        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" (ionChange)="onChange($event)"></ion-input>
+      </ion-item> -->
+
+      <ion-item>
+        <ion-label fixed>{{ 'Date Of Birth' | translate }}</ion-label>
+        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" (ionChange)="onChange($event)"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'Gender' | translate }}</ion-label>
+        <ion-select [(ngModel)]="account.gender" name="gender" (ionChange)="onChange($event)">
+          <ion-option value="female">Female</ion-option>
+          <ion-option value="male">Male</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'Role' | translate }}</ion-label>
+        <ion-select [(ngModel)]="account.role" name="role" (ionChange)="onChange($event)">
+          <ion-option value="admin">Admin</ion-option>
+          <ion-option value="master">Master Franchise</ion-option>
+          <ion-option value="district">District Franchise</ion-option>
+          <ion-option value="unit">Unit Franchise</ion-option>
+          <ion-option value="instructor">Instructor</ion-option>
+          <ion-option value="student">Student</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item *ngIf="account.role != 'admin'">
+        <ion-label fixed>{{ 'State' | translate }}</ion-label>
+        <ion-select [(ngModel)]="account.user_state" name="user_state" (ionChange)="onChange($event)">
+          <ion-option *ngFor="let name of statesList" [value]="name.state_code">{{name.state_name}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item *ngIf="account.role == 'district'">
+        <ion-label fixed>{{ 'District' | translate }}</ion-label>
+        <ion-select [(ngModel)]="account.user_district" name="user_district" (ionChange)="onChange($event)">
+          <ion-option *ngFor="let name of districtsList" [value]="name.district_code">{{name.district_name}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item *ngIf="account.role == 'unit'">
+        <ion-label fixed>{{ 'Unit / Center' | translate }}</ion-label>
+        <ion-select [(ngModel)]="account.user_center" name="user_center" (ionChange)="onChange($event)">
+          <ion-option *ngFor="let name of centersList" [value]="name.center_code">{{name.center_name}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'Active:' | translate }}</ion-label>
+        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" (ionChange)="onChange($event)"></ion-toggle>
+      </ion-item>
+
+    </ion-list>
+  </form>
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar transparent>
+    <button ion-button full (ngSubmit)="doSignup()" disabled="!isReadyToSave || isDuplicate || !isPasswordMatch">
+      {{ 'SAVE' | translate }}
+    </button>
+  </ion-toolbar>
+</ion-footer>

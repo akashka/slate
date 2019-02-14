@@ -1,0 +1,44 @@
+<ion-content class="branchtab">
+
+    <ion-list>
+        <div *ngFor="let group of states">
+
+            <ion-item class="item-stable" [class]="{active: isGroupShown(group)}">
+                <ion-buttons right>
+                    <button ion-button icon-only (click)="toggleGroup(group)" color="success">
+                        <ion-icon name="add" *ngIf="!isGroupShown(group)"></ion-icon>
+                        <ion-icon name="minus" *ngIf="isGroupShown(group)"></ion-icon>
+                    </button>
+                </ion-buttons>
+                &nbsp; {{group.center_name}}
+            </ion-item>
+
+            <div *ngIf="isGroupShown(group) && !isChildThere(group)">
+                <ion-item class="item-accordion" *ngFor="let item of groupItems">
+                    &nbsp; &nbsp; {{item.center_name}}
+                </ion-item>
+            </div>
+
+            <div *ngIf="isGroupShown(group) && isChildThere(group)">
+                <div *ngFor="let item of groupItems">
+                    <ion-item class="item-stable" [class]="{active: isSubGroupShown(item)}">
+                        &nbsp; &nbsp;
+                        <ion-buttons right>
+                            <button ion-button icon-only (click)="toggleSubGroup(item)" color="success">
+                                <ion-icon name="arrow-dropdown" *ngIf="!isSubGroupShown(group)"></ion-icon>
+                                <ion-icon name="arrow-dropright" *ngIf="isSubGroupShown(group)"></ion-icon>
+                            </button>
+                        </ion-buttons>
+                        &nbsp; {{item.center_name}}
+                    </ion-item>
+
+                    <ion-item class="item-accordion" *ngFor="let mem of groupMember">
+                        &nbsp; &nbsp; &nbsp; &nbsp; {{mem.center_name}}
+                    </ion-item>
+                </div>
+            </div>
+
+        </div>
+    </ion-list>
+
+</ion-content>

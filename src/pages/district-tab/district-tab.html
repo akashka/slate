@@ -1,0 +1,36 @@
+<ion-content>
+    <form [formGroup]="form">
+
+        <ion-list>
+            <ion-item>
+                <ion-label fixed>{{ 'District Name:' | translate }}</ion-label>
+                <ion-input type="text" placeholder="{{ 'District Name' | translate }}" formControlName="center_name"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label fixed>{{ 'District Code:' | translate }}</ion-label>
+                <ion-input type="text" placeholder="{{ 'District Code' | translate }}" formControlName="center_id"
+                    (ionChange)="onCodeChange($event)"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label fixed>{{ 'State:' | translate }}</ion-label>
+                <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="center_parent">
+                    <ion-option *ngFor="let state of states" value="{{state._id}}">{{state.center_name}}</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label fixed>{{ 'Active:' | translate }}</ion-label>
+                <ion-toggle color="primary" formControlName="active"></ion-toggle>
+            </ion-item>
+        </ion-list>
+
+    </form>
+
+</ion-content>
+
+<ion-footer no-border>
+    <ion-toolbar transparent>
+        <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave || isDuplicate">
+            {{ 'SAVE' | translate }}
+        </button>
+    </ion-toolbar>
+</ion-footer>
