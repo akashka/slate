@@ -12,17 +12,17 @@ import {
 import { Vibration } from '@ionic-native/vibration';
 import { ItemSliding } from "ionic-angular/umd";
 import * as _ from 'lodash';
-import { Programs, Franchise, User, Center } from '../../providers';
+import { Programs, User, Center, Instructor } from '../../providers';
 import { Storage } from '@ionic/storage';
 import { isGeneratedFile } from '@angular/compiler/src/aot/util';
 import { CallNumber } from '@ionic-native/call-number/ngx';
 
 @IonicPage()
 @Component({
-  selector: 'franchiseenquiry-lists',
-  templateUrl: 'franchiseenquiry-list.html'
+  selector: 'instructorenquiry-lists',
+  templateUrl: 'instructorenquiry-list.html'
 })
-export class FranchiseEnquiryListPage {
+export class InstructorEnquiryListPage {
 
   currentItems;
   tempCurrentItems;
@@ -39,14 +39,14 @@ export class FranchiseEnquiryListPage {
     private alertCtrl: AlertController,
     public loadingCtrl: LoadingController,
     public programs: Programs,
-    public franchise: Franchise,
     public storage: Storage,
     public users: User,
     public centers: Center,
     public callNumber: CallNumber,
-    public alertController: AlertController
+    public alertController: AlertController,
+    public instructorService: Instructor
   ) {
-    this.franchise.query().subscribe((res: any) => {
+    this.instructorService.query().subscribe((res: any) => {
       this.currentItems = res;
       this.tempCurrentItems = res;
       this.storage.get('user').then((value) => {
@@ -93,10 +93,10 @@ export class FranchiseEnquiryListPage {
     });
   }
 
-  view(program, slidingItem: ItemSliding) {
+  view(instructor, slidingItem: ItemSliding) {
     slidingItem.close();
     this.navCtrl.push('ProgramDetailPage', {
-      program: program
+      instructor: instructor
     });
   }
 
@@ -104,43 +104,69 @@ export class FranchiseEnquiryListPage {
     this.navCtrl.push('FranchiseEnquiryAddPage');
   }
 
-  edit(franchiseEnquiry, slidingItem: ItemSliding) {
+  edit(instructor, slidingItem: ItemSliding) {
     slidingItem.close();
     this.navCtrl.push('FranchiseEnquiryAddPage');
   }
 
-  followup(franchiseEnquiry, slidingItem: ItemSliding) {
+  call(instructor, slidingItem: ItemSliding) {
     slidingItem.close();
-    this.navCtrl.push('FollowupPage', {
-      franchiseEnquiry: franchiseEnquiry
-    });
-  }
-
-  call(franchiseEnquiry, slidingItem: ItemSliding) {
-    slidingItem.close();
-    this.callNumber.callNumber(franchiseEnquiry.mobile_no, true)
+    this.callNumber.callNumber(instructor.mobile_no, true)
       .then(res => console.log('Launched dialer!', res))
       .catch(err => console.log('Error launching dialer', err));
   }
 
-  email(franchiseEnquiry, slidingItem: ItemSliding) {
+  email(instructor, slidingItem: ItemSliding) {
     slidingItem.close();
-    window.open(`mailto:${franchiseEnquiry.email_id}`, '_system');
+    window.open(`mailto:${instructor.email_id}`, '_system');
   }
 
-  confirm(franchiseEnquiry, slidingItem: ItemSliding) {
+  confirm(instructor, slidingItem: ItemSliding) {
     slidingItem.close();
-    this.navCtrl.push('FranchiseEnquiryAddPage');
+    this.presentAlertConfirm(instructor);
   }
 
-  reject(franchiseEnquiry, slidingItem: ItemSliding) {
-    slidingItem.close();
-    this.presentAlertConfirm(franchiseEnquiry);
-  }
-
-  async presentAlertConfirm(franchiseEnquiry) {
+  async presentAlertConfirm(instructor) {
     const alert = await this.alertController.create({
-      title: 'Confirm!',
+      title: 'Confirm?',
+      subTitle: '',
+      message: 'Are you sure you want to Confirm this Enquiry?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: (blah) => {
+            console.log('Confirm Cancel: blah');
+          }
+        }, {
+          text: 'Confirm',
+          handler: () => {
+            instructor.status = 'confirm';
+            this.instructorService.update(instructor).subscribe((resp) => {
+            }, (err) => {
+              let toast = this.toastCtrl.create({
+                message: "Error in rejecting this Enquiry. Please try again.",
+                duration: 3000,
+                position: 'top'
+              });
+              toast.present();
+            });
+          }
+        }
+      ]
+    });
+
+    await alert.present();
+  }
+
+  reject(instructor, slidingItem: ItemSliding) {
+    slidingItem.close();
+    this.presentAlertReject(instructor);
+  }
+
+  async presentAlertReject(instructor) {
+    const alert = await this.alertController.create({
+      title: 'Reject?',
       subTitle: '',
       message: 'Are you sure you want to Reject this Enquiry? Once rejected you cannot do actions on this Enquiry again.',
       buttons: [
@@ -153,8 +179,8 @@ export class FranchiseEnquiryListPage {
         }, {
           text: 'Confirm',
           handler: () => {
-            franchiseEnquiry.status = 'reject';
-            this.franchise.update(franchiseEnquiry).subscribe((resp) => {
+            instructor.status = 'reject';
+            this.instructorService.update(instructor).subscribe((resp) => {
             }, (err) => {
               let toast = this.toastCtrl.create({
                 message: "Error in rejecting this Enquiry. Please try again.",
@@ -185,8 +211,7 @@ export class FranchiseEnquiryListPage {
     return (_.find(this.allUsers, { _id: id }));
   }
 
-  findLocation(id, type, franchise_type) {
-    if (type == franchise_type) return id;
+  findLocation(id) {
     return (_.find(this.allCenters, { _id: id }));
   }
 

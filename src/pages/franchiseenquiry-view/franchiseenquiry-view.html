@@ -1,0 +1,142 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{ 'View Franchise Enquiry' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form">
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>{{ 'Name:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Name' | translate }}" formControlName="name" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Franchise Type:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Franchise Type' | translate }}" formControlName="franchise_type"
+          disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'State:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'State' | translate }}" formControlName="getBranchName(franchise_state)"
+          disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="form.value.franchise_type == 'district' || form.value.franchise_type == 'unit'">
+        <ion-label floating>{{ 'District:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'District' | translate }}" formControlName="getBranchName(franchise_district)"
+          disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="form.value.franchise_type == 'unit'">
+        <ion-label floating>{{ 'Area:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Area' | translate }}" formControlName="franchise_area" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Address:' | translate }}</ion-label>
+        <ion-textarea #myInput id="myInput" rows="2" maxLength="500" formControlName="address" placeholder="{{ 'Address' | translate }}"
+          disabled="true"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Pincode:' | translate }}</ion-label>
+        <ion-input type="number" placeholder="{{ 'Pincode' | translate }}" formControlName="pincode" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Mobile No:' | translate }}</ion-label>
+        <ion-input type="number" placeholder="{{ 'Mobile No' | translate }}" formControlName="mobile_no" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Email ID:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Email ID' | translate }}" formControlName="email_id" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Date Of Birth' | translate }}</ion-label>
+        <ion-datetime displayFormat="DD/MMM/YYYY" formControlName="dob" disabled="true"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Present Occupation:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Present Occupation' | translate }}" formControlName="present_occupation"
+          disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Nature Of Business:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Nature Of Business' | translate }}" formControlName="business_type"
+          disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Capital To Invest:' | translate }}</ion-label>
+        <ion-input type="number" placeholder="{{ 'Capital To Invest' | translate }}" formControlName="capital" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Qualification:' | translate }}</ion-label>
+        <ion-input type="number" placeholder="{{ 'Qualification' | translate }}" formControlName="qualification"
+          disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Time Frame To Start:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Time Frame To Start' | translate }}" formControlName="start_timeframe"
+          disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Programs Interested In:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Programs Interested In' | translate }}" formControlName="getProgramNames(programs_interested)"
+          disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Best Time To Contact:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Best Time To Contact' | translate }}" formControlName="working_hours"
+          disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'How Did You Hear About Us:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'How Did You Hear About Us' | translate }}" formControlName="reference_source"
+          disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Referral:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Referral' | translate }}" formControlName="referral" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Remarks:' | translate }}</ion-label>
+        <ion-textarea #myInput1 id="myInput1" rows="2" maxLength="5000" formControlName="remarks" placeholder="{{ 'Remarks' | translate }}"
+          disabled="true"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Status:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Status' | translate }}" formControlName="status" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Enquiry By:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Enquiry By' | translate }}" formControlName="getUserName(enquiry_by)" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Enquiry Date:' | translate }}</ion-label>
+        <ion-input type="text" placeholder="{{ 'Enquiry Date' | translate }}" formControlName="enquiry_datetime"
+          disabled="true"></ion-input>
+      </ion-item>
+
+    </ion-list>
+  </form>
+
+</ion-content>

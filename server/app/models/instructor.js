@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var InstructorSchema = new mongoose.Schema({
-    
+
     name: {
         type: String,
         required: true,
@@ -14,6 +14,10 @@ var InstructorSchema = new mongoose.Schema({
     },
     instructor_area: {
         type: String,
+    },
+    program: {
+        type: Array,
+        required: true,
     },
     address: {
         type: String,
@@ -60,6 +64,13 @@ var InstructorSchema = new mongoose.Schema({
     },
     photo: {
         type: String,
+    },
+    enquiry_by: {
+        type: String
+    },
+    enquiry_datetime: {
+        type: Date,
+        default: new Date()
     }
 
 }, {

@@ -5,7 +5,7 @@
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>{{ 'Franchise List' | translate }}</ion-title>
+    <ion-title>{{ 'Instructor List' | translate }}</ion-title>
     <ion-buttons right>
       <button ion-button icon-only (click)="add()">
         <ion-icon name="add"></ion-icon>
@@ -16,24 +16,21 @@
 
 <ion-content>
 
-  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'Search Franchise' | translate }}"></ion-searchbar>
+  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'Search Instructor' | translate }}"></ion-searchbar>
 
   <ion-list>
     <ion-item-sliding *ngFor="let item of currentItems" #slidingItem>
 
       <ion-item (press)="pressEvent($event)" class="listing-item">
         <h2> {{item.name}} </h2>
-        <h3> <b> Franchise Type: </b> {{item.franchise_type}}</h3>
-        <p> <b> State: </b> {{findLocation(item.franchise_state, 'state', item.franchise_type)}} </p>
-        <p *ngIf="item.franchise_district != ''"> <b> District: </b> {{findLocation(item.franchise_district,
-          'district', item.franchise_type)}} </p>
-        <p *ngIf="item.franchise_area != ''"> <b> Area: </b> {{findLocation(item.franchise_area, 'unit',
-          item.franchise_type)}} </p>
+        <p> <b> State: </b> {{findLocation(item.instructor_state)}} </p>
+        <p> <b> District: </b> {{findLocation(item.franchise_district)}} </p>
+        <p> <b> Area: </b> {{findLocation(item.franchise_area)}} </p>
         <p> <b> Enquired By: </b> {{findUser(item.enquiry_by)}} </p>
         <p>
           <b> Status: </b>
-          <span [class.franchise-enquiry]="item.status == 'enquiry'" [class.franchise-reject]="item.status == 'reject'"
-            [class.franchise-confirm]="item.status == 'confirm'"> {{item.status}} </span>
+          <span [class.instructor-enquiry]="item.status == 'enquiry'" [class.instructor-reject]="item.status == 'reject'"
+            [class.instructor-confirm]="item.status == 'confirm'"> {{item.status}} </span>
         </p>
       </ion-item>
 
@@ -41,14 +38,11 @@
         <button ion-button color="info" (click)="view(item, slidingItem)">
           <ion-icon name="ios-more"></ion-icon> View
         </button>
-        <button ion-button color="danger" (click)="reject(item, slidingItem)" *ngIf="user.role == 'admin' && item.status == 'enquiry'">
+        <button ion-button color="danger" (click)="reject(item, slidingItem)" *ngIf="item.status == 'enquiry'">
           <ion-icon name="ios-more"></ion-icon> Reject
         </button>
-        <button ion-button color="success" (click)="confirm(item, slidingItem)" *ngIf="user.role == 'admin' && item.status == 'enquiry'">
+        <button ion-button color="success" (click)="confirm(item, slidingItem)" *ngIf="item.status == 'enquiry'">
           <ion-icon name="ios-more"></ion-icon> Confirm
-        </button>
-        <button ion-button color="success" (click)="confirm(item, slidingItem)" *ngIf="user.role == 'admin' && item.status == 'confirm'">
-          <ion-icon name="ios-more"></ion-icon> Documents
         </button>
       </ion-item-options>
 
@@ -61,9 +55,6 @@
         </button>
         <button ion-button color="warning" (click)="edit(item, slidingItem)">
           <ion-icon name="ios-more"></ion-icon> Edit
-        </button>
-        <button ion-button color="success" (click)="followup(item, slidingItem)" *ngIf="item.status == 'enquiry'">
-          <ion-icon name="ios-more"></ion-icon> Followup
         </button>
       </ion-item-options>
 
