@@ -64,10 +64,8 @@ export class StatesTab {
   }
 
   onCodeChange(ev) {
-    let program = _.filter(this.branches, function (item) {
-      return (item.center_id.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0)
-    });
-    if (program.length) this.isDuplicate = true;
+    ev = this.form.controls['center_id'].value; 
+    this.isDuplicate = (_.find(this.branches, { center_id: ev }) != undefined);
   }
 
   ionViewDidLoad() {

@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__followup_page__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__followup_page__ = __webpack_require__(382);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var FollowupPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 376:
+/***/ 380:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -116,7 +116,7 @@ var FollowupCreateTab = /** @class */ (function () {
     };
     FollowupCreateTab = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'followupcreate-tab',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/followupcreate-tab/followupcreate-tab.html"*/'<ion-content>\n    <form [formGroup]="form">\n        <ion-textarea #myInput id="myInput" rows="7" maxLength="5000" formControlName="comment" placeholder="{{ \'Remarks\' | translate }}"></ion-textarea>\n    </form>\n</ion-content>\n\n<ion-footer no-border>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="save()" [disabled]="!isReadyToSave">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/followupcreate-tab/followupcreate-tab.html"*/
+            selector: 'followupcreate-tab',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/followupcreate-tab/followupcreate-tab.html"*/'<ion-content>\n    <form [formGroup]="form">\n        <ion-textarea #myInput id="myInput" rows="7" maxLength="5000" formControlName="comment" placeholder="{{ \'Remarks\' | translate }}"></ion-textarea>\n    </form>\n</ion-content>\n\n<ion-footer no-border>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="save()" [disabled]="!isReadyToSave">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/followupcreate-tab/followupcreate-tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
@@ -138,7 +138,7 @@ var FollowupCreateTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 377:
+/***/ 381:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -146,7 +146,7 @@ var FollowupCreateTab = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(12);
@@ -194,7 +194,7 @@ var FollowupViewTab = /** @class */ (function () {
     };
     FollowupViewTab = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'followupview-tab',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/followupview-tab/followupview-tab.html"*/'<ion-content>\n\n    <ion-card *ngFor="let card of followups">\n        <ion-item>\n            <ion-avatar item-left>\n                <img src="{{findUser(card.user, \'profile_pic\')}}" />\n            </ion-avatar>\n            <h2>{{findUser(card.user, \'name\')}}</h2>\n            <p>{{card.dated}}</p>\n        </ion-item>\n        <ion-card-content>\n            {{card.comment}}\n        </ion-card-content>\n    </ion-card>\n\n    <ion-card *ngIf="followups.length < 1">\n        <ion-card-content>\n            We see that there are no followup\'s yet for this Enquiry. <br>\n            Do a new Enquiry by going on Create on top.\n        </ion-card-content>\n    </ion-card>\n\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/followupview-tab/followupview-tab.html"*/
+            selector: 'followupview-tab',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/followupview-tab/followupview-tab.html"*/'<ion-content>\n\n    <ion-card *ngFor="let card of followups">\n        <ion-item>\n            <ion-avatar item-left>\n                <img src="{{findUser(card.user, \'profile_pic\')}}" />\n            </ion-avatar>\n            <h2>{{findUser(card.user, \'name\')}}</h2>\n            <p>{{card.dated}}</p>\n        </ion-item>\n        <ion-card-content>\n            {{card.comment}}\n        </ion-card-content>\n    </ion-card>\n\n    <ion-card *ngIf="followups.length < 1">\n        <ion-card-content>\n            We see that there are no followup\'s yet for this Enquiry. <br>\n            Do a new Enquiry by going on Create on top.\n        </ion-card-content>\n    </ion-card>\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/followupview-tab/followupview-tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
@@ -214,7 +214,7 @@ var FollowupViewTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 378:
+/***/ 382:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -222,8 +222,8 @@ var FollowupViewTab = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__followupcreate_tab_followupcreate_tab__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__followupview_tab_followupview_tab__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__followupcreate_tab_followupcreate_tab__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__followupview_tab_followupview_tab__ = __webpack_require__(381);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -254,7 +254,7 @@ var FollowupPage = /** @class */ (function () {
     }
     FollowupPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'followup-page',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/followup-page/followup-page.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Followup\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-tabs tabsPlacement="top">\n    <ion-tab tabTitle="View" [root]="view" [rootParams]="franchiseEnquiry"></ion-tab>\n    <ion-tab tabTitle="Create" [root]="create" [rootParams]="franchiseEnquiry"></ion-tab>\n  </ion-tabs>\n\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/followup-page/followup-page.html"*/
+            selector: 'followup-page',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/followup-page/followup-page.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Followup\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-tabs tabsPlacement="top">\n    <ion-tab tabTitle="View" [root]="view" [rootParams]="franchiseEnquiry"></ion-tab>\n    <ion-tab tabTitle="Create" [root]="create" [rootParams]="franchiseEnquiry"></ion-tab>\n  </ion-tabs>\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/followup-page/followup-page.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],

@@ -3,18 +3,17 @@
 
         <ion-list>
             <ion-item>
-                <ion-label fixed>{{ 'Center Name:' | translate }}</ion-label>
-                <ion-input type="text" placeholder="{{ 'Center Name' | translate }}" formControlName="center_name"></ion-input>
+                <ion-label floating>{{ 'Center Name' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+                <ion-input type="text" formControlName="center_name"></ion-input>
             </ion-item>
             <ion-item>
-                <ion-label fixed>{{ 'Center Code:' | translate }}</ion-label>
-                <ion-input type="text" placeholder="{{ 'Center Code' | translate }}" formControlName="center_id"
-                    (ionChange)="onCodeChange($event)"></ion-input>
+                <ion-label floating>{{ 'Center Code' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+                <ion-input type="text" formControlName="center_id" (ionChange)="onCodeChange($event)"></ion-input>
             </ion-item>
             <ion-item>
-                <ion-label fixed>{{ 'State / District:' | translate }}</ion-label>
+                <ion-label floating>{{ 'State / District' | translate }} <span class="mandatory-field"> * </span> </ion-label>
                 <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="center_parent">
-                    <ion-option value="state._id" *ngFor="let state of states">{{state.center_name}}</ion-option>
+                    <ion-option value="{{state._id}}" *ngFor="let state of states">{{state.center_name}}</ion-option>
                 </ion-select>
             </ion-item>
             <ion-item>
@@ -28,6 +27,7 @@
 </ion-content>
 
 <ion-footer no-border>
+    <p style="color:red;" *ngIf="isDuplicate"> Center Code already exists for any State or Districts or Center. Please try again with new Center Code. </p>
     <ion-toolbar transparent>
         <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave || isDuplicate">
             {{ 'SAVE' | translate }}

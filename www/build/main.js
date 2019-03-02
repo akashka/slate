@@ -1,4 +1,4 @@
-webpackJsonp([6],{
+webpackJsonp([10],{
 
 /***/ 12:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6,19 +6,19 @@ webpackJsonp([6],{
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_api__ = __webpack_require__(33);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__api_api__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__settings_settings__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__settings_settings__ = __webpack_require__(335);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_1__settings_settings__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_user__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_user__ = __webpack_require__(336);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_2__user_user__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(337);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_3__programs_programs__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__center_center__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__center_center__ = __webpack_require__(338);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_4__center_center__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__franchise_franchise__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__franchise_franchise__ = __webpack_require__(339);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_5__franchise_franchise__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__instructor_instructor__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__instructor_instructor__ = __webpack_require__(340);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_6__instructor_instructor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__students_students__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__students_students__ = __webpack_require__(341);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_7__students_students__["a"]; });
 
 
@@ -32,7 +32,7 @@ webpackJsonp([6],{
 
 /***/ }),
 
-/***/ 137:
+/***/ 138:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -45,25 +45,25 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 137;
+webpackEmptyAsyncContext.id = 138;
 
 /***/ }),
 
-/***/ 186:
+/***/ 187:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/area-tab/area-tab.module": [
-		187
+		188
 	],
 	"../pages/branches-tab/branches-tab.module": [
-		189
+		190
 	],
 	"../pages/centers-page/centers-page.module": [
-		191
+		192
 	],
 	"../pages/district-tab/district-tab.module": [
-		194
+		195
 	],
 	"../pages/followup-page/followup-page.module": [
 		370,
@@ -71,61 +71,77 @@ var map = {
 	],
 	"../pages/followupcreate-tab/followupcreate-tab.module": [
 		371,
-		5
+		9
 	],
 	"../pages/followupview-tab/followupview-tab.module": [
 		372,
-		4
+		8
 	],
 	"../pages/franchiseenquiry-create/franchiseenquiry-create.module": [
 		373,
-		3
+		7
 	],
 	"../pages/franchiseenquiry-list/franchiseenquiry-list.module": [
 		374,
-		2
+		6
+	],
+	"../pages/franchiseenquiry-view/franchiseenquiry-view.module": [
+		375,
+		5
 	],
 	"../pages/home-page/home-page.module": [
-		195
+		196
 	],
 	"../pages/home-tab/home-tab.module": [
-		199
-	],
-	"../pages/notification-tab/notification-tab.module": [
 		200
 	],
-	"../pages/profile-tab/profile-tab.module": [
+	"../pages/instructorenquiry-create/instructorenquiry-create.module": [
+		376,
+		4
+	],
+	"../pages/instructorenquiry-list/instructorenquiry-list.module": [
+		377,
+		3
+	],
+	"../pages/instructorenquiry-update/instructorenquiry-update.module": [
+		378,
+		2
+	],
+	"../pages/notification-tab/notification-tab.module": [
 		201
 	],
-	"../pages/program -create/program-create.module": [
+	"../pages/profile-tab/profile-tab.module": [
 		202
 	],
-	"../pages/program -detail/program-detail.module": [
+	"../pages/program -create/program-create.module": [
 		203
 	],
-	"../pages/program -update/program-update.module": [
+	"../pages/program -detail/program-detail.module": [
 		204
 	],
-	"../pages/programs-list/programs-list.module": [
+	"../pages/program -update/program-update.module": [
 		205
 	],
-	"../pages/states-tab/states-tab.module": [
+	"../pages/programs-list/programs-list.module": [
 		206
 	],
-	"../pages/user-add/signup.module": [
+	"../pages/states-tab/states-tab.module": [
 		207
+	],
+	"../pages/user-add/signup.module": [
+		209
 	],
 	"../pages/user-detail/user-detail.module": [
 		208
 	],
 	"../pages/user-update/user-update.module": [
-		209
+		211
 	],
 	"../pages/users-lists/users_lists.module": [
 		210
 	],
 	"../pages/welcome/welcome.module": [
-		375,
+		379,
 		1
 	]
 };
@@ -140,12 +156,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 186;
+webpackAsyncContext.id = 187;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 187:
+/***/ 188:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -154,7 +170,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_tab__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_tab__ = __webpack_require__(189);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -189,7 +205,7 @@ var AreaTabModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 188:
+/***/ 189:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -198,7 +214,7 @@ var AreaTabModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -234,16 +250,16 @@ var AreaTab = /** @class */ (function () {
         this.centers.query().subscribe(function (res) {
             _this.branches = res;
             _this.states = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](res, function (item) {
-                return (item.center_type != 'unit');
+                return item.center_type != "unit";
             });
         }, function (err) {
-            console.error('ERROR', err);
+            console.error("ERROR", err);
         });
         this.form = formBuilder.group({
-            center_id: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            center_name: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            center_type: ['unit'],
-            center_parent: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            center_id: ["", __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            center_name: ["", __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            center_type: ["unit"],
+            center_parent: ["", __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
             active: [true, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required]
         });
         // Watch the form for changes, and
@@ -252,30 +268,26 @@ var AreaTab = /** @class */ (function () {
         });
     }
     AreaTab.prototype.onCodeChange = function (ev) {
-        var program = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return (item.center_id.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0);
-        });
-        if (program.length)
-            this.isDuplicate = true;
+        ev = this.form.controls["center_id"].value;
+        this.isDuplicate = __WEBPACK_IMPORTED_MODULE_4_lodash__["find"](this.branches, { center_id: ev }) != undefined;
     };
-    AreaTab.prototype.ionViewDidLoad = function () {
-    };
+    AreaTab.prototype.ionViewDidLoad = function () { };
     AreaTab.prototype.createState = function () {
         var _this = this;
         this.centers.add(this.form.value).subscribe(function (resp) {
-            _this.nav.setRoot('CentersPage');
+            _this.nav.setRoot("CentersPage");
         }, function (err) {
             var toast = _this.toastCtrl.create({
                 message: "Error in adding the Center. Please try again.",
                 duration: 3000,
-                position: 'top'
+                position: "top"
             });
             toast.present();
         });
     };
     AreaTab = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'area-tab',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/area-tab/area-tab.html"*/'<ion-content>\n    <form [formGroup]="form">\n\n        <ion-list>\n            <ion-item>\n                <ion-label fixed>{{ \'Center Name:\' | translate }}</ion-label>\n                <ion-input type="text" placeholder="{{ \'Center Name\' | translate }}" formControlName="center_name"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'Center Code:\' | translate }}</ion-label>\n                <ion-input type="text" placeholder="{{ \'Center Code\' | translate }}" formControlName="center_id"\n                    (ionChange)="onCodeChange($event)"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'State / District:\' | translate }}</ion-label>\n                <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="center_parent">\n                    <ion-option value="state._id" *ngFor="let state of states">{{state.center_name}}</ion-option>\n                </ion-select>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n                <ion-toggle color="primary" formControlName="active"></ion-toggle>\n            </ion-item>\n        </ion-list>\n\n    </form>\n\n</ion-content>\n\n<ion-footer no-border>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave || isDuplicate">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/area-tab/area-tab.html"*/
+            selector: "area-tab",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/area-tab/area-tab.html"*/'<ion-content>\n    <form [formGroup]="form">\n\n        <ion-list>\n            <ion-item>\n                <ion-label floating>{{ \'Center Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-input type="text" formControlName="center_name"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>{{ \'Center Code\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-input type="text" formControlName="center_id" (ionChange)="onCodeChange($event)"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>{{ \'State / District\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="center_parent">\n                    <ion-option value="{{state._id}}" *ngFor="let state of states">{{state.center_name}}</ion-option>\n                </ion-select>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n                <ion-toggle color="primary" formControlName="active"></ion-toggle>\n            </ion-item>\n        </ion-list>\n\n    </form>\n\n</ion-content>\n\n<ion-footer no-border>\n    <p style="color:red;" *ngIf="isDuplicate"> Center Code already exists for any State or Districts or Center. Please try again with new Center Code. </p>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave || isDuplicate">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/area-tab/area-tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
@@ -295,7 +307,7 @@ var AreaTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 189:
+/***/ 190:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -304,7 +316,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__branches_tab__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__branches_tab__ = __webpack_require__(191);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -339,7 +351,7 @@ var BranchesTabModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 190:
+/***/ 191:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -376,51 +388,32 @@ var BranchesTab = /** @class */ (function () {
         this.shownGroup = null;
         this.shownSubGroup = null;
         this.centers.query().subscribe(function (res) {
-            _this.branches = res;
-            _this.states = res.filter(function (item) {
-                return item.center_type == 'state';
-            });
+            _this.branches = _this.formBranches(res);
         }, function (err) {
-            console.error('ERROR', err);
+            console.error("ERROR", err);
         });
     }
-    BranchesTab.prototype.toggleGroup = function (group) {
-        if (this.isGroupShown(group))
-            this.shownGroup = null;
-        else {
-            this.shownGroup = group;
-            this.groupItems = this.branches.filter(function (item) {
-                return item.center_parent == group.center_id;
-            });
-        }
-    };
-    ;
-    BranchesTab.prototype.isGroupShown = function (group) {
-        return this.shownGroup === group;
-    };
-    ;
-    BranchesTab.prototype.isChildThere = function (group) {
-        var filteredList = this.branches.filter(function (item) {
-            return item.center_parent == group.center_id;
+    BranchesTab.prototype.formBranches = function (res) {
+        var branches = res.filter(function (item) {
+            return item.center_type == "state";
         });
-        return filteredList.length > 0;
-    };
-    BranchesTab.prototype.toggleSubGroup = function (subGroup) {
-        if (this.isSubGroupShown(subGroup))
-            this.shownSubGroup = null;
-        else {
-            this.shownSubGroup = subGroup;
-            this.groupMember = this.branches.filter(function (item) {
-                return item.center_parent == subGroup.center_id;
+        for (var i = 0; i < branches.length; i++) {
+            branches[i].branches = [];
+            branches[i].branches = res.filter(function (item) {
+                return item.center_parent == branches[i]._id;
             });
+            for (var j = 0; j < branches[i].branches.length; j++) {
+                branches[i].branches[j].branches = [];
+                branches[i].branches[j].branches = res.filter(function (item) {
+                    return item.center_parent == branches[i].branches[j]._id;
+                });
+            }
         }
-    };
-    BranchesTab.prototype.isSubGroupShown = function (subGroup) {
-        return this.shownSubGroup === subGroup;
+        return branches;
     };
     BranchesTab = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'branches-tab',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/branches-tab/branches-tab.html"*/'<ion-content class="branchtab">\n\n    <ion-list>\n        <div *ngFor="let group of states">\n\n            <ion-item class="item-stable" [class]="{active: isGroupShown(group)}">\n                <ion-buttons right>\n                    <button ion-button icon-only (click)="toggleGroup(group)" color="success">\n                        <ion-icon name="add" *ngIf="!isGroupShown(group)"></ion-icon>\n                        <ion-icon name="minus" *ngIf="isGroupShown(group)"></ion-icon>\n                    </button>\n                </ion-buttons>\n                &nbsp; {{group.center_name}}\n            </ion-item>\n\n            <div *ngIf="isGroupShown(group) && !isChildThere(group)">\n                <ion-item class="item-accordion" *ngFor="let item of groupItems">\n                    &nbsp; &nbsp; {{item.center_name}}\n                </ion-item>\n            </div>\n\n            <div *ngIf="isGroupShown(group) && isChildThere(group)">\n                <div *ngFor="let item of groupItems">\n                    <ion-item class="item-stable" [class]="{active: isSubGroupShown(item)}">\n                        &nbsp; &nbsp;\n                        <ion-buttons right>\n                            <button ion-button icon-only (click)="toggleSubGroup(item)" color="success">\n                                <ion-icon name="arrow-dropdown" *ngIf="!isSubGroupShown(group)"></ion-icon>\n                                <ion-icon name="arrow-dropright" *ngIf="isSubGroupShown(group)"></ion-icon>\n                            </button>\n                        </ion-buttons>\n                        &nbsp; {{item.center_name}}\n                    </ion-item>\n\n                    <ion-item class="item-accordion" *ngFor="let mem of groupMember">\n                        &nbsp; &nbsp; &nbsp; &nbsp; {{mem.center_name}}\n                    </ion-item>\n                </div>\n            </div>\n\n        </div>\n    </ion-list>\n\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/branches-tab/branches-tab.html"*/
+            selector: "branches-tab",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/branches-tab/branches-tab.html"*/'<ion-content class="branchtab">\n\n    <ion-list>\n        <div *ngFor="let branch of branches">\n\n            <ion-item class="item-stable">\n                <ion-icon name="arrow-dropright" *ngIf="branch.hide" (click)="onSelect(branch)"></ion-icon>\n                <ion-icon name="arrow-dropdown" *ngIf="!branch.hide" (click)="onSelect(branch)"></ion-icon>\n                <span *ngIf="branch.active" style="color:green;" (click)="onSelect(branch)"> {{branch.center_name}}\n                    ({{branch.center_id}}) </span>\n                <span *ngIf="!branch.active" style="color:red;" (click)="onSelect(branch)"> {{branch.center_name}}\n                    ({{branch.center_id}}) </span>\n                <span style="color:blue;text-decoration:underline;float:right;" (click)="edit(branch)"> Edit </span>\n            </ion-item>\n\n            <div *ngIf="!branch.hide" style="padding-left: 20px;">\n                <div *ngFor="let bran of branch.branches">\n\n                    <ion-item class="item-stable">\n                        <ion-icon name="arrow-dropright" *ngIf="bran.hide" (click)="onSubSelect(bran)"></ion-icon>\n                        <ion-icon name="arrow-dropdown" *ngIf="!bran.hide" (click)="onSubSelect(bran)"></ion-icon>\n                        <span *ngIf="bran.active" style="color: green;" (click)="onSubSelect(bran)">\n                            {{bran.center_name}} ({{bran.center_id}}) </span>\n                        <span *ngIf="!bran.active" style="color: red;" (click)="onSubSelect(bran)">\n                            {{bran.center_name}} ({{bran.center_id}}) </span>\n                        <span style="color:blue;text-decoration:underline;float:right;" (click)="edit(bran)"> Edit </span>\n                    </ion-item>\n\n                    <div *ngIf="!bran.hide" style="padding-left: 40px;">\n                        <div *ngFor="let b of bran.branches">\n                            <ion-item class="item-stable">\n                                <span *ngIf="b.active" style="color: green;"> {{b.center_name}} ({{b.center_id}})\n                                </span>\n                                <span *ngIf="!b.active" style="color: red;"> {{b.center_name}} ({{b.center_id}}) </span>\n                                <span style="color:blue;text-decoration:underline;float:right;" (click)="edit(b)"> Edit </span>\n                            </ion-item>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n\n        </div>\n    </ion-list>\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/branches-tab/branches-tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
@@ -438,7 +431,7 @@ var BranchesTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 191:
+/***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -447,7 +440,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__centers_page__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__centers_page__ = __webpack_require__(342);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -482,7 +475,7 @@ var CentersPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 192:
+/***/ 193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -491,7 +484,7 @@ var CentersPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -545,11 +538,8 @@ var DistrictTab = /** @class */ (function () {
         });
     }
     DistrictTab.prototype.onCodeChange = function (ev) {
-        var program = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return (item.center_id.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0);
-        });
-        if (program.length)
-            this.isDuplicate = true;
+        ev = this.form.controls['center_id'].value;
+        this.isDuplicate = (__WEBPACK_IMPORTED_MODULE_4_lodash__["find"](this.branches, { center_id: ev }) != undefined);
     };
     DistrictTab.prototype.ionViewDidLoad = function () {
     };
@@ -568,7 +558,7 @@ var DistrictTab = /** @class */ (function () {
     };
     DistrictTab = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'district-tab',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/district-tab/district-tab.html"*/'<ion-content>\n    <form [formGroup]="form">\n\n        <ion-list>\n            <ion-item>\n                <ion-label fixed>{{ \'District Name:\' | translate }}</ion-label>\n                <ion-input type="text" placeholder="{{ \'District Name\' | translate }}" formControlName="center_name"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'District Code:\' | translate }}</ion-label>\n                <ion-input type="text" placeholder="{{ \'District Code\' | translate }}" formControlName="center_id"\n                    (ionChange)="onCodeChange($event)"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'State:\' | translate }}</ion-label>\n                <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="center_parent">\n                    <ion-option *ngFor="let state of states" value="{{state._id}}">{{state.center_name}}</ion-option>\n                </ion-select>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n                <ion-toggle color="primary" formControlName="active"></ion-toggle>\n            </ion-item>\n        </ion-list>\n\n    </form>\n\n</ion-content>\n\n<ion-footer no-border>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave || isDuplicate">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/district-tab/district-tab.html"*/
+            selector: 'district-tab',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/district-tab/district-tab.html"*/'<ion-content>\n    <form [formGroup]="form">\n\n        <ion-list>\n            <ion-item>\n                <ion-label floating>{{ \'District Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-input type="text" formControlName="center_name"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>{{ \'District Code\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-input type="text" formControlName="center_id" (ionChange)="onCodeChange($event)"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>{{ \'State\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-select multiple="false" cancelText="Cancel" okText="Okay">\n                    <ion-option *ngFor="let state of states" value="{{state._id}}">{{state.center_name}}</ion-option>\n                </ion-select>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n                <ion-toggle color="primary" formControlName="active"></ion-toggle>\n            </ion-item>\n        </ion-list>\n\n    </form>\n\n</ion-content>\n\n<ion-footer no-border>\n    <p style="color:red;" *ngIf="isDuplicate"> District Code already exists for any State or Districts or Center. Please try again with new District Code. </p>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave || isDuplicate">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/district-tab/district-tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
@@ -588,7 +578,7 @@ var DistrictTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 193:
+/***/ 194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -596,7 +586,7 @@ var DistrictTab = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(12);
@@ -648,11 +638,8 @@ var StatesTab = /** @class */ (function () {
         });
     }
     StatesTab.prototype.onCodeChange = function (ev) {
-        var program = __WEBPACK_IMPORTED_MODULE_3_lodash__["filter"](this.branches, function (item) {
-            return (item.center_id.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0);
-        });
-        if (program.length)
-            this.isDuplicate = true;
+        ev = this.form.controls['center_id'].value;
+        this.isDuplicate = (__WEBPACK_IMPORTED_MODULE_3_lodash__["find"](this.branches, { center_id: ev }) != undefined);
     };
     StatesTab.prototype.ionViewDidLoad = function () {
     };
@@ -671,7 +658,7 @@ var StatesTab = /** @class */ (function () {
     };
     StatesTab = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'states-tab',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/states-tab/states-tab.html"*/'<ion-content>\n    <form [formGroup]="form">\n\n        <ion-list>\n            <ion-item>\n                <ion-label fixed>{{ \'State Name:\' | translate }}</ion-label>\n                <ion-input type="text" placeholder="{{ \'State Name\' | translate }}" formControlName="center_name"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'State Code:\' | translate }}</ion-label>\n                <ion-input type="text" placeholder="{{ \'State Code\' | translate }}" formControlName="center_id"\n                    (ionChange)="onCodeChange($event)"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n                <ion-toggle color="primary" formControlName="active"></ion-toggle>\n            </ion-item>\n        </ion-list>\n\n    </form>\n\n</ion-content>\n\n<ion-footer no-border>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave || isDuplicate">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/states-tab/states-tab.html"*/
+            selector: 'states-tab',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/states-tab/states-tab.html"*/'<ion-content>\n    <form [formGroup]="form">\n\n        <ion-list>\n            <ion-item>\n                <ion-label floating>{{ \'State Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-input type="text" formControlName="center_name"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>{{ \'State Code\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-input type="text" formControlName="center_id" (ionChange)="onCodeChange($event)"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'Active:\' | translate }} </ion-label>\n                <ion-toggle color="primary" formControlName="active"></ion-toggle>\n            </ion-item>\n        </ion-list>\n\n    </form>\n\n</ion-content>\n\n<ion-footer no-border>\n    <p style="color:red;" *ngIf="isDuplicate"> State Code already exists for any State or Districts or Center. Please try again with new State Code. </p>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave || isDuplicate">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/states-tab/states-tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
@@ -691,7 +678,7 @@ var StatesTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 194:
+/***/ 195:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -700,7 +687,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__district_tab__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__district_tab__ = __webpack_require__(193);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -735,7 +722,7 @@ var DistrictTabModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 195:
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -779,7 +766,7 @@ var HomePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 196:
+/***/ 197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -815,7 +802,7 @@ var HomeTab = /** @class */ (function () {
     }
     HomeTab = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'home-tab',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/home-tab/home-tab.html"*/'<ion-content>\n\n  HOME TAB\n\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/home-tab/home-tab.html"*/
+            selector: 'home-tab',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/home-tab/home-tab.html"*/'<ion-content>\n\n  HOME TAB\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/home-tab/home-tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
@@ -833,7 +820,7 @@ var HomeTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 197:
+/***/ 198:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -869,7 +856,7 @@ var NotificationTab = /** @class */ (function () {
     }
     NotificationTab = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'notification-tab',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/notification-tab/notification-tab.html"*/'<ion-content>\n\n  NOTIFICATION TAB\n\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/notification-tab/notification-tab.html"*/
+            selector: 'notification-tab',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/notification-tab/notification-tab.html"*/'<ion-content>\n\n  NOTIFICATION TAB\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/notification-tab/notification-tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
@@ -887,7 +874,7 @@ var NotificationTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 198:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -923,7 +910,7 @@ var ProfileTab = /** @class */ (function () {
     }
     ProfileTab = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'profile-tab',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/profile-tab/profile-tab.html"*/'<ion-content>\n\n  PROFILE TAB\n\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/profile-tab/profile-tab.html"*/
+            selector: 'profile-tab',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/profile-tab/profile-tab.html"*/'<ion-content>\n\n  PROFILE TAB\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/profile-tab/profile-tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
@@ -941,7 +928,7 @@ var ProfileTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -950,7 +937,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_tab__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_tab__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -985,7 +972,7 @@ var HomeTabModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 200:
+/***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -994,7 +981,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__notification_tab__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__notification_tab__ = __webpack_require__(198);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1029,7 +1016,7 @@ var NotificationTabModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1038,7 +1025,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_tab__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_tab__ = __webpack_require__(199);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1073,7 +1060,7 @@ var ProfileTabModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 202:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1082,7 +1069,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_create__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_create__ = __webpack_require__(343);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1117,7 +1104,7 @@ var ProgramAddPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 203:
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1126,7 +1113,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_detail__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_detail__ = __webpack_require__(344);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1161,7 +1148,7 @@ var ProgramDetailPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 204:
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1170,7 +1157,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_update__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_update__ = __webpack_require__(345);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1205,7 +1192,7 @@ var ProgramEditPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 205:
+/***/ 206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1214,7 +1201,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_list__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_list__ = __webpack_require__(346);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1249,7 +1236,7 @@ var ProgramsListPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 206:
+/***/ 207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1258,7 +1245,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__states_tab__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__states_tab__ = __webpack_require__(194);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1293,7 +1280,51 @@ var StatesTabModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 207:
+/***/ 208:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserDetailPageModule", function() { return UserDetailPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_detail__ = __webpack_require__(347);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var UserDetailPageModule = /** @class */ (function () {
+    function UserDetailPageModule() {
+    }
+    UserDetailPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__user_detail__["a" /* UserDetailPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__user_detail__["a" /* UserDetailPage */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__user_detail__["a" /* UserDetailPage */]
+            ]
+        })
+    ], UserDetailPageModule);
+    return UserDetailPageModule;
+}());
+
+//# sourceMappingURL=user-detail.module.js.map
+
+/***/ }),
+
+/***/ 209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1337,16 +1368,16 @@ var SignupPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 208:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserDetailPageModule", function() { return UserDetailPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UsersPageModule", function() { return UsersPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_detail__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__users_lists__ = __webpack_require__(349);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1357,31 +1388,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var UserDetailPageModule = /** @class */ (function () {
-    function UserDetailPageModule() {
+var UsersPageModule = /** @class */ (function () {
+    function UsersPageModule() {
     }
-    UserDetailPageModule = __decorate([
+    UsersPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__user_detail__["a" /* UserDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_3__users_lists__["a" /* UsersPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__user_detail__["a" /* UserDetailPage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__users_lists__["a" /* UsersPage */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__user_detail__["a" /* UserDetailPage */]
+                __WEBPACK_IMPORTED_MODULE_3__users_lists__["a" /* UsersPage */]
             ]
         })
-    ], UserDetailPageModule);
-    return UserDetailPageModule;
+    ], UsersPageModule);
+    return UsersPageModule;
 }());
 
-//# sourceMappingURL=user-detail.module.js.map
+//# sourceMappingURL=users_lists.module.js.map
 
 /***/ }),
 
-/***/ 209:
+/***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1425,50 +1456,6 @@ var UserUpdatePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 210:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UsersPageModule", function() { return UsersPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__users_lists__ = __webpack_require__(252);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var UsersPageModule = /** @class */ (function () {
-    function UsersPageModule() {
-    }
-    UsersPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__users_lists__["a" /* UsersPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__users_lists__["a" /* UsersPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__users_lists__["a" /* UsersPage */]
-            ]
-        })
-    ], UsersPageModule);
-    return UsersPageModule;
-}());
-
-//# sourceMappingURL=users_lists.module.js.map
-
-/***/ }),
-
 /***/ 251:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1478,9 +1465,9 @@ var UsersPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_tab_home_tab__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__notification_tab_notification_tab__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__profile_tab_profile_tab__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_tab_home_tab__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__notification_tab_notification_tab__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__profile_tab_profile_tab__ = __webpack_require__(199);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1514,7 +1501,7 @@ var HomePage = /** @class */ (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'home-page',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/home-page/home-page.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'ALOHA INDIA\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-tabs>\n    <ion-tab tabIcon="home" tabTitle="Home" [root]="home"></ion-tab>\n    <ion-tab tabIcon="notifications" tabTitle="Notification" [root]="notification"></ion-tab>\n    <ion-tab tabIcon="settings" tabTitle="Profile" [root]="profile"></ion-tab>\n  </ion-tabs>\n\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/home-page/home-page.html"*/
+            selector: 'home-page',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/home-page/home-page.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'ALOHA INDIA\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-tabs>\n    <ion-tab tabIcon="home" tabTitle="Home" [root]="home"></ion-tab>\n    <ion-tab tabIcon="notifications" tabTitle="Notification" [root]="notification"></ion-tab>\n    <ion-tab tabIcon="settings" tabTitle="Profile" [root]="profile"></ion-tab>\n  </ion-tabs>\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/home-page/home-page.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
@@ -1536,115 +1523,9 @@ var HomePage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_call_number_ngx__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var UsersPage = /** @class */ (function () {
-    function UsersPage(vibration, navCtrl, navParams, modalCtrl, toastCtrl, alertCtrl, loadingCtrl, users, callNumber) {
-        var _this = this;
-        this.vibration = vibration;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.modalCtrl = modalCtrl;
-        this.toastCtrl = toastCtrl;
-        this.alertCtrl = alertCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.users = users;
-        this.callNumber = callNumber;
-        this.users.users_list().subscribe(function (res) {
-            _this.currentItems = res;
-            _this.allItems = res;
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-    }
-    UsersPage.prototype.getItems = function (ev) {
-        var val = ev.target.value.toUpperCase();
-        if (!val || !val.trim()) {
-            this.currentItems = this.allItems;
-            return;
-        }
-        this.currentItems = this.allItems.filter(function (item) {
-            return (item.user_name.toUpperCase().indexOf(ev.data) >= 0 ||
-                item.name.toUpperCase().indexOf(ev.data) >= 0 ||
-                item.email_id.toUpperCase().indexOf(ev.data) >= 0);
-        });
-    };
-    UsersPage.prototype.openItem = function (item) {
-        this.navCtrl.push('UserDetailPage', {
-            user: item
-        });
-    };
-    UsersPage.prototype.addItem = function () {
-        this.navCtrl.push('SignupPage');
-    };
-    UsersPage.prototype.pressEvent = function (ev) {
-        this.vibration.vibrate(150);
-        var toast = this.toastCtrl.create({
-            message: "please slide to get the options .",
-            duration: 2000,
-            position: 'top'
-        });
-        toast.present();
-    };
-    UsersPage.prototype.editItem = function (item, slidingItem) {
-        this.navCtrl.push('UserEditPage', {
-            user: item
-        });
-    };
-    UsersPage.prototype.mailUser = function (user) {
-        window.open("mailto:" + user.email, '_system');
-    };
-    UsersPage.prototype.callUser = function (user) {
-        this.callNumber.callNumber(user.phone_no, true)
-            .then(function (res) { return console.log('Launched dialer!', res); })
-            .catch(function (err) { return console.log('Error launching dialer', err); });
-    };
-    UsersPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'users_lists',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/users-lists/users_lists.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Users Lists\' | translate }}</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only (click)="addItem()">\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ \'Search Users\' | translate }}"></ion-searchbar>\n  <ion-list>\n    <ion-item-sliding class="cssForRoundSLidingItems" *ngFor="let item of currentItems" #slidingItem>\n\n      <ion-item (press)="pressEvent($event)">\n        <ion-avatar item-start>\n          <img src={{item.profile_pic}}>\n        </ion-avatar>\n        <h2>{{item.name}}</h2>\n        <h3>{{item.role}}</h3>\n        <p *ngIf="item.user_state != \'\'"> <b> State: </b> {{item.user_state}}</p>\n        <p *ngIf="item.user_district != \'\'"> <b> District: </b> {{item.user_district}}</p>\n        <p *ngIf="item.user_center != \'\'"> <b> Center: </b> {{item.user_center}}</p>\n      </ion-item>\n\n      <ion-item-options side="left">\n        <button ion-button color="dark" (click)="mailUser(item)" icon-start>\n          <ion-icon name="text"></ion-icon>\n        </button>\n        <button ion-button color="dark" (click)="callUser(item)" icon-start>\n          <ion-icon name="call"></ion-icon>\n        </button>\n      </ion-item-options>\n\n      <ion-item-options side="right">\n        <button ion-button color="dark" (click)="openItem(item)" icon-start>\n          <ion-icon name="ios-more"></ion-icon>\n        </button>\n        <button ion-button color="dark" (click)="editItem(item,slidingItem)" icon-start>\n          <ion-icon name="trash"></ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/users-lists/users_lists.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_4__providers__["h" /* User */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_call_number_ngx__["a" /* CallNumber */]])
-    ], UsersPage);
-    return UsersPage;
-}());
-
-//# sourceMappingURL=users_lists.js.map
-
-/***/ }),
-
-/***/ 253:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(254);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(265);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1652,7 +1533,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 266:
+/***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1661,35 +1542,35 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(310);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_vibration__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_call_number_ngx__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_call_number_ngx__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_component__ = __webpack_require__(368);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_home_page_home_page_module__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_home_tab_home_tab_module__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_notification_tab_notification_tab_module__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_profile_tab_profile_tab_module__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_programs_list_programs_list_module__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_program_create_program_create_module__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_program_detail_program_detail_module__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_program_update_program_update_module__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_centers_page_centers_page_module__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_district_tab_district_tab_module__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_states_tab_states_tab_module__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_branches_tab_branches_tab_module__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_area_tab_area_tab_module__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_home_page_home_page_module__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_home_tab_home_tab_module__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_notification_tab_notification_tab_module__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_profile_tab_profile_tab_module__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_programs_list_programs_list_module__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_program_create_program_create_module__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_program_detail_program_detail_module__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_program_update_program_update_module__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_centers_page_centers_page_module__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_district_tab_district_tab_module__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_states_tab_states_tab_module__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_branches_tab_branches_tab_module__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_area_tab_area_tab_module__ = __webpack_require__(188);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_users_lists_users_lists_module__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_user_add_signup_module__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_user_add_signup_module__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_user_detail_user_detail_module__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_user_update_user_update_module__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_user_update_user_update_module__ = __webpack_require__(211);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1785,20 +1666,24 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/followupview-tab/followupview-tab.module#FollowupViewTabModule', name: 'FollowupViewTab', segment: 'followupview-tab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/franchiseenquiry-create/franchiseenquiry-create.module#FranchiseEnquiryAddPageModule', name: 'FranchiseEnquiryAddPage', segment: 'franchiseenquiry-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/franchiseenquiry-list/franchiseenquiry-list.module#FranchiseEnquiryListPageModule', name: 'FranchiseEnquiryListPage', segment: 'franchiseenquiry-list', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/franchiseenquiry-view/franchiseenquiry-view.module#FranchiseEnquiryViewPageModule', name: 'FranchiseEnquiryViewPage', segment: 'franchiseenquiry-view', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home-page/home-page.module#HomePageModule', name: 'HomePage', segment: 'home-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home-tab/home-tab.module#HomeTabModule', name: 'HomeTab', segment: 'home-tab', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/instructorenquiry-create/instructorenquiry-create.module#InstructorEnquiryAddPageModule', name: 'InstructorEnquiryAddPage', segment: 'instructorenquiry-create', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/instructorenquiry-list/instructorenquiry-list.module#InstructorEnquiryListPageModule', name: 'InstructorEnquiryListPage', segment: 'instructorenquiry-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/notification-tab/notification-tab.module#NotificationTabModule', name: 'NotificationTab', segment: 'notification-tab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile-tab/profile-tab.module#ProfileTabModule', name: 'ProfileTab', segment: 'profile-tab', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/instructorenquiry-update/instructorenquiry-update.module#InstructorEnquiryEditPageModule', name: 'InstructorEnquiryEditPage', segment: 'instructorenquiry-update', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/program -create/program-create.module#ProgramAddPageModule', name: 'ProgramAddPage', segment: 'program-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/program -detail/program-detail.module#ProgramDetailPageModule', name: 'ProgramDetailPage', segment: 'program-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/program -update/program-update.module#ProgramEditPageModule', name: 'ProgramEditPage', segment: 'program-update', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/programs-list/programs-list.module#ProgramsListPageModule', name: 'ProgramsListPage', segment: 'programs-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/states-tab/states-tab.module#StatesTabModule', name: 'StatesTab', segment: 'states-tab', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/user-add/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/user-detail/user-detail.module#UserDetailPageModule', name: 'UserDetailPage', segment: 'user-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/user-update/user-update.module#UserUpdatePageModule', name: 'UserUpdatePage', segment: 'user-update', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/user-add/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/users-lists/users_lists.module#UsersPageModule', name: 'UsersPage', segment: 'users_lists', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/user-update/user-update.module#UserUpdatePageModule', name: 'UserUpdatePage', segment: 'user-update', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["a" /* IonicStorageModule */].forRoot()
@@ -1896,7 +1781,7 @@ var Api = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 336:
+/***/ 335:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1985,12 +1870,12 @@ var Settings = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 337:
+/***/ 336:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return User; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
@@ -2108,12 +1993,12 @@ var User = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 338:
+/***/ 337:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Programs; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(33);
@@ -2153,12 +2038,12 @@ var Programs = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 339:
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Center; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(33);
@@ -2198,12 +2083,12 @@ var Center = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 340:
+/***/ 339:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Franchise; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(33);
@@ -2243,12 +2128,12 @@ var Franchise = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 341:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Instructor; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(33);
@@ -2288,12 +2173,12 @@ var Instructor = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 342:
+/***/ 341:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Students; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(33);
@@ -2333,7 +2218,7 @@ var Students = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 343:
+/***/ 342:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2341,10 +2226,10 @@ var Students = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_tab_area_tab__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__branches_tab_branches_tab__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__district_tab_district_tab__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__states_tab_states_tab__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_tab_area_tab__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__branches_tab_branches_tab__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__district_tab_district_tab__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__states_tab_states_tab__ = __webpack_require__(194);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2374,28 +2259,31 @@ var CentersPage = /** @class */ (function () {
         this.states = __WEBPACK_IMPORTED_MODULE_6__states_tab_states_tab__["a" /* StatesTab */];
         this.districts = __WEBPACK_IMPORTED_MODULE_5__district_tab_district_tab__["a" /* DistrictTab */];
         this.centers = __WEBPACK_IMPORTED_MODULE_3__area_tab_area_tab__["a" /* AreaTab */];
-        console.log('States Page');
+        console.log("States Page");
     }
+    CentersPage.prototype.showAlert = function () {
+        var alert = this.alertCtrl.create({
+            title: "Information",
+            subTitle: "\n          <br/>\n          Click on icons or Name to open Accordion. <br/> <br/>\n          &nbsp;  Green: Active  <br/> \n          &nbsp;  Red: Inactive  <br/> <br/>\n          Click on Edit to edit. <br/>\n        ",
+            buttons: ["OK"]
+        });
+        alert.present();
+    };
     CentersPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'centers-page',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/centers-page/centers-page.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'State / Centers Master\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-tabs tabsPlacement="top">\n    <ion-tab tabTitle="View" [root]="view"></ion-tab>\n    <ion-tab tabTitle="States" [root]="states"></ion-tab>\n    <ion-tab tabTitle="Districts" [root]="districts"></ion-tab>\n    <ion-tab tabTitle="Centers" [root]="centers"></ion-tab>\n  </ion-tabs>\n\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/centers-page/centers-page.html"*/
+            selector: "centers-page",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/centers-page/centers-page.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'State / Centers Master\' | translate }}</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only menuToggle (click)="showAlert()">\n        <a class="icon-circle">\n          <ion-icon name="information"></ion-icon>\n        </a>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-tabs tabsPlacement="top">\n    <ion-tab tabTitle="View" [root]="view"></ion-tab>\n    <ion-tab tabTitle="States" [root]="states"></ion-tab>\n    <ion-tab tabTitle="Districts" [root]="districts"></ion-tab>\n    <ion-tab tabTitle="Centers" [root]="centers"></ion-tab>\n  </ion-tabs>\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/centers-page/centers-page.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ToastController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]) === "function" && _g || Object])
     ], CentersPage);
     return CentersPage;
+    var _a, _b, _c, _d, _e, _f, _g;
 }());
 
 //# sourceMappingURL=centers-page.js.map
 
 /***/ }),
 
-/***/ 344:
+/***/ 343:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2405,7 +2293,7 @@ var CentersPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_lodash__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2491,7 +2379,7 @@ var ProgramAddPage = /** @class */ (function () {
     };
     ProgramAddPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'program-create',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/program -create/program-create.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>{{ \'New Program\' | translate }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <form [formGroup]="form">\n\n    <ion-list>\n      <ion-item>\n        <ion-label fixed>{{ \'Program Name:\' | translate }}</ion-label>\n        <ion-input type="text" placeholder="{{ \'Program Name\' | translate }}" formControlName="program_name"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Program Code:\' | translate }}</ion-label>\n        <ion-input type="text" placeholder="{{ \'Program Code\' | translate }}" formControlName="program_code"\n          (ionChange)="onRegisterationCodeChange($event)"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'No Of Sessions:\' | translate }}</ion-label>\n        <ion-input type="text" placeholder="{{ \'No Of Sessions\' | translate }}" formControlName="no_of_sessions"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Months Per Level:\' | translate }}</ion-label>\n        <ion-input type="number" placeholder="{{ \'Months Per Level\' | translate }}" formControlName="months_per_level"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Total Levels:\' | translate }}</ion-label>\n        <ion-input type="number" placeholder="{{ \'Total Levels\' | translate }}" formControlName="total_levels"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n        <ion-toggle color="primary" formControlName="active"></ion-toggle>\n      </ion-item>\n    </ion-list>\n\n  </form>\n\n  <ion-grid>\n    <ion-row>\n      <ion-title>{{ \'Registeration Kit:\' | translate }}</ion-title>\n      <ion-buttons right>\n        <button ion-button icon-only (click)="addRegisterationKit()" color="success">\n          <ion-icon name="add"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row *ngFor="let item of registration_kit; let i = index">\n      <ion-input type="text" placeholder="Kit {{i}}" [(ngModel)]="registration_kit[i]" name="kit_{{i}}"></ion-input>\n        <ion-buttons right>\n          <button ion-button icon-only (click)="removeRegisterationKit(i)" color="danger">\n            <ion-icon name="close"></ion-icon>\n          </button>\n        </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n  <p class="error-validation-msg" *ngIf="isDuplicate"> There already exists a Program with same Code. Please change\n    Code. </p>\n\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="createProgram()" [disabled]="!isReadyToSave || isDuplicate">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/program -create/program-create.html"*/
+            selector: 'program-create',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/program -create/program-create.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>{{ \'New Program\' | translate }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <form [formGroup]="form">\n\n    <ion-list>\n      <ion-item>\n        <ion-label floating>{{ \'Program Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="program_name"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Program Code\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="program_code"\n          (ionChange)="onRegisterationCodeChange($event)"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'No Of Sessions\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="no_of_sessions"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Months Per Level\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" formControlName="months_per_level"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Total Levels\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" formControlName="total_levels"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Active\' | translate }} </ion-label>\n        <ion-toggle color="primary" formControlName="active"></ion-toggle>\n      </ion-item>\n    </ion-list>\n\n  </form>\n\n  <ion-grid>\n    <ion-row>\n      <ion-title>{{ \'Registration Kit:\' | translate }}</ion-title>\n      <ion-buttons right>\n        <button ion-button icon-only (click)="addRegisterationKit()" color="success">\n          <ion-icon name="add"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid class="looping-reg">\n    <ion-row *ngFor="let item of registration_kit; let i = index">\n      <ion-input type="text" placeholder="Kit {{i}}" [(ngModel)]="registration_kit[i]" name="kit_{{i}}"></ion-input>\n        <ion-buttons right>\n          <button ion-button icon-only (click)="removeRegisterationKit(i)" color="danger">\n            <ion-icon name="close"></ion-icon>\n          </button>\n        </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n  <p class="error-validation-msg" *ngIf="isDuplicate"> There already exists a Program with same Code. Please change\n    Code. </p>\n\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="createProgram()" [disabled]="!isReadyToSave || isDuplicate">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/program -create/program-create.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["o" /* ViewController */],
@@ -2507,7 +2395,7 @@ var ProgramAddPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 345:
+/***/ 344:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2558,7 +2446,7 @@ var ProgramDetailPage = /** @class */ (function () {
     };
     ProgramDetailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'program-detail',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/program -detail/program-detail.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'View Program\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form [formGroup]="form">\n    <ion-list class="details-info">\n      <ion-item>\n        <ion-label>{{ \'Program Name:\' | translate }}</ion-label>\n        <ion-input type="text" placeholder="{{ \'Program Name\' | translate }}" formControlName="program_name" disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>{{ \'Program Code:\' | translate }}</ion-label>\n        <ion-input type="text" placeholder="{{ \'Program Code\' | translate }}" formControlName="program_code" disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>{{ \'No Of Sessions:\' | translate }}</ion-label>\n        <ion-input type="number" placeholder="{{ \'No Of Sessions\' | translate }}" formControlName="no_of_sessions"\n          disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>{{ \'Months Per Level:\' | translate }}</ion-label>\n        <ion-input type="number" placeholder="{{ \'Months Per Level\' | translate }}" formControlName="months_per_level"\n          disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>{{ \'Total Levels:\' | translate }}</ion-label>\n        <ion-input type="number" placeholder="{{ \'Total Levels\' | translate }}" formControlName="total_levels" disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>{{ \'Active:\' | translate }}</ion-label>\n        <ion-toggle color="primary" formControlName="active" disabled="true"></ion-toggle>\n      </ion-item>\n    </ion-list>\n  </form>\n\n  <ion-item>\n    <h2> {{ \'Registeration Kit:\' | translate }} </h2>\n  </ion-item>\n\n  <ion-item *ngFor="let item of registration_kit; let i = index">\n    <ion-input type="text" placeholder="Kit {{i}}" [(ngModel)]="registration_kit[i]" name="kit_{{i}}" disabled="true"></ion-input>\n  </ion-item>\n\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/program -detail/program-detail.html"*/
+            selector: 'program-detail',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/program -detail/program-detail.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'View Program\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form [formGroup]="form">\n    <ion-list class="details-info program-details-info">\n      <ion-item>\n        <ion-label>{{ \'Program Name:\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="program_name" disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>{{ \'Program Code:\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="program_code" disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>{{ \'No Of Sessions:\' | translate }}</ion-label>\n        <ion-input type="number" formControlName="no_of_sessions"\n          disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>{{ \'Months Per Level:\' | translate }}</ion-label>\n        <ion-input type="number" formControlName="months_per_level"\n          disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>{{ \'Total Levels:\' | translate }}</ion-label>\n        <ion-input type="number" formControlName="total_levels" disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>{{ \'Active:\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="active" disabled="true"></ion-input>\n      </ion-item>\n    </ion-list>\n  </form>\n\n  <ion-item>\n    <h2> {{ \'Registeration Kit:\' | translate }} </h2>\n  </ion-item>\n\n  <ion-item *ngFor="let item of registration_kit; let i = index">\n    <ion-input type="text" placeholder="Kit {{i}}" [(ngModel)]="registration_kit[i]" name="kit_{{i}}" disabled="true"></ion-input>\n  </ion-item>\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/program -detail/program-detail.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["o" /* ViewController */],
@@ -2574,7 +2462,7 @@ var ProgramDetailPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 346:
+/***/ 345:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2584,7 +2472,7 @@ var ProgramDetailPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_lodash__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2682,7 +2570,7 @@ var ProgramEditPage = /** @class */ (function () {
     };
     ProgramEditPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'program-update',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/program -update/program-update.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>{{ \'Update Program\' | translate }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n  <form [formGroup]="form">\n\n    <ion-list>\n      <ion-item>\n        <ion-label fixed>{{ \'Program Name:\' | translate }}</ion-label>\n        <ion-input type="text" placeholder="{{ \'Program Name\' | translate }}" formControlName="program_name"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Program Code:\' | translate }}</ion-label>\n        <ion-input type="text" placeholder="{{ \'Program Code\' | translate }}" formControlName="program_code" disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'No Of Sessions:\' | translate }}</ion-label>\n        <ion-input type="number" placeholder="{{ \'No Of Sessions\' | translate }}" formControlName="no_of_sessions"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Months Per Level:\' | translate }}</ion-label>\n        <ion-input type="number" placeholder="{{ \'Months Per Level\' | translate }}" formControlName="months_per_level"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Total Levels:\' | translate }}</ion-label>\n        <ion-input type="number" placeholder="{{ \'Total Levels\' | translate }}" formControlName="total_levels"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n        <ion-toggle color="primary" formControlName="active"></ion-toggle>\n      </ion-item>\n    </ion-list>\n\n  </form>\n\n  <ion-grid>\n    <ion-row>\n      <ion-title>{{ \'Registeration Kit:\' | translate }}</ion-title>\n      <ion-buttons right>\n        <button ion-button icon-only (click)="addRegisterationKit()" color="success">\n          <ion-icon name="add"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid>\n    <ion-row *ngFor="let item of registration_kit; let i = index">\n      <ion-input type="text" placeholder="Kit {{i}}" [(ngModel)]="registration_kit[i]" name="kit_{{i}}"></ion-input>\n        <ion-buttons right>\n          <button ion-button icon-only (click)="removeRegisterationKit(i)" color="danger">\n            <ion-icon name="close"></ion-icon>\n          </button>\n        </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="createProgram()" [disabled]="!isReadyToSave">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/program -update/program-update.html"*/
+            selector: 'program-update',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/program -update/program-update.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>{{ \'Update Program\' | translate }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n  <form [formGroup]="form">\n\n    <ion-list>\n      <ion-item>\n        <ion-label floating>{{ \'Program Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" placeholder="{{ \'Program Name\' | translate }}" formControlName="program_name"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Program Code:\' | translate }}</ion-label>\n        <ion-input type="text" placeholder="{{ \'Program Code\' | translate }}" formControlName="program_code" disabled="true"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'No Of Sessions\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" placeholder="{{ \'No Of Sessions\' | translate }}" formControlName="no_of_sessions"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Months Per Level\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" placeholder="{{ \'Months Per Level\' | translate }}" formControlName="months_per_level"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Total Levels\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" placeholder="{{ \'Total Levels\' | translate }}" formControlName="total_levels"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n        <ion-toggle color="primary" formControlName="active"></ion-toggle>\n      </ion-item>\n    </ion-list>\n\n  </form>\n\n  <ion-grid>\n    <ion-row>\n      <ion-title>{{ \'Registration Kit:\' | translate }}</ion-title>\n      <ion-buttons right>\n        <button ion-button icon-only (click)="addRegisterationKit()" color="success">\n          <ion-icon name="add"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid class="looping-reg">\n    <ion-row *ngFor="let item of registration_kit; let i = index">\n      <ion-input type="text" placeholder="Kit {{i}}" [(ngModel)]="registration_kit[i]" name="kit_{{i}}"></ion-input>\n        <ion-buttons right>\n          <button ion-button icon-only (click)="removeRegisterationKit(i)" color="danger">\n            <ion-icon name="close"></ion-icon>\n          </button>\n        </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="createProgram()" [disabled]="!isReadyToSave">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/program -update/program-update.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["o" /* ViewController */],
@@ -2699,7 +2587,7 @@ var ProgramEditPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 347:
+/***/ 346:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2723,7 +2611,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ProgramsListPage = /** @class */ (function () {
     function ProgramsListPage(vibration, navCtrl, navParams, modalCtrl, toastCtrl, alertCtrl, loadingCtrl, programs) {
-        var _this = this;
         this.vibration = vibration;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
@@ -2732,15 +2619,19 @@ var ProgramsListPage = /** @class */ (function () {
         this.alertCtrl = alertCtrl;
         this.loadingCtrl = loadingCtrl;
         this.programs = programs;
+        this.input_search = "";
+    }
+    ProgramsListPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
         this.programs.query().subscribe(function (res) {
             _this.currentItems = res;
             _this.tempCurrentItems = res;
         }, function (err) {
-            console.error('ERROR', err);
+            console.error("ERROR", err);
         });
-    }
+    };
     ProgramsListPage.prototype.getItems = function (ev) {
-        var val = ev.data.toUpperCase();
+        var val = this.input_search.toUpperCase();
         if (!val || !val.trim()) {
             this.currentItems = this.tempCurrentItems;
             return;
@@ -2752,16 +2643,16 @@ var ProgramsListPage = /** @class */ (function () {
     };
     ProgramsListPage.prototype.viewProgram = function (program, slidingItem) {
         slidingItem.close();
-        this.navCtrl.push('ProgramDetailPage', {
+        this.navCtrl.push("ProgramDetailPage", {
             program: program
         });
     };
     ProgramsListPage.prototype.addProgram = function () {
-        this.navCtrl.push('ProgramAddPage');
+        this.navCtrl.push("ProgramAddPage");
     };
     ProgramsListPage.prototype.editProgram = function (program, slidingItem) {
         slidingItem.close();
-        this.navCtrl.push('ProgramEditPage', {
+        this.navCtrl.push("ProgramEditPage", {
             program: program
         });
     };
@@ -2770,13 +2661,13 @@ var ProgramsListPage = /** @class */ (function () {
         var toast = this.toastCtrl.create({
             message: "please slide to get the options .",
             duration: 2000,
-            position: 'top'
+            position: "top"
         });
         toast.present();
     };
     ProgramsListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'programs-lists',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/programs-list/programs-list.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Programs Lists\' | translate }}</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only (click)="addProgram()">\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ \'Search Programs\' | translate }}"></ion-searchbar>\n\n  <ion-list>\n    <ion-item-sliding *ngFor="let item of currentItems" #slidingItem>\n\n      <ion-item (press)="pressEvent($event)" class="listing-item">\n        <h2> {{item.program_name}} </h2>\n        <h3> <b> Code: </b> {{item.program_code}}</h3>\n        <p> <b> No Of Sessions: </b> {{item.no_of_sessions}} </p>\n        <p> <b> Months Per Level: </b> {{item.months_per_level}} </p>\n        <p> <b> Total Levels: </b> {{item.total_levels}} </p>\n      </ion-item>\n\n      <ion-item-options side="right" class="listing-btn">\n        <button ion-button color="info" (click)="viewProgram(item, slidingItem)">\n          <ion-icon name="ios-more"></ion-icon> View\n        </button>\n        <button ion-button color="warning" icon-start (click)="editProgram(item, slidingItem)">\n          <ion-icon name="create"></ion-icon> Edit\n        </button>\n      </ion-item-options>\n\n    </ion-item-sliding>\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/programs-list/programs-list.html"*/
+            selector: "programs-lists",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/programs-list/programs-list.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Programs Lists\' | translate }}</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only (click)="addProgram()">\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-searchbar (ionInput)="getItems($event)" [(ngModel)]="input_search" placeholder="{{ \'Search Programs\' | translate }}"></ion-searchbar>\n\n  <ion-list>\n    <ion-item-sliding *ngFor="let item of currentItems" #slidingItem>\n\n      <ion-item (press)="pressEvent($event)" class="listing-item">\n        <h2> {{item.program_name}} </h2>\n        <h3> <b> Code: </b> {{item.program_code}}</h3>\n        <p> <b> No Of Sessions: </b> {{item.no_of_sessions}} </p>\n        <p> <b> Months Per Level: </b> {{item.months_per_level}} </p>\n        <p> <b> Total Levels: </b> {{item.total_levels}} </p>\n      </ion-item>\n\n      <ion-item-options side="right" class="listing-btn">\n        <button ion-button color="info" (click)="viewProgram(item, slidingItem)">\n          <ion-icon name="ios-more"></ion-icon> View\n        </button>\n        <button ion-button color="warning" icon-start (click)="editProgram(item, slidingItem)">\n          <ion-icon name="create"></ion-icon> Edit\n        </button>\n      </ion-item-options>\n\n    </ion-item-sliding>\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/programs-list/programs-list.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
@@ -2791,6 +2682,59 @@ var ProgramsListPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=programs-list.js.map
+
+/***/ }),
+
+/***/ 347:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserDetailPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var UserDetailPage = /** @class */ (function () {
+    function UserDetailPage(navCtrl, user, toastCtrl, translateService, navParams, viewCtrl) {
+        this.navCtrl = navCtrl;
+        this.user = user;
+        this.toastCtrl = toastCtrl;
+        this.translateService = translateService;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.account = navParams.get('user');
+    }
+    UserDetailPage.prototype.cancel = function () {
+        this.viewCtrl.dismiss();
+    };
+    UserDetailPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'user-detail',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/user-detail/user-detail.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only (click)="cancel()">\n        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'User Details\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form>\n    <ion-list>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Full Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.name" name="name" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'User Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Phone No\' | translate }}</ion-label>\n        <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Email\' | translate }}</ion-label>\n        <ion-input type="email" [(ngModel)]="account.email" name="email" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.password" name="password" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Confirm Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Date Of Birth\' | translate }}</ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" disabled="true"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Gender\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.gender" name="gender" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Role\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.role" name="role" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'admin\'">\n        <ion-label fixed>{{ \'State\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_state" name="user_state" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'district\'">\n        <ion-label fixed>{{ \'District\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_district" name="user_district" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'unit\'">\n        <ion-label fixed>{{ \'Unit / Center\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_center" name="user_center" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Active\' | translate }}</ion-label>\n        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" disabled="true"></ion-toggle>\n      </ion-item>\n\n    </ion-list>\n  </form>\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/user-detail/user-detail.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["h" /* User */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ViewController */]])
+    ], UserDetailPage);
+    return UserDetailPage;
+}());
+
+//# sourceMappingURL=user-detail.js.map
 
 /***/ }),
 
@@ -2891,12 +2835,16 @@ var SignupPage = /** @class */ (function () {
     };
     SignupPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-signup',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/user-add/signup.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'Create User\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form>\n    <ion-list>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Full Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.name" name="name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'User Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Phone No\' | translate }}</ion-label>\n        <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Email\' | translate }}</ion-label>\n        <ion-input type="email" [(ngModel)]="account.email" name="email" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.password" name="password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Confirm Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Date Of Birth\' | translate }}</ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" (ionChange)="onChange($event)"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Gender\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.gender" name="gender" (ionChange)="onChange($event)">\n          <ion-option value="female">Female</ion-option>\n          <ion-option value="male">Male</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Role\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.role" name="role" (ionChange)="onChange($event)">\n          <ion-option value="admin">Admin</ion-option>\n          <ion-option value="master">Master Franchise</ion-option>\n          <ion-option value="district">District Franchise</ion-option>\n          <ion-option value="unit">Unit Franchise</ion-option>\n          <ion-option value="instructor">Instructor</ion-option>\n          <ion-option value="student">Student</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'admin\'">\n        <ion-label fixed>{{ \'State\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_state" name="user_state" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of statesList" [value]="name.state_code">{{name.state_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'district\'">\n        <ion-label fixed>{{ \'District\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_district" name="user_district" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of districtsList" [value]="name.district_code">{{name.district_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'unit\'">\n        <ion-label fixed>{{ \'Unit / Center\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_center" name="user_center" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of centersList" [value]="name.center_code">{{name.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" (ionChange)="onChange($event)"></ion-toggle>\n      </ion-item>\n\n    </ion-list>\n  </form>\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (ngSubmit)="doSignup()" disabled="!isReadyToSave || isDuplicate || !isPasswordMatch">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>\n\n<!-- profile_pic: \'\', -->'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/user-add/signup.html"*/
+            selector: 'page-signup',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/user-add/signup.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'Create User\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form>\n    <ion-list>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Full Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.name" name="name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'User Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Phone No\' | translate }}</ion-label>\n        <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Email\' | translate }}</ion-label>\n        <ion-input type="email" [(ngModel)]="account.email" name="email" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.password" name="password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Confirm Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Date Of Birth\' | translate }}</ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" (ionChange)="onChange($event)"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Gender\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.gender" name="gender" (ionChange)="onChange($event)">\n          <ion-option value="female">Female</ion-option>\n          <ion-option value="male">Male</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Role\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.role" name="role" (ionChange)="onChange($event)">\n          <ion-option value="admin">Admin</ion-option>\n          <ion-option value="master">Master Franchise</ion-option>\n          <ion-option value="district">District Franchise</ion-option>\n          <ion-option value="unit">Unit Franchise</ion-option>\n          <ion-option value="instructor">Instructor</ion-option>\n          <ion-option value="student">Student</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'admin\'">\n        <ion-label fixed>{{ \'State\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_state" name="user_state" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of statesList" [value]="name.state_code">{{name.state_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'district\'">\n        <ion-label fixed>{{ \'District\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_district" name="user_district" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of districtsList" [value]="name.district_code">{{name.district_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'unit\'">\n        <ion-label fixed>{{ \'Unit / Center\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_center" name="user_center" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of centersList" [value]="name.center_code">{{name.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" (ionChange)="onChange($event)"></ion-toggle>\n      </ion-item>\n\n    </ion-list>\n  </form>\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (ngSubmit)="doSignup()" disabled="!isReadyToSave || isDuplicate || !isPasswordMatch">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>\n\n<!-- profile_pic: \'\', -->'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/user-add/signup.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__providers__["h" /* User */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers__["h" /* User */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__providers__["b" /* Center */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers__["b" /* Center */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* ToastController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ViewController */]) === "function" && _f || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["h" /* User */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["b" /* Center */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ViewController */]])
     ], SignupPage);
     return SignupPage;
-    var _a, _b, _c, _d, _e, _f;
 }());
 
 //# sourceMappingURL=signup.js.map
@@ -2907,11 +2855,12 @@ var SignupPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserDetailPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_call_number_ngx__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2925,34 +2874,86 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var UserDetailPage = /** @class */ (function () {
-    function UserDetailPage(navCtrl, user, toastCtrl, translateService, navParams, viewCtrl) {
+
+var UsersPage = /** @class */ (function () {
+    function UsersPage(vibration, navCtrl, navParams, modalCtrl, toastCtrl, alertCtrl, loadingCtrl, users, callNumber) {
+        var _this = this;
+        this.vibration = vibration;
         this.navCtrl = navCtrl;
-        this.user = user;
-        this.toastCtrl = toastCtrl;
-        this.translateService = translateService;
         this.navParams = navParams;
-        this.viewCtrl = viewCtrl;
-        this.account = navParams.get('user');
+        this.modalCtrl = modalCtrl;
+        this.toastCtrl = toastCtrl;
+        this.alertCtrl = alertCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.users = users;
+        this.callNumber = callNumber;
+        this.users.users_list().subscribe(function (res) {
+            _this.currentItems = res;
+            _this.allItems = res;
+        }, function (err) {
+            console.error('ERROR', err);
+        });
     }
-    UserDetailPage.prototype.cancel = function () {
-        this.viewCtrl.dismiss();
+    UsersPage.prototype.getItems = function (ev) {
+        var val = ev.target.value.toUpperCase();
+        if (!val || !val.trim()) {
+            this.currentItems = this.allItems;
+            return;
+        }
+        this.currentItems = this.allItems.filter(function (item) {
+            return (item.user_name.toUpperCase().indexOf(ev.data) >= 0 ||
+                item.name.toUpperCase().indexOf(ev.data) >= 0 ||
+                item.email_id.toUpperCase().indexOf(ev.data) >= 0);
+        });
     };
-    UserDetailPage = __decorate([
+    UsersPage.prototype.openItem = function (item) {
+        this.navCtrl.push('UserDetailPage', {
+            user: item
+        });
+    };
+    UsersPage.prototype.addItem = function () {
+        this.navCtrl.push('SignupPage');
+    };
+    UsersPage.prototype.pressEvent = function (ev) {
+        this.vibration.vibrate(150);
+        var toast = this.toastCtrl.create({
+            message: "please slide to get the options .",
+            duration: 2000,
+            position: 'top'
+        });
+        toast.present();
+    };
+    UsersPage.prototype.editItem = function (item, slidingItem) {
+        this.navCtrl.push('UserEditPage', {
+            user: item
+        });
+    };
+    UsersPage.prototype.mailUser = function (user) {
+        window.open("mailto:" + user.email, '_system');
+    };
+    UsersPage.prototype.callUser = function (user) {
+        this.callNumber.callNumber(user.phone_no, true)
+            .then(function (res) { return console.log('Launched dialer!', res); })
+            .catch(function (err) { return console.log('Error launching dialer', err); });
+    };
+    UsersPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'user-detail',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/user-detail/user-detail.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only (click)="cancel()">\n        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'User Details\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form>\n    <ion-list>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Full Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.name" name="name" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'User Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Phone No\' | translate }}</ion-label>\n        <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Email\' | translate }}</ion-label>\n        <ion-input type="email" [(ngModel)]="account.email" name="email" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.password" name="password" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Confirm Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Date Of Birth\' | translate }}</ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" disabled="true"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Gender\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.gender" name="gender" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Role\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.role" name="role" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'admin\'">\n        <ion-label fixed>{{ \'State\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_state" name="user_state" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'district\'">\n        <ion-label fixed>{{ \'District\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_district" name="user_district" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'unit\'">\n        <ion-label fixed>{{ \'Unit / Center\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_center" name="user_center" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Active\' | translate }}</ion-label>\n        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" disabled="true"></ion-toggle>\n      </ion-item>\n\n    </ion-list>\n  </form>\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/user-detail/user-detail.html"*/
+            selector: 'users_lists',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/users-lists/users_lists.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Users Lists\' | translate }}</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only (click)="addItem()">\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ \'Search Users\' | translate }}"></ion-searchbar>\n  <ion-list>\n    <ion-item-sliding class="cssForRoundSLidingItems" *ngFor="let item of currentItems" #slidingItem>\n\n      <ion-item (press)="pressEvent($event)">\n        <ion-avatar item-start>\n          <img src={{item.profile_pic}}>\n        </ion-avatar>\n        <h2>{{item.name}}</h2>\n        <h3>{{item.role}}</h3>\n        <p *ngIf="item.user_state != \'\'"> <b> State: </b> {{item.user_state}}</p>\n        <p *ngIf="item.user_district != \'\'"> <b> District: </b> {{item.user_district}}</p>\n        <p *ngIf="item.user_center != \'\'"> <b> Center: </b> {{item.user_center}}</p>\n      </ion-item>\n\n      <ion-item-options side="left">\n        <button ion-button color="dark" (click)="mailUser(item)" icon-start>\n          <ion-icon name="text"></ion-icon>\n        </button>\n        <button ion-button color="dark" (click)="callUser(item)" icon-start>\n          <ion-icon name="call"></ion-icon>\n        </button>\n      </ion-item-options>\n\n      <ion-item-options side="right">\n        <button ion-button color="dark" (click)="openItem(item)" icon-start>\n          <ion-icon name="ios-more"></ion-icon>\n        </button>\n        <button ion-button color="dark" (click)="editItem(item,slidingItem)" icon-start>\n          <ion-icon name="trash"></ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/users-lists/users_lists.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_3__providers__["h" /* User */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ViewController */]])
-    ], UserDetailPage);
-    return UserDetailPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_4__providers__["h" /* User */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_call_number_ngx__["a" /* CallNumber */]])
+    ], UsersPage);
+    return UsersPage;
 }());
 
-//# sourceMappingURL=user-detail.js.map
+//# sourceMappingURL=users_lists.js.map
 
 /***/ }),
 
@@ -3038,7 +3039,7 @@ var UserUpdatePage = /** @class */ (function () {
     };
     UserUpdatePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'user-update',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/user-update/user-update.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only (click)="cancel()">\n        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Update User\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form>\n    <ion-list>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Full Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.name" name="name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'User Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Phone No\' | translate }}</ion-label>\n        <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Email\' | translate }}</ion-label>\n        <ion-input type="email" [(ngModel)]="account.email" name="email" disabled="true"></ion-input>\n      </ion-item>\n\n      <!-- <ion-item>\n        <ion-label fixed>{{ \'Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.password" name="password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Confirm Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item> -->\n\n      <ion-item>\n        <ion-label fixed>{{ \'Date Of Birth\' | translate }}</ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" (ionChange)="onChange($event)"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Gender\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.gender" name="gender" (ionChange)="onChange($event)">\n          <ion-option value="female">Female</ion-option>\n          <ion-option value="male">Male</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Role\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.role" name="role" (ionChange)="onChange($event)">\n          <ion-option value="admin">Admin</ion-option>\n          <ion-option value="master">Master Franchise</ion-option>\n          <ion-option value="district">District Franchise</ion-option>\n          <ion-option value="unit">Unit Franchise</ion-option>\n          <ion-option value="instructor">Instructor</ion-option>\n          <ion-option value="student">Student</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'admin\'">\n        <ion-label fixed>{{ \'State\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_state" name="user_state" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of statesList" [value]="name.state_code">{{name.state_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'district\'">\n        <ion-label fixed>{{ \'District\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_district" name="user_district" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of districtsList" [value]="name.district_code">{{name.district_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'unit\'">\n        <ion-label fixed>{{ \'Unit / Center\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_center" name="user_center" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of centersList" [value]="name.center_code">{{name.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" (ionChange)="onChange($event)"></ion-toggle>\n      </ion-item>\n\n    </ion-list>\n  </form>\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (ngSubmit)="doSignup()" disabled="!isReadyToSave || isDuplicate || !isPasswordMatch">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/user-update/user-update.html"*/
+            selector: 'user-update',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/user-update/user-update.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only (click)="cancel()">\n        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'Update User\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form>\n    <ion-list>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Full Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.name" name="name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'User Name\' | translate }}</ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Phone No\' | translate }}</ion-label>\n        <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Email\' | translate }}</ion-label>\n        <ion-input type="email" [(ngModel)]="account.email" name="email" disabled="true"></ion-input>\n      </ion-item>\n\n      <!-- <ion-item>\n        <ion-label fixed>{{ \'Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.password" name="password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Confirm Password\' | translate }}</ion-label>\n        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item> -->\n\n      <ion-item>\n        <ion-label fixed>{{ \'Date Of Birth\' | translate }}</ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" (ionChange)="onChange($event)"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Gender\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.gender" name="gender" (ionChange)="onChange($event)">\n          <ion-option value="female">Female</ion-option>\n          <ion-option value="male">Male</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Role\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.role" name="role" (ionChange)="onChange($event)">\n          <ion-option value="admin">Admin</ion-option>\n          <ion-option value="master">Master Franchise</ion-option>\n          <ion-option value="district">District Franchise</ion-option>\n          <ion-option value="unit">Unit Franchise</ion-option>\n          <ion-option value="instructor">Instructor</ion-option>\n          <ion-option value="student">Student</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'admin\'">\n        <ion-label fixed>{{ \'State\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_state" name="user_state" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of statesList" [value]="name.state_code">{{name.state_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'district\'">\n        <ion-label fixed>{{ \'District\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_district" name="user_district" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of districtsList" [value]="name.district_code">{{name.district_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role == \'unit\'">\n        <ion-label fixed>{{ \'Unit / Center\' | translate }}</ion-label>\n        <ion-select [(ngModel)]="account.user_center" name="user_center" (ionChange)="onChange($event)">\n          <ion-option *ngFor="let name of centersList" [value]="name.center_code">{{name.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label fixed>{{ \'Active:\' | translate }}</ion-label>\n        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" (ionChange)="onChange($event)"></ion-toggle>\n      </ion-item>\n\n    </ion-list>\n  </form>\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (ngSubmit)="doSignup()" disabled="!isReadyToSave || isDuplicate || !isPasswordMatch">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/user-update/user-update.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_3__providers__["h" /* User */],
@@ -3061,8 +3062,8 @@ var UserUpdatePage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_splash_screen__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages__ = __webpack_require__(369);
@@ -3182,7 +3183,7 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'side-main-menu',
-            template: "<ion-menu [content]=\"content\">\n    <ion-content class=\"sideMenuIoncContent\">\n\n      <ion-list class=\"headerMAin\">\n          <ion-item class=\"headerBackground\">\n              <ion-list class=\"logoImage\" menuClose (click)=\"openPage(pages[4])\">\n                  <div class=\"circle-pic\" text-center #profilePic [style.background-image]=\"'url(' + user.profile_pic + ')'\"></div>\n              </ion-list>\n              <br/>\n              <h2 class=\"userName\">Hi {{user.name}}</h2>\n              <h3 class=\"userDetails\">{{user.role}}</h3>\n          </ion-item>\n      </ion-list>\n\n      <ion-list>\n          <button menuClose ion-item no-lines style=\"border-top: 0.55px solid white;\" [class.activeHIghlight]=\"checkActive(pages[1])\"\n                (click)=\"openPage(pages[1])\" class=\"buttonSIdeBAr\">\n              <ion-icon name=\"home\" class=\"sidebarCss\"></ion-icon>\n              Home\n          </button>\n          <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[2])\"\n              (click)=\"openPage(pages[2])\" class=\"buttonSIdeBAr\">\n              <ion-icon name=\"bookmarks\" class=\"sidebarCss\"></ion-icon>\n              Programs Master\n          </button>\n          <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[3])\"\n              (click)=\"openPage(pages[3])\" class=\"buttonSIdeBAr\">\n              <ion-icon name=\"swap\" class=\"sidebarCss\"></ion-icon>\n              State / Centers Master\n          </button>\n          <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[4])\" (click)=\"openPage(pages[4])\"\n              class=\"buttonSIdeBAr\">\n              <ion-icon name=\"person\" class=\"sidebarCss\"></ion-icon>\n              Users master\n          </button>\n          <!-- <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[4])\" (click)=\"openPage(pages[4])\"\n              class=\"buttonSIdeBAr\">\n              <ion-icon ios=\"ios-notifications-outline\" class=\"sidebarCss\" md=\"ios-notifications-outline\"></ion-icon>\n              Franchise Enquiry\n          </button>\n          <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[5])\" (click)=\"openPage(pages[5])\"\n              class=\"buttonSIdeBAr\">\n              <ion-icon ios=\"ios-notifications-outline\" class=\"sidebarCss\" md=\"ios-notifications-outline\"></ion-icon>\n              Instructor Enquiry\n          </button>\n          <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[6])\" (click)=\"openPage(pages[6])\"\n              class=\"buttonSIdeBAr\">\n              <ion-icon ios=\"ios-notifications-outline\" class=\"sidebarCss\" md=\"ios-notifications-outline\"></ion-icon>\n              Student Enquiry\n          </button> -->\n          <button menuClose no-lines ion-item [class.activeHIghlight]=\"checkActive(pages[0])\"\n              (click)=\"openPage(pages[0])\" class=\"buttonSIdeBAr\">\n              <ion-icon class=\"sidebarCss\" name=\"power\"></ion-icon>\n              Logout\n          </button>\n\n      </ion-list>\n  </ion-content>\n</ion-menu>\n<ion-nav #content [root]=\"rootPage\"></ion-nav>"
+            template: "<ion-menu [content]=\"content\">\n    <ion-content class=\"sideMenuIoncContent\">\n\n      <ion-list class=\"headerMAin\">\n          <ion-item class=\"headerBackground\">\n              <ion-list class=\"logoImage\" menuClose (click)=\"openPage(pages[4])\">\n                  <div class=\"circle-pic\" text-center #profilePic \n                    [style.background-image]=\"'url(' + user.profile_pic + ')'\">\n                  </div>\n              </ion-list>\n              <br/>\n              <h2 class=\"userName\">Hi {{user.name}}</h2>\n              <h3 class=\"userDetails\">{{user.role}}</h3>\n          </ion-item>\n      </ion-list>\n\n      <ion-list>\n          <button menuClose ion-item no-lines style=\"border-top: 0.55px solid white;\" [class.activeHIghlight]=\"checkActive(pages[1])\"\n                (click)=\"openPage(pages[1])\" class=\"buttonSIdeBAr\">\n              <ion-icon name=\"home\" class=\"sidebarCss\"></ion-icon>\n              Home\n          </button>\n          <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[2])\"\n              (click)=\"openPage(pages[2])\" class=\"buttonSIdeBAr\">\n              <ion-icon name=\"bookmarks\" class=\"sidebarCss\"></ion-icon>\n              Programs Master\n          </button>\n          <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[3])\"\n              (click)=\"openPage(pages[3])\" class=\"buttonSIdeBAr\">\n              <ion-icon name=\"swap\" class=\"sidebarCss\"></ion-icon>\n              State / Centers Master\n          </button>\n          <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[4])\" (click)=\"openPage(pages[4])\"\n              class=\"buttonSIdeBAr\">\n              <ion-icon name=\"person\" class=\"sidebarCss\"></ion-icon>\n              Users master\n          </button>\n          <!-- <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[4])\" (click)=\"openPage(pages[4])\"\n              class=\"buttonSIdeBAr\">\n              <ion-icon ios=\"ios-notifications-outline\" class=\"sidebarCss\" md=\"ios-notifications-outline\"></ion-icon>\n              Franchise Enquiry\n          </button>\n          <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[5])\" (click)=\"openPage(pages[5])\"\n              class=\"buttonSIdeBAr\">\n              <ion-icon ios=\"ios-notifications-outline\" class=\"sidebarCss\" md=\"ios-notifications-outline\"></ion-icon>\n              Instructor Enquiry\n          </button>\n          <button menuClose ion-item no-lines [class.activeHIghlight]=\"checkActive(pages[6])\" (click)=\"openPage(pages[6])\"\n              class=\"buttonSIdeBAr\">\n              <ion-icon ios=\"ios-notifications-outline\" class=\"sidebarCss\" md=\"ios-notifications-outline\"></ion-icon>\n              Student Enquiry\n          </button> -->\n          <button menuClose no-lines ion-item [class.activeHIghlight]=\"checkActive(pages[0])\"\n              (click)=\"openPage(pages[0])\" class=\"buttonSIdeBAr\">\n              <ion-icon class=\"sidebarCss\" name=\"power\"></ion-icon>\n              Logout\n          </button>\n\n      </ion-list>\n  </ion-content>\n</ion-menu>\n<ion-nav #content [root]=\"rootPage\"></ion-nav>"
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["m" /* Platform */],
@@ -3220,5 +3221,5 @@ var MainPage = 'HomePage';
 
 /***/ })
 
-},[253]);
+},[252]);
 //# sourceMappingURL=main.js.map

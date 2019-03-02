@@ -15,7 +15,9 @@ import { Storage } from '@ionic/storage';
       <ion-list class="headerMAin">
           <ion-item class="headerBackground">
               <ion-list class="logoImage" menuClose (click)="openPage(pages[4])">
-                  <div class="circle-pic" text-center #profilePic [style.background-image]="'url(' + user.profile_pic + ')'"></div>
+                  <div class="circle-pic" text-center #profilePic 
+                    [style.background-image]="'url(' + user.profile_pic + ')'">
+                  </div>
               </ion-list>
               <br/>
               <h2 class="userName">Hi {{user.name}}</h2>

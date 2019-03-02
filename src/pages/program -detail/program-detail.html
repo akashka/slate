@@ -6,32 +6,32 @@
 
 <ion-content>
   <form [formGroup]="form">
-    <ion-list class="details-info">
+    <ion-list class="details-info program-details-info">
       <ion-item>
         <ion-label>{{ 'Program Name:' | translate }}</ion-label>
-        <ion-input type="text" placeholder="{{ 'Program Name' | translate }}" formControlName="program_name" disabled="true"></ion-input>
+        <ion-input type="text" formControlName="program_name" disabled="true"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label>{{ 'Program Code:' | translate }}</ion-label>
-        <ion-input type="text" placeholder="{{ 'Program Code' | translate }}" formControlName="program_code" disabled="true"></ion-input>
+        <ion-input type="text" formControlName="program_code" disabled="true"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label>{{ 'No Of Sessions:' | translate }}</ion-label>
-        <ion-input type="number" placeholder="{{ 'No Of Sessions' | translate }}" formControlName="no_of_sessions"
+        <ion-input type="number" formControlName="no_of_sessions"
           disabled="true"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label>{{ 'Months Per Level:' | translate }}</ion-label>
-        <ion-input type="number" placeholder="{{ 'Months Per Level' | translate }}" formControlName="months_per_level"
+        <ion-input type="number" formControlName="months_per_level"
           disabled="true"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label>{{ 'Total Levels:' | translate }}</ion-label>
-        <ion-input type="number" placeholder="{{ 'Total Levels' | translate }}" formControlName="total_levels" disabled="true"></ion-input>
+        <ion-input type="number" formControlName="total_levels" disabled="true"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label>{{ 'Active:' | translate }}</ion-label>
-        <ion-toggle color="primary" formControlName="active" disabled="true"></ion-toggle>
+        <ion-input type="text" formControlName="active" disabled="true"></ion-input>
       </ion-item>
     </ion-list>
   </form>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 import {
   IonicPage,
   ModalController,
@@ -7,20 +7,17 @@ import {
   ToastController,
   AlertController,
   LoadingController
-} from 'ionic-angular';
-import { Vibration } from '@ionic-native/vibration';
+} from "ionic-angular";
+import { Vibration } from "@ionic-native/vibration";
 import { ItemSliding } from "ionic-angular/umd";
-
 import { Center } from "../../providers";
 
 @IonicPage()
 @Component({
-  selector: 'branches-tab',
-  templateUrl: 'branches-tab.html'
+  selector: "branches-tab",
+  templateUrl: "branches-tab.html"
 })
-
 export class BranchesTab {
-
   branches;
   states = [];
   shownGroup: any = null;
@@ -38,49 +35,47 @@ export class BranchesTab {
     public loadingCtrl: LoadingController,
     public centers: Center
   ) {
-    this.centers.query().subscribe((res: any) => {
-      this.branches = res;
-      this.states = res.filter((item) => {
-        return item.center_type == 'state'
-      });
-    }, err => {
-      console.error('ERROR', err);
+    this.centers.query().subscribe(
+      (res: any) => {
+        this.branches = this.formBranches(res);
+      },
+      err => {
+        console.error("ERROR", err);
+      }
+    );
+  }
+
+  formBranches(res) {
+    let branches = res.filter(item => {
+      return item.center_type == "state";
     });
-  }
-
-  toggleGroup(group) {
-    if (this.isGroupShown(group)) this.shownGroup = null;
-    else {
-      this.shownGroup = group;
-      this.groupItems = this.branches.filter((item) => {
-        return item.center_parent == group.center_id
+    for (var i = 0; i < branches.length; i++) {
+      branches[i].hide = true;
+      branches[i].branches = [];
+      branches[i].branches = res.filter(item => {
+        return item.center_parent == branches[i]._id;
       });
+      for (var j = 0; j < branches[i].branches.length; j++) {
+        branches[i].branches[j].hide = true;
+        branches[i].branches[j].branches = [];
+        branches[i].branches[j].branches = res.filter(item => {
+          return item.center_parent == branches[i].branches[j]._id;
+        });
+      }
     }
-  };
-
-  isGroupShown(group) {
-    return this.shownGroup === group;
-  };
-
-  isChildThere(group) {
-    let filteredList = this.branches.filter((item) => {
-      return item.center_parent == group.center_id
-    });
-    return filteredList.length > 0;
+    return branches;
   }
 
-  toggleSubGroup(subGroup) {
-    if (this.isSubGroupShown(subGroup)) this.shownSubGroup = null;
-    else {
-      this.shownSubGroup = subGroup;
-      this.groupMember = this.branches.filter((item) => {
-        return item.center_parent == subGroup.center_id
-      });
-    }
+  onSelect(branch) {
+    branch.hide = !branch.hide;
   }
 
-  isSubGroupShown(subGroup) {
-    return this.shownSubGroup === subGroup;
+  onSubSelect(subbranch) {
+    subbranch.hide = !subbranch.hide;
+  }
+
+  edit(branch) {
+    console.log(branch);
   }
 
 }

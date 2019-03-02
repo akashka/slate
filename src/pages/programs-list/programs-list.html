@@ -16,7 +16,7 @@
 
 <ion-content>
 
-  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'Search Programs' | translate }}"></ion-searchbar>
+  <ion-searchbar (ionInput)="getItems($event)" [(ngModel)]="input_search" placeholder="{{ 'Search Programs' | translate }}"></ion-searchbar>
 
   <ion-list>
     <ion-item-sliding *ngFor="let item of currentItems" #slidingItem>

@@ -139,3 +139,16 @@ page-welcome {
   }
 
 }
+
+.passwordIcon {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  float: right;
+  color: map_get($colors, theme_color) !important;
+  text-decoration: underline;
+}
+
+ion-header {
+  background-image: url(http://www.alohaindia.com/wp-content/uploads/img/cloud.jpg);
+}

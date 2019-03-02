@@ -3,16 +3,15 @@
 
         <ion-list>
             <ion-item>
-                <ion-label fixed>{{ 'State Name:' | translate }}</ion-label>
-                <ion-input type="text" placeholder="{{ 'State Name' | translate }}" formControlName="center_name"></ion-input>
+                <ion-label floating>{{ 'State Name' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+                <ion-input type="text" formControlName="center_name"></ion-input>
             </ion-item>
             <ion-item>
-                <ion-label fixed>{{ 'State Code:' | translate }}</ion-label>
-                <ion-input type="text" placeholder="{{ 'State Code' | translate }}" formControlName="center_id"
-                    (ionChange)="onCodeChange($event)"></ion-input>
+                <ion-label floating>{{ 'State Code' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+                <ion-input type="text" formControlName="center_id" (ionChange)="onCodeChange($event)"></ion-input>
             </ion-item>
             <ion-item>
-                <ion-label fixed>{{ 'Active:' | translate }}</ion-label>
+                <ion-label fixed>{{ 'Active:' | translate }} </ion-label>
                 <ion-toggle color="primary" formControlName="active"></ion-toggle>
             </ion-item>
         </ion-list>
@@ -22,6 +21,7 @@
 </ion-content>
 
 <ion-footer no-border>
+    <p style="color:red;" *ngIf="isDuplicate"> State Code already exists for any State or Districts or Center. Please try again with new State Code. </p>
     <ion-toolbar transparent>
         <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave || isDuplicate">
             {{ 'SAVE' | translate }}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 import {
   IonicPage,
   ModalController,
@@ -7,21 +7,22 @@ import {
   ToastController,
   AlertController,
   LoadingController
-} from 'ionic-angular';
-import { Vibration } from '@ionic-native/vibration';
+} from "ionic-angular";
+import { Vibration } from "@ionic-native/vibration";
 
-import { Programs } from '../../providers';
+import { Programs } from "../../providers";
 import { ItemSliding } from "ionic-angular/umd";
 
 @IonicPage()
 @Component({
-  selector: 'programs-lists',
-  templateUrl: 'programs-list.html'
+  selector: "programs-lists",
+  templateUrl: "programs-list.html"
 })
 export class ProgramsListPage {
-
   currentItems;
   tempCurrentItems;
+
+  input_search: String = "";
 
   constructor(
     public vibration: Vibration,
@@ -32,41 +33,48 @@ export class ProgramsListPage {
     private alertCtrl: AlertController,
     public loadingCtrl: LoadingController,
     public programs: Programs
-  ) {
-    this.programs.query().subscribe((res: any) => {
-      this.currentItems = res;
-      this.tempCurrentItems = res;
-    }, err => {
-      console.error('ERROR', err);
-    });
+  ) {}
+
+  ionViewDidLoad() {
+    this.programs.query().subscribe(
+      (res: any) => {
+        this.currentItems = res;
+        this.tempCurrentItems = res;
+      },
+      err => {
+        console.error("ERROR", err);
+      }
+    );
   }
 
   getItems(ev) {
-    let val = ev.data.toUpperCase();
+    let val = this.input_search.toUpperCase();
     if (!val || !val.trim()) {
       this.currentItems = this.tempCurrentItems;
       return;
     }
-    this.currentItems = this.tempCurrentItems.filter((item) => {
-      return (item.program_name.toUpperCase().indexOf(val) >= 0 ||
-        item.program_code.toUpperCase().indexOf(val) >= 0)
-    })
+    this.currentItems = this.tempCurrentItems.filter(item => {
+      return (
+        item.program_name.toUpperCase().indexOf(val) >= 0 ||
+        item.program_code.toUpperCase().indexOf(val) >= 0
+      );
+    });
   }
 
   viewProgram(program, slidingItem: ItemSliding) {
     slidingItem.close();
-    this.navCtrl.push('ProgramDetailPage', {
+    this.navCtrl.push("ProgramDetailPage", {
       program: program
     });
   }
 
   addProgram() {
-    this.navCtrl.push('ProgramAddPage');
+    this.navCtrl.push("ProgramAddPage");
   }
 
   editProgram(program, slidingItem: ItemSliding) {
     slidingItem.close();
-    this.navCtrl.push('ProgramEditPage', {
+    this.navCtrl.push("ProgramEditPage", {
       program: program
     });
   }
@@ -76,9 +84,8 @@ export class ProgramsListPage {
     let toast = this.toastCtrl.create({
       message: "please slide to get the options .",
       duration: 2000,
-      position: 'top'
+      position: "top"
     });
     toast.present();
   }
-
 }

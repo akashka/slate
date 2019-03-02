@@ -35,7 +35,7 @@ module.exports = function (app) {
     authRoutes.post('/login', AuthenticationController.login);
     authRoutes.post('/forgotPassword', AuthenticationController.forgotPassword);
     authRoutes.get('/usersList', AuthenticationController.getUsers);
-    authRoutes.get('/protected', requireAuth, function (req, res) {
+    authRoutes.get('/protected', function (req, res) {
         res.send({ content: 'Success' });
     });
 

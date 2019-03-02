@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 375:
+/***/ 379:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome__ = __webpack_require__(389);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var WelcomePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 381:
+/***/ 389:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -54,9 +54,8 @@ var WelcomePageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__users_lists_users_lists__ = __webpack_require__(252);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_page_home_page__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_page_home_page__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -66,7 +65,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
 
 
 
@@ -87,23 +85,23 @@ var WelcomePage = /** @class */ (function () {
         this.user = user;
         this.storage = storage;
         // @ViewChild(Nav) nav: Nav;
-        this.pages = [
-            { title: 'Users Lists', component: 'UsersPage' }
-        ];
+        this.pages = [{ title: "Users Lists", component: "UsersPage" }];
         this.account = {
-            email: '',
-            password: ''
+            email: "",
+            password: ""
         };
+        this.passwordType = "password";
+        this.passwordIcon = "Show";
         this.isLoggedIn();
         this.form = formBuilder.group({
-            user_name: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            user_pass: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required]
+            user_name: ["", __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            user_pass: ["", __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required]
         });
         // Watch the form for changes, and
         this.form.valueChanges.subscribe(function (v) {
             _this.isReadyToSave = _this.form.valid;
         });
-        this.translateService.get('SIGNUP_ERROR').subscribe(function (value) {
+        this.translateService.get("SIGNUP_ERROR").subscribe(function (value) {
             _this.signinErrorString = value;
         });
         this.falsemsg = "Welcome !";
@@ -111,17 +109,21 @@ var WelcomePage = /** @class */ (function () {
     WelcomePage.prototype.isLoggedIn = function () {
         var _this = this;
         var loading = this.loadingCtrl.create({
-            content: 'Please wait...'
+            content: "Please wait..."
         });
         loading.present();
-        this.storage.get('token').then(function (value) {
+        this.storage.get("token").then(function (value) {
             _this.user.checkAuthentication(value).then(function (resp) {
                 loading.dismiss();
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__users_lists_users_lists__["a" /* UsersPage */]);
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__home_page_home_page__["a" /* HomePage */]);
             }, function (err) {
                 loading.dismiss();
             });
         });
+    };
+    WelcomePage.prototype.hideShowPassword = function () {
+        this.passwordType = this.passwordType === "text" ? "password" : "text";
+        this.passwordIcon = this.passwordIcon === "Show" ? "Hide" : "Show";
     };
     WelcomePage.prototype.signIn = function () {
         var _this = this;
@@ -129,25 +131,25 @@ var WelcomePage = /** @class */ (function () {
             var toast = this.toastCtrl.create({
                 message: "Email and password both are required to Sign In.",
                 duration: 3000,
-                position: 'top'
+                position: "top"
             });
             toast.present();
             return;
         }
         else {
             var loading_1 = this.loadingCtrl.create({
-                content: 'Signing in...'
+                content: "Signing in..."
             });
             loading_1.present();
             this.user.login(this.account).subscribe(function (resp) {
                 loading_1.dismiss();
-                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__home_page_home_page__["a" /* HomePage */]);
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__home_page_home_page__["a" /* HomePage */]);
             }, function (err) {
                 loading_1.dismiss();
                 var toast = _this.toastCtrl.create({
                     message: "Oops ! some issues has occured. Please try again later!",
                     duration: 3000,
-                    position: 'top'
+                    position: "top"
                 });
                 toast.present();
             });
@@ -155,7 +157,7 @@ var WelcomePage = /** @class */ (function () {
     };
     WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-welcome',template:/*ion-inline-start:"/home/reckonsys/Code/slate/src/pages/welcome/welcome.html"*/'<ion-content scroll="false">\n  <div class="fixed-content">\n\n    <div class="logoHeader">\n      <img alt="logo" height="60" style="position: relative" src="../assets/img/icon-512x512.png">\n    </div>\n    \n    <h1 class="welcomeHeader"> &nbsp; </h1>\n    \n    <form *ngIf="form" [formGroup]="form" (ngSubmit)="signIn()">\n      <div padding>\n        <ion-input type="email" [(ngModel)]="account.email" class="input-access-code" placeholder="Email"\n          formControlName="user_name"></ion-input>\n        <br>\n        <ion-input type="password" [(ngModel)]="account.password" class="input-access-code" placeholder="Password"\n          formControlName="user_pass"></ion-input>\n        <br>\n        <a (click)="signIn()">\n          <button ion-button block class="login" style="color:white !important;">{{ \'LOGIN\' | translate }}</button>\n        </a>\n      </div>\n    </form>\n  \n  </div>\n</ion-content>'/*ion-inline-end:"/home/reckonsys/Code/slate/src/pages/welcome/welcome.html"*/
+            selector: "page-welcome",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/welcome/welcome.html"*/'<ion-content scroll="false">\n  <div class="fixed-content">\n\n    <div class="logoHeader">\n      <img alt="logo" height="60" style="position: relative" src="../assets/img/icon-512x512.png">\n    </div>\n    \n    <h1 class="welcomeHeader"> &nbsp; </h1>\n    \n    <form *ngIf="form" [formGroup]="form">\n      <div padding>\n        <ion-input type="email" [(ngModel)]="account.email" class="input-access-code" placeholder="Email" formControlName="user_name"></ion-input>\n        <br>\n        <ion-input [type]="passwordType" [(ngModel)]="account.password" class="input-access-code" placeholder="Password" formControlName="user_pass"></ion-input>\n        <br>\n        <ion-icon item-end [name]="passwordIcon" class="passwordIcon" (click)=\'hideShowPassword()\' style="z-index:9999999;">{{passwordIcon}} Password</ion-icon>\n        <br> <br>\n        <a (click)="signIn()">\n          <button ion-button block class="login" style="color:white !important;">{{ \'LOGIN\' | translate }}</button>\n        </a>\n      </div>\n    </form>\n  \n  </div>\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/welcome/welcome.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ToastController */],
@@ -165,7 +167,7 @@ var WelcomePage = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */],
             __WEBPACK_IMPORTED_MODULE_4__providers__["h" /* User */],
-            __WEBPACK_IMPORTED_MODULE_7__ionic_storage__["b" /* Storage */]])
+            __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]])
     ], WelcomePage);
     return WelcomePage;
 }());

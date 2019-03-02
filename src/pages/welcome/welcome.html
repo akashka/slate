@@ -7,14 +7,14 @@
     
     <h1 class="welcomeHeader"> &nbsp; </h1>
     
-    <form *ngIf="form" [formGroup]="form" (ngSubmit)="signIn()">
+    <form *ngIf="form" [formGroup]="form">
       <div padding>
-        <ion-input type="email" [(ngModel)]="account.email" class="input-access-code" placeholder="Email"
-          formControlName="user_name"></ion-input>
+        <ion-input type="email" [(ngModel)]="account.email" class="input-access-code" placeholder="Email" formControlName="user_name"></ion-input>
         <br>
-        <ion-input type="password" [(ngModel)]="account.password" class="input-access-code" placeholder="Password"
-          formControlName="user_pass"></ion-input>
+        <ion-input [type]="passwordType" [(ngModel)]="account.password" class="input-access-code" placeholder="Password" formControlName="user_pass"></ion-input>
         <br>
+        <ion-icon item-end [name]="passwordIcon" class="passwordIcon" (click)='hideShowPassword()' style="z-index:9999999;">{{passwordIcon}} Password</ion-icon>
+        <br> <br>
         <a (click)="signIn()">
           <button ion-button block class="login" style="color:white !important;">{{ 'LOGIN' | translate }}</button>
         </a>

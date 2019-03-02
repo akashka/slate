@@ -5036,7 +5036,7 @@ ion-input :focus {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
@@ -22285,23 +22285,23 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-3d .swiper-slide-shadow-left {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .swiper-container-3d .swiper-slide-shadow-right {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .swiper-container-3d .swiper-slide-shadow-top {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .swiper-container-3d .swiper-slide-shadow-bottom {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .swiper-container-coverflow .swiper-wrapper,
@@ -36525,6 +36525,11 @@ side-main-menu .menu-inner {
   width: 80% !important;
 }
 
+page-welcome .text-input-md {
+  color: #1ABC9C !important;
+  text-align: left !important;
+}
+
 .branchtab .list .item .item-accordion {
   line-height: 38px;
   padding-top: 0;
@@ -36540,6 +36545,72 @@ side-main-menu .menu-inner {
 .branchtab .list .item .item-accordion .ng-hide-add,
 .branchtab .list .item .item-accordion .ng-hide-remove {
   display: block !important;
+}
+
+.cd-accordion-menu input[type=checkbox] {
+  /* hide native checkbox */
+  position: absolute;
+  opacity: 0;
+}
+
+.cd-accordion-menu label,
+.cd-accordion-menu a {
+  position: relative;
+  display: block;
+  padding: 18px 18px 18px 64px;
+  background: #4d5158;
+  -webkit-box-shadow: inset 0 -1px #555960;
+  box-shadow: inset 0 -1px #555960;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.cd-accordion-menu ul {
+  /* by default hide all sub menus */
+  display: none;
+}
+
+.cd-accordion-menu input[type=checkbox]:checked + label + ul,
+.cd-accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+  /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+  /* show children when item is checked */
+  display: block;
+}
+
+.dot-success {
+  height: 25px;
+  width: 25px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+}
+
+.dot-failure {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+}
+
+.icon-circle {
+  position: relative;
+  display: inline-block;
+  margin: -10px;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 1px solid #ebebeb;
+  background: black;
+  color: #fff;
+  text-align: center;
+}
+
+.item-label-stacked .select-md, .item-label-floating .select-md {
+  border-bottom: 1px solid black;
 }
 
 .header-image {
@@ -36609,6 +36680,18 @@ ion-item {
   color: green;
 }
 
+.instructor-enquiry {
+  color: blue;
+}
+
+.instructor-reject {
+  color: red;
+}
+
+.instructor-confirm {
+  color: green;
+}
+
 .error-validation-msg {
   color: red;
 }
@@ -36619,12 +36702,46 @@ ion-footer .button-md {
   font-size: 22px;
 }
 
+ion-input, ion-textarea {
+  border-bottom: 1px solid black;
+}
+
+.mandatory-field {
+  color: green;
+  font-size: 16px;
+}
+
+.looping-reg .button {
+  border-radius: 25px;
+}
+
+.details-info ion-label, .item-toggle .input-wrapper {
+  font-weight: normal !important;
+  max-width: 100% !important;
+  padding-top: 10px;
+}
+
 .item-toggle .input-wrapper {
   max-width: 80px;
 }
 
 .details-info ion-label, .item-toggle .input-wrapper {
   font-weight: bold;
+}
+
+.program-details-info .input-wrapper {
+  border-bottom: 1px solid black;
+}
+
+.program-details-info ion-label {
+  min-width: 125px;
+  font-weight: bold;
+}
+
+.program-details-info ion-input {
+  border-bottom: none;
+  padding-top: 10px;
+  font-weight: bolder;
 }
 
 .listing-item {
@@ -36686,6 +36803,10 @@ ion-footer .button-md {
   color: #fff;
   background-color: #5bc0de;
   border-color: #46b8da;
+}
+
+ion-searchbar {
+  background: #4093b9 !important;
 }
 
 page-signup .toolbar-background {
@@ -36753,10 +36874,6 @@ ion-item-options[side=left] ion-icon {
 
 .login {
   color: #1ABC9C !important;
-}
-
-ion-searchbar {
-  background: #1ABC9C !important;
 }
 
 .toolbar-background {
@@ -36913,4 +37030,17 @@ page-welcome .create_account {
 
 page-welcome .login disable-hover button button-ios button-default button-default-ios button-block button-block-ios {
   background-color: #1ABC9C;
+}
+
+.passwordIcon {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  float: right;
+  color: #1ABC9C !important;
+  text-decoration: underline;
+}
+
+ion-header {
+  background-image: url(http://www.alohaindia.com/wp-content/uploads/img/cloud.jpg);
 }
