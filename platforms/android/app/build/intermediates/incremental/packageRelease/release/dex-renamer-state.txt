@@ -1,0 +1,4 @@
+#Sat Mar 09 12:45:40 IST 2019
+base.0=/home/akash/Code/akash/slate/platforms/android/app/build/intermediates/transforms/dex/release/0
+path.0=classes.dex
+renamed.0=classes.dex

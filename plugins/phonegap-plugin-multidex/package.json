@@ -1,19 +1,19 @@
 {
-  "_from": "phonegap-plugin-multidex@~1.0.0",
+  "_from": "phonegap-plugin-multidex",
   "_id": "phonegap-plugin-multidex@1.0.0",
   "_inBundle": false,
   "_integrity": "sha512-1wvc3iQOQpEBaQbXgLxA2JUiLSQ2azdF/bF29ghXDiQJWSpQ1BF8gSuqttM8WZoj081Ps8OKL0gYxdDBkFNPqA==",
   "_location": "/phonegap-plugin-multidex",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "tag",
     "registry": true,
-    "raw": "phonegap-plugin-multidex@~1.0.0",
+    "raw": "phonegap-plugin-multidex",
     "name": "phonegap-plugin-multidex",
     "escapedName": "phonegap-plugin-multidex",
-    "rawSpec": "~1.0.0",
+    "rawSpec": "",
     "saveSpec": null,
-    "fetchSpec": "~1.0.0"
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
     "#USER",
@@ -21,8 +21,8 @@
   ],
   "_resolved": "https://registry.npmjs.org/phonegap-plugin-multidex/-/phonegap-plugin-multidex-1.0.0.tgz",
   "_shasum": "b0c0ccba04da2c27dd18aeba5cde6be7309594b1",
-  "_spec": "phonegap-plugin-multidex@~1.0.0",
-  "_where": "/var/www/html/Projects/IonicAngular/learning /demo1/LearningPartOne",
+  "_spec": "phonegap-plugin-multidex",
+  "_where": "/home/akash/Code/akash/slate",
   "author": {
     "name": "Adobe PhoneGap Team"
   },

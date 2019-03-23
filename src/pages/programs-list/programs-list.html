@@ -7,6 +7,11 @@
     </ion-buttons>
     <ion-title>{{ 'Programs Lists' | translate }}</ion-title>
     <ion-buttons right>
+      <button ion-button icon-only (click)="saveAsCsv()">
+        <ion-icon name="download"></ion-icon>
+      </button>
+    </ion-buttons>  
+    <ion-buttons right>
       <button ion-button icon-only (click)="addProgram()">
         <ion-icon name="add"></ion-icon>
       </button>
@@ -14,7 +19,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content> 
 
   <ion-searchbar (ionInput)="getItems($event)" [(ngModel)]="input_search" placeholder="{{ 'Search Programs' | translate }}"></ion-searchbar>
 

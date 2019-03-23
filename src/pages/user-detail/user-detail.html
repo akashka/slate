@@ -1,10 +1,5 @@
 <ion-header>
   <ion-navbar color="primary">
-    <ion-buttons left>
-      <button ion-button icon-only (click)="cancel()">
-        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
-      </button>
-    </ion-buttons>
     <ion-title>{{ 'User Details' | translate }}</ion-title>
   </ion-navbar>
 </ion-header>
@@ -14,68 +9,58 @@
     <ion-list>
 
       <ion-item>
-        <ion-label fixed>{{ 'Full Name' | translate }}</ion-label>
+        <ion-label floating>{{ 'Full Name' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.name" name="name" disabled="true"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label fixed>{{ 'User Name' | translate }}</ion-label>
+        <ion-label floating>{{ 'User Name' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" disabled="true"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label fixed>{{ 'Phone No' | translate }}</ion-label>
+        <ion-label floating>{{ 'Phone No' | translate }}</ion-label>
         <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" disabled="true"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label fixed>{{ 'Email' | translate }}</ion-label>
+        <ion-label floating>{{ 'Email' | translate }}</ion-label>
         <ion-input type="email" [(ngModel)]="account.email" name="email" disabled="true"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label fixed>{{ 'Password' | translate }}</ion-label>
-        <ion-input type="password" [(ngModel)]="account.password" name="password" disabled="true"></ion-input>
+        <ion-label floating>{{ 'Date Of Birth' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="account.dob" name="dob" disabled="true"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label fixed>{{ 'Confirm Password' | translate }}</ion-label>
-        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" disabled="true"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label fixed>{{ 'Date Of Birth' | translate }}</ion-label>
-        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" disabled="true"></ion-datetime>
-      </ion-item>
-
-      <ion-item>
-        <ion-label fixed>{{ 'Gender' | translate }}</ion-label>
+        <ion-label floating>{{ 'Gender' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.gender" name="gender" disabled="true"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label fixed>{{ 'Role' | translate }}</ion-label>
+        <ion-label floating>{{ 'Role' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.role" name="role" disabled="true"></ion-input>
       </ion-item>
 
-      <ion-item *ngIf="account.role != 'admin'">
-        <ion-label fixed>{{ 'State' | translate }}</ion-label>
+      <ion-item *ngIf="account.user_state != ''">
+        <ion-label floating>{{ 'State' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.user_state" name="user_state" disabled="true"></ion-input>
       </ion-item>
 
-      <ion-item *ngIf="account.role == 'district'">
-        <ion-label fixed>{{ 'District' | translate }}</ion-label>
+      <ion-item *ngIf="account.user_district == ''">
+        <ion-label floating>{{ 'District' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.user_district" name="user_district" disabled="true"></ion-input>
       </ion-item>
 
-      <ion-item *ngIf="account.role == 'unit'">
-        <ion-label fixed>{{ 'Unit / Center' | translate }}</ion-label>
+      <ion-item *ngIf="account.user_center == ''">
+        <ion-label floating>{{ 'Unit / Center' | translate }}</ion-label>
         <ion-input type="text" [(ngModel)]="account.user_center" name="user_center" disabled="true"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label fixed>{{ 'Active' | translate }}</ion-label>
-        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" disabled="true"></ion-toggle>
+        <ion-label floating>{{ 'Active' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="account.active" name="active" disabled="true"></ion-input>
       </ion-item>
 
     </ion-list>

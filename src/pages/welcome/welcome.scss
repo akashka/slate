@@ -145,10 +145,28 @@ page-welcome {
   padding: 0;
   margin: 0;
   float: right;
-  color: map_get($colors, theme_color) !important;
+  color: #488aff !important;
   text-decoration: underline;
 }
 
 ion-header {
   background-image: url(http://www.alohaindia.com/wp-content/uploads/img/cloud.jpg);
+}
+
+.welcome-footer {
+  margin-top: 25px;
+}
+
+.welcome-footer a{
+  text-decoration: underline !important;
+  padding: 9%;
+  color: grey;
+}
+
+.reservation {
+  position: absolute;
+  bottom: 10px;
+  color: black;
+  text-align: center;
+  width: 100%;
 }

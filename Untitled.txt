@@ -1,30 +1,40 @@
 *** Login:
 - Reset Password
-- Privacy Policy / Term & Conditions
-
-*** State:                                                   Admin Only
-- Edit screen needs to be created
 
 *** Users:                                                   Admin Only
-
+- User Create page needs to be optimized
+- User Update page needs to be optimized
 
 *** Franchise Enquiry:
-
+- Franchise confirm page needs to be created
 
 *** Instructor Enquiry:
-
+- View page needs to be seen
+- Edit page needs to be seen
 
 *** Student Enquiry:
-
-
 
 
 *** HomePage:
 
 
 
-
+COMMON:
+Download & Mail Options
 
 
 
 *** Program:                                                 Admin Only
+*** State:                                                   Admin Only
+
+
+
+
+
+sudo ANDROID_HOME="/tools/bin" ionic cordova build --release --verbose android
+
+// sudo keytool -genkey -v -keystore slateByAloha.keystore -alias slateByAloha -keyalg RSA -keysize 2048 -validity 10000
+
+sudo jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore slateByAloha.keystore /home/akash/Code/akash/slate/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk slateByAloha
+
+sudo zipalign -v -p 4 /home/akash/Code/akash/slate/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk slateByAloha.apk

@@ -6,7 +6,8 @@ import { Injectable } from '@angular/core';
  */
 @Injectable()
 export class Api {
-  url: string = 'http://localhost:8080';
+  // url: string = 'http://localhost:8000';
+  url: string = 'https://slate-server.herokuapp.com';
 
   constructor(public http: HttpClient) {
   }

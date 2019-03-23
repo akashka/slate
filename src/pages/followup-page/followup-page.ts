@@ -37,6 +37,7 @@ export class FollowupPage {
     public loadingCtrl: LoadingController,
   ) {
     this.franchiseEnquiry = navParams.get('franchiseEnquiry');
+    console.log(this.franchiseEnquiry);
     console.log('Followup Page');
   }
 

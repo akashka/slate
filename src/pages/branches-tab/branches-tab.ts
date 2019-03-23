@@ -75,7 +75,25 @@ export class BranchesTab {
   }
 
   edit(branch) {
-    console.log(branch);
+    if (branch.center_type == "state") {
+      this.navCtrl.push("StatesEdit", {
+        branch: branch
+      });
+    } else if (branch.center_type == "district") {
+      this.navCtrl.push("DistrictEdit", {
+        branch: branch
+      });
+    } else if (branch.center_type == "unit") {
+      this.navCtrl.push("AreaEdit", {
+        branch: branch
+      });
+    } else {
+      let toast = this.toastCtrl.create({
+        message: "There is some error in updating. Please try again.",
+        duration: 3000,
+        position: "top"
+      });
+      toast.present();
+    }
   }
-
 }

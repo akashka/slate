@@ -46,7 +46,8 @@ export class FollowupCreateTab {
     public franchise: Franchise,
     public viewCtrl: ViewController
   ) {
-    this.franchiseEnquiry = navParams.get('franchiseEnquiry');
+
+    this.franchiseEnquiry = navParams.data;
     this.followups = this.franchiseEnquiry.follow_up;
 
     this.form = formBuilder.group({
@@ -66,6 +67,7 @@ export class FollowupCreateTab {
 
   save() {
     this.franchiseEnquiry.follow_up.push(this.form.value);
+    delete this.franchiseEnquiry['__v']; 
     this.franchise.update(this.franchiseEnquiry).subscribe((resp) => {
       this.viewCtrl.dismiss();
     }, (err) => {

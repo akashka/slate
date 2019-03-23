@@ -11,15 +11,15 @@ export class Instructor {
     constructor(public api: Api) { }
 
     query(params?: any) {
-        return this.api.get('instructor', params);
+        return this.api.get('api/instructor', params);
     }
 
     add(instructor) {
-        return this.api.post('instructor', instructor);
+        return this.api.post('api/instructor', instructor);
     }
 
     update(instructor) {
-        return this.api.put('instructor', instructor);
+        return this.api.put('api/instructor', instructor);
     }
 
 }

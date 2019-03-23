@@ -39,31 +39,31 @@
 
       <ion-item-options side="right" class="listing-btn">
         <button ion-button color="info" (click)="view(item, slidingItem)">
-          <ion-icon name="ios-more"></ion-icon> View
+          <ion-icon name="eye"></ion-icon> View
         </button>
-        <button ion-button color="danger" (click)="reject(item, slidingItem)" *ngIf="user.role == 'admin' && item.status == 'enquiry'">
-          <ion-icon name="ios-more"></ion-icon> Reject
+        <button ion-button color="danger" (click)="reject(item, slidingItem)" *ngIf="user && user.role == 'admin' && item.status == 'enquiry'">
+          <ion-icon name="thumbs-down"></ion-icon> Reject
         </button>
-        <button ion-button color="success" (click)="confirm(item, slidingItem)" *ngIf="user.role == 'admin' && item.status == 'enquiry'">
-          <ion-icon name="ios-more"></ion-icon> Confirm
+        <button ion-button color="success" (click)="confirm(item, slidingItem)" *ngIf="user && user.role == 'admin' && item.status == 'enquiry'">
+          <ion-icon name="thumbs-up"></ion-icon> Confirm
         </button>
-        <button ion-button color="success" (click)="confirm(item, slidingItem)" *ngIf="user.role == 'admin' && item.status == 'confirm'">
-          <ion-icon name="ios-more"></ion-icon> Documents
+        <button ion-button color="success" (click)="confirm(item, slidingItem)" *ngIf="user && user.role == 'admin' && item.status == 'confirm'">
+          <ion-icon name="cloud-upload"></ion-icon> Documents
         </button>
       </ion-item-options>
 
       <ion-item-options side="left" class="listing-btn">
         <button ion-button color="primary" (click)="call(item, slidingItem)">
-          <ion-icon name="ios-more"></ion-icon> Call
+          <ion-icon name="call"></ion-icon> Call
         </button>
         <button ion-button color="info" (click)="email(item, slidingItem)">
-          <ion-icon name="ios-more"></ion-icon> Mail
+          <ion-icon name="mail"></ion-icon> Mail
         </button>
         <button ion-button color="warning" (click)="edit(item, slidingItem)">
-          <ion-icon name="ios-more"></ion-icon> Edit
+          <ion-icon name="create"></ion-icon> Edit
         </button>
         <button ion-button color="success" (click)="followup(item, slidingItem)" *ngIf="item.status == 'enquiry'">
-          <ion-icon name="ios-more"></ion-icon> Followup
+          <ion-icon name="quote"></ion-icon> Followup
         </button>
       </ion-item-options>
 

@@ -13,6 +13,13 @@ import { Vibration } from "@ionic-native/vibration";
 import { Programs } from "../../providers";
 import { ItemSliding } from "ionic-angular/umd";
 
+import {
+  FileTransfer,
+  FileUploadOptions,
+  FileTransferObject
+} from "@ionic-native/file-transfer/ngx";
+import { File } from "@ionic-native/file";
+
 @IonicPage()
 @Component({
   selector: "programs-lists",
@@ -87,5 +94,45 @@ export class ProgramsListPage {
       position: "top"
     });
     toast.present();
+  }
+
+  saveAsCsv() {
+    var csv: any = this.convertToCSV(this.currentItems);
+    var fileName: any = "users.csv";
+
+    File.writeFile(File.externalRootDirectory, fileName, csv)
+      .then(_ => {
+        alert("Success ;-)");
+      })
+      .catch(err => {
+        File.writeExistingFile(File.externalRootDirectory, fileName, csv)
+          .then(_ => {
+            alert("Success ;-)");
+          })
+          .catch(err => {
+            alert("Failure");
+          });
+      });
+  }
+
+  convertToCSV(teams) {
+    var csv: any = "";
+    var line: any = "";
+
+    for (let i = 0; i < teams.length; i++) {
+      if (line != "") line += ";";
+      line += "Team " + (i + 1);
+    }
+    csv += line + "\r\n";
+
+    for (let i = 0; i < teams[0].length; i++) {
+      line = "";
+      for (var j = 0; j < teams.length; j++) {
+        if (line != "") line += ";";
+        line += teams[j][i];
+      }
+      csv += line + "\r\n";
+    }
+    return csv;
   }
 }

@@ -93,10 +93,10 @@ export class FranchiseEnquiryListPage {
     });
   }
 
-  view(program, slidingItem: ItemSliding) {
+  view(franchiseEnquiry, slidingItem: ItemSliding) {
     slidingItem.close();
-    this.navCtrl.push('ProgramDetailPage', {
-      program: program
+    this.navCtrl.push('FranchiseEnquiryViewPage', {
+      franchiseEnquiry: franchiseEnquiry
     });
   }
 
@@ -106,7 +106,9 @@ export class FranchiseEnquiryListPage {
 
   edit(franchiseEnquiry, slidingItem: ItemSliding) {
     slidingItem.close();
-    this.navCtrl.push('FranchiseEnquiryAddPage');
+    this.navCtrl.push('FranchiseEnquiryEditPage', {
+      franchiseEnquiry: franchiseEnquiry
+    });
   }
 
   followup(franchiseEnquiry, slidingItem: ItemSliding) {
@@ -182,12 +184,17 @@ export class FranchiseEnquiryListPage {
   }
 
   findUser(id) {
-    return (_.find(this.allUsers, { _id: id }));
+    let val = (_.find(this.allUsers, { _id: id }));
+    return (val && val['name']) ? val['name'] : '';
   }
 
   findLocation(id, type, franchise_type) {
     if (type == franchise_type) return id;
-    return (_.find(this.allCenters, { _id: id }));
+    let val = _.filter(this.allCenters, function (item) {
+      return (item._id.indexOf(id) >= 0)
+    });
+    val = val[0];
+    return (val && val['center_name']) ? val['center_name'] : '';
   }
 
 }

@@ -42,7 +42,7 @@ export class FollowupViewTab {
     public nav: Nav,
     public user: User
   ) {
-    this.franchiseEnquiry = navParams.get('franchiseEnquiry');
+    this.franchiseEnquiry = navParams.data;
     this.followups = this.franchiseEnquiry.follow_up;
 
     this.user.users_list().subscribe((res: any) => {
@@ -54,9 +54,11 @@ export class FollowupViewTab {
 
   findUser(user, option) {
     let val = _.find(this.allusers, function (i) {
-      return i == user;
+      return i._id == user;
     });
-    return val[option];
+    let vals = (val != undefined && val[option] != undefined) ? val[option] : '';
+    console.log('vals', vals);
+    return vals;
   }
 
 }

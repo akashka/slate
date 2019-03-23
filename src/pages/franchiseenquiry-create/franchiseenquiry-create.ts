@@ -67,7 +67,7 @@ export class FranchiseEnquiryAddPage {
     this.form = formBuilder.group({
       name: ['', Validators.compose([Validators.required])],
       franchise_type: ['unit', Validators.compose([Validators.required])],
-      franchise_state: [''],
+      franchise_state: ['', Validators.compose([Validators.required])],
       franchise_district: [''],
       franchise_area: [''],
       address: ['', Validators.compose([Validators.required])],
@@ -155,16 +155,16 @@ export class FranchiseEnquiryAddPage {
 
   onFranchiseStateChange(ev) {
     this.districts = _.filter(this.branches, function (item) {
-      return (item.center_type == 'district' && item.center_parent == ev.value)
+      return (item.center_type == 'district' && item.center_parent == ev)
     });
     this.areas = _.filter(this.branches, function (item) {
-      return (item.center_type == 'unit' && item.center_parent == ev.value)
+      return (item.center_type == 'unit' && item.center_parent == ev)
     });
   }
 
   onFranchiseDistrictChange(ev) {
     this.areas = _.filter(this.branches, function (item) {
-      return (item.center_type == 'unit' && item.center_parent == ev.value)
+      return (item.center_type == 'unit' && item.center_parent == ev)
     });
   }
 
@@ -191,10 +191,11 @@ export class FranchiseEnquiryAddPage {
   }
 
   onPhoneOrEmailChange(ev) {
-    let franchisees = _.filter(this.allFranchisees, function (item) {
-      return (item.mobile_no == ev.value || item.email_id == ev.value)
-    });
-    this.counter = franchisees.length;
+    let ev_mobile_no = this.form.controls['mobile_no'].value; 
+    let isDuplicate_mobile_no = (_.find(this.allFranchisees, { mobile_no: ev_mobile_no }) != undefined);
+    let ev_email_id = this.form.controls['email_id'].value; 
+    let isDuplicate_email_id = (_.find(this.allFranchisees, { email_id: ev_email_id }) != undefined);
+    this.counter = (isDuplicate_mobile_no || isDuplicate_email_id) ? 1 : 0;
   }
 
 }

@@ -7,6 +7,11 @@
     </ion-buttons>
     <ion-title>{{ 'Users Lists' | translate }}</ion-title>
     <ion-buttons right>
+      <button ion-button icon-only (click)="saveAsCsv()">
+        <ion-icon name="download"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
       <button ion-button icon-only (click)="addItem()">
         <ion-icon name="add"></ion-icon>
       </button>
@@ -17,9 +22,9 @@
 <ion-content>
   <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'Search Users' | translate }}"></ion-searchbar>
   <ion-list>
-    <ion-item-sliding class="cssForRoundSLidingItems" *ngFor="let item of currentItems" #slidingItem>
+    <ion-item-sliding *ngFor="let item of currentItems" #slidingItem>
 
-      <ion-item (press)="pressEvent($event)">
+      <ion-item (press)="pressEvent($event)" class="listing-item">
         <ion-avatar item-start>
           <img src={{item.profile_pic}}>
         </ion-avatar>
@@ -30,23 +35,24 @@
         <p *ngIf="item.user_center != ''"> <b> Center: </b> {{item.user_center}}</p>
       </ion-item>
 
-      <ion-item-options side="left">
-        <button ion-button color="dark" (click)="mailUser(item)" icon-start>
-          <ion-icon name="text"></ion-icon>
+      <ion-item-options side="left" class="listing-btn">
+        <button ion-button color="primary" (click)="mailUser(item)" icon-start>
+          <ion-icon name="text"></ion-icon> Mail
         </button>
-        <button ion-button color="dark" (click)="callUser(item)" icon-start>
-          <ion-icon name="call"></ion-icon>
+        <button ion-button color="primary" (click)="callUser(item)" icon-start>
+          <ion-icon name="call"></ion-icon> Call
         </button>
       </ion-item-options>
 
-      <ion-item-options side="right">
-        <button ion-button color="dark" (click)="openItem(item)" icon-start>
-          <ion-icon name="ios-more"></ion-icon>
+      <ion-item-options side="right" class="listing-btn">
+        <button ion-button color="info" (click)="openItem(item)" icon-start>
+          <ion-icon name="ios-more"></ion-icon> View
         </button>
-        <button ion-button color="dark" (click)="editItem(item,slidingItem)" icon-start>
-          <ion-icon name="trash"></ion-icon>
+        <button ion-button color="warning" (click)="editItem(item,slidingItem)" icon-start>
+          <ion-icon name="create"></ion-icon> Edit
         </button>
       </ion-item-options>
+
     </ion-item-sliding>
   </ion-list>
 </ion-content>

@@ -133,16 +133,16 @@ export class InstructorEnquiryAddPage {
 
   onInstructorStateChange(ev) {
     this.districts = _.filter(this.branches, function (item) {
-      return (item.center_type == 'district' && item.center_parent == ev.value)
+      return (item.center_type == 'district' && item.center_parent == ev)
     });
     this.areas = _.filter(this.branches, function (item) {
-      return (item.center_type == 'unit' && item.center_parent == ev.value)
+      return (item.center_type == 'unit' && item.center_parent == ev)
     });
   }
 
   onInstructorDistrictChange(ev) {
     this.areas = _.filter(this.branches, function (item) {
-      return (item.center_type == 'unit' && item.center_parent == ev.value)
+      return (item.center_type == 'unit' && item.center_parent == ev)
     });
   }
 

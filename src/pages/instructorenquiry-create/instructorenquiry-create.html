@@ -9,53 +9,51 @@
     <ion-list>
 
       <ion-item>
-        <ion-label floating>{{ 'Name:' | translate }}</ion-label>
-        <ion-input type="text" placeholder="{{ 'Name' | translate }}" formControlName="name"></ion-input>
+        <ion-label floating>{{ 'Name' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-input type="text" formControlName="name"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'State:' | translate }}</ion-label>
-        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="instructor_state" placeholder="{{ 'State' | translate }}"
-          (ionChange)="onInstructorStateChange($event)" [disabled]="isStateDisabled">
-          <ion-option value="state._id" *ngFor="let state of states">{{state.center_name}}</ion-option>
+        <ion-label floating>{{ 'State' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="instructor_state" (ionChange)="onInstructorStateChange($event)"
+          [disabled]="isStateDisabled">
+          <ion-option value={{state._id}} *ngFor="let state of states">{{state.center_name}}</ion-option>
         </ion-select>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'District:' | translate }}</ion-label>
+        <ion-label floating>{{ 'District' | translate }} <span class="mandatory-field"> * </span> </ion-label>
         <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="instructor_district"
-          placeholder="{{ 'District' | translate }}" (ionChange)="onInstructorDistrictChange($event)" [disabled]="isDistrictDisabled">
-          <ion-option value="district._id" *ngFor="let district of districts">{{district.center_name}}</ion-option>
+          (ionChange)="onInstructorDistrictChange($event)" [disabled]="isDistrictDisabled">
+          <ion-option value={{district._id}} *ngFor="let district of districts">{{district.center_name}}</ion-option>
         </ion-select>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'Area:' | translate }}</ion-label>
-        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="instructor_area" [disabled]="isAreaDisabled"
-          placeholder="{{ 'Area' | translate }}">
-          <ion-option value="area._id" *ngFor="let area of areas">{{area.center_name}}</ion-option>
+        <ion-label floating>{{ 'Area' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="instructor_area" [disabled]="isAreaDisabled">
+          <ion-option value={{area._id}} *ngFor="let area of areas">{{area.center_name}}</ion-option>
         </ion-select>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'Address:' | translate }}</ion-label>
-        <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="address"
-          placeholder="{{ 'Address' | translate }}"></ion-textarea>
+        <ion-label floating>{{ 'Address' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="address"></ion-textarea>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'Pincode:' | translate }}</ion-label>
-        <ion-input type="number" placeholder="{{ 'Pincode' | translate }}" formControlName="pincode"></ion-input>
+        <ion-label floating>{{ 'Pincode' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-input type="number" formControlName="pincode"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'Mobile No:' | translate }}</ion-label>
-        <ion-input type="number" placeholder="{{ 'Mobile No' | translate }}" formControlName="mobile_no" (ionChange)="onPhoneOrEmailChange($event)"></ion-input>
+        <ion-label floating>{{ 'Mobile No' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-input type="number" formControlName="mobile_no" (ionChange)="onPhoneOrEmailChange($event)"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'Email ID:' | translate }}</ion-label>
-        <ion-input type="text" placeholder="{{ 'Email ID' | translate }}" formControlName="email_id" (ionChange)="onPhoneOrEmailChange($event)"></ion-input>
+        <ion-label floating>{{ 'Email ID' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-input type="text" formControlName="email_id" (ionChange)="onPhoneOrEmailChange($event)"></ion-input>
       </ion-item>
 
       <ion-item>
@@ -64,46 +62,45 @@
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'Qualification:' | translate }}</ion-label>
-        <ion-input type="number" placeholder="{{ 'Qualification' | translate }}" formControlName="qualification"></ion-input>
+        <ion-label floating>{{ 'Qualification' | translate }}</ion-label>
+        <ion-input type="text" formControlName="qualification"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'Old Organization Name:' | translate }}</ion-label>
-        <ion-input type="number" placeholder="{{ 'Old Organization Name' | translate }}" formControlName="old_organization_name"></ion-input>
+        <ion-label floating>{{ 'Old Organization Name' | translate }}</ion-label>
+        <ion-input type="text" formControlName="old_organization_name"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'Old Organization Designation:' | translate }}</ion-label>
-        <ion-input type="number" placeholder="{{ 'Old Organization Designation' | translate }}" formControlName="old_organization_designation"></ion-input>
+        <ion-label floating>{{ 'Old Organization Designation' | translate }}</ion-label>
+        <ion-input type="text" formControlName="old_organization_designation"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'Total Experience:' | translate }}</ion-label>
-        <ion-input type="text" placeholder="{{ 'Total Experience' | translate }}" formControlName="total_experience"></ion-input>
+        <ion-label floating>{{ 'Total Experience' | translate }}</ion-label>
+        <ion-input type="text" formControlName="total_experience"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'Programs Interested In:' | translate }}</ion-label>
-        <ion-select multiple="true" cancelText="Cancel" okText="Okay" formControlName="programs_interested" placeholder="{{ 'Programs Interested In' | translate }}">
-          <ion-option value="program._id" *ngFor="let program of programmes">{{program.program_name}}</ion-option>
+        <ion-label floating>{{ 'Programs Interested In' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-select multiple="true" cancelText="Cancel" okText="Okay" formControlName="program">
+          <ion-option value={{program._id}} *ngFor="let program of programmes">{{program.program_name}}</ion-option>
         </ion-select>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'Remarks:' | translate }}</ion-label>
-        <ion-textarea #myInput1 id="myInput1" rows="2" maxLength="5000" (keyup)="resize()" formControlName="remarks"
-          placeholder="{{ 'Remarks' | translate }}"></ion-textarea>
+        <ion-label floating>{{ 'Remarks' | translate }}</ion-label>
+        <ion-textarea #myInput1 id="myInput1" rows="2" maxLength="5000" (keyup)="resize()" formControlName="remarks"></ion-textarea>
       </ion-item>
 
     </ion-list>
   </form>
 
-  <p style="color: red;" *ngIf="counter > 0">There already exists an Enquiry with same details from same or different
-    center. Hence, cannot save it. Please contact Head Office.</p>
 </ion-content>
 
 <ion-footer no-border>
+  <p style="color: red;" *ngIf="counter > 0">There already exists an Enquiry with same details from same or different
+    center. Hence, cannot save it. Please contact Head Office.</p>
   <ion-toolbar transparent>
     <button ion-button full (click)="save()" [disabled]="!isReadyToSave || counter > 0">
       {{ 'SAVE' | translate }}

@@ -24,8 +24,8 @@
       <ion-item (press)="pressEvent($event)" class="listing-item">
         <h2> {{item.name}} </h2>
         <p> <b> State: </b> {{findLocation(item.instructor_state)}} </p>
-        <p> <b> District: </b> {{findLocation(item.franchise_district)}} </p>
-        <p> <b> Area: </b> {{findLocation(item.franchise_area)}} </p>
+        <p> <b> District: </b> {{findLocation(item.instructor_district)}} </p>
+        <p> <b> Area: </b> {{findLocation(item.instructor_area)}} </p>
         <p> <b> Enquired By: </b> {{findUser(item.enquiry_by)}} </p>
         <p>
           <b> Status: </b>
@@ -36,25 +36,25 @@
 
       <ion-item-options side="right" class="listing-btn">
         <button ion-button color="info" (click)="view(item, slidingItem)">
-          <ion-icon name="ios-more"></ion-icon> View
+          <ion-icon name="eye"></ion-icon> View
         </button>
         <button ion-button color="danger" (click)="reject(item, slidingItem)" *ngIf="item.status == 'enquiry'">
-          <ion-icon name="ios-more"></ion-icon> Reject
+          <ion-icon name="thumbs-down"></ion-icon> Reject
         </button>
         <button ion-button color="success" (click)="confirm(item, slidingItem)" *ngIf="item.status == 'enquiry'">
-          <ion-icon name="ios-more"></ion-icon> Confirm
+          <ion-icon name="thumbs-up"></ion-icon> Confirm
         </button>
       </ion-item-options>
 
       <ion-item-options side="left" class="listing-btn">
         <button ion-button color="primary" (click)="call(item, slidingItem)">
-          <ion-icon name="ios-more"></ion-icon> Call
+          <ion-icon name="call"></ion-icon> Call
         </button>
         <button ion-button color="info" (click)="email(item, slidingItem)">
-          <ion-icon name="ios-more"></ion-icon> Mail
+          <ion-icon name="mail"></ion-icon> Mail
         </button>
         <button ion-button color="warning" (click)="edit(item, slidingItem)">
-          <ion-icon name="ios-more"></ion-icon> Edit
+          <ion-icon name="create"></ion-icon> Edit
         </button>
       </ion-item-options>
 

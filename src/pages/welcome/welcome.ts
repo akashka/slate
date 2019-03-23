@@ -13,6 +13,7 @@ import { User } from "../../providers";
 import { UsersPage } from "../users-lists/users_lists";
 import { HomePage } from "../home-page/home-page";
 import { Storage } from "@ionic/storage";
+import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
 
 @IonicPage()
 @Component({
@@ -44,15 +45,20 @@ export class WelcomePage {
     loading.present();
 
     this.storage.get("token").then(value => {
-      this.user.checkAuthentication(value).then(
-        resp => {
-          loading.dismiss();
-          this.navCtrl.setRoot(HomePage);
-        },
-        err => {
-          loading.dismiss();
-        }
-      );
+      console.log("value", value);
+      if (value) {
+        this.user.checkAuthentication(value).then(
+          resp => {
+            loading.dismiss();
+            this.navCtrl.setRoot(HomePage);
+          },
+          err => {
+            loading.dismiss();
+          }
+        );
+      } else {
+        loading.dismiss();
+      }
     });
   }
 
@@ -65,7 +71,8 @@ export class WelcomePage {
     public viewCtrl: ViewController,
     public app: App,
     public user: User,
-    public storage: Storage
+    public storage: Storage,
+    public iab: InAppBrowser
   ) {
     this.isLoggedIn();
 
@@ -121,5 +128,20 @@ export class WelcomePage {
         }
       );
     }
+  }
+
+  contactUs() {
+    const browser = this.iab.create("http://www.alohaindia.com/contact-us/");
+    browser.show();
+  }
+
+  feedback() {
+    const browser = this.iab.create("http://www.alohaindia.com/feedback/");
+    browser.show();
+  }
+
+  faq() {
+    const browser = this.iab.create("http://www.alohaindia.com/faq/");
+    browser.show();
   }
 }

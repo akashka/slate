@@ -10,6 +10,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { Vibration } from '@ionic-native/vibration';
 import { CallNumber } from '@ionic-native/call-number/ngx';
+import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
 
 import { Settings, User, Api, Programs, Instructor, Center, Franchise, Students } from '../providers';
 
@@ -30,11 +31,25 @@ import { DistrictTabModule } from '../pages/district-tab/district-tab.module';
 import { StatesTabModule } from '../pages/states-tab/states-tab.module';
 import { BranchesTabModule } from '../pages/branches-tab/branches-tab.module';
 import { AreaTabModule } from '../pages/area-tab/area-tab.module';
+import { AreaEditModule } from '../pages/area-edit/area-edit.module';
+import { StatesEditModule } from '../pages/states-edit/states-edit.module';
+import { DistrictEditModule } from '../pages/district-edit/district-edit.module';
 
 import { UsersPageModule } from "../pages/users-lists/users_lists.module";
 import { SignupPageModule } from "../pages/user-add/signup.module";
 import { UserDetailPageModule } from "../pages/user-detail/user-detail.module";
 import { UserUpdatePageModule } from "../pages/user-update/user-update.module";
+
+import { FranchiseEnquiryAddPageModule } from '../pages/franchiseenquiry-create/franchiseenquiry-create.module';
+import { FranchiseEnquiryEditPageModule } from '../pages/franchiseenquiry-edit/franchiseenquiry-edit.module';
+import { FranchiseEnquiryListPageModule } from '../pages/franchiseenquiry-list/franchiseenquiry-list.module';
+import { FranchiseEnquiryViewPageModule } from '../pages/franchiseenquiry-view/franchiseenquiry-view.module';
+import { FollowupCreateTabModule } from '../pages/followupcreate-tab/followupcreate-tab.module';
+import { FollowupViewTabModule } from '../pages/followupview-tab/followupview-tab.module';
+
+import { InstructorEnquiryAddPageModule } from '../pages/instructorenquiry-create/instructorenquiry-create.module';
+import { InstructorEnquiryListPageModule } from '../pages/instructorenquiry-list/instructorenquiry-list.module';
+import { InstructorEnquiryEditPageModule } from '../pages/instructorenquiry-update/instructorenquiry-update.module';
 
 // Module imported here and bottom
 
@@ -81,6 +96,20 @@ export function provideSettings(storage: Storage) {
     StatesTabModule,
     BranchesTabModule,
     AreaTabModule,
+    StatesEditModule,
+    AreaEditModule,
+    DistrictEditModule,
+
+    FranchiseEnquiryAddPageModule,
+    FranchiseEnquiryEditPageModule,
+    FranchiseEnquiryListPageModule,
+    FranchiseEnquiryViewPageModule,
+    FollowupCreateTabModule,
+    FollowupViewTabModule,
+
+    InstructorEnquiryAddPageModule,
+    InstructorEnquiryListPageModule,
+    InstructorEnquiryEditPageModule,
 
     TranslateModule.forRoot({
       loader: {
@@ -105,6 +134,7 @@ export function provideSettings(storage: Storage) {
     StatusBar,
     Vibration,
     CallNumber,
+    InAppBrowser,
     User, 
     Api, 
     Programs, 
