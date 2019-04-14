@@ -26,21 +26,18 @@
 
       <ion-item (press)="pressEvent($event)" class="listing-item">
         <ion-avatar item-start>
-          <img src={{item.profile_pic}}>
+          <img src={{findImage(item.profile_pic)}}>
         </ion-avatar>
         <h2>{{item.name}}</h2>
-        <h3>{{item.role}}</h3>
-        <p *ngIf="item.user_state != ''"> <b> State: </b> {{item.user_state}}</p>
-        <p *ngIf="item.user_district != ''"> <b> District: </b> {{item.user_district}}</p>
-        <p *ngIf="item.user_center != ''"> <b> Center: </b> {{item.user_center}}</p>
+        <h3>{{findRole(item.role)}}</h3>
+        <p *ngIf="item.user_state != ''"> <b> State: </b> {{findLocation(item.user_state)}}</p>
+        <p *ngIf="item.user_district != ''"> <b> District: </b> {{findLocation(item.user_district)}}</p>
+        <p *ngIf="item.user_center != ''"> <b> Center: </b> {{findLocation(item.user_center)}}</p>
       </ion-item>
 
       <ion-item-options side="left" class="listing-btn">
-        <button ion-button color="primary" (click)="mailUser(item)" icon-start>
-          <ion-icon name="text"></ion-icon> Mail
-        </button>
-        <button ion-button color="primary" (click)="callUser(item)" icon-start>
-          <ion-icon name="call"></ion-icon> Call
+        <button ion-button color="primary" (click)="contact(item, slidingItem)" icon-start>
+          <ion-icon name="call"></ion-icon> Contact
         </button>
       </ion-item-options>
 

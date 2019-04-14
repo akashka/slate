@@ -51,6 +51,7 @@ export class InstructorEnquiryAddPage {
       address: ['', Validators.compose([Validators.required])],
       pincode: ['', Validators.compose([Validators.required, Validators.maxLength(7), Validators.minLength(2)])],
       mobile_no: ['', Validators.compose([Validators.required, Validators.maxLength(10), Validators.minLength(10), Validators.pattern('[0-9]*')])],
+      whatsapp_no: ['', Validators.compose([Validators.maxLength(10), Validators.minLength(10), Validators.pattern('[0-9]*')])],
       email_id: ['', Validators.compose([Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")])],
       dob: [''],
       qualification: [''],
@@ -170,6 +171,9 @@ export class InstructorEnquiryAddPage {
 
   onPhoneOrEmailChange(ev) {
     let inst = _.filter(this.allInstructors, function (item) {
+      if(item.whatsapp_no != undefined && item.whatsapp_no != '' && item.whatsapp_no == ev.value) {
+        return true;
+      }
       return (item.mobile_no == ev.value || item.email_id == ev.value)
     });
     this.counter = inst.length;

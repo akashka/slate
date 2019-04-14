@@ -8,25 +8,19 @@
 *** Franchise Enquiry:
 - Franchise confirm page needs to be created
 
-*** Instructor Enquiry:
-- View page needs to be seen
-- Edit page needs to be seen
-
-*** Student Enquiry:
-
-
 *** HomePage:
-
 
 
 COMMON:
 Download & Mail Options
-
+Whatsapp & Call Options
+Images
 
 
 *** Program:                                                 Admin Only
 *** State:                                                   Admin Only
-
+*** Instructor Enquiry:                                      Admin, Master, District, Center
+*** Student Enquiry:                                         Admin, Master, District, Center
 
 
 

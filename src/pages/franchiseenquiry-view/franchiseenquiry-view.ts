@@ -149,6 +149,14 @@ export class FranchiseEnquiryViewPage {
           Validators.pattern("[0-9]*")
         ])
       ],
+      whatsapp_no: [
+        franchisee.whatsapp_no,
+        Validators.compose([
+          Validators.maxLength(10),
+          Validators.minLength(10),
+          Validators.pattern("[0-9]*")
+        ])
+      ],
       email_id: [
         franchisee.email_id,
         Validators.compose([

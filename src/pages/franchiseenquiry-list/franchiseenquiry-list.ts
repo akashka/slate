@@ -7,7 +7,8 @@ import {
   ToastController,
   AlertController,
   LoadingController,
-  Alert
+  Alert,
+  ActionSheetController
 } from 'ionic-angular';
 import { Vibration } from '@ionic-native/vibration';
 import { ItemSliding } from "ionic-angular/umd";
@@ -36,7 +37,7 @@ export class FranchiseEnquiryListPage {
     public navParams: NavParams,
     public modalCtrl: ModalController,
     public toastCtrl: ToastController,
-    private alertCtrl: AlertController,
+    public alertCtrl: AlertController,
     public loadingCtrl: LoadingController,
     public programs: Programs,
     public franchise: Franchise,
@@ -44,8 +45,12 @@ export class FranchiseEnquiryListPage {
     public users: User,
     public centers: Center,
     public callNumber: CallNumber,
-    public alertController: AlertController
+    public alertController: AlertController,
+    public actionSheetController: ActionSheetController,
   ) {
+  }
+
+  ionViewWillEnter() {
     this.franchise.query().subscribe((res: any) => {
       this.currentItems = res;
       this.tempCurrentItems = res;
@@ -74,8 +79,6 @@ export class FranchiseEnquiryListPage {
       console.error('ERROR', err);
     });
   }
-
-  // Nested filtering of records to users under them
 
   getItems(ev) {
     let val = ev.data.toUpperCase();
@@ -118,16 +121,64 @@ export class FranchiseEnquiryListPage {
     });
   }
 
-  call(franchiseEnquiry, slidingItem: ItemSliding) {
+  async contact(franchiseEnquiry, slidingItem: ItemSliding) {
     slidingItem.close();
-    this.callNumber.callNumber(franchiseEnquiry.mobile_no, true)
+    const actionSheet = await this.actionSheetController.create({
+      buttons: [
+        {
+          text: "Call",
+          icon: "call",
+          handler: () => {
+            this.callNumber.callNumber(franchiseEnquiry.mobile_no, true)
+              .then(res => console.log('Launched dialer!', res))
+              .catch(err => console.log('Error launching dialer', err));
+          }
+        },
+        {
+          text: "Whatsapp",
+          icon: "logo-whatsapp",
+          handler: () => {
+            if(franchiseEnquiry.whatsapp_no != undefined && franchiseEnquiry.whatsapp_no != '' && franchiseEnquiry.whatsapp_no != null) 
+              window.open(("https://wa.me/91"+franchiseEnquiry.whatsapp_no), "_blank");
+            else
+              window.open(("https://wa.me/91"+franchiseEnquiry.mobile_no), "_blank");
+          }
+        },
+        {
+          text: "SMS",
+          icon: "text",
+          handler: () => {
+            window.open("sms://"+franchiseEnquiry.mobile_no);
+          }
+        },
+        {
+          text: "Email",
+          icon: "mail",
+          handler: () => {
+            window.open("mailto://"+franchiseEnquiry.email_id);
+          }
+        },
+        {
+          text: "Cancel",
+          icon: "close",
+          role: "cancel",
+          handler: () => {
+            console.log("Cancel clicked");
+          }
+        }
+      ]
+    });
+    await actionSheet.present();
+  }
+
+  call(mobile_no) {
+    this.callNumber.callNumber(mobile_no, true)
       .then(res => console.log('Launched dialer!', res))
       .catch(err => console.log('Error launching dialer', err));
   }
 
-  email(franchiseEnquiry, slidingItem: ItemSliding) {
-    slidingItem.close();
-    window.open(`mailto:${franchiseEnquiry.email_id}`, '_system');
+  email(email_id) {
+    window.open(`mailto:${email_id}`, '_system');
   }
 
   confirm(franchiseEnquiry, slidingItem: ItemSliding) {
@@ -155,6 +206,7 @@ export class FranchiseEnquiryListPage {
         }, {
           text: 'Confirm',
           handler: () => {
+            delete franchiseEnquiry.__v;
             franchiseEnquiry.status = 'reject';
             this.franchise.update(franchiseEnquiry).subscribe((resp) => {
             }, (err) => {

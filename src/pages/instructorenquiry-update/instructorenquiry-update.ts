@@ -43,28 +43,31 @@ export class InstructorEnquiryEditPage {
     public navParams: NavParams
   ) {
 
+    let pro = navParams.get('instructor');
+
     this.form = formBuilder.group({
-      _id: ['', Validators.compose([Validators.required])],
-      name: ['', Validators.compose([Validators.required])],
-      instructor_state: ['', Validators.compose([Validators.required])],
-      instructor_district: ['', Validators.compose([Validators.required])],
-      instructor_area: ['', Validators.compose([Validators.required])],
-      program: [[], Validators.compose([Validators.required])],
-      address: ['', Validators.compose([Validators.required])],
-      pincode: ['', Validators.compose([Validators.required, Validators.maxLength(7), Validators.minLength(2)])],
-      mobile_no: ['', Validators.compose([Validators.required, Validators.maxLength(10), Validators.minLength(10), Validators.pattern('[0-9]*')])],
-      email_id: ['', Validators.compose([Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")])],
-      dob: [''],
-      qualification: [''],
-      old_organization_name: [''],
-      old_organization_designation: [''],
-      total_experience: [''],
-      status: ['enquiry', Validators.compose([Validators.required])],
-      remarks: [''],
-      active: [true, Validators.compose([Validators.required])],
-      photo: [[]],
-      enquiry_by: [''],
-      enquiry_datetime: [new Date()]
+      _id: [pro._id, Validators.compose([Validators.required])],
+      name: [pro.name, Validators.compose([Validators.required])],
+      instructor_state: [pro.instructor_state, Validators.compose([Validators.required])],
+      instructor_district: [pro.instructor_district, Validators.compose([Validators.required])],
+      instructor_area: [pro.instructor_area, Validators.compose([Validators.required])],
+      program: [pro.program, Validators.compose([Validators.required])],
+      address: [pro.address, Validators.compose([Validators.required])],
+      pincode: [pro.pincode, Validators.compose([Validators.required, Validators.maxLength(7), Validators.minLength(2)])],
+      mobile_no: [pro.mobile_no, Validators.compose([Validators.required, Validators.maxLength(10), Validators.minLength(10), Validators.pattern('[0-9]*')])],
+      whatsapp_no: [pro.whatsapp_no, Validators.compose([Validators.maxLength(10), Validators.minLength(10), Validators.pattern('[0-9]*')])],
+      email_id: [pro.email_id, Validators.compose([Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")])],
+      dob: [pro.dob],
+      qualification: [pro.qualification],
+      old_organization_name: [pro.old_organization_name],
+      old_organization_designation: [pro.old_organization_designation],
+      total_experience: [pro.total_experience],
+      status: [pro.status, Validators.compose([Validators.required])],
+      remarks: [pro.remarks],
+      active: [pro.active, Validators.compose([Validators.required])],
+      photo: [pro.photo],
+      enquiry_by: [pro.enquiry_by],
+      enquiry_datetime: [pro.enquiry_datetime]
     });
 
     // Watch the form for changes, and
@@ -77,6 +80,8 @@ export class InstructorEnquiryEditPage {
       this.states = _.filter(res, function (item) {
         return (item.center_type == 'state')
       });
+      this.onInstructorStateChange(this.form.controls['instructor_state'].value);
+      this.onInstructorDistrictChange(this.form.controls['instructor_district'].value);
     }, err => {
       console.error('ERROR', err);
     });
@@ -122,30 +127,6 @@ export class InstructorEnquiryEditPage {
     }, err => {
       console.error('ERROR', err);
     });
-
-    let pro = navParams.get('program');
-    this.form.controls['_id'].setValue(pro._id);
-    this.form.controls['name'].setValue(pro.name);
-    this.form.controls['instructor_state'].setValue(pro.instructor_state);
-    this.form.controls['instructor_district'].setValue(pro.instructor_district);
-    this.form.controls['instructor_area'].setValue(pro.instructor_area);
-    this.form.controls['program'].setValue(pro.program);
-    this.form.controls['address'].setValue(pro.address);
-    this.form.controls['pincode'].setValue(pro.pincode);
-    this.form.controls['mobile_no'].setValue(pro.mobile_no);
-    this.form.controls['email_id'].setValue(pro.email_id);
-    this.form.controls['dob'].setValue(pro.dob);
-    this.form.controls['qualification'].setValue(pro.qualification);
-    this.form.controls['old_organization_name'].setValue(pro.old_organization_name);
-    this.form.controls['old_organization_designation'].setValue(pro.old_organization_designation);
-    this.form.controls['total_experience'].setValue(pro.total_experience);
-    this.form.controls['status'].setValue(pro.status);
-    this.form.controls['remarks'].setValue(pro.remarks);
-    this.form.controls['active'].setValue(pro.active);
-    this.form.controls['photo'].setValue(pro.photo);
-    this.form.controls['enquiry_by'].setValue(pro.enquiry_by);
-    this.form.controls['enquiry_datetime'].setValue(pro.enquiry_datetime);
-
   }
 
   ionViewDidLoad() {
@@ -158,16 +139,16 @@ export class InstructorEnquiryEditPage {
 
   onInstructorStateChange(ev) {
     this.districts = _.filter(this.branches, function (item) {
-      return (item.center_type == 'district' && item.center_parent == ev.value)
+      return (item.center_type == 'district' && item.center_parent == ev)
     });
     this.areas = _.filter(this.branches, function (item) {
-      return (item.center_type == 'unit' && item.center_parent == ev.value)
+      return (item.center_type == 'unit' && item.center_parent == ev)
     });
   }
 
   onInstructorDistrictChange(ev) {
     this.areas = _.filter(this.branches, function (item) {
-      return (item.center_type == 'unit' && item.center_parent == ev.value)
+      return (item.center_type == 'unit' && item.center_parent == ev)
     });
   }
 
@@ -195,6 +176,9 @@ export class InstructorEnquiryEditPage {
 
   onPhoneOrEmailChange(ev) {
     let inst = _.filter(this.allInstructors, function (item) {
+      if(item.whatsapp_no != undefined && item.whatsapp_no != '' && item.whatsapp_no == ev.value) {
+        return true;
+      }
       return (item.mobile_no == ev.value || item.email_id == ev.value)
     });
     this.counter = inst.length;

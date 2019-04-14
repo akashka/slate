@@ -55,6 +55,7 @@ export class FranchiseEnquiryEditPage {
       this.states = _.filter(res, function (item) {
         return (item.center_type == 'state')
       });
+      this.onFranchiseStateChange(franchiseEnquiry.franchise_state);
     }, err => {
       console.error('ERROR', err);
     });
@@ -77,6 +78,7 @@ export class FranchiseEnquiryEditPage {
       address: [franchiseEnquiry.address, Validators.compose([Validators.required])],
       pincode: [franchiseEnquiry.pincode, Validators.compose([Validators.required, Validators.maxLength(7), Validators.minLength(2)])],
       mobile_no: [franchiseEnquiry.mobile_no, Validators.compose([Validators.required, Validators.maxLength(10), Validators.minLength(10), Validators.pattern('[0-9]*')])],
+      whatsapp_no: [franchiseEnquiry.whatsapp_no, Validators.compose([Validators.maxLength(10), Validators.minLength(10), Validators.pattern('[0-9]*')])],
       email_id: [franchiseEnquiry.email_id, Validators.compose([Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")])],
       dob: [franchiseEnquiry.dob],
       present_occupation: [franchiseEnquiry.present_occupation],
@@ -197,9 +199,12 @@ export class FranchiseEnquiryEditPage {
   onPhoneOrEmailChange(ev) {
     let ev_mobile_no = this.form.controls['mobile_no'].value; 
     let isDuplicate_mobile_no = (_.find(this.allFranchisees, { mobile_no: ev_mobile_no }) != undefined);
+    let ev_whatsapp_no = this.form.controls['whatsapp_no'].value; 
+    let isDuplicate_whstapp_no = false;
+    if(ev_whatsapp_no != undefined && ev_whatsapp_no != '') isDuplicate_whstapp_no = (_.find(this.allFranchisees, { whatsapp_no: ev_whatsapp_no }) != undefined);
     let ev_email_id = this.form.controls['email_id'].value; 
     let isDuplicate_email_id = (_.find(this.allFranchisees, { email_id: ev_email_id }) != undefined);
-    this.counter = (isDuplicate_mobile_no || isDuplicate_email_id) ? 1 : 0;
+    this.counter = (isDuplicate_mobile_no || isDuplicate_whstapp_no || isDuplicate_email_id) ? 1 : 0;
   }
 
 }

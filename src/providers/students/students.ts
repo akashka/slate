@@ -11,15 +11,15 @@ export class Students {
     constructor(public api: Api) { }
 
     query(params?: any) {
-        return this.api.get('students', params);
+        return this.api.get('api/students', params);
     }
 
     add(students) {
-        return this.api.post('students', students);
+        return this.api.post('api/students', students);
     }
 
     update(students) {
-        return this.api.put('students', students);
+        return this.api.put('api/students', students);
     }
 
 }

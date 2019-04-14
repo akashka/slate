@@ -43,6 +43,9 @@ export class ProgramsListPage {
   ) {}
 
   ionViewDidLoad() {
+  }
+
+  ionViewWillEnter(){
     this.programs.query().subscribe(
       (res: any) => {
         this.currentItems = res;
@@ -98,7 +101,7 @@ export class ProgramsListPage {
 
   saveAsCsv() {
     var csv: any = this.convertToCSV(this.currentItems);
-    var fileName: any = "users.csv";
+    var fileName: any = "programs.csv";
 
     File.writeFile(File.externalRootDirectory, fileName, csv)
       .then(_ => {

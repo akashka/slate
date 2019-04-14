@@ -69,7 +69,7 @@ export class FollowupCreateTab {
     this.franchiseEnquiry.follow_up.push(this.form.value);
     delete this.franchiseEnquiry['__v']; 
     this.franchise.update(this.franchiseEnquiry).subscribe((resp) => {
-      this.viewCtrl.dismiss();
+      this.nav.setRoot("FranchiseEnquiryListPage");
     }, (err) => {
       let toast = this.toastCtrl.create({
         message: "Error in adding Followup. Please try again.",

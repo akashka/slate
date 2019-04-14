@@ -73,6 +73,7 @@ export class FranchiseEnquiryAddPage {
       address: ['', Validators.compose([Validators.required])],
       pincode: ['', Validators.compose([Validators.required, Validators.maxLength(7), Validators.minLength(2)])],
       mobile_no: ['', Validators.compose([Validators.required, Validators.maxLength(10), Validators.minLength(10), Validators.pattern('[0-9]*')])],
+      whatsapp_no: ['', Validators.compose([Validators.maxLength(10), Validators.minLength(10), Validators.pattern('[0-9]*')])],
       email_id: ['', Validators.compose([Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")])],
       dob: [''],
       present_occupation: [''],
@@ -193,9 +194,12 @@ export class FranchiseEnquiryAddPage {
   onPhoneOrEmailChange(ev) {
     let ev_mobile_no = this.form.controls['mobile_no'].value; 
     let isDuplicate_mobile_no = (_.find(this.allFranchisees, { mobile_no: ev_mobile_no }) != undefined);
+    let ev_whatsapp_no = this.form.controls['whatsapp_no'].value;
+    let isDuplicate_whatsapp_no = false; 
+    if(ev_whatsapp_no != undefined && ev_whatsapp_no != '') isDuplicate_whatsapp_no = (_.find(this.allFranchisees, { whatsapp_no: ev_whatsapp_no }) != undefined);
     let ev_email_id = this.form.controls['email_id'].value; 
     let isDuplicate_email_id = (_.find(this.allFranchisees, { email_id: ev_email_id }) != undefined);
-    this.counter = (isDuplicate_mobile_no || isDuplicate_email_id) ? 1 : 0;
+    this.counter = (isDuplicate_mobile_no || isDuplicate_whatsapp_no || isDuplicate_email_id) ? 1 : 0;
   }
 
 }

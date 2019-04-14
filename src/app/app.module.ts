@@ -10,6 +10,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { Vibration } from '@ionic-native/vibration';
 import { CallNumber } from '@ionic-native/call-number/ngx';
+import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts/ngx';
 import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
 
 import { Settings, User, Api, Programs, Instructor, Center, Franchise, Students } from '../providers';
@@ -50,6 +51,12 @@ import { FollowupViewTabModule } from '../pages/followupview-tab/followupview-ta
 import { InstructorEnquiryAddPageModule } from '../pages/instructorenquiry-create/instructorenquiry-create.module';
 import { InstructorEnquiryListPageModule } from '../pages/instructorenquiry-list/instructorenquiry-list.module';
 import { InstructorEnquiryEditPageModule } from '../pages/instructorenquiry-update/instructorenquiry-update.module';
+import { InstructorEnquiryViewPageModule } from '../pages/instructorenquiry-view/instructorenquiry-view.module';
+
+import { StudentEnquiryAddPageModule } from '../pages/studentenquiry-create/studentenquiry-create.module';
+import { StudentEnquiryListPageModule } from '../pages/studentenquiry-list/studentenquiry-list.module';
+import { StudentEnquiryEditPageModule } from '../pages/studentenquiry-update/studentenquiry-update.module';
+import { StudentEnquiryViewPageModule } from '../pages/studentenquiry-view/studentenquiry-view.module';
 
 // Module imported here and bottom
 
@@ -110,6 +117,12 @@ export function provideSettings(storage: Storage) {
     InstructorEnquiryAddPageModule,
     InstructorEnquiryListPageModule,
     InstructorEnquiryEditPageModule,
+    InstructorEnquiryViewPageModule,
+
+    StudentEnquiryAddPageModule,
+    StudentEnquiryListPageModule,
+    StudentEnquiryEditPageModule,
+    StudentEnquiryViewPageModule,
 
     TranslateModule.forRoot({
       loader: {

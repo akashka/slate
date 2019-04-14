@@ -54,6 +54,7 @@ import { Storage } from "@ionic/storage";
             [class.activeHIghlight]="checkActive(pages[2])"
             (click)="openPage(pages[2])"
             class="buttonSIdeBAr"
+            *ngIf="user.role != undefined && user.role == 'admin'"
           >
             <ion-icon name="bookmarks" class="sidebarCss"></ion-icon>
             Programs Master
@@ -65,6 +66,7 @@ import { Storage } from "@ionic/storage";
             [class.activeHIghlight]="checkActive(pages[3])"
             (click)="openPage(pages[3])"
             class="buttonSIdeBAr"
+            *ngIf="user.role != undefined && user.role == 'admin'"
           >
             <ion-icon name="swap" class="sidebarCss"></ion-icon>
             State / Centers Master
@@ -76,6 +78,7 @@ import { Storage } from "@ionic/storage";
             [class.activeHIghlight]="checkActive(pages[4])"
             (click)="openPage(pages[4])"
             class="buttonSIdeBAr"
+            *ngIf="user.role != undefined && user.role == 'admin'"
           >
             <ion-icon name="person" class="sidebarCss"></ion-icon>
             Users master
@@ -87,6 +90,7 @@ import { Storage } from "@ionic/storage";
             [class.activeHIghlight]="checkActive(pages[5])"
             (click)="openPage(pages[5])"
             class="buttonSIdeBAr"
+            *ngIf="user.role == 'admin' || user.role == 'master' || user.role == 'district'"
           >
             <ion-icon name="briefcase" class="sidebarCss"></ion-icon>
             Franchise Enquiry
@@ -98,15 +102,23 @@ import { Storage } from "@ionic/storage";
             [class.activeHIghlight]="checkActive(pages[6])"
             (click)="openPage(pages[6])"
             class="buttonSIdeBAr"
+            *ngIf="user.role == 'admin' || user.role == 'master' || user.role == 'district' || user.role == 'unit'"
           >
             <ion-icon name="walk" class="sidebarCss"></ion-icon>
             Instructor Enquiry
           </button>
-          <!-- <button menuClose ion-item no-lines [class.activeHIghlight]="checkActive(pages[6])" (click)="openPage(pages[6])"
-              class="buttonSIdeBAr">
-              <ion-icon ios="ios-notifications-outline" class="sidebarCss" md="ios-notifications-outline"></ion-icon>
+          <button 
+            menuClose 
+            ion-item 
+            no-lines 
+            [class.activeHIghlight]="checkActive(pages[7])" 
+            (click)="openPage(pages[7])"
+            class="buttonSIdeBAr"
+            *ngIf="user.role == 'admin' || user.role == 'master' || user.role == 'district' || user.role == 'unit'"
+          >
+              <ion-icon name="school" class="sidebarCss"></ion-icon>
               Student Enquiry
-          </button> -->
+          </button>
           <button
             menuClose
             no-lines
@@ -143,8 +155,8 @@ export class MyApp {
     { title: "State / Centers Master", component: "CentersPage" },
     { title: "Users master", component: "UsersPage" },
     { title: "Franchise Enquiry", component: "FranchiseEnquiryListPage" },
-    { title: "Instructor Enquiry", component: "InstructorEnquiryListPage" }
-    // { title: 'Student Enquiry', component: 'StudentsListPage' },
+    { title: "Instructor Enquiry", component: "InstructorEnquiryListPage" },
+    { title: 'Student Enquiry', component: 'StudentEnquiryListPage' },
     // { title: 'Signup', component: 'LoginPage' },
     // { title: 'Master Detail', component: 'ListMasterPage' },
     // { title: 'News Feed', component: 'NewsFeed' },
@@ -170,6 +182,12 @@ export class MyApp {
       this.statusBar.backgroundColorByHexString("#1ABC9C");
     });
     this.initTranslate();
+    this.storage.get("user").then(value => {
+      this.user = value;
+    });
+  }
+
+  ionViewWillEnter() {
     this.storage.get("user").then(value => {
       this.user = value;
     });

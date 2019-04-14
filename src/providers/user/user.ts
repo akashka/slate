@@ -20,7 +20,7 @@ export class User {
     return new Promise((resolve, reject) => {
       let headers = new HttpHeaders();
       headers.append('Authorization', token);
-      this.http.get(this.api.url + '/api/auth/protected', { headers: headers })
+      this.http.get(this.api.url + 'api/auth/protected', { headers: headers })
         .subscribe(res => {
           resolve(res);
         }, (err) => {
@@ -40,7 +40,7 @@ export class User {
   }
 
   signup(accountInfo: any) {
-    let seq = this.api.post('signup', accountInfo).share();
+    let seq = this.api.post('api/auth/register', accountInfo).share();
 
     seq.subscribe((res: any) => {
       if (res.status == 'success') {
@@ -65,7 +65,8 @@ export class User {
   }
 
   update_user(accountInfo) {
-    let seq = this.api.put('updateUser', accountInfo).share();
+    delete accountInfo.__v;
+    let seq = this.api.post('api/auth/update', accountInfo).share();
     seq.subscribe((res: any) => {
       if (res.status == 'success') {
         //   this._loggedIn(res);
@@ -86,24 +87,5 @@ export class User {
   _loggedIn(resp) {
     this.storage.set('token', resp.token);
     this.storage.set('user', resp.user).then((res) => { });
-  }
-
-  profile_update() {
-    var profileDetails = [
-      {
-        full_name: "Sibabrat Swain",
-        about: "I am working in NTT . ",
-        profile_image: "asset/img/src/img.jpg",
-
-        followers: 230,
-        following: 170,
-
-        user_name: "sibabratswain",
-        password: 'July 8, 1954',
-        email: 'sibabrat.swain@constacloud.net',
-        state: 'Odisha',
-      },
-    ];
-    return profileDetails;
   }
 }

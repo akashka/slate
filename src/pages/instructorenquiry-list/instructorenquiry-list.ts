@@ -7,7 +7,8 @@ import {
   ToastController,
   AlertController,
   LoadingController,
-  Alert
+  Alert,
+  ActionSheetController
 } from "ionic-angular";
 import { Vibration } from "@ionic-native/vibration";
 import { ItemSliding } from "ionic-angular/umd";
@@ -43,8 +44,12 @@ export class InstructorEnquiryListPage {
     public centers: Center,
     public callNumber: CallNumber,
     public alertController: AlertController,
-    public instructorService: Instructor
+    public instructorService: Instructor,
+    public actionSheetController: ActionSheetController
   ) {
+  }
+
+  ionViewWillEnter() {
     this.instructorService.query().subscribe(
       (res: any) => {
         this.currentItems = res;
@@ -83,8 +88,6 @@ export class InstructorEnquiryListPage {
     );
   }
 
-  // Nested filtering of records to users under them
-
   getItems(ev) {
     let val = ev.data.toUpperCase();
     if (!val || !val.trim()) {
@@ -107,7 +110,7 @@ export class InstructorEnquiryListPage {
 
   view(instructor, slidingItem: ItemSliding) {
     slidingItem.close();
-    this.navCtrl.push("ProgramDetailPage", {
+    this.navCtrl.push("InstructorEnquiryViewPage", {
       instructor: instructor
     });
   }
@@ -118,20 +121,59 @@ export class InstructorEnquiryListPage {
 
   edit(instructor, slidingItem: ItemSliding) {
     slidingItem.close();
-    this.navCtrl.push("FranchiseEnquiryAddPage");
+    this.navCtrl.push("InstructorEnquiryEditPage", {
+      instructor: instructor
+    });
   }
 
-  call(instructor, slidingItem: ItemSliding) {
+  async contact(instructor, slidingItem: ItemSliding) {
     slidingItem.close();
-    this.callNumber
-      .callNumber(instructor.mobile_no, true)
-      .then(res => console.log("Launched dialer!", res))
-      .catch(err => console.log("Error launching dialer", err));
-  }
-
-  email(instructor, slidingItem: ItemSliding) {
-    slidingItem.close();
-    window.open(`mailto:${instructor.email_id}`, "_system");
+    const actionSheet = await this.actionSheetController.create({
+      buttons: [
+        {
+          text: "Call",
+          icon: "call",
+          handler: () => {
+            this.callNumber.callNumber(instructor.mobile_no, true)
+              .then(res => console.log('Launched dialer!', res))
+              .catch(err => console.log('Error launching dialer', err));
+          }
+        },
+        {
+          text: "Whatsapp",
+          icon: "logo-whatsapp",
+          handler: () => {
+            if(instructor.whatsapp_no != undefined && instructor.whatsapp_no != '' && instructor.whatsapp_no != null) 
+              window.open(("https://wa.me/91"+instructor.whatsapp_no), "_blank");
+            else
+              window.open(("https://wa.me/91"+instructor.mobile_no), "_blank");
+          }
+        },
+        {
+          text: "SMS",
+          icon: "text",
+          handler: () => {
+            window.open("sms://"+instructor.mobile_no);
+          }
+        },
+        {
+          text: "Email",
+          icon: "mail",
+          handler: () => {
+            window.open("mailto://"+instructor.email_id);
+          }
+        },
+        {
+          text: "Cancel",
+          icon: "close",
+          role: "cancel",
+          handler: () => {
+            console.log("Cancel clicked");
+          }
+        }
+      ]
+    });
+    await actionSheet.present();
   }
 
   confirm(instructor, slidingItem: ItemSliding) {
@@ -155,6 +197,7 @@ export class InstructorEnquiryListPage {
         {
           text: "Confirm",
           handler: () => {
+            delete instructor.__v;
             instructor.status = "confirm";
             this.instructorService.update(instructor).subscribe(
               resp => {},
@@ -197,6 +240,7 @@ export class InstructorEnquiryListPage {
         {
           text: "Confirm",
           handler: () => {
+            delete instructor.__v;
             instructor.status = "reject";
             this.instructorService.update(instructor).subscribe(
               resp => {},

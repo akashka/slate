@@ -35,6 +35,9 @@ export class BranchesTab {
     public loadingCtrl: LoadingController,
     public centers: Center
   ) {
+  }
+
+  ionViewWillEnter() {
     this.centers.query().subscribe(
       (res: any) => {
         this.branches = this.formBranches(res);

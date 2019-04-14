@@ -3,6 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, ToastController, NavParams, ViewController } from 'ionic-angular';
 import { User, Center } from '../../providers';
 import { FirstRunPage } from '../';
+import * as _ from 'lodash';
 
 @IonicPage()
 @Component({
@@ -12,13 +13,13 @@ import { FirstRunPage } from '../';
 export class UserUpdatePage {
 
   account = {
-    _id: '',
     name: '',
     user_name: '',
     email: '',
     password: '',
     confirm_password: '',
     phone_no: '',
+    whatsapp_no: '',
     gender: 'male',
     role: '',
     dob: new Date(),
@@ -34,8 +35,10 @@ export class UserUpdatePage {
   isPasswordMatch: Boolean = false;
   usersList;
   allBranches;
-
-  // Our translated text strings
+  branches;
+  states = [];
+  districts = [];
+  areas = [];
   private signupErrorString: string;
 
   constructor(
@@ -48,9 +51,23 @@ export class UserUpdatePage {
     public center: Center,
   ) {
     this.account = navParams.get('user');
-    this.usersList = this.user.users_list();
-    this.allBranches = this.center.query();
-    // TO-DO: Divide branches
+    this.account.confirm_password = this.account.password;
+    this.user.users_list().subscribe((res: any) => {
+      this.usersList = res; 
+    }, err => {
+      console.error('ERROR', err);
+    });
+
+    this.center.query().subscribe((res: any) => {
+      this.branches = res;
+      this.states = _.filter(res, function (item) {
+        return (item.center_type == 'state')
+      });
+      this.onStateChange(this.account.user_state);
+      this.onDistrictChange(this.account.user_district);
+    }, err => {
+      console.error('ERROR', err);
+    });
 
     this.translateService.get('SIGNUP_ERROR').subscribe((value) => {
       this.signupErrorString = value;
@@ -62,6 +79,7 @@ export class UserUpdatePage {
   }
 
   doSignup() {
+    this.account.dob = new Date(this.account.dob);
     this.user.update_user(this.account).subscribe((resp) => {
       this.viewCtrl.dismiss();
     }, (err) => {
@@ -75,9 +93,32 @@ export class UserUpdatePage {
   }
 
   onChange(ev) {
-    this.isReadyToSave = (this.account.name != '' && this.account.email != '' && this.account.phone_no != '' && this.account.gender != '' && this.account.role != '' &&
-      (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.account.password)) && (/^\d+$/.test(this.account.phone_no)) && this.account.phone_no.length == 10);
+    this.isReadyToSave = (this.account.name != '' && this.account.user_name != '' && this.account.email != '' &&
+      this.account.password != '' && this.account.confirm_password != '' && this.account.phone_no != '' &&
+      this.account.gender != '' && this.account.role != '');
+
+    this.isPasswordMatch = (this.account.password == this.account.confirm_password);
+
+    // let user = _.filter(this.usersList, function (item) {
+    //   return ((item.user_name.toUpperCase().indexOf(this.account.user_name.toUpperCase()) >= 0)
+    //     || (item.email.toUpperCase().indexOf(this.account.email.toUpperCase()) >= 0))
+    // });
+    // this.isDuplicate = (user.length > 0);
+  }
+
+  onStateChange(ev) {
+    this.districts = _.filter(this.branches, function (item) {
+      return (item.center_type == 'district' && item.center_parent == ev)
+    });
+    this.areas = _.filter(this.branches, function (item) {
+      return (item.center_type == 'unit' && item.center_parent == ev)
+    });
+  }
+
+  onDistrictChange(ev) {
+    this.areas = _.filter(this.branches, function (item) {
+      return (item.center_type == 'unit' && item.center_parent == ev)
+    });
   }
 
 }
-
