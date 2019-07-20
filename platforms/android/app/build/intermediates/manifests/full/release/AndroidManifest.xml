@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aloha.slate"
     android:hardwareAccelerated="true"
-    android:versionCode="2"
-    android:versionName="0.0.2" >
+    android:versionCode="3"
+    android:versionName="0.0.3" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -28,6 +28,9 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
         android:name="android.support.multidex.MultiDexApplication"
