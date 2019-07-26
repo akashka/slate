@@ -119,6 +119,18 @@ import { Storage } from "@ionic/storage";
               <ion-icon name="school" class="sidebarCss"></ion-icon>
               Student Enquiry
           </button>
+          <button 
+            menuClose 
+            ion-item 
+            no-lines 
+            [class.activeHIghlight]="checkActive(pages[8])" 
+            (click)="openPage(pages[8])"
+            class="buttonSIdeBAr"
+            *ngIf="user.role == 'admin'"
+          >
+              <ion-icon name="barcode" class="sidebarCss"></ion-icon>
+              Course Price Mapping
+          </button>
           <button
             menuClose
             no-lines
@@ -157,6 +169,7 @@ export class MyApp {
     { title: "Franchise Enquiry", component: "FranchiseEnquiryListPage" },
     { title: "Instructor Enquiry", component: "InstructorEnquiryListPage" },
     { title: 'Student Enquiry', component: 'StudentEnquiryListPage' },
+    { title: 'Course Price Mapping', component: 'CourseMappingPage' },
     // { title: 'Signup', component: 'LoginPage' },
     // { title: 'Master Detail', component: 'ListMasterPage' },
     // { title: 'News Feed', component: 'NewsFeed' },

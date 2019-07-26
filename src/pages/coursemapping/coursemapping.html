@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{ 'Course Price Mapping' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content> 
+
+    <form [formGroup]="form">
+      <ion-list>
+
+        <ion-item>
+          <ion-label floating>{{ 'State' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="state" 
+                (ionChange)="onStateChange($event)">
+            <ion-option value={{state._id}} *ngFor="let state of states">{{state.center_name}}</ion-option>
+          </ion-select>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>{{ 'District' | translate }} </ion-label>
+          <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="district"
+              (ionChange)="onDistrictChange($event)">
+            <ion-option value={{district._id}} *ngFor="let district of districts">{{district.center_name}}</ion-option>
+          </ion-select>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>{{ 'Area' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="center"
+                    (ionChange)="onAreaChange($event)">
+            <ion-option value={{area._id}} *ngFor="let area of areas">{{area.center_name}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Program' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="course"
+                    (ionChange)="onCourseChange($event)">
+            <ion-option value={{program._id}} *ngFor="let program of selectedProgrammes">{{program.program_name}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Level' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="level"
+                    (ionChange)="onLevelChange($event)">
+            <ion-option value={{level}} *ngFor="let level of levels">Level {{level}}</ion-option>
+          </ion-select>
+        </ion-item>  
+        
+        <ion-item>
+          <ion-label floating>{{ 'Registration Fee' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-input type="text" formControlName="registration_fee" (ionChange)="calculateTotal()"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Kit Fee' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-input type="text" formControlName="kit_fee" (ionChange)="calculateTotal()"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label floating>{{ 'Extra Fee' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-input type="text" formControlName="extra_fee" (ionChange)="calculateTotal()"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Total Fee' | translate }} </ion-label>
+          <ion-input type="text" formControlName="total_fee" [disabled]="true"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Max Discount' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-input type="text" formControlName="max_discount"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    </form>
+
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar transparent>
+    <button ion-button full (click)="save()" [disabled]="!isReadyToSave">
+      {{ 'SAVE' | translate }}
+    </button>
+  </ion-toolbar>
+</ion-footer>

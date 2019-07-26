@@ -6,3 +6,4 @@ export { Center } from './center/center';
 export { Franchise } from './franchise/franchise';
 export { Instructor } from './instructor/instructor';
 export { Students } from './students/students';
+export { CourseMapping } from './coursemapping/coursemapping';

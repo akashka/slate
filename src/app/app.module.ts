@@ -13,7 +13,7 @@ import { CallNumber } from '@ionic-native/call-number/ngx';
 import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts/ngx';
 import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
 
-import { Settings, User, Api, Programs, Instructor, Center, Franchise, Students } from '../providers';
+import { Settings, User, Api, Programs, Instructor, Center, Franchise, Students, CourseMapping } from '../providers';
 
 import { MyApp } from './app.component';
 
@@ -57,6 +57,8 @@ import { StudentEnquiryAddPageModule } from '../pages/studentenquiry-create/stud
 import { StudentEnquiryListPageModule } from '../pages/studentenquiry-list/studentenquiry-list.module';
 import { StudentEnquiryEditPageModule } from '../pages/studentenquiry-update/studentenquiry-update.module';
 import { StudentEnquiryViewPageModule } from '../pages/studentenquiry-view/studentenquiry-view.module';
+
+import { CourseMappingPageModule } from '../pages/coursemapping/coursemapping.module';
 
 // Module imported here and bottom
 
@@ -124,6 +126,8 @@ export function provideSettings(storage: Storage) {
     StudentEnquiryEditPageModule,
     StudentEnquiryViewPageModule,
 
+    CourseMappingPageModule,
+
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -155,6 +159,7 @@ export function provideSettings(storage: Storage) {
     Center, 
     Franchise, 
     Students,
+    CourseMapping,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
