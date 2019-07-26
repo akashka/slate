@@ -16,7 +16,7 @@ import { ItemSliding } from "ionic-angular/umd";
 import * as _ from "lodash";
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { Center } from '../../providers';
+import { Center, Programs } from '../../providers';
 
 @IonicPage()
 @Component({
@@ -27,6 +27,7 @@ import { Center } from '../../providers';
 export class StatesTab {
 
   branches;
+  courses;
   isDuplicate: Boolean = false;
   isReadyToSave: Boolean = false;
   form: any;
@@ -40,6 +41,7 @@ export class StatesTab {
     private alertCtrl: AlertController,
     public loadingCtrl: LoadingController,
     public centers: Center,
+    public program: Programs,
     public formBuilder: FormBuilder,
     public nav: Nav
   ) {
@@ -49,12 +51,19 @@ export class StatesTab {
       console.error('ERROR', err);
     });
 
+    this.program.query().subscribe((res: any) => {
+      this.courses = res;
+    }, err => {
+      console.log('ERROR', err);
+    });
+
     this.form = formBuilder.group({
       center_id: ['', Validators.required],
       center_name: ['', Validators.required],
       center_type: ['state'],
       center_parent: [''],
-      active: [true, Validators.required]
+      active: [true, Validators.required],
+      programs: [[], Validators.required]
     });
 
     // Watch the form for changes, and

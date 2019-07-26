@@ -14,7 +14,7 @@ import { ItemSliding } from "ionic-angular/umd";
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import * as _ from 'lodash';
 
-import { Center } from '../../providers';
+import { Center, Programs } from '../../providers';
 
 @IonicPage()
 @Component({
@@ -25,6 +25,7 @@ import { Center } from '../../providers';
 export class DistrictEdit {
 
   branches;
+  courses;
   form;
   isReadyToSave: Boolean = false;
   states;
@@ -38,6 +39,7 @@ export class DistrictEdit {
     private alertCtrl: AlertController,
     public loadingCtrl: LoadingController,
     public centers: Center,
+    public program: Programs,
     public formBuilder: FormBuilder,
     public nav: Nav
   ) {
@@ -50,13 +52,20 @@ export class DistrictEdit {
       console.error('ERROR', err);
     });
 
+    this.program.query().subscribe((res: any) => {
+      this.courses = res;
+    }, err => {
+      console.log('ERROR', err);
+    });
+
     this.form = formBuilder.group({
       _id: [''],
       center_id: ['', Validators.required],
       center_name: ['', Validators.required],
       center_type: ['district'],
       center_parent: ['', Validators.required],
-      active: [true, Validators.required]
+      active: [true, Validators.required],
+      programs: [[], Validators.required]
     });
 
     // Watch the form for changes, and
@@ -71,6 +80,7 @@ export class DistrictEdit {
     this.form.controls["center_type"].setValue(center.center_type);
     this.form.controls["center_parent"].setValue(center.center_parent);
     this.form.controls["active"].setValue(center.active);
+    this.form.controls["programs"].setValue(center.programs);
   }
 
   ionViewDidLoad() {

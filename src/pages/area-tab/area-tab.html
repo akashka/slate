@@ -17,6 +17,12 @@
                 </ion-select>
             </ion-item>
             <ion-item>
+                <ion-label floating> {{ 'Programs:' | translate }}  <span class="mandatory-field"> * </span> </ion-label>
+                <ion-select formControlName="programs" multiple="true" style="min-width: 100%;">
+                    <ion-option value={{course._id}} *ngFor="let course of courses">{{course.program_name}}</ion-option>
+                </ion-select>
+            </ion-item>        
+            <ion-item>
                 <ion-label fixed>{{ 'Active:' | translate }}</ion-label>
                 <ion-toggle color="primary" formControlName="active"></ion-toggle>
             </ion-item>
