@@ -16,7 +16,7 @@ import { Storage } from "@ionic/storage";
 @Component({
   selector: "side-main-menu",
   template: `
-    <ion-menu [content]="content">
+    <ion-menu [content]="content" *ngIf="user != null">
       <ion-content class="sideMenuIoncContent">
         <ion-list class="headerMAin">
           <ion-item class="headerBackground">
@@ -185,6 +185,7 @@ export class MyApp {
     this.storage.get("user").then(value => {
       this.user = value;
     });
+    console.log(this.user);
   }
 
   ionViewWillEnter() {

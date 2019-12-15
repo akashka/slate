@@ -76,28 +76,28 @@ page-welcome {
   }
   
   input, select, textarea {
-    color: map_get($colors, theme_color) !important;
+    color: map_get($colors, black) !important;
     text-align: center !important;
   }
   
   ::-webkit-input-placeholder {
     text-align: center;
-    color: map_get($colors, theme_color) !important;
+    color: map_get($colors, black) !important;
   }
   
   :-moz-placeholder { /* Firefox 18- */
     text-align: center;
-    color: map_get($colors, theme_color) !important;
+    color: map_get($colors, black) !important;
   }
   
   ::-moz-placeholder { /* Firefox 19+ */
     text-align: center;
-    color: map_get($colors, theme_color) !important;
+    color: map_get($colors, black) !important;
   }
   
   :-ms-input-placeholder {
     text-align: center;
-    color: map_get($colors, theme_color) !important;
+    color: map_get($colors, black) !important;
   }
   
   .scroll-content {
@@ -145,8 +145,8 @@ page-welcome {
   padding: 0;
   margin: 0;
   float: right;
-  color: #488aff !important;
-  text-decoration: underline;
+  color: #58bd9c !important;
+  text-decoration: none;
 }
 
 ion-header {

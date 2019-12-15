@@ -101,7 +101,7 @@
 
 <ion-footer no-border>
   <ion-toolbar transparent>
-    <button ion-button full (click)="doSignup()" disabled="(isDuplicate || !isPasswordMatch)">
+    <button ion-button full (click)="doSignup()" [disabled]="isReadyToSave">
       {{ 'SAVE' | translate }}
     </button>
   </ion-toolbar>

@@ -99,6 +99,7 @@ export class WelcomePage {
   }
 
   signIn() {
+    console.log(this.form.value);
     if (!this.form.valid) {
       let toast = this.toastCtrl.create({
         message: "Email and password both are required to Sign In.",
@@ -120,7 +121,7 @@ export class WelcomePage {
         err => {
           loading.dismiss();
           let toast = this.toastCtrl.create({
-            message: "Oops ! some issues has occured. Please try again later!",
+            message: err.error.message,
             duration: 3000,
             position: "top"
           });

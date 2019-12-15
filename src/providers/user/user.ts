@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { Api } from '../api/api';
 import { NullTemplateVisitor } from '@angular/compiler';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class User {
@@ -29,7 +30,7 @@ export class User {
     });
   }
 
-  login(accountInfo: any) {
+  login(accountInfo: any): Observable<any> {
     let seq = this.api.post('api/auth/login', accountInfo).share();
     seq.subscribe((res: any) => {
       this._loggedIn(res);
