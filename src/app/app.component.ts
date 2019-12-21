@@ -10,7 +10,7 @@ import {
   LoadingController
 } from "ionic-angular";
 import { FirstRunPage } from "../pages";
-import { Settings } from "../providers";
+import { Settings, User } from "../providers";
 import { Storage } from "@ionic/storage";
 
 @Component({
@@ -148,6 +148,8 @@ export class MyApp {
     profile_pic: ""
   };
 
+  userSubcription;
+
   pages: any[] = [
     { title: "Welcome", component: "WelcomePage" },
     { title: "Home", component: "HomePage" },
@@ -186,6 +188,10 @@ export class MyApp {
       this.user = value;
     });
     console.log(this.user);
+    this.userSubcription = User.userChanged.subscribe(data => {
+      this.user = data;
+    }
+    )
   }
 
   ionViewWillEnter() {

@@ -38,10 +38,10 @@
         <ion-input type="password" [(ngModel)]="account.password" name="password" (ionChange)="onChange($event)"></ion-input>
       </ion-item>
 
-      <ion-item>
+      <!-- <ion-item>
         <ion-label floating>{{ 'Confirm Password' | translate }} <span class="mandatory-field"> * </span> </ion-label>
         <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" (ionChange)="onChange($event)"></ion-input>
-      </ion-item>
+      </ion-item> -->
 
       <ion-item>
         <ion-label floating>{{ 'Date Of Birth' | translate }} <span class="mandatory-field"> * </span> </ion-label>
@@ -101,7 +101,7 @@
 
 <ion-footer no-border>
   <ion-toolbar transparent>
-    <button ion-button full (click)="doSignup()">
+    <button ion-button full (click)="doSignup()" [disabled]="!isReadyToSave">
       {{ 'SAVE' | translate }}
     </button>
   </ion-toolbar>

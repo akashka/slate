@@ -47,6 +47,7 @@ export class WelcomePage {
     this.storage.get("token").then(value => {
       console.log("value", value);
       if (value) {
+        console.log(value);
         this.user.checkAuthentication(value).then(
           resp => {
             loading.dismiss();
@@ -115,13 +116,15 @@ export class WelcomePage {
       loading.present();
       this.user.login(this.account).subscribe(
         resp => {
+          console.log('resp',resp);
           loading.dismiss();
           this.navCtrl.setRoot(HomePage);
         },
         err => {
+          console.log(err);
           loading.dismiss();
           let toast = this.toastCtrl.create({
-            message: err.error.message,
+            message: 'Invalid Credentials',
             duration: 3000,
             position: "top"
           });
