@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{ 'POST ORDER' | translate }}</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="saveAsCsv()">
+        <ion-icon name="download"></ion-icon>
+      </button>
+    </ion-buttons> 
+    <ion-buttons right>
+      <button ion-button icon-only (click)="add()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'Search Post Order' | translate }}"></ion-searchbar>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of currentItems" #slidingItem>
+
+      <ion-item (press)="pressEvent($event)" class="listing-item">
+        <h2> PO No: {{item._id}} </h2>
+        <p> <b> PO Date: </b> {{item.order_date | date: 'dd/MMM/yyyy'}} </p>
+        <p> <b> Center: </b> {{findLocation(item.center)}} </p>
+        <p> <b> Dispatch Center: </b> {{findLocation(item.dispatch_center)}} </p>
+        <p> <b> Amount: </b> Rs. {{item.total_amount}} </p>
+      </ion-item>
+
+      <ion-item-options side="right" class="listing-btn">
+        <button ion-button color="info" (click)="view(item, slidingItem)">
+          <ion-icon name="eye"></ion-icon> View
+        </button>
+        <button ion-button color="warning" (click)="edit(item, slidingItem)" *ngIf="item.payment_method == undefined || item.payment_method == null || item.payment_method == ''">
+            <ion-icon name="create"></ion-icon> Edit
+        </button>
+        <button ion-button color="success" (click)="payment(item, slidingItem)" *ngIf="item.payment_method == undefined || item.payment_method == null || item.payment_method == ''">
+          <ion-icon name="thumbs-up"></ion-icon> Payment
+        </button>
+      </ion-item-options>
+
+      <ion-item-options side="left" class="listing-btn">
+        <!-- <button ion-button color="primary" (click)="confirm(item, slidingItem)" *ngIf="item.payment_method == undefined || item.payment_method == null || item.payment_method == ''">
+          <ion-icon name="call"></ion-icon> Confirm
+        </button> -->
+        <button ion-button color="primary" (click)="dispatch(item, slidingItem)" *ngIf="isDipatchCenter(item.dispatch_center)">
+          <ion-icon name="thumbs-up"></ion-icon> Dispatch
+        </button>
+      </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

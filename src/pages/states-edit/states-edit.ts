@@ -84,7 +84,39 @@ export class StatesEdit {
   createState() {
     this.centers.update(this.form.value).subscribe(
       resp => {
-        this.nav.setRoot("CentersPage");
+
+        if(!this.form.value.active) {
+          for(var b=0; b<this.branches.length; b++) {
+            if(this.branches[b].center_parent == this.form.value._id) {
+              this.branches[b].active = false;
+              this.centers.update(this.branches[b]).subscribe((resp) => { 
+                console.log(resp);
+
+                for(var bb = 0; bb < this.branches.length; bb++) {
+                  if(this.branches[bb].center_parent == this.branches[b]._id) {
+                    this.branches[bb].active = false;
+                    this.centers.update(this.branches[bb]).subscribe((resp) => { 
+                      console.log(resp);
+                    }, (err) => {
+                      console.log(err);
+                    });            
+                  }
+                }
+
+              }, (err) => {
+                console.log(err);
+              });
+            }
+          }
+        }
+
+        let toast = this.toastCtrl.create({
+          message: "Successfully updated State",
+          duration: 3000,
+          position: "top"
+        });
+        toast.present();
+        this.navCtrl.push("BranchesTab");
       },
       err => {
         let toast = this.toastCtrl.create({

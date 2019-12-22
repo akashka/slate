@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{ 'Student Enquiries' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form">
+    <ion-list>
+ 
+      <ion-list class="logoImage">
+        <div
+          class="circle-pic"
+          text-center
+          #profilePic
+          [style.background-image]="'url(' + user.profile_pic + ')'"
+        ></div>
+      </ion-list>
+      <br />
+      <h2 class="userName">{{ student.name }}</h2>
+      <h3 class="userDetails">{{ studentCenterState }}</h3>
+      <h3 class="userDetails">{{ studentProgram }}</h3>
+
+      <ion-item>
+        <ion-label floating>{{ 'Registration Fee (Rs)' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-input type="text" formControlName="registration_fee" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Kit Fee (Rs)' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-input type="text" formControlName="kit_fee" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Extra Fee (Rs)' | translate }} </ion-label>
+        <ion-input type="text" formControlName="extra_fee" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Total Amount (Rs)' | translate }} </ion-label>
+        <ion-input type="text" formControlName="total_amount" disabled="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Discount' | translate }}</ion-label>
+        <ion-input type="number" formControlName="grade"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Best Time To Contact' | translate }}</ion-label>
+        <ion-input type="text" formControlName="contact_time"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Referral' | translate }}</ion-label>
+        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="referral">
+          <ion-option value={{referral}} *ngFor="let referral of referralOptions">{{referral}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Remarks' | translate }}</ion-label>
+        <ion-textarea #myInput1 id="myInput1" rows="2" maxLength="5000" (keyup)="resize()" formControlName="remarks"></ion-textarea>
+      </ion-item>
+
+    </ion-list>
+  </form>
+
+</ion-content>
+
+<ion-footer no-border>
+  <p style="color: red;" *ngIf="counter > 0">There already exists an Enquiry with same details from same or different
+    center. Hence, cannot save it. Please contact Head Office.</p>
+  <ion-toolbar transparent>
+    <button ion-button full (click)="save()" [disabled]="!isReadyToSave || counter > 0">
+      {{ 'SAVE' | translate }}
+    </button>
+  </ion-toolbar>
+</ion-footer>

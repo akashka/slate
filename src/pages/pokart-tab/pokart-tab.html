@@ -1,0 +1,28 @@
+<ion-content>
+
+    <ion-card-content>
+        <div class='summary_row'>
+            <div  class='summarycell summarycell1'>Course</div>
+            <div  class='summarycell summarycell2'>Level</div>
+            <div  class='summarycell summarycell3'>Quantity</div>
+            <div  class='summarycell summarycell4'>Total Price</div>
+        </div>
+
+        <div  class='summary_row' *ngFor="let pop of postOrder.products">
+            <div  class='summarycell summarycell1 cell'>{{getCourseName(pop.course)}}</div>
+            <div  class='summarycell summarycell2 cell'>Level {{pop.level}}</div>
+            <div  class='summarycell summarycell3 cell'>{{pop.quantity}}</div>
+            <div  class='summarycell summarycell4 cell'>Rs. {{pop.total_price}}</div>
+        </div>
+    </ion-card-content>
+
+<ion-footer no-border>
+    <ion-toolbar transparent>
+        <button ion-button full (click)="pay(0)" style="width:50%;float:left;">
+            {{ 'PAY NOW' | translate }}
+        </button>
+        <button ion-button full (click)="pay(1)" style="width:50%;float:left;">
+                {{ 'PAY LATER' | translate }}
+        </button>
+    </ion-toolbar>
+</ion-footer>

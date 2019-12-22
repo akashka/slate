@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{ 'Confirm Franchise' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form">
+    <ion-list *ngIf="stage === 1">
+
+      <ion-item>
+        <ion-label floating>{{ 'GST No.' | translate }} </ion-label>
+        <ion-input type="text" formControlName="gstin_no"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Royalty Percentage' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-input type="number" formControlName="royalty_percentage"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Bank Account Number' | translate }} </ion-label>
+        <ion-input type="number" formControlName="bank_account_number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Bank Account Name' | translate }} </ion-label>
+        <ion-input type="number" formControlName="bank_account_name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>{{ 'Bank IFSC Code' | translate }} </ion-label>
+        <ion-input type="number" formControlName="bank_ifsc_code"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-list *ngIf="stage === 2" class="uploadDocuments">
+
+      <ion-item>
+        <ion-label>{{ 'Address Proof' | translate }} </ion-label>
+        <ion-label class="sm-label">{{form.value.address_proof.length}} {{ ' Files Uploaded' | translate }}</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'ID Proof' | translate }} </ion-label>
+        <ion-label class="sm-label">{{form.value.id_proof.length}} {{ ' Files Uploaded' | translate }}</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'GST Certificate' | translate }} </ion-label>
+        <ion-label class="sm-label">{{form.value.gst_certificate.length}} {{ ' Files Uploaded' | translate }}</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'PAN Card' | translate }} </ion-label>
+        <ion-label class="sm-label">{{form.value.pan_card.length}} {{ ' Files Uploaded' | translate }}</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'Registration Certificate' | translate }} </ion-label>
+        <ion-label class="sm-label">{{form.value.registration_certificate.length}} {{ ' Files Uploaded' | translate }}</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'Partnership Deed' | translate }} </ion-label>
+        <ion-label class="sm-label">{{form.value.partnership_deed.length}} {{ ' Files Uploaded' | translate }}</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'Photo' | translate }} </ion-label>
+        <ion-label class="sm-label">{{form.value.photo.length}} {{ ' Files Uploaded' | translate }}</ion-label>
+      </ion-item>
+
+    </ion-list>
+
+  </form>
+
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar transparent *ngIf="stage === 1">
+    <button ion-button full (click)="next()" [disabled]="!isReadyToSave">
+      {{ 'NEXT' | translate }}
+    </button>
+  </ion-toolbar>
+  <ion-toolbar transparent *ngIf="stage === 2">
+    <button ion-button full (click)="save()" [disabled]="!isReadyToSave">
+      {{ 'SAVE' | translate }}
+    </button>
+  </ion-toolbar>
+</ion-footer>

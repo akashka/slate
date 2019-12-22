@@ -13,7 +13,21 @@ import { CallNumber } from '@ionic-native/call-number/ngx';
 import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts/ngx';
 import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
 
-import { Settings, User, Api, Programs, Instructor, Center, Franchise, Students, CourseMapping } from '../providers';
+import {
+  Settings,
+  User,
+  Api,
+  Programs,
+  Instructor,
+  Center,
+  Franchise,
+  Students,
+  CourseMapping,
+  PostOrder,
+  Notifications,
+  Passbook,
+  Inventory
+} from '../providers';
 
 import { MyApp } from './app.component';
 
@@ -45,6 +59,7 @@ import { FranchiseEnquiryAddPageModule } from '../pages/franchiseenquiry-create/
 import { FranchiseEnquiryEditPageModule } from '../pages/franchiseenquiry-edit/franchiseenquiry-edit.module';
 import { FranchiseEnquiryListPageModule } from '../pages/franchiseenquiry-list/franchiseenquiry-list.module';
 import { FranchiseEnquiryViewPageModule } from '../pages/franchiseenquiry-view/franchiseenquiry-view.module';
+import { FranchiseEnquiryConfirmPageModule } from '../pages/franchiseenquiry-confirm/franchiseenquiry-confirm.module';
 import { FollowupCreateTabModule } from '../pages/followupcreate-tab/followupcreate-tab.module';
 import { FollowupViewTabModule } from '../pages/followupview-tab/followupview-tab.module';
 
@@ -59,6 +74,12 @@ import { StudentEnquiryEditPageModule } from '../pages/studentenquiry-update/stu
 import { StudentEnquiryViewPageModule } from '../pages/studentenquiry-view/studentenquiry-view.module';
 
 import { CourseMappingPageModule } from '../pages/coursemapping/coursemapping.module';
+
+import { PostOrderListPageModule } from '../pages/postorder-list/postorder-list.module';
+import { PostOrderAddPageModule } from '../pages/postorder-create/postorder-create.module';
+import { POKartTabModule } from '../pages/pokart-tab/pokart-tab.module';
+import { POPaymentTabModule } from '../pages/popayment-tab/popayment-tab.module';
+import { POShopTabModule } from '../pages/poshop-tab/poshop-tab.module';
 
 // Module imported here and bottom
 
@@ -113,6 +134,7 @@ export function provideSettings(storage: Storage) {
     FranchiseEnquiryEditPageModule,
     FranchiseEnquiryListPageModule,
     FranchiseEnquiryViewPageModule,
+    FranchiseEnquiryConfirmPageModule,
     FollowupCreateTabModule,
     FollowupViewTabModule,
 
@@ -127,6 +149,12 @@ export function provideSettings(storage: Storage) {
     StudentEnquiryViewPageModule,
 
     CourseMappingPageModule,
+
+    PostOrderListPageModule,
+    PostOrderAddPageModule,
+    POKartTabModule,
+    POPaymentTabModule,
+    POShopTabModule,
 
     TranslateModule.forRoot({
       loader: {
@@ -152,14 +180,18 @@ export function provideSettings(storage: Storage) {
     Vibration,
     CallNumber,
     InAppBrowser,
-    User, 
-    Api, 
-    Programs, 
-    Instructor, 
-    Center, 
-    Franchise, 
+    User,
+    Api,
+    Programs,
+    Instructor,
+    Center,
+    Franchise,
     Students,
     CourseMapping,
+    PostOrder,
+    Notifications,
+    Passbook,
+    Inventory,  
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]

@@ -89,7 +89,13 @@ export class AreaEdit {
   createState() {
     this.centers.update(this.form.value).subscribe(
       resp => {
-        this.nav.setRoot("CentersPage");
+        let toast = this.toastCtrl.create({
+          message: "Successfully updated Center",
+          duration: 3000,
+          position: "top"
+        });
+        toast.present();
+        this.navCtrl.push("BranchesTab");
       },
       err => {
         let toast = this.toastCtrl.create({

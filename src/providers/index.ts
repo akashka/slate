@@ -7,3 +7,7 @@ export { Franchise } from './franchise/franchise';
 export { Instructor } from './instructor/instructor';
 export { Students } from './students/students';
 export { CourseMapping } from './coursemapping/coursemapping';
+export { PostOrder } from './postorder/postorder';
+export { Notifications } from './notifications/notifications';
+export { Passbook } from './passbook/passbook';
+export { Inventory } from './inventory/inventory';

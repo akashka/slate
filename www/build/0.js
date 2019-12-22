@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 776:
+/***/ 793:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome__ = __webpack_require__(778);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome__ = __webpack_require__(796);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var WelcomePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 778:
+/***/ 796:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -52,11 +52,11 @@ var WelcomePageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_page_home_page__ = __webpack_require__(413);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_in_app_browser_ngx__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_page_home_page__ = __webpack_require__(422);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_in_app_browser_ngx__ = __webpack_require__(423);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -178,7 +178,7 @@ var WelcomePage = /** @class */ (function () {
     };
     WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-welcome",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/welcome/welcome.html"*/'<ion-content scroll="false">\n  <div class="fixed-content">\n\n    <div class="logoHeader">\n      <img alt="logo" height="60" style="position: relative" src="../assets/img/icon-512x512.png">\n    </div>\n\n    <h1 class="welcomeHeader"> &nbsp; </h1>\n\n    <form *ngIf="form" [formGroup]="form">\n      <div padding>\n        <ion-input type="email" [(ngModel)]="account.email" class="input-access-code" placeholder="Email"\n          formControlName="user_name"></ion-input>\n        <br>\n        <ion-input [type]="passwordType" [(ngModel)]="account.password" class="input-access-code" placeholder="Password"\n          formControlName="user_pass"></ion-input>\n        <br>\n        <ion-icon item-end [name]="passwordIcon" class="passwordIcon" (click)=\'hideShowPassword()\' style="z-index:9999999;">{{passwordIcon}}\n          Password</ion-icon>\n        <br> <br>\n        <a (click)="signIn()">\n          <button ion-button block class="login" style="color:white !important;">{{ \'LOGIN\' | translate }}</button>\n        </a>\n      </div>\n    </form>\n\n    <div class="welcome-footer">\n      <a (click)="contactUs()"> Contact Us </a>\n      <a (click)="feedback()"> Feedback </a>\n      <a (click)="faq()"> FAQ </a>\n    </div>\n\n    <div class="reservation">\n      All Rights Reserved by Aloha India &copy; 2019\n    </div>\n\n  </div>\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/welcome/welcome.html"*/
+            selector: "page-welcome",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/welcome/welcome.html"*/'<ion-content scroll="false">\n  <div class="fixed-content">\n\n    <div class="logoHeader">\n      <img alt="logo" height="60" style="position: relative" src="../assets/img/icon-512x512.png">\n    </div>\n\n    <h1 class="welcomeHeader"> &nbsp; </h1>\n\n    <form *ngIf="form" [formGroup]="form">\n      <div padding>\n        <ion-input type="email" [(ngModel)]="account.email" class="input-access-code" placeholder="Email"\n          formControlName="user_name"></ion-input>\n        <br>\n        <ion-input [type]="passwordType" [(ngModel)]="account.password" class="input-access-code" placeholder="Password"\n          formControlName="user_pass"></ion-input>\n        <br>\n        <ion-icon item-end [name]="passwordIcon" class="passwordIcon" (click)=\'hideShowPassword()\' style="z-index:9999999;">{{passwordIcon}}\n          Password</ion-icon>\n        <br> <br>\n        <a (click)="signIn()">\n          <button ion-button block class="login" style="color:white !important;">{{ \'LOGIN\' | translate }}</button>\n        </a>\n      </div>\n    </form>\n\n  </div>\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/welcome/welcome.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ToastController */],
@@ -187,7 +187,7 @@ var WelcomePage = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* App */],
-            __WEBPACK_IMPORTED_MODULE_4__providers__["i" /* User */],
+            __WEBPACK_IMPORTED_MODULE_4__providers__["m" /* User */],
             __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */],
             __WEBPACK_IMPORTED_MODULE_7__ionic_native_in_app_browser_ngx__["a" /* InAppBrowser */]])
     ], WelcomePage);

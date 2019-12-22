@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{ 'NEW POST ORDER' | translate }}</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only menuToggle (click)="showAlert()">
+        <a class="icon-circle">
+          <ion-icon name="information"></ion-icon>
+        </a>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+  
+<ion-content>
+  
+  <ion-tabs tabsPlacement="top">
+    <ion-tab tabTitle="Shop" [root]="shop" [rootParams]="postOrder"></ion-tab>
+    <ion-tab tabTitle="Cart" [root]="kart" [rootParams]="postOrder"></ion-tab>
+    <ion-tab tabTitle="Payment" [root]="payment" [rootParams]="postOrder"></ion-tab>
+  </ion-tabs>
+  
+</ion-content>

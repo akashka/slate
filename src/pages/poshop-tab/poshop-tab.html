@@ -1,0 +1,49 @@
+<ion-content>
+    <form [formGroup]="form">
+
+        <ion-list>
+
+            <ion-item>
+                <ion-label floating> {{ 'Program:' | translate }}  <span class="mandatory-field"> * </span> </ion-label>
+                <ion-select formControlName="course" cancelText="Cancel" okText="Okay" multiple="false"
+                            (ionChange)="onCourseChange()">
+                    <ion-option value={{course._id}} *ngFor="let course of programs">{{course.program_name}}</ion-option>
+                </ion-select>
+            </ion-item>   
+
+            <ion-item>
+                <ion-label floating>{{ 'Level:' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+                <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="level"
+                        (ionChange)="onLevelChange()">
+                    <ion-option value={{level}} *ngFor="let level of allLevels">Level {{level}}</ion-option>
+                </ion-select>
+            </ion-item>  
+
+            <ion-item>
+                <ion-label floating>{{ 'Price Per Quantity (Rs.):' | translate }} </ion-label>
+                <ion-input type="text" formControlName="price" [disabled]="true"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+                <ion-label floating>{{ 'Quantity:' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+                <ion-input type="number" formControlName="quantity" (ionChange)="onQuantityChange()"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>{{ 'Total Price (Rs.):' | translate }} </ion-label>
+                <ion-input type="text" formControlName="price" [disabled]="true"></ion-input>
+            </ion-item>
+
+                
+        </ion-list>
+    </form>
+
+</ion-content>
+
+<ion-footer no-border>
+    <ion-toolbar transparent>
+        <button ion-button full (click)="save()" ng-disabled="!isReadyToSave">
+            {{ 'ADD TO CART' | translate }}
+        </button>
+    </ion-toolbar>
+</ion-footer>

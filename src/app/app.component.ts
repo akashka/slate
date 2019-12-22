@@ -16,11 +16,11 @@ import { Storage } from "@ionic/storage";
 @Component({
   selector: "side-main-menu",
   template: `
-    <ion-menu [content]="content">
+    <ion-menu [content]="content" *ngIf="user && user.role">
       <ion-content class="sideMenuIoncContent">
         <ion-list class="headerMAin">
           <ion-item class="headerBackground">
-            <ion-list class="logoImage" menuClose (click)="openPage(pages[4])">
+            <ion-list class="logoImage">
               <div
                 class="circle-pic"
                 text-center
@@ -34,7 +34,7 @@ import { Storage } from "@ionic/storage";
           </ion-item>
         </ion-list>
 
-        <ion-list>
+        <ion-list list>
           <button
             menuClose
             ion-item
@@ -131,6 +131,18 @@ import { Storage } from "@ionic/storage";
               <ion-icon name="barcode" class="sidebarCss"></ion-icon>
               Course Price Mapping
           </button>
+          <button 
+            menuClose 
+            ion-item 
+            no-lines 
+            [class.activeHIghlight]="checkActive(pages[9])" 
+            (click)="openPage(pages[9])"
+            class="buttonSIdeBAr"
+            *ngIf="user.role == 'admin' || user.role == 'master' || user.role == 'district' || user.role == 'unit'"
+          >
+              <ion-icon name="basket" class="sidebarCss"></ion-icon>
+              Post Order
+          </button>
           <button
             menuClose
             no-lines
@@ -170,6 +182,7 @@ export class MyApp {
     { title: "Instructor Enquiry", component: "InstructorEnquiryListPage" },
     { title: 'Student Enquiry', component: 'StudentEnquiryListPage' },
     { title: 'Course Price Mapping', component: 'CourseMappingPage' },
+    { title: 'Post Order', component: 'PostOrderListPage' },
     // { title: 'Signup', component: 'LoginPage' },
     // { title: 'Master Detail', component: 'ListMasterPage' },
     // { title: 'News Feed', component: 'NewsFeed' },

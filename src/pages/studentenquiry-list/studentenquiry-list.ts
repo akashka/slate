@@ -52,6 +52,12 @@ export class StudentEnquiryListPage {
   ionViewWillEnter() {
     this.studentService.query().subscribe(
       (res: any) => {
+        for(var i=0; i<res.length; i++) {
+          if(res[i].status === 'status') {
+            res.splice(i,1);
+            i--;
+          }
+        }
         this.currentItems = res;
         this.tempCurrentItems = res;
         this.storage.get("user").then(value => {

@@ -1,0 +1,46 @@
+<ion-content>
+    <form [formGroup]="form">
+
+        <ion-list>
+
+            <ion-item>
+                <ion-label floating>{{ 'Total Amount:' | translate }} </ion-label>
+                <ion-input type="text" formControlName="total_amount" [disabled]="true"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating> {{ 'Payment Method:' | translate }}  <span class="mandatory-field"> * </span> </ion-label>
+                <ion-select formControlName="payment_method" cancelText="Cancel" okText="Okay" multiple="false">
+                    <ion-option value='bank transfer'>Bank Transfer</ion-option>
+                    <ion-option value='cheque'>Cheque / DD</ion-option>
+                    <ion-option value='cash'>Cash</ion-option>
+                </ion-select>
+            </ion-item>   
+
+            <ion-item>
+                <ion-label floating>{{ 'Payment Date:' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+                <ion-datetime formControlName="payment_date" displayFormat="DD/MMM/YYYY" ></ion-datetime>
+            </ion-item>  
+
+            <ion-item>
+                <ion-label floating>{{ 'Bank Name:' | translate }} </ion-label>
+                <ion-input type="text" formControlName="bank_name"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+                <ion-label floating>{{ 'Trasaction / Cheque No:' | translate }} </ion-label>
+                <ion-input type="text" formControlName="transaction_no"></ion-input>
+            </ion-item>
+
+        </ion-list>
+    </form>
+
+</ion-content>
+
+<ion-footer no-border>
+    <ion-toolbar transparent>
+        <button ion-button full (click)="save()" ng-disabled="!isReadyToSave">
+            {{ 'SAVE' | translate }}
+        </button>
+    </ion-toolbar>
+</ion-footer>
