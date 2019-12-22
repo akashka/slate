@@ -1,26 +1,20 @@
 *** Login:
 - Reset Password
 
-*** Users:                                                   Admin Only
-- User Create page needs to be optimized
-- User Update page needs to be optimized
-
 *** Franchise Enquiry:
 - Franchise confirm page needs to be created
 
 *** HomePage:
 
-
 COMMON:
 Download & Mail Options
-Whatsapp & Call Options
 Images
-
 
 *** Program:                                                 Admin Only
 *** State:                                                   Admin Only
 *** Instructor Enquiry:                                      Admin, Master, District, Center
 *** Student Enquiry:                                         Admin, Master, District, Center
+*** Users:                                                   Admin Only
 
 
 

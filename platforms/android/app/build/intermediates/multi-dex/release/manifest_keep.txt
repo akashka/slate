@@ -1,2 +1,2 @@
-# Referenced at /home/akash/Code/akash/slate/platforms/android/app/build/intermediates/manifests/full/release/AndroidManifest.xml:32
+# Referenced at /home/akash/Code/akash/slate/platforms/android/app/build/intermediates/manifests/full/release/AndroidManifest.xml:35
 -keep class android.support.multidex.MultiDexApplication { <init>(...); }
