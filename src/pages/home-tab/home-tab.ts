@@ -61,74 +61,75 @@ export class HomeTab {
   getData() {
     this.storage.get("user").then(value => {
       this.user = value;
-    });
 
-    this.users.users_list().subscribe(
-      (res: any) => {
-        this.allUsers = res;
-      },
-      err => {
-        console.error("ERROR", err);
-      }
-    );
-
-    this.centers.query().subscribe(
-      (res: any) => {
-        this.allCenters = res;
-      },
-      err => {
-        console.error("ERROR", err);
-      }
-    );
-
-    this.programs.query().subscribe(
-      (res: any) => {
-        this.allPrograms = res;
-      },
-      err => {
-        console.error("ERROR", err);
-      }
-    );
-
-    this.franchise.query().subscribe((res: any) => {
-      this.allFranchisees = res;
-      if (this.user.role != 'admin') {
-        this.allFranchisees = _.filter(this.allFranchisees, function (item) {
-          return (item.enquiry_by == this.user._id)
-        });
-      }
-    }, err => {
-      console.error('ERROR', err);
-    });
-
-    this.instructor.query().subscribe(
-      (res: any) => {
-        this.allInstructor = res;
-        if (this.user.role != "admin") {
-          this.allInstructor = _.filter(this.allInstructor, function(item) {
-            return item.enquiry_by == this.user._id;
+      this.users.users_list().subscribe(
+        (res: any) => {
+          this.allUsers = res;
+        },
+        err => {
+          console.error("ERROR", err);
+        }
+      );
+  
+      this.centers.query().subscribe(
+        (res: any) => {
+          this.allCenters = res;
+        },
+        err => {
+          console.error("ERROR", err);
+        }
+      );
+  
+      this.programs.query().subscribe(
+        (res: any) => {
+          this.allPrograms = res;
+        },
+        err => {
+          console.error("ERROR", err);
+        }
+      );
+  
+      this.franchise.query().subscribe((res: any) => {
+        this.allFranchisees = res;
+        if (this.user.role != 'admin') {
+          this.allFranchisees = _.filter(this.allFranchisees, function (item) {
+            return (item.enquiry_by == this.user._id)
           });
         }
-      },
-      err => {
-        console.error("ERROR", err);
-      }
-    );
-
-    this.student.query().subscribe(
-      (res: any) => {
-        this.allStudent = res;
-        if (this.user.role != "admin") {
-          this.allStudent = _.filter(this.allStudent, function(item) {
-            return item.enquiry_by == this.user._id;
-          });
+      }, err => {
+        console.error('ERROR', err);
+      });
+  
+      this.instructor.query().subscribe(
+        (res: any) => {
+          this.allInstructor = res;
+          if (this.user.role != "admin") {
+            this.allInstructor = _.filter(this.allInstructor, function(item) {
+              return item.enquiry_by == this.user._id;
+            });
+          }
+        },
+        err => {
+          console.error("ERROR", err);
         }
-      },
-      err => {
-        console.error("ERROR", err);
-      }
-    );
+      );
+  
+      this.student.query().subscribe(
+        (res: any) => {
+          this.allStudent = res;
+          if (this.user.role != "admin") {
+            this.allStudent = _.filter(this.allStudent, function(item) {
+              return item.enquiry_by == this.user._id;
+            });
+          }
+        },
+        err => {
+          console.error("ERROR", err);
+        }
+      );
+    });
 
+    
   }
 
   openPage(page) {

@@ -36455,7 +36455,7 @@ side-main-menu .logoImage {
 
 side-main-menu .circle-pic {
   display: inline-block;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 100px;
@@ -37179,7 +37179,7 @@ page-welcome img {
 }
 
 page-welcome .fixed-content {
-  background-image: url(http://www.alohaindia.com/wp-content/uploads/img/cloud.jpg);
+  background-image: url(http://imgs.mi9.com/uploads/abstract/4147/abstract-blue-backgrounds-34_1920x1200_71451.jpg);
   background-size: cover;
 }
 
@@ -37242,12 +37242,12 @@ page-welcome .splash-intro {
 page-welcome button.login {
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  background: #1ABC9C !important;
+  background: #42cafc !important;
   padding: 22px !important;
 }
 
 page-welcome button.login.activated {
-  background-color: #1ABC9C;
+  background-color: #42cafc;
 }
 
 page-welcome button.signup {
@@ -37258,30 +37258,31 @@ page-welcome button.signup {
 }
 
 page-welcome input, page-welcome select, page-welcome textarea {
-  color: #1ABC9C !important;
-  text-align: center !important;
+  color: !important;
+  font-weight: bold;
+  font-size: large;
 }
 
 page-welcome ::-webkit-input-placeholder {
-  text-align: center;
-  color: #1ABC9C !important;
+  color: !important;
+  font-weight: bolder;
 }
 
 page-welcome :-moz-placeholder {
   /* Firefox 18- */
-  text-align: center;
-  color: #1ABC9C !important;
+  color: !important;
+  font-weight: bolder;
 }
 
 page-welcome ::-moz-placeholder {
   /* Firefox 19+ */
-  text-align: center;
-  color: #1ABC9C !important;
+  color: !important;
+  font-weight: bolder;
 }
 
 page-welcome :-ms-input-placeholder {
-  text-align: center;
-  color: #1ABC9C !important;
+  color: !important;
+  font-weight: bolder;
 }
 
 page-welcome .scroll-content {
@@ -37291,11 +37292,12 @@ page-welcome .scroll-content {
 }
 
 page-welcome .input-access-code {
-  border: 3px solid #1ABC9C !important;
+  border: 1px solid #42cafc !important;
+  border-bottom: 3px solid #42cafc !important;
 }
 
 page-welcome .content-md {
-  background-color: black !important;
+  background-color: white !important;
 }
 
 page-welcome .welcomeHeader {
@@ -37327,12 +37329,12 @@ page-welcome .login disable-hover button button-ios button-default button-defaul
   padding: 0;
   margin: 0;
   float: right;
-  color: #488aff !important;
-  text-decoration: underline;
+  color: #42cafc !important;
+  text-decoration: none;
 }
 
 ion-header {
-  background-image: url(http://www.alohaindia.com/wp-content/uploads/img/cloud.jpg);
+  background-image: url();
 }
 
 .welcome-footer {
@@ -37351,4 +37353,140 @@ ion-header {
   color: black;
   text-align: center;
   width: 100%;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDownBig {
+  -webkit-animation: fadeInDown 1s ease 0.5s;
+  animation: fadeInDown 1s ease 0.5s;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation: fadeInLeft 1s ease 0.4s;
+  animation: fadeInLeft 1s ease 0.4s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation: fadeInRight 1s ease 0.4s;
+  animation: fadeInRight 1s ease 0.4s;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation: fadeInUp 1s ease 0.5s;
+  animation: fadeInUp 1s ease 0.5s;
+}
+
+side-main-menu .toolbar-background {
+  background-color: #0e2f8e !important;
+}
+
+ion-searchbar {
+  background: #c4c4dc !important;
+}
+
+.tabbar {
+  background: #a5a5d2 !important;
 }

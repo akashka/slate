@@ -22,22 +22,22 @@ webpackEmptyAsyncContext.id = 176;
 
 var map = {
 	"../pages/area-edit/area-edit.module": [
-		249
-	],
-	"../pages/area-tab/area-tab.module": [
 		245
 	],
+	"../pages/area-tab/area-tab.module": [
+		246
+	],
 	"../pages/branches-tab/branches-tab.module": [
-		247
+		248
 	],
 	"../pages/centers-page/centers-page.module": [
-		252
-	],
-	"../pages/coursemapping/coursemapping.module": [
 		250
 	],
+	"../pages/coursemapping/coursemapping.module": [
+		253
+	],
 	"../pages/district-edit/district-edit.module": [
-		251
+		254
 	],
 	"../pages/district-tab/district-tab.module": [
 		255
@@ -62,13 +62,13 @@ var map = {
 		260
 	],
 	"../pages/franchiseenquiry-list/franchiseenquiry-list.module": [
-		266
+		261
 	],
 	"../pages/franchiseenquiry-view/franchiseenquiry-view.module": [
-		265
+		262
 	],
 	"../pages/home-page/home-page.module": [
-		261
+		263
 	],
 	"../pages/home-tab/home-tab.module": [
 		267
@@ -83,74 +83,74 @@ var map = {
 		270
 	],
 	"../pages/instructorenquiry-view/instructorenquiry-view.module": [
-		272
+		274
 	],
 	"../pages/notification-tab/notification-tab.module": [
-		271
-	],
-	"../pages/pokart-tab/pokart-tab.module": [
 		273
 	],
+	"../pages/pokart-tab/pokart-tab.module": [
+		271
+	],
 	"../pages/popayment-tab/popayment-tab.module": [
-		275
+		278
 	],
 	"../pages/poshop-tab/poshop-tab.module": [
 		279
 	],
 	"../pages/postorder-create/postorder-create.module": [
-		277
+		275
 	],
 	"../pages/postorder-list/postorder-list.module": [
-		282
-	],
-	"../pages/profile-tab/profile-tab.module": [
 		280
 	],
-	"../pages/program -create/program-create.module": [
+	"../pages/profile-tab/profile-tab.module": [
 		281
 	],
+	"../pages/program -create/program-create.module": [
+		286
+	],
 	"../pages/program -detail/program-detail.module": [
-		283
+		282
 	],
 	"../pages/program -update/program-update.module": [
-		284
+		283
 	],
 	"../pages/programs-list/programs-list.module": [
-		285
+		284
 	],
 	"../pages/states-edit/states-edit.module": [
-		287
+		289
 	],
 	"../pages/states-tab/states-tab.module": [
-		288
+		287
 	],
 	"../pages/studentenquiry-confirm/studentenquiry-confirm.module": [
 		792,
 		1
 	],
 	"../pages/studentenquiry-create/studentenquiry-create.module": [
-		289
+		288
 	],
 	"../pages/studentenquiry-list/studentenquiry-list.module": [
-		290
-	],
-	"../pages/studentenquiry-update/studentenquiry-update.module": [
-		292
-	],
-	"../pages/studentenquiry-view/studentenquiry-view.module": [
-		294
-	],
-	"../pages/user-add/signup.module": [
 		291
 	],
-	"../pages/user-detail/user-detail.module": [
-		295
+	"../pages/studentenquiry-update/studentenquiry-update.module": [
+		290
 	],
-	"../pages/user-update/user-update.module": [
+	"../pages/studentenquiry-view/studentenquiry-view.module": [
+		292
+	],
+	"../pages/user-add/signup.module": [
 		293
 	],
-	"../pages/users-lists/users_lists.module": [
+	"../pages/user-detail/user-detail.module": [
+		294
+	],
+	"../pages/user-update/user-update.module": [
 		296
+	],
+	"../pages/users-lists/users_lists.module": [
+		295
 	],
 	"../pages/welcome/welcome.module": [
 		793,
@@ -178,11 +178,48 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AreaEditModule", function() { return AreaEditModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_edit__ = __webpack_require__(466);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var AreaEditModule = /** @class */ (function () {
+    function AreaEditModule() {
+    }
+    AreaEditModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [__WEBPACK_IMPORTED_MODULE_3__area_edit__["a" /* AreaEdit */]],
+            imports: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__area_edit__["a" /* AreaEdit */]), __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()],
+            exports: [__WEBPACK_IMPORTED_MODULE_3__area_edit__["a" /* AreaEdit */]]
+        })
+    ], AreaEditModule);
+    return AreaEditModule;
+}());
+
+//# sourceMappingURL=area-edit.module.js.map
+
+/***/ }),
+
+/***/ 246:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AreaTabModule", function() { return AreaTabModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_tab__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_tab__ = __webpack_require__(247);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -217,7 +254,7 @@ var AreaTabModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 246:
+/***/ 247:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -333,7 +370,7 @@ var AreaTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 247:
+/***/ 248:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -342,7 +379,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__branches_tab__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__branches_tab__ = __webpack_require__(249);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -377,7 +414,7 @@ var BranchesTabModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 248:
+/***/ 249:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -492,132 +529,7 @@ var BranchesTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 249:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AreaEditModule", function() { return AreaEditModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_edit__ = __webpack_require__(479);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var AreaEditModule = /** @class */ (function () {
-    function AreaEditModule() {
-    }
-    AreaEditModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_3__area_edit__["a" /* AreaEdit */]],
-            imports: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__area_edit__["a" /* AreaEdit */]), __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()],
-            exports: [__WEBPACK_IMPORTED_MODULE_3__area_edit__["a" /* AreaEdit */]]
-        })
-    ], AreaEditModule);
-    return AreaEditModule;
-}());
-
-//# sourceMappingURL=area-edit.module.js.map
-
-/***/ }),
-
 /***/ 250:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseMappingPageModule", function() { return CourseMappingPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__coursemapping__ = __webpack_require__(480);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var CourseMappingPageModule = /** @class */ (function () {
-    function CourseMappingPageModule() {
-    }
-    CourseMappingPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__coursemapping__["a" /* CourseMappingPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__coursemapping__["a" /* CourseMappingPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__coursemapping__["a" /* CourseMappingPage */]
-            ]
-        })
-    ], CourseMappingPageModule);
-    return CourseMappingPageModule;
-}());
-
-//# sourceMappingURL=coursemapping.module.js.map
-
-/***/ }),
-
-/***/ 251:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DistrictEditModule", function() { return DistrictEditModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__district_edit__ = __webpack_require__(481);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var DistrictEditModule = /** @class */ (function () {
-    function DistrictEditModule() {
-    }
-    DistrictEditModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__district_edit__["a" /* DistrictEdit */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__district_edit__["a" /* DistrictEdit */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__district_edit__["a" /* DistrictEdit */]
-            ]
-        })
-    ], DistrictEditModule);
-    return DistrictEditModule;
-}());
-
-//# sourceMappingURL=district-edit.module.js.map
-
-/***/ }),
-
-/***/ 252:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -626,7 +538,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__centers_page__ = __webpack_require__(482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__centers_page__ = __webpack_require__(480);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -661,7 +573,7 @@ var CentersPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 253:
+/***/ 251:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -778,7 +690,7 @@ var DistrictTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 254:
+/***/ 252:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -892,6 +804,94 @@ var StatesTab = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 253:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseMappingPageModule", function() { return CourseMappingPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__coursemapping__ = __webpack_require__(481);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var CourseMappingPageModule = /** @class */ (function () {
+    function CourseMappingPageModule() {
+    }
+    CourseMappingPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__coursemapping__["a" /* CourseMappingPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__coursemapping__["a" /* CourseMappingPage */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__coursemapping__["a" /* CourseMappingPage */]
+            ]
+        })
+    ], CourseMappingPageModule);
+    return CourseMappingPageModule;
+}());
+
+//# sourceMappingURL=coursemapping.module.js.map
+
+/***/ }),
+
+/***/ 254:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DistrictEditModule", function() { return DistrictEditModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__district_edit__ = __webpack_require__(482);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var DistrictEditModule = /** @class */ (function () {
+    function DistrictEditModule() {
+    }
+    DistrictEditModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__district_edit__["a" /* DistrictEdit */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__district_edit__["a" /* DistrictEdit */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__district_edit__["a" /* DistrictEdit */]
+            ]
+        })
+    ], DistrictEditModule);
+    return DistrictEditModule;
+}());
+
+//# sourceMappingURL=district-edit.module.js.map
+
+/***/ }),
+
 /***/ 255:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -901,7 +901,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__district_tab__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__district_tab__ = __webpack_require__(251);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1161,6 +1161,94 @@ var FranchiseEnquiryEditPageModule = /** @class */ (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FranchiseEnquiryListPageModule", function() { return FranchiseEnquiryListPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_list__ = __webpack_require__(486);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var FranchiseEnquiryListPageModule = /** @class */ (function () {
+    function FranchiseEnquiryListPageModule() {
+    }
+    FranchiseEnquiryListPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_list__["a" /* FranchiseEnquiryListPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_list__["a" /* FranchiseEnquiryListPage */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_list__["a" /* FranchiseEnquiryListPage */]
+            ]
+        })
+    ], FranchiseEnquiryListPageModule);
+    return FranchiseEnquiryListPageModule;
+}());
+
+//# sourceMappingURL=franchiseenquiry-list.module.js.map
+
+/***/ }),
+
+/***/ 262:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FranchiseEnquiryViewPageModule", function() { return FranchiseEnquiryViewPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_view__ = __webpack_require__(487);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var FranchiseEnquiryViewPageModule = /** @class */ (function () {
+    function FranchiseEnquiryViewPageModule() {
+    }
+    FranchiseEnquiryViewPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_view__["a" /* FranchiseEnquiryViewPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_view__["a" /* FranchiseEnquiryViewPage */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_view__["a" /* FranchiseEnquiryViewPage */]
+            ]
+        })
+    ], FranchiseEnquiryViewPageModule);
+    return FranchiseEnquiryViewPageModule;
+}());
+
+//# sourceMappingURL=franchiseenquiry-view.module.js.map
+
+/***/ }),
+
+/***/ 263:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePageModule", function() { return HomePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
@@ -1200,7 +1288,7 @@ var HomePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 262:
+/***/ 264:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1250,51 +1338,51 @@ var HomeTab = /** @class */ (function () {
         var _this = this;
         this.storage.get("user").then(function (value) {
             _this.user = value;
-        });
-        this.users.users_list().subscribe(function (res) {
-            _this.allUsers = res;
-        }, function (err) {
-            console.error("ERROR", err);
-        });
-        this.centers.query().subscribe(function (res) {
-            _this.allCenters = res;
-        }, function (err) {
-            console.error("ERROR", err);
-        });
-        this.programs.query().subscribe(function (res) {
-            _this.allPrograms = res;
-        }, function (err) {
-            console.error("ERROR", err);
-        });
-        this.franchise.query().subscribe(function (res) {
-            _this.allFranchisees = res;
-            if (_this.user.role != 'admin') {
-                _this.allFranchisees = __WEBPACK_IMPORTED_MODULE_5_lodash__["filter"](_this.allFranchisees, function (item) {
-                    return (item.enquiry_by == this.user._id);
-                });
-            }
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        this.instructor.query().subscribe(function (res) {
-            _this.allInstructor = res;
-            if (_this.user.role != "admin") {
-                _this.allInstructor = __WEBPACK_IMPORTED_MODULE_5_lodash__["filter"](_this.allInstructor, function (item) {
-                    return item.enquiry_by == this.user._id;
-                });
-            }
-        }, function (err) {
-            console.error("ERROR", err);
-        });
-        this.student.query().subscribe(function (res) {
-            _this.allStudent = res;
-            if (_this.user.role != "admin") {
-                _this.allStudent = __WEBPACK_IMPORTED_MODULE_5_lodash__["filter"](_this.allStudent, function (item) {
-                    return item.enquiry_by == this.user._id;
-                });
-            }
-        }, function (err) {
-            console.error("ERROR", err);
+            _this.users.users_list().subscribe(function (res) {
+                _this.allUsers = res;
+            }, function (err) {
+                console.error("ERROR", err);
+            });
+            _this.centers.query().subscribe(function (res) {
+                _this.allCenters = res;
+            }, function (err) {
+                console.error("ERROR", err);
+            });
+            _this.programs.query().subscribe(function (res) {
+                _this.allPrograms = res;
+            }, function (err) {
+                console.error("ERROR", err);
+            });
+            _this.franchise.query().subscribe(function (res) {
+                _this.allFranchisees = res;
+                if (_this.user.role != 'admin') {
+                    _this.allFranchisees = __WEBPACK_IMPORTED_MODULE_5_lodash__["filter"](_this.allFranchisees, function (item) {
+                        return (item.enquiry_by == this.user._id);
+                    });
+                }
+            }, function (err) {
+                console.error('ERROR', err);
+            });
+            _this.instructor.query().subscribe(function (res) {
+                _this.allInstructor = res;
+                if (_this.user.role != "admin") {
+                    _this.allInstructor = __WEBPACK_IMPORTED_MODULE_5_lodash__["filter"](_this.allInstructor, function (item) {
+                        return item.enquiry_by == this.user._id;
+                    });
+                }
+            }, function (err) {
+                console.error("ERROR", err);
+            });
+            _this.student.query().subscribe(function (res) {
+                _this.allStudent = res;
+                if (_this.user.role != "admin") {
+                    _this.allStudent = __WEBPACK_IMPORTED_MODULE_5_lodash__["filter"](_this.allStudent, function (item) {
+                        return item.enquiry_by == this.user._id;
+                    });
+                }
+            }, function (err) {
+                console.error("ERROR", err);
+            });
         });
     };
     HomeTab.prototype.openPage = function (page) {
@@ -1330,7 +1418,7 @@ var HomeTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 263:
+/***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1384,7 +1472,7 @@ var NotificationTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 264:
+/***/ 266:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1532,94 +1620,6 @@ var ProfileTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 265:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FranchiseEnquiryViewPageModule", function() { return FranchiseEnquiryViewPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_view__ = __webpack_require__(486);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var FranchiseEnquiryViewPageModule = /** @class */ (function () {
-    function FranchiseEnquiryViewPageModule() {
-    }
-    FranchiseEnquiryViewPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_view__["a" /* FranchiseEnquiryViewPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_view__["a" /* FranchiseEnquiryViewPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_view__["a" /* FranchiseEnquiryViewPage */]
-            ]
-        })
-    ], FranchiseEnquiryViewPageModule);
-    return FranchiseEnquiryViewPageModule;
-}());
-
-//# sourceMappingURL=franchiseenquiry-view.module.js.map
-
-/***/ }),
-
-/***/ 266:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FranchiseEnquiryListPageModule", function() { return FranchiseEnquiryListPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_list__ = __webpack_require__(487);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var FranchiseEnquiryListPageModule = /** @class */ (function () {
-    function FranchiseEnquiryListPageModule() {
-    }
-    FranchiseEnquiryListPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_list__["a" /* FranchiseEnquiryListPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_list__["a" /* FranchiseEnquiryListPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__franchiseenquiry_list__["a" /* FranchiseEnquiryListPage */]
-            ]
-        })
-    ], FranchiseEnquiryListPageModule);
-    return FranchiseEnquiryListPageModule;
-}());
-
-//# sourceMappingURL=franchiseenquiry-list.module.js.map
-
-/***/ }),
-
 /***/ 267:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1629,7 +1629,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_tab__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_tab__ = __webpack_require__(264);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1801,99 +1801,11 @@ var InstructorEnquiryEditPageModule = /** @class */ (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotificationTabModule", function() { return NotificationTabModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__notification_tab__ = __webpack_require__(263);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var NotificationTabModule = /** @class */ (function () {
-    function NotificationTabModule() {
-    }
-    NotificationTabModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__notification_tab__["a" /* NotificationTab */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__notification_tab__["a" /* NotificationTab */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__notification_tab__["a" /* NotificationTab */]
-            ]
-        })
-    ], NotificationTabModule);
-    return NotificationTabModule;
-}());
-
-//# sourceMappingURL=notification-tab.module.js.map
-
-/***/ }),
-
-/***/ 272:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstructorEnquiryViewPageModule", function() { return InstructorEnquiryViewPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__instructorenquiry_view__ = __webpack_require__(491);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var InstructorEnquiryViewPageModule = /** @class */ (function () {
-    function InstructorEnquiryViewPageModule() {
-    }
-    InstructorEnquiryViewPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__instructorenquiry_view__["a" /* InstructorEnquiryViewPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__instructorenquiry_view__["a" /* InstructorEnquiryViewPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__instructorenquiry_view__["a" /* InstructorEnquiryViewPage */]
-            ]
-        })
-    ], InstructorEnquiryViewPageModule);
-    return InstructorEnquiryViewPageModule;
-}());
-
-//# sourceMappingURL=instructorenquiry-view.module.js.map
-
-/***/ }),
-
-/***/ 273:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "POKartTabModule", function() { return POKartTabModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pokart_tab__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pokart_tab__ = __webpack_require__(272);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1928,7 +1840,7 @@ var POKartTabModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 274:
+/***/ 272:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2038,16 +1950,16 @@ var POKartTab = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 275:
+/***/ 273:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "POPaymentTabModule", function() { return POPaymentTabModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotificationTabModule", function() { return NotificationTabModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__popayment_tab__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__notification_tab__ = __webpack_require__(265);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2058,185 +1970,75 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var POPaymentTabModule = /** @class */ (function () {
-    function POPaymentTabModule() {
+var NotificationTabModule = /** @class */ (function () {
+    function NotificationTabModule() {
     }
-    POPaymentTabModule = __decorate([
+    NotificationTabModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__popayment_tab__["a" /* POPaymentTab */],
+                __WEBPACK_IMPORTED_MODULE_3__notification_tab__["a" /* NotificationTab */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__popayment_tab__["a" /* POPaymentTab */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__notification_tab__["a" /* NotificationTab */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__popayment_tab__["a" /* POPaymentTab */]
+                __WEBPACK_IMPORTED_MODULE_3__notification_tab__["a" /* NotificationTab */]
             ]
         })
-    ], POPaymentTabModule);
-    return POPaymentTabModule;
+    ], NotificationTabModule);
+    return NotificationTabModule;
 }());
 
-//# sourceMappingURL=popayment-tab.module.js.map
+//# sourceMappingURL=notification-tab.module.js.map
 
 /***/ }),
 
-/***/ 276:
+/***/ 274:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return POPaymentTab; });
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstructorEnquiryViewPageModule", function() { return InstructorEnquiryViewPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__instructorenquiry_view__ = __webpack_require__(491);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
 
 
 
-
-
-var POPaymentTab = /** @class */ (function () {
-    function POPaymentTab(vibration, navCtrl, navParams, modalCtrl, toastCtrl, alertCtrl, loadingCtrl, centers, program, postOrders, courseMappings, formBuilder, nav, storage, viewCtrl) {
-        var _this = this;
-        this.vibration = vibration;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.modalCtrl = modalCtrl;
-        this.toastCtrl = toastCtrl;
-        this.alertCtrl = alertCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.centers = centers;
-        this.program = program;
-        this.postOrders = postOrders;
-        this.courseMappings = courseMappings;
-        this.formBuilder = formBuilder;
-        this.nav = nav;
-        this.storage = storage;
-        this.viewCtrl = viewCtrl;
-        this.isReadyToSave = false;
-        this.isDuplicate = false;
-        this.programs = [];
-        this.allLevels = [];
-        this.form = this.formBuilder.group({
-            _id: [''],
-            center: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            dispatch_center: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            order_date: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            total_amount: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            products: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            payment_method: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            payment_date: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            bank_name: [''],
-            transaction_no: [''],
-            remarks: [''],
-            dispatched: [''],
-        });
-        // Watch the form for changes, and
-        this.form.valueChanges.subscribe(function (v) {
-            _this.isReadyToSave = _this.form.valid;
-        });
+var InstructorEnquiryViewPageModule = /** @class */ (function () {
+    function InstructorEnquiryViewPageModule() {
     }
-    POPaymentTab.prototype.ionViewDidLoad = function () {
-        var _this = this;
-        this.centers.query().subscribe(function (res) {
-            _this.branches = res;
-        }, function (err) {
-            console.error("ERROR", err);
-        });
-        this.program.query().subscribe(function (res) {
-            _this.courses = res;
-        }, function (err) {
-            console.log('ERROR', err);
-        });
-        this.postOrder = this.navParams.data;
-        this.form.controls['_id'].setValue(this.postOrder._id);
-        this.form.controls['center'].setValue(this.postOrder.center);
-        this.form.controls['dispatch_center'].setValue(this.postOrder.dispatch_center);
-        this.form.controls['order_date'].setValue(this.postOrder.order_date);
-        this.form.controls['total_amount'].setValue(this.postOrder.total_amount);
-        this.form.controls['products'].setValue(this.postOrder.products);
-        this.form.controls['payment_method'].setValue(this.postOrder.payment_method);
-        this.form.controls['payment_date'].setValue(this.postOrder.payment_date);
-        this.form.controls['bank_name'].setValue(this.postOrder.bank_name);
-        this.form.controls['transaction_no'].setValue(this.postOrder.transaction_no);
-        this.form.controls['remarks'].setValue(this.postOrder.remarks);
-        this.form.controls['dispatched'].setValue(this.postOrder.dispatched);
-        this.courseMappings.query().subscribe(function (res) {
-            _this.courseMappingList = res;
-            for (var c = 0; c < _this.courseMappingList.length; c++) {
-                if (_this.courseMappingList[c].center === _this.form.value.center && _this.courseMappingList[c].dispatch_center === _this.form.value.dispatch_center
-                    && _this.courseMappingList[c].products.length === _this.form.value.products.length && _this.courseMappingList[c].total_amount === _this.form.value.total_amount)
-                    _this.form.controls['_id'].setValue(_this.courseMappingList[c]._id);
-            }
-        }, function (err) {
-            console.log('Error', err);
-        });
-    };
-    POPaymentTab.prototype.save = function () {
-        var _this = this;
-        if (this.form.value._id != '' && this.form.value._id != undefined) {
-            this.postOrders.update(this.form.value).subscribe(function (resp) {
-                _this.viewCtrl.dismiss();
-            }, function (err) {
-                var toast = _this.toastCtrl.create({
-                    message: "Error in saving the Post Order. Please try again.",
-                    duration: 3000,
-                    position: 'top'
-                });
-                toast.present();
-            });
-        }
-        else {
-            var toast = this.toastCtrl.create({
-                message: "Cannot find more details. Please try again.",
-                duration: 3000,
-                position: 'top'
-            });
-            toast.present();
-        }
-    };
-    ;
-    POPaymentTab = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "popayment-tab",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/popayment-tab/popayment-tab.html"*/'<ion-content>\n    <form [formGroup]="form">\n\n        <ion-list>\n\n            <ion-item>\n                <ion-label floating>{{ \'Total Amount:\' | translate }} </ion-label>\n                <ion-input type="text" formControlName="total_amount" [disabled]="true"></ion-input>\n            </ion-item>\n\n            <ion-item>\n                <ion-label floating> {{ \'Payment Method:\' | translate }}  <span class="mandatory-field"> * </span> </ion-label>\n                <ion-select formControlName="payment_method" cancelText="Cancel" okText="Okay" multiple="false">\n                    <ion-option value=\'bank transfer\'>Bank Transfer</ion-option>\n                    <ion-option value=\'cheque\'>Cheque / DD</ion-option>\n                    <ion-option value=\'cash\'>Cash</ion-option>\n                </ion-select>\n            </ion-item>   \n\n            <ion-item>\n                <ion-label floating>{{ \'Payment Date:\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-datetime formControlName="payment_date" displayFormat="DD/MMM/YYYY" ></ion-datetime>\n            </ion-item>  \n\n            <ion-item>\n                <ion-label floating>{{ \'Bank Name:\' | translate }} </ion-label>\n                <ion-input type="text" formControlName="bank_name"></ion-input>\n            </ion-item>\n          \n            <ion-item>\n                <ion-label floating>{{ \'Trasaction / Cheque No:\' | translate }} </ion-label>\n                <ion-input type="text" formControlName="transaction_no"></ion-input>\n            </ion-item>\n\n        </ion-list>\n    </form>\n\n</ion-content>\n\n<ion-footer no-border>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="save()" ng-disabled="!isReadyToSave">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/popayment-tab/popayment-tab.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_5__providers__["b" /* Center */],
-            __WEBPACK_IMPORTED_MODULE_5__providers__["j" /* Programs */],
-            __WEBPACK_IMPORTED_MODULE_5__providers__["i" /* PostOrder */],
-            __WEBPACK_IMPORTED_MODULE_5__providers__["c" /* CourseMapping */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */],
-            __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */]])
-    ], POPaymentTab);
-    return POPaymentTab;
+    InstructorEnquiryViewPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__instructorenquiry_view__["a" /* InstructorEnquiryViewPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__instructorenquiry_view__["a" /* InstructorEnquiryViewPage */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__instructorenquiry_view__["a" /* InstructorEnquiryViewPage */]
+            ]
+        })
+    ], InstructorEnquiryViewPageModule);
+    return InstructorEnquiryViewPageModule;
 }());
 
-//# sourceMappingURL=popayment-tab.js.map
+//# sourceMappingURL=instructorenquiry-view.module.js.map
 
 /***/ }),
 
-/***/ 277:
+/***/ 275:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2280,7 +2082,7 @@ var PostOrderAddPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 278:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2451,6 +2253,204 @@ var POShopTab = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 277:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return POPaymentTab; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var POPaymentTab = /** @class */ (function () {
+    function POPaymentTab(vibration, navCtrl, navParams, modalCtrl, toastCtrl, alertCtrl, loadingCtrl, centers, program, postOrders, courseMappings, formBuilder, nav, storage, viewCtrl) {
+        var _this = this;
+        this.vibration = vibration;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
+        this.toastCtrl = toastCtrl;
+        this.alertCtrl = alertCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.centers = centers;
+        this.program = program;
+        this.postOrders = postOrders;
+        this.courseMappings = courseMappings;
+        this.formBuilder = formBuilder;
+        this.nav = nav;
+        this.storage = storage;
+        this.viewCtrl = viewCtrl;
+        this.isReadyToSave = false;
+        this.isDuplicate = false;
+        this.programs = [];
+        this.allLevels = [];
+        this.form = this.formBuilder.group({
+            _id: [''],
+            center: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            dispatch_center: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            order_date: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            total_amount: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            products: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            payment_method: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            payment_date: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            bank_name: [''],
+            transaction_no: [''],
+            remarks: [''],
+            dispatched: [''],
+        });
+        // Watch the form for changes, and
+        this.form.valueChanges.subscribe(function (v) {
+            _this.isReadyToSave = _this.form.valid;
+        });
+    }
+    POPaymentTab.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.centers.query().subscribe(function (res) {
+            _this.branches = res;
+        }, function (err) {
+            console.error("ERROR", err);
+        });
+        this.program.query().subscribe(function (res) {
+            _this.courses = res;
+        }, function (err) {
+            console.log('ERROR', err);
+        });
+        this.postOrder = this.navParams.data;
+        this.form.controls['_id'].setValue(this.postOrder._id);
+        this.form.controls['center'].setValue(this.postOrder.center);
+        this.form.controls['dispatch_center'].setValue(this.postOrder.dispatch_center);
+        this.form.controls['order_date'].setValue(this.postOrder.order_date);
+        this.form.controls['total_amount'].setValue(this.postOrder.total_amount);
+        this.form.controls['products'].setValue(this.postOrder.products);
+        this.form.controls['payment_method'].setValue(this.postOrder.payment_method);
+        this.form.controls['payment_date'].setValue(this.postOrder.payment_date);
+        this.form.controls['bank_name'].setValue(this.postOrder.bank_name);
+        this.form.controls['transaction_no'].setValue(this.postOrder.transaction_no);
+        this.form.controls['remarks'].setValue(this.postOrder.remarks);
+        this.form.controls['dispatched'].setValue(this.postOrder.dispatched);
+        this.courseMappings.query().subscribe(function (res) {
+            _this.courseMappingList = res;
+            for (var c = 0; c < _this.courseMappingList.length; c++) {
+                if (_this.courseMappingList[c].center === _this.form.value.center && _this.courseMappingList[c].dispatch_center === _this.form.value.dispatch_center
+                    && _this.courseMappingList[c].products.length === _this.form.value.products.length && _this.courseMappingList[c].total_amount === _this.form.value.total_amount)
+                    _this.form.controls['_id'].setValue(_this.courseMappingList[c]._id);
+            }
+        }, function (err) {
+            console.log('Error', err);
+        });
+    };
+    POPaymentTab.prototype.save = function () {
+        var _this = this;
+        if (this.form.value._id != '' && this.form.value._id != undefined) {
+            this.postOrders.update(this.form.value).subscribe(function (resp) {
+                _this.viewCtrl.dismiss();
+            }, function (err) {
+                var toast = _this.toastCtrl.create({
+                    message: "Error in saving the Post Order. Please try again.",
+                    duration: 3000,
+                    position: 'top'
+                });
+                toast.present();
+            });
+        }
+        else {
+            var toast = this.toastCtrl.create({
+                message: "Cannot find more details. Please try again.",
+                duration: 3000,
+                position: 'top'
+            });
+            toast.present();
+        }
+    };
+    ;
+    POPaymentTab = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: "popayment-tab",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/popayment-tab/popayment-tab.html"*/'<ion-content>\n    <form [formGroup]="form">\n\n        <ion-list>\n\n            <ion-item>\n                <ion-label floating>{{ \'Total Amount:\' | translate }} </ion-label>\n                <ion-input type="text" formControlName="total_amount" [disabled]="true"></ion-input>\n            </ion-item>\n\n            <ion-item>\n                <ion-label floating> {{ \'Payment Method:\' | translate }}  <span class="mandatory-field"> * </span> </ion-label>\n                <ion-select formControlName="payment_method" cancelText="Cancel" okText="Okay" multiple="false">\n                    <ion-option value=\'bank transfer\'>Bank Transfer</ion-option>\n                    <ion-option value=\'cheque\'>Cheque / DD</ion-option>\n                    <ion-option value=\'cash\'>Cash</ion-option>\n                </ion-select>\n            </ion-item>   \n\n            <ion-item>\n                <ion-label floating>{{ \'Payment Date:\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-datetime formControlName="payment_date" displayFormat="DD/MMM/YYYY" ></ion-datetime>\n            </ion-item>  \n\n            <ion-item>\n                <ion-label floating>{{ \'Bank Name:\' | translate }} </ion-label>\n                <ion-input type="text" formControlName="bank_name"></ion-input>\n            </ion-item>\n          \n            <ion-item>\n                <ion-label floating>{{ \'Trasaction / Cheque No:\' | translate }} </ion-label>\n                <ion-input type="text" formControlName="transaction_no"></ion-input>\n            </ion-item>\n\n        </ion-list>\n    </form>\n\n</ion-content>\n\n<ion-footer no-border>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="save()" ng-disabled="!isReadyToSave">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/popayment-tab/popayment-tab.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_5__providers__["b" /* Center */],
+            __WEBPACK_IMPORTED_MODULE_5__providers__["j" /* Programs */],
+            __WEBPACK_IMPORTED_MODULE_5__providers__["i" /* PostOrder */],
+            __WEBPACK_IMPORTED_MODULE_5__providers__["c" /* CourseMapping */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */]])
+    ], POPaymentTab);
+    return POPaymentTab;
+}());
+
+//# sourceMappingURL=popayment-tab.js.map
+
+/***/ }),
+
+/***/ 278:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "POPaymentTabModule", function() { return POPaymentTabModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__popayment_tab__ = __webpack_require__(277);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var POPaymentTabModule = /** @class */ (function () {
+    function POPaymentTabModule() {
+    }
+    POPaymentTabModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__popayment_tab__["a" /* POPaymentTab */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__popayment_tab__["a" /* POPaymentTab */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__popayment_tab__["a" /* POPaymentTab */]
+            ]
+        })
+    ], POPaymentTabModule);
+    return POPaymentTabModule;
+}());
+
+//# sourceMappingURL=popayment-tab.module.js.map
+
+/***/ }),
+
 /***/ 279:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2460,7 +2460,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__poshop_tab__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__poshop_tab__ = __webpack_require__(276);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2500,99 +2500,11 @@ var POShopTabModule = /** @class */ (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileTabModule", function() { return ProfileTabModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_tab__ = __webpack_require__(264);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var ProfileTabModule = /** @class */ (function () {
-    function ProfileTabModule() {
-    }
-    ProfileTabModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__profile_tab__["a" /* ProfileTab */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__profile_tab__["a" /* ProfileTab */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__profile_tab__["a" /* ProfileTab */]
-            ]
-        })
-    ], ProfileTabModule);
-    return ProfileTabModule;
-}());
-
-//# sourceMappingURL=profile-tab.module.js.map
-
-/***/ }),
-
-/***/ 281:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProgramAddPageModule", function() { return ProgramAddPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_create__ = __webpack_require__(493);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var ProgramAddPageModule = /** @class */ (function () {
-    function ProgramAddPageModule() {
-    }
-    ProgramAddPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__program_create__["a" /* ProgramAddPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__program_create__["a" /* ProgramAddPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__program_create__["a" /* ProgramAddPage */]
-            ]
-        })
-    ], ProgramAddPageModule);
-    return ProgramAddPageModule;
-}());
-
-//# sourceMappingURL=program-create.module.js.map
-
-/***/ }),
-
-/***/ 282:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostOrderListPageModule", function() { return PostOrderListPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__postorder_list__ = __webpack_require__(494);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__postorder_list__ = __webpack_require__(493);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2627,7 +2539,51 @@ var PostOrderListPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 283:
+/***/ 281:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileTabModule", function() { return ProfileTabModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_tab__ = __webpack_require__(266);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var ProfileTabModule = /** @class */ (function () {
+    function ProfileTabModule() {
+    }
+    ProfileTabModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__profile_tab__["a" /* ProfileTab */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__profile_tab__["a" /* ProfileTab */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__profile_tab__["a" /* ProfileTab */]
+            ]
+        })
+    ], ProfileTabModule);
+    return ProfileTabModule;
+}());
+
+//# sourceMappingURL=profile-tab.module.js.map
+
+/***/ }),
+
+/***/ 282:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2636,7 +2592,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_detail__ = __webpack_require__(495);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_detail__ = __webpack_require__(494);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2671,7 +2627,7 @@ var ProgramDetailPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 284:
+/***/ 283:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2680,7 +2636,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_update__ = __webpack_require__(496);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_update__ = __webpack_require__(495);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2715,7 +2671,7 @@ var ProgramEditPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 285:
+/***/ 284:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2724,7 +2680,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_list__ = __webpack_require__(497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_list__ = __webpack_require__(496);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2759,16 +2715,16 @@ var ProgramsListPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 287:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StatesEditModule", function() { return StatesEditModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProgramAddPageModule", function() { return ProgramAddPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__states_edit__ = __webpack_require__(498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__program_create__ = __webpack_require__(497);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2779,31 +2735,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var StatesEditModule = /** @class */ (function () {
-    function StatesEditModule() {
+var ProgramAddPageModule = /** @class */ (function () {
+    function ProgramAddPageModule() {
     }
-    StatesEditModule = __decorate([
+    ProgramAddPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__states_edit__["a" /* StatesEdit */],
+                __WEBPACK_IMPORTED_MODULE_3__program_create__["a" /* ProgramAddPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__states_edit__["a" /* StatesEdit */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__program_create__["a" /* ProgramAddPage */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__states_edit__["a" /* StatesEdit */]
+                __WEBPACK_IMPORTED_MODULE_3__program_create__["a" /* ProgramAddPage */]
             ]
         })
-    ], StatesEditModule);
-    return StatesEditModule;
+    ], ProgramAddPageModule);
+    return ProgramAddPageModule;
 }());
 
-//# sourceMappingURL=states-edit.module.js.map
+//# sourceMappingURL=program-create.module.js.map
 
 /***/ }),
 
-/***/ 288:
+/***/ 287:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2812,7 +2768,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__states_tab__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__states_tab__ = __webpack_require__(252);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2847,7 +2803,7 @@ var StatesTabModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 289:
+/***/ 288:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2856,7 +2812,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__studentenquiry_create__ = __webpack_require__(499);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__studentenquiry_create__ = __webpack_require__(498);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2891,6 +2847,50 @@ var StudentEnquiryAddPageModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 289:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StatesEditModule", function() { return StatesEditModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__states_edit__ = __webpack_require__(499);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var StatesEditModule = /** @class */ (function () {
+    function StatesEditModule() {
+    }
+    StatesEditModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__states_edit__["a" /* StatesEdit */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__states_edit__["a" /* StatesEdit */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__states_edit__["a" /* StatesEdit */]
+            ]
+        })
+    ], StatesEditModule);
+    return StatesEditModule;
+}());
+
+//# sourceMappingURL=states-edit.module.js.map
+
+/***/ }),
+
 /***/ 29:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2913,10 +2913,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Api is a generic REST Api handler. Set your API url first.
  */
 var Api = /** @class */ (function () {
+    // url: string = 'https://slate-server.herokuapp.com';
     function Api(http) {
         this.http = http;
-        // url: string = 'http://localhost:8080';
-        this.url = 'https://slate-server.herokuapp.com';
+        this.url = 'http://localhost:8080';
     }
     Api.prototype.get = function (endpoint, params, reqOpts) {
         if (!reqOpts) {
@@ -2961,99 +2961,11 @@ var Api = /** @class */ (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentEnquiryListPageModule", function() { return StudentEnquiryListPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__studentenquiry_list__ = __webpack_require__(500);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var StudentEnquiryListPageModule = /** @class */ (function () {
-    function StudentEnquiryListPageModule() {
-    }
-    StudentEnquiryListPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__studentenquiry_list__["a" /* StudentEnquiryListPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__studentenquiry_list__["a" /* StudentEnquiryListPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__studentenquiry_list__["a" /* StudentEnquiryListPage */]
-            ]
-        })
-    ], StudentEnquiryListPageModule);
-    return StudentEnquiryListPageModule;
-}());
-
-//# sourceMappingURL=studentenquiry-list.module.js.map
-
-/***/ }),
-
-/***/ 291:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupPageModule", function() { return SignupPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signup__ = __webpack_require__(501);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var SignupPageModule = /** @class */ (function () {
-    function SignupPageModule() {
-    }
-    SignupPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__signup__["a" /* SignupPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__signup__["a" /* SignupPage */]),
-                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_3__signup__["a" /* SignupPage */]
-            ]
-        })
-    ], SignupPageModule);
-    return SignupPageModule;
-}());
-
-//# sourceMappingURL=signup.module.js.map
-
-/***/ }),
-
-/***/ 292:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentEnquiryEditPageModule", function() { return StudentEnquiryEditPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__studentenquiry_update__ = __webpack_require__(502);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__studentenquiry_update__ = __webpack_require__(500);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3088,16 +3000,16 @@ var StudentEnquiryEditPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 293:
+/***/ 291:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserUpdatePageModule", function() { return UserUpdatePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentEnquiryListPageModule", function() { return StudentEnquiryListPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_update__ = __webpack_require__(503);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__studentenquiry_list__ = __webpack_require__(501);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3108,31 +3020,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var UserUpdatePageModule = /** @class */ (function () {
-    function UserUpdatePageModule() {
+var StudentEnquiryListPageModule = /** @class */ (function () {
+    function StudentEnquiryListPageModule() {
     }
-    UserUpdatePageModule = __decorate([
+    StudentEnquiryListPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__user_update__["a" /* UserUpdatePage */],
+                __WEBPACK_IMPORTED_MODULE_3__studentenquiry_list__["a" /* StudentEnquiryListPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__user_update__["a" /* UserUpdatePage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__studentenquiry_list__["a" /* StudentEnquiryListPage */]),
                 __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__user_update__["a" /* UserUpdatePage */]
+                __WEBPACK_IMPORTED_MODULE_3__studentenquiry_list__["a" /* StudentEnquiryListPage */]
             ]
         })
-    ], UserUpdatePageModule);
-    return UserUpdatePageModule;
+    ], StudentEnquiryListPageModule);
+    return StudentEnquiryListPageModule;
 }());
 
-//# sourceMappingURL=user-update.module.js.map
+//# sourceMappingURL=studentenquiry-list.module.js.map
 
 /***/ }),
 
-/***/ 294:
+/***/ 292:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3141,7 +3053,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__studentenquiry_view__ = __webpack_require__(504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__studentenquiry_view__ = __webpack_require__(502);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3176,7 +3088,51 @@ var StudentEnquiryViewPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 295:
+/***/ 293:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupPageModule", function() { return SignupPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signup__ = __webpack_require__(503);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var SignupPageModule = /** @class */ (function () {
+    function SignupPageModule() {
+    }
+    SignupPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__signup__["a" /* SignupPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__signup__["a" /* SignupPage */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__signup__["a" /* SignupPage */]
+            ]
+        })
+    ], SignupPageModule);
+    return SignupPageModule;
+}());
+
+//# sourceMappingURL=signup.module.js.map
+
+/***/ }),
+
+/***/ 294:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3185,7 +3141,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_detail__ = __webpack_require__(505);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_detail__ = __webpack_require__(504);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3220,7 +3176,7 @@ var UserDetailPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 296:
+/***/ 295:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3229,7 +3185,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__users_lists__ = __webpack_require__(506);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__users_lists__ = __webpack_require__(505);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3261,6 +3217,50 @@ var UsersPageModule = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=users_lists.module.js.map
+
+/***/ }),
+
+/***/ 296:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserUpdatePageModule", function() { return UserUpdatePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_update__ = __webpack_require__(506);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var UserUpdatePageModule = /** @class */ (function () {
+    function UserUpdatePageModule() {
+    }
+    UserUpdatePageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__user_update__["a" /* UserUpdatePage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__user_update__["a" /* UserUpdatePage */]),
+                __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__user_update__["a" /* UserUpdatePage */]
+            ]
+        })
+    ], UserUpdatePageModule);
+    return UserUpdatePageModule;
+}());
+
+//# sourceMappingURL=user-update.module.js.map
 
 /***/ }),
 
@@ -3446,9 +3446,9 @@ var FollowupViewTab = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_tab_home_tab__ = __webpack_require__(262);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__notification_tab_notification_tab__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__profile_tab_profile_tab__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_tab_home_tab__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__notification_tab_notification_tab__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__profile_tab_profile_tab__ = __webpack_require__(266);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3536,46 +3536,46 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_in_app_browser_ngx__ = __webpack_require__(423);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_component__ = __webpack_require__(789);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_home_page_home_page_module__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_home_page_home_page_module__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_home_tab_home_tab_module__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_notification_tab_notification_tab_module__ = __webpack_require__(271);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_profile_tab_profile_tab_module__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_programs_list_programs_list_module__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_program_create_program_create_module__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_program_detail_program_detail_module__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_program_update_program_update_module__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_centers_page_centers_page_module__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_notification_tab_notification_tab_module__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_profile_tab_profile_tab_module__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_programs_list_programs_list_module__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_program_create_program_create_module__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_program_detail_program_detail_module__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_program_update_program_update_module__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_centers_page_centers_page_module__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_district_tab_district_tab_module__ = __webpack_require__(255);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_states_tab_states_tab_module__ = __webpack_require__(288);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_branches_tab_branches_tab_module__ = __webpack_require__(247);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_area_tab_area_tab_module__ = __webpack_require__(245);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_area_edit_area_edit_module__ = __webpack_require__(249);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_states_edit_states_edit_module__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_district_edit_district_edit_module__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_users_lists_users_lists_module__ = __webpack_require__(296);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_user_add_signup_module__ = __webpack_require__(291);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_user_detail_user_detail_module__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_user_update_user_update_module__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_states_tab_states_tab_module__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_branches_tab_branches_tab_module__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_area_tab_area_tab_module__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_area_edit_area_edit_module__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_states_edit_states_edit_module__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_district_edit_district_edit_module__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_users_lists_users_lists_module__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_user_add_signup_module__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_user_detail_user_detail_module__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_user_update_user_update_module__ = __webpack_require__(296);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_franchiseenquiry_create_franchiseenquiry_create_module__ = __webpack_require__(259);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_franchiseenquiry_edit_franchiseenquiry_edit_module__ = __webpack_require__(260);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_franchiseenquiry_list_franchiseenquiry_list_module__ = __webpack_require__(266);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_franchiseenquiry_view_franchiseenquiry_view_module__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_franchiseenquiry_list_franchiseenquiry_list_module__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_franchiseenquiry_view_franchiseenquiry_view_module__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_franchiseenquiry_confirm_franchiseenquiry_confirm_module__ = __webpack_require__(258);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_followupcreate_tab_followupcreate_tab_module__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_followupview_tab_followupview_tab_module__ = __webpack_require__(257);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__pages_instructorenquiry_create_instructorenquiry_create_module__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__pages_instructorenquiry_list_instructorenquiry_list_module__ = __webpack_require__(269);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__pages_instructorenquiry_update_instructorenquiry_update_module__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__pages_instructorenquiry_view_instructorenquiry_view_module__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__pages_studentenquiry_create_studentenquiry_create_module__ = __webpack_require__(289);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_studentenquiry_list_studentenquiry_list_module__ = __webpack_require__(290);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__pages_studentenquiry_update_studentenquiry_update_module__ = __webpack_require__(292);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__pages_studentenquiry_view_studentenquiry_view_module__ = __webpack_require__(294);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__pages_coursemapping_coursemapping_module__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__pages_postorder_list_postorder_list_module__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__pages_postorder_create_postorder_create_module__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__pages_pokart_tab_pokart_tab_module__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__pages_popayment_tab_popayment_tab_module__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__pages_instructorenquiry_view_instructorenquiry_view_module__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__pages_studentenquiry_create_studentenquiry_create_module__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_studentenquiry_list_studentenquiry_list_module__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__pages_studentenquiry_update_studentenquiry_update_module__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__pages_studentenquiry_view_studentenquiry_view_module__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__pages_coursemapping_coursemapping_module__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__pages_postorder_list_postorder_list_module__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__pages_postorder_create_postorder_create_module__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__pages_pokart_tab_pokart_tab_module__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__pages_popayment_tab_popayment_tab_module__ = __webpack_require__(278);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__pages_poshop_tab_poshop_tab_module__ = __webpack_require__(279);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3712,12 +3712,12 @@ var AppModule = /** @class */ (function () {
                 }),
                 __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["g" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_14__app_component__["a" /* MyApp */], {}, {
                     links: [
+                        { loadChildren: '../pages/area-edit/area-edit.module#AreaEditModule', name: 'AreaEdit', segment: 'area-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/area-tab/area-tab.module#AreaTabModule', name: 'AreaTab', segment: 'area-tab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/branches-tab/branches-tab.module#BranchesTabModule', name: 'BranchesTab', segment: 'branches-tab', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/area-edit/area-edit.module#AreaEditModule', name: 'AreaEdit', segment: 'area-edit', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/centers-page/centers-page.module#CentersPageModule', name: 'CentersPage', segment: 'centers-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/coursemapping/coursemapping.module#CourseMappingPageModule', name: 'CourseMappingPage', segment: 'coursemapping', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/district-edit/district-edit.module#DistrictEditModule', name: 'DistrictEdit', segment: 'district-edit', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/centers-page/centers-page.module#CentersPageModule', name: 'CentersPage', segment: 'centers-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/district-tab/district-tab.module#DistrictTabModule', name: 'DistrictTab', segment: 'district-tab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/followup-page/followup-page.module#FollowupPageModule', name: 'FollowupPage', segment: 'followup-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/followupcreate-tab/followupcreate-tab.module#FollowupCreateTabModule', name: 'FollowupCreateTab', segment: 'followupcreate-tab', priority: 'low', defaultHistory: [] },
@@ -3725,36 +3725,36 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/franchiseenquiry-confirm/franchiseenquiry-confirm.module#FranchiseEnquiryConfirmPageModule', name: 'FranchiseEnquiryConfirmPage', segment: 'franchiseenquiry-confirm', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/franchiseenquiry-create/franchiseenquiry-create.module#FranchiseEnquiryAddPageModule', name: 'FranchiseEnquiryAddPage', segment: 'franchiseenquiry-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/franchiseenquiry-edit/franchiseenquiry-edit.module#FranchiseEnquiryEditPageModule', name: 'FranchiseEnquiryEditPage', segment: 'franchiseenquiry-edit', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/home-page/home-page.module#HomePageModule', name: 'HomePage', segment: 'home-page', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/franchiseenquiry-view/franchiseenquiry-view.module#FranchiseEnquiryViewPageModule', name: 'FranchiseEnquiryViewPage', segment: 'franchiseenquiry-view', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/franchiseenquiry-list/franchiseenquiry-list.module#FranchiseEnquiryListPageModule', name: 'FranchiseEnquiryListPage', segment: 'franchiseenquiry-list', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/franchiseenquiry-view/franchiseenquiry-view.module#FranchiseEnquiryViewPageModule', name: 'FranchiseEnquiryViewPage', segment: 'franchiseenquiry-view', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/home-page/home-page.module#HomePageModule', name: 'HomePage', segment: 'home-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home-tab/home-tab.module#HomeTabModule', name: 'HomeTab', segment: 'home-tab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/instructorenquiry-create/instructorenquiry-create.module#InstructorEnquiryAddPageModule', name: 'InstructorEnquiryAddPage', segment: 'instructorenquiry-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/instructorenquiry-list/instructorenquiry-list.module#InstructorEnquiryListPageModule', name: 'InstructorEnquiryListPage', segment: 'instructorenquiry-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/instructorenquiry-update/instructorenquiry-update.module#InstructorEnquiryEditPageModule', name: 'InstructorEnquiryEditPage', segment: 'instructorenquiry-update', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/pokart-tab/pokart-tab.module#POKartTabModule', name: 'POKartTab', segment: 'pokart-tab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/notification-tab/notification-tab.module#NotificationTabModule', name: 'NotificationTab', segment: 'notification-tab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/instructorenquiry-view/instructorenquiry-view.module#InstructorEnquiryViewPageModule', name: 'InstructorEnquiryViewPage', segment: 'instructorenquiry-view', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/pokart-tab/pokart-tab.module#POKartTabModule', name: 'POKartTab', segment: 'pokart-tab', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/popayment-tab/popayment-tab.module#POPaymentTabModule', name: 'POPaymentTab', segment: 'popayment-tab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/postorder-create/postorder-create.module#PostOrderAddPageModule', name: 'PostOrderAddPage', segment: 'postorder-create', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/popayment-tab/popayment-tab.module#POPaymentTabModule', name: 'POPaymentTab', segment: 'popayment-tab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/poshop-tab/poshop-tab.module#POShopTabModule', name: 'POShopTab', segment: 'poshop-tab', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/profile-tab/profile-tab.module#ProfileTabModule', name: 'ProfileTab', segment: 'profile-tab', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/program -create/program-create.module#ProgramAddPageModule', name: 'ProgramAddPage', segment: 'program-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/postorder-list/postorder-list.module#PostOrderListPageModule', name: 'PostOrderListPage', segment: 'postorder-list', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/profile-tab/profile-tab.module#ProfileTabModule', name: 'ProfileTab', segment: 'profile-tab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/program -detail/program-detail.module#ProgramDetailPageModule', name: 'ProgramDetailPage', segment: 'program-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/program -update/program-update.module#ProgramEditPageModule', name: 'ProgramEditPage', segment: 'program-update', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/programs-list/programs-list.module#ProgramsListPageModule', name: 'ProgramsListPage', segment: 'programs-list', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/states-edit/states-edit.module#StatesEditModule', name: 'StatesEdit', segment: 'states-edit', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/program -create/program-create.module#ProgramAddPageModule', name: 'ProgramAddPage', segment: 'program-create', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/states-tab/states-tab.module#StatesTabModule', name: 'StatesTab', segment: 'states-tab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/studentenquiry-confirm/studentenquiry-confirm.module#StudentEnquiryConfirmPageModule', name: 'StudentEnquiryConfirmPage', segment: 'studentenquiry-confirm', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/studentenquiry-create/studentenquiry-create.module#StudentEnquiryAddPageModule', name: 'StudentEnquiryAddPage', segment: 'studentenquiry-create', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/studentenquiry-list/studentenquiry-list.module#StudentEnquiryListPageModule', name: 'StudentEnquiryListPage', segment: 'studentenquiry-list', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/user-add/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/states-edit/states-edit.module#StatesEditModule', name: 'StatesEdit', segment: 'states-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/studentenquiry-update/studentenquiry-update.module#StudentEnquiryEditPageModule', name: 'StudentEnquiryEditPage', segment: 'studentenquiry-update', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/user-update/user-update.module#UserUpdatePageModule', name: 'UserUpdatePage', segment: 'user-update', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/studentenquiry-list/studentenquiry-list.module#StudentEnquiryListPageModule', name: 'StudentEnquiryListPage', segment: 'studentenquiry-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/studentenquiry-view/studentenquiry-view.module#StudentEnquiryViewPageModule', name: 'StudentEnquiryViewPage', segment: 'studentenquiry-view', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/user-add/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/user-detail/user-detail.module#UserDetailPageModule', name: 'UserDetailPage', segment: 'user-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/users-lists/users_lists.module#UsersPageModule', name: 'UsersPage', segment: 'users_lists', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/user-update/user-update.module#UserUpdatePageModule', name: 'UserUpdatePage', segment: 'user-update', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -3795,654 +3795,7 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 467:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Settings; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(17);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * A simple settings/config class for storing key/value pairs with persistence.
- */
-var Settings = /** @class */ (function () {
-    function Settings(storage, defaults) {
-        this.storage = storage;
-        this.SETTINGS_KEY = '_settings';
-        this._defaults = defaults;
-    }
-    Settings.prototype.load = function () {
-        var _this = this;
-        return this.storage.get(this.SETTINGS_KEY).then(function (value) {
-            if (value) {
-                _this.settings = value;
-                return _this._mergeDefaults(_this._defaults);
-            }
-            else {
-                return _this.setAll(_this._defaults).then(function (val) {
-                    _this.settings = val;
-                });
-            }
-        });
-    };
-    Settings.prototype._mergeDefaults = function (defaults) {
-        for (var k in defaults) {
-            if (!(k in this.settings)) {
-                this.settings[k] = defaults[k];
-            }
-        }
-        return this.setAll(this.settings);
-    };
-    Settings.prototype.merge = function (settings) {
-        for (var k in settings) {
-            this.settings[k] = settings[k];
-        }
-        return this.save();
-    };
-    Settings.prototype.setValue = function (key, value) {
-        this.settings[key] = value;
-        return this.storage.set(this.SETTINGS_KEY, this.settings);
-    };
-    Settings.prototype.setAll = function (value) {
-        return this.storage.set(this.SETTINGS_KEY, value);
-    };
-    Settings.prototype.getValue = function (key) {
-        return this.storage.get(this.SETTINGS_KEY)
-            .then(function (settings) {
-            return settings[key];
-        });
-    };
-    Settings.prototype.save = function () {
-        return this.setAll(this.settings);
-    };
-    Object.defineProperty(Settings.prototype, "allSettings", {
-        get: function () {
-            return this.settings;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Settings = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_storage__["b" /* Storage */], Object])
-    ], Settings);
-    return Settings;
-}());
-
-//# sourceMappingURL=settings.js.map
-
-/***/ }),
-
-/***/ 468:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return User; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__api_api__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(101);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var User = /** @class */ (function () {
-    function User(api, storage, http) {
-        this.api = api;
-        this.storage = storage;
-        this.http = http;
-    }
-    User.prototype.checkAuthentication = function (token) {
-        var _this = this;
-        return new Promise(function (resolve, reject) {
-            var headers = new __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["c" /* HttpHeaders */]();
-            headers.append('Authorization', token);
-            _this.http.get(_this.api.url + 'api/auth/protected', { headers: headers })
-                .subscribe(function (res) {
-                resolve(res);
-            }, function (err) {
-                reject(err);
-            });
-        });
-    };
-    User.prototype.login = function (accountInfo) {
-        var _this = this;
-        var seq = this.api.post('api/auth/login', accountInfo).share();
-        seq.subscribe(function (res) {
-            _this._loggedIn(res);
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        return seq;
-    };
-    User.prototype.signup = function (accountInfo) {
-        var seq = this.api.post('api/auth/register', accountInfo).share();
-        seq.subscribe(function (res) {
-            if (res.status == 'success') {
-                //   this._loggedIn(res);
-            }
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        return seq;
-    };
-    User.prototype.users_list = function () {
-        var seq = this.api.get('api/auth/usersList').share();
-        seq.subscribe(function (res) {
-            return res;
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        return seq;
-    };
-    User.prototype.update_user = function (accountInfo) {
-        delete accountInfo.__v;
-        var seq = this.api.post('api/auth/update', accountInfo).share();
-        seq.subscribe(function (res) {
-            if (res.status == 'success') {
-                //   this._loggedIn(res);
-            }
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        return seq;
-    };
-    User.prototype.logout = function () {
-        this._user = null;
-        this.storage.set('token', '');
-        this.storage.set('user', {});
-    };
-    User.prototype._loggedIn = function (resp) {
-        this.storage.set('token', resp.token);
-        this.storage.set('user', resp.user).then(function (res) { });
-    };
-    User = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__api_api__["a" /* Api */],
-            __WEBPACK_IMPORTED_MODULE_1__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]])
-    ], User);
-    return User;
-}());
-
-//# sourceMappingURL=user.js.map
-
-/***/ }),
-
-/***/ 469:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Programs; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var Programs = /** @class */ (function () {
-    function Programs(api) {
-        this.api = api;
-    }
-    Programs.prototype.query = function (params) {
-        return this.api.get('api/programmes', params);
-    };
-    Programs.prototype.add = function (program) {
-        return this.api.post('api/programmes', program);
-    };
-    Programs.prototype.update = function (program) {
-        return this.api.put('api/programmes', program);
-    };
-    Programs = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
-    ], Programs);
-    return Programs;
-}());
-
-//# sourceMappingURL=programs.js.map
-
-/***/ }),
-
-/***/ 470:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Center; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var Center = /** @class */ (function () {
-    function Center(api) {
-        this.api = api;
-    }
-    Center.prototype.query = function (params) {
-        return this.api.get('api/centers', params);
-    };
-    Center.prototype.add = function (center) {
-        return this.api.post('api/centers', center);
-    };
-    Center.prototype.update = function (center) {
-        return this.api.put('api/centers', center);
-    };
-    Center = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
-    ], Center);
-    return Center;
-}());
-
-//# sourceMappingURL=center.js.map
-
-/***/ }),
-
-/***/ 471:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Franchise; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var Franchise = /** @class */ (function () {
-    function Franchise(api) {
-        this.api = api;
-    }
-    Franchise.prototype.query = function (params) {
-        return this.api.get('api/franchise', params);
-    };
-    Franchise.prototype.add = function (franchise) {
-        return this.api.post('api/franchise', franchise);
-    };
-    Franchise.prototype.update = function (franchise) {
-        return this.api.put('api/franchise', franchise);
-    };
-    Franchise = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
-    ], Franchise);
-    return Franchise;
-}());
-
-//# sourceMappingURL=franchise.js.map
-
-/***/ }),
-
-/***/ 472:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Instructor; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var Instructor = /** @class */ (function () {
-    function Instructor(api) {
-        this.api = api;
-    }
-    Instructor.prototype.query = function (params) {
-        return this.api.get('api/instructor', params);
-    };
-    Instructor.prototype.add = function (instructor) {
-        return this.api.post('api/instructor', instructor);
-    };
-    Instructor.prototype.update = function (instructor) {
-        return this.api.put('api/instructor', instructor);
-    };
-    Instructor = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
-    ], Instructor);
-    return Instructor;
-}());
-
-//# sourceMappingURL=instructor.js.map
-
-/***/ }),
-
-/***/ 473:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Students; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var Students = /** @class */ (function () {
-    function Students(api) {
-        this.api = api;
-    }
-    Students.prototype.query = function (params) {
-        return this.api.get('api/students', params);
-    };
-    Students.prototype.add = function (students) {
-        return this.api.post('api/students', students);
-    };
-    Students.prototype.update = function (students) {
-        return this.api.put('api/students', students);
-    };
-    Students = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
-    ], Students);
-    return Students;
-}());
-
-//# sourceMappingURL=students.js.map
-
-/***/ }),
-
-/***/ 474:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseMapping; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var CourseMapping = /** @class */ (function () {
-    function CourseMapping(api) {
-        this.api = api;
-    }
-    CourseMapping.prototype.query = function (params) {
-        return this.api.get('api/pricemapping', params);
-    };
-    CourseMapping.prototype.add = function (priceMapping) {
-        return this.api.post('api/pricemapping', priceMapping);
-    };
-    CourseMapping.prototype.update = function (priceMapping) {
-        return this.api.put('api/pricemapping', priceMapping);
-    };
-    CourseMapping = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
-    ], CourseMapping);
-    return CourseMapping;
-}());
-
-//# sourceMappingURL=coursemapping.js.map
-
-/***/ }),
-
-/***/ 475:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostOrder; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var PostOrder = /** @class */ (function () {
-    function PostOrder(api) {
-        this.api = api;
-    }
-    PostOrder.prototype.query = function (params) {
-        return this.api.get('api/postorder', params);
-    };
-    PostOrder.prototype.add = function (postorder) {
-        return this.api.post('api/postorder', postorder);
-    };
-    PostOrder.prototype.update = function (postorder) {
-        return this.api.put('api/postorder', postorder);
-    };
-    PostOrder = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
-    ], PostOrder);
-    return PostOrder;
-}());
-
-//# sourceMappingURL=postorder.js.map
-
-/***/ }),
-
-/***/ 476:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Notifications; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var Notifications = /** @class */ (function () {
-    function Notifications(api) {
-        this.api = api;
-    }
-    Notifications.prototype.query = function (params) {
-        return this.api.get('api/notifications', params);
-    };
-    Notifications.prototype.add = function (notifications) {
-        return this.api.post('api/notifications', notifications);
-    };
-    Notifications.prototype.update = function (notifications) {
-        return this.api.put('api/notifications', notifications);
-    };
-    Notifications = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
-    ], Notifications);
-    return Notifications;
-}());
-
-//# sourceMappingURL=notifications.js.map
-
-/***/ }),
-
-/***/ 477:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Passbook; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var Passbook = /** @class */ (function () {
-    function Passbook(api) {
-        this.api = api;
-    }
-    Passbook.prototype.query = function (params) {
-        return this.api.get('api/passbook', params);
-    };
-    Passbook.prototype.add = function (passbook) {
-        return this.api.post('api/passbook', passbook);
-    };
-    Passbook.prototype.update = function (passbook) {
-        return this.api.put('api/passbook', passbook);
-    };
-    Passbook = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
-    ], Passbook);
-    return Passbook;
-}());
-
-//# sourceMappingURL=passbook.js.map
-
-/***/ }),
-
-/***/ 478:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Inventory; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var Inventory = /** @class */ (function () {
-    function Inventory(api) {
-        this.api = api;
-    }
-    Inventory.prototype.query = function (params) {
-        return this.api.get('api/inventory', params);
-    };
-    Inventory.prototype.add = function (inventory) {
-        return this.api.post('api/inventory', inventory);
-    };
-    Inventory.prototype.update = function (inventory) {
-        return this.api.put('api/inventory', inventory);
-    };
-    Inventory = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
-    ], Inventory);
-    return Inventory;
-}());
-
-//# sourceMappingURL=inventory.js.map
-
-/***/ }),
-
-/***/ 479:
+/***/ 466:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4562,7 +3915,735 @@ var AreaEdit = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 468:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Settings; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(17);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * A simple settings/config class for storing key/value pairs with persistence.
+ */
+var Settings = /** @class */ (function () {
+    function Settings(storage, defaults) {
+        this.storage = storage;
+        this.SETTINGS_KEY = '_settings';
+        this._defaults = defaults;
+    }
+    Settings.prototype.load = function () {
+        var _this = this;
+        return this.storage.get(this.SETTINGS_KEY).then(function (value) {
+            if (value) {
+                _this.settings = value;
+                return _this._mergeDefaults(_this._defaults);
+            }
+            else {
+                return _this.setAll(_this._defaults).then(function (val) {
+                    _this.settings = val;
+                });
+            }
+        });
+    };
+    Settings.prototype._mergeDefaults = function (defaults) {
+        for (var k in defaults) {
+            if (!(k in this.settings)) {
+                this.settings[k] = defaults[k];
+            }
+        }
+        return this.setAll(this.settings);
+    };
+    Settings.prototype.merge = function (settings) {
+        for (var k in settings) {
+            this.settings[k] = settings[k];
+        }
+        return this.save();
+    };
+    Settings.prototype.setValue = function (key, value) {
+        this.settings[key] = value;
+        return this.storage.set(this.SETTINGS_KEY, this.settings);
+    };
+    Settings.prototype.setAll = function (value) {
+        return this.storage.set(this.SETTINGS_KEY, value);
+    };
+    Settings.prototype.getValue = function (key) {
+        return this.storage.get(this.SETTINGS_KEY)
+            .then(function (settings) {
+            return settings[key];
+        });
+    };
+    Settings.prototype.save = function () {
+        return this.setAll(this.settings);
+    };
+    Object.defineProperty(Settings.prototype, "allSettings", {
+        get: function () {
+            return this.settings;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Settings = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_storage__["b" /* Storage */], Object])
+    ], Settings);
+    return Settings;
+}());
+
+//# sourceMappingURL=settings.js.map
+
+/***/ }),
+
+/***/ 469:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return User; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__api_api__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(2);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var User = /** @class */ (function () {
+    function User(api, storage, http, loadingCtrl) {
+        this.api = api;
+        this.storage = storage;
+        this.http = http;
+        this.loadingCtrl = loadingCtrl;
+    }
+    User_1 = User;
+    User.prototype.checkAuthentication = function (token) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["c" /* HttpHeaders */]();
+            headers = headers.set('Authorization', token);
+            _this.http.get(_this.api.url + '/api/auth/protected', { headers: headers })
+                .subscribe(function (res) {
+                resolve(res);
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    User.prototype.login = function (accountInfo) {
+        var _this = this;
+        var seq = this.api.post('api/auth/login', accountInfo).share();
+        seq.subscribe(function (res) {
+            _this._loggedIn(res);
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    User.prototype.signup = function (accountInfo) {
+        var seq = this.api.post('api/auth/register', accountInfo).share();
+        seq.subscribe(function (res) {
+            if (res.status == 'success') {
+                //   this._loggedIn(res);
+            }
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    User.prototype.users_list = function () {
+        var seq = this.api.get('api/auth/usersList').share();
+        seq.subscribe(function (res) {
+            return res;
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    User.prototype.update_user = function (accountInfo) {
+        var loading = this.loadingCtrl.create({
+            content: "Processing ..."
+        });
+        loading.present();
+        delete accountInfo.__v;
+        var seq = this.api.post('api/auth/update', accountInfo).share();
+        seq.subscribe(function (res) {
+            loading.dismiss();
+        }, function (err) {
+            loading.dismiss();
+            console.error('ERROR', err);
+        });
+        return seq;
+    };
+    User.prototype.logout = function () {
+        this._user = null;
+        this.storage.set('token', '');
+        this.storage.set('user', {});
+    };
+    User.prototype._loggedIn = function (resp) {
+        this.storage.set('token', resp.token);
+        this.storage.set('user', resp.user).then(function (res) { });
+        User_1.userChanged.next(resp.user);
+    };
+    var User_1;
+    User.userChanged = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["v" /* EventEmitter */]();
+    User = User_1 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__api_api__["a" /* Api */],
+            __WEBPACK_IMPORTED_MODULE_1__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */],
+            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["i" /* LoadingController */]])
+    ], User);
+    return User;
+}());
+
+//# sourceMappingURL=user.js.map
+
+/***/ }),
+
+/***/ 470:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Programs; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Programs = /** @class */ (function () {
+    function Programs(api) {
+        this.api = api;
+    }
+    Programs.prototype.query = function (params) {
+        return this.api.get('api/programmes', params);
+    };
+    Programs.prototype.add = function (program) {
+        return this.api.post('api/programmes', program);
+    };
+    Programs.prototype.update = function (program) {
+        return this.api.put('api/programmes', program);
+    };
+    Programs = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], Programs);
+    return Programs;
+}());
+
+//# sourceMappingURL=programs.js.map
+
+/***/ }),
+
+/***/ 471:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Center; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Center = /** @class */ (function () {
+    function Center(api) {
+        this.api = api;
+    }
+    Center.prototype.query = function (params) {
+        return this.api.get('api/centers', params);
+    };
+    Center.prototype.add = function (center) {
+        return this.api.post('api/centers', center);
+    };
+    Center.prototype.update = function (center) {
+        return this.api.put('api/centers', center);
+    };
+    Center = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], Center);
+    return Center;
+}());
+
+//# sourceMappingURL=center.js.map
+
+/***/ }),
+
+/***/ 472:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Franchise; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Franchise = /** @class */ (function () {
+    function Franchise(api) {
+        this.api = api;
+    }
+    Franchise.prototype.query = function (params) {
+        return this.api.get('api/franchise', params);
+    };
+    Franchise.prototype.add = function (franchise) {
+        return this.api.post('api/franchise', franchise);
+    };
+    Franchise.prototype.update = function (franchise) {
+        return this.api.put('api/franchise', franchise);
+    };
+    Franchise = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], Franchise);
+    return Franchise;
+}());
+
+//# sourceMappingURL=franchise.js.map
+
+/***/ }),
+
+/***/ 473:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Instructor; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Instructor = /** @class */ (function () {
+    function Instructor(api) {
+        this.api = api;
+    }
+    Instructor.prototype.query = function (params) {
+        return this.api.get('api/instructor', params);
+    };
+    Instructor.prototype.add = function (instructor) {
+        return this.api.post('api/instructor', instructor);
+    };
+    Instructor.prototype.update = function (instructor) {
+        return this.api.put('api/instructor', instructor);
+    };
+    Instructor = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], Instructor);
+    return Instructor;
+}());
+
+//# sourceMappingURL=instructor.js.map
+
+/***/ }),
+
+/***/ 474:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Students; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Students = /** @class */ (function () {
+    function Students(api) {
+        this.api = api;
+    }
+    Students.prototype.query = function (params) {
+        return this.api.get('api/students', params);
+    };
+    Students.prototype.add = function (students) {
+        return this.api.post('api/students', students);
+    };
+    Students.prototype.update = function (students) {
+        return this.api.put('api/students', students);
+    };
+    Students = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], Students);
+    return Students;
+}());
+
+//# sourceMappingURL=students.js.map
+
+/***/ }),
+
+/***/ 475:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseMapping; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CourseMapping = /** @class */ (function () {
+    function CourseMapping(api) {
+        this.api = api;
+    }
+    CourseMapping.prototype.query = function (params) {
+        return this.api.get('api/pricemapping', params);
+    };
+    CourseMapping.prototype.add = function (priceMapping) {
+        return this.api.post('api/pricemapping', priceMapping);
+    };
+    CourseMapping.prototype.update = function (priceMapping) {
+        return this.api.put('api/pricemapping', priceMapping);
+    };
+    CourseMapping = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], CourseMapping);
+    return CourseMapping;
+}());
+
+//# sourceMappingURL=coursemapping.js.map
+
+/***/ }),
+
+/***/ 476:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostOrder; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PostOrder = /** @class */ (function () {
+    function PostOrder(api) {
+        this.api = api;
+    }
+    PostOrder.prototype.query = function (params) {
+        return this.api.get('api/postorder', params);
+    };
+    PostOrder.prototype.add = function (postorder) {
+        return this.api.post('api/postorder', postorder);
+    };
+    PostOrder.prototype.update = function (postorder) {
+        return this.api.put('api/postorder', postorder);
+    };
+    PostOrder = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], PostOrder);
+    return PostOrder;
+}());
+
+//# sourceMappingURL=postorder.js.map
+
+/***/ }),
+
+/***/ 477:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Notifications; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Notifications = /** @class */ (function () {
+    function Notifications(api) {
+        this.api = api;
+    }
+    Notifications.prototype.query = function (params) {
+        return this.api.get('api/notifications', params);
+    };
+    Notifications.prototype.add = function (notifications) {
+        return this.api.post('api/notifications', notifications);
+    };
+    Notifications.prototype.update = function (notifications) {
+        return this.api.put('api/notifications', notifications);
+    };
+    Notifications = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], Notifications);
+    return Notifications;
+}());
+
+//# sourceMappingURL=notifications.js.map
+
+/***/ }),
+
+/***/ 478:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Passbook; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Passbook = /** @class */ (function () {
+    function Passbook(api) {
+        this.api = api;
+    }
+    Passbook.prototype.query = function (params) {
+        return this.api.get('api/passbook', params);
+    };
+    Passbook.prototype.add = function (passbook) {
+        return this.api.post('api/passbook', passbook);
+    };
+    Passbook.prototype.update = function (passbook) {
+        return this.api.put('api/passbook', passbook);
+    };
+    Passbook = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], Passbook);
+    return Passbook;
+}());
+
+//# sourceMappingURL=passbook.js.map
+
+/***/ }),
+
+/***/ 479:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Inventory; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__api_api__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Inventory = /** @class */ (function () {
+    function Inventory(api) {
+        this.api = api;
+    }
+    Inventory.prototype.query = function (params) {
+        return this.api.get('api/inventory', params);
+    };
+    Inventory.prototype.add = function (inventory) {
+        return this.api.post('api/inventory', inventory);
+    };
+    Inventory.prototype.update = function (inventory) {
+        return this.api.put('api/inventory', inventory);
+    };
+    Inventory = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__api_api__["a" /* Api */]])
+    ], Inventory);
+    return Inventory;
+}());
+
+//# sourceMappingURL=inventory.js.map
+
+/***/ }),
+
 /***/ 480:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CentersPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_tab_area_tab__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__branches_tab_branches_tab__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__district_tab_district_tab__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__states_tab_states_tab__ = __webpack_require__(252);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var CentersPage = /** @class */ (function () {
+    function CentersPage(vibration, navCtrl, navParams, modalCtrl, toastCtrl, alertCtrl, loadingCtrl) {
+        this.vibration = vibration;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
+        this.toastCtrl = toastCtrl;
+        this.alertCtrl = alertCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.view = __WEBPACK_IMPORTED_MODULE_4__branches_tab_branches_tab__["a" /* BranchesTab */];
+        this.states = __WEBPACK_IMPORTED_MODULE_6__states_tab_states_tab__["a" /* StatesTab */];
+        this.districts = __WEBPACK_IMPORTED_MODULE_5__district_tab_district_tab__["a" /* DistrictTab */];
+        this.centers = __WEBPACK_IMPORTED_MODULE_3__area_tab_area_tab__["a" /* AreaTab */];
+        console.log("States Page");
+    }
+    CentersPage.prototype.showAlert = function () {
+        var alert = this.alertCtrl.create({
+            title: "Information",
+            subTitle: "\n          <br/>\n          Click on icons or Name to open Accordion. <br/> <br/>\n          &nbsp;  Green: Active  <br/> \n          &nbsp;  Red: Inactive  <br/> <br/>\n          Click on Edit to edit. <br/>\n        ",
+            buttons: ["OK"]
+        });
+        alert.present();
+    };
+    CentersPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: "centers-page",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/centers-page/centers-page.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'State / Centers Master\' | translate }}</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only menuToggle (click)="showAlert()">\n        <a class="icon-circle">\n          <ion-icon name="information"></ion-icon>\n        </a>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-tabs tabsPlacement="top">\n    <ion-tab tabTitle="View" [root]="view"></ion-tab>\n    <ion-tab tabTitle="States" [root]="states"></ion-tab>\n    <ion-tab tabTitle="Districts" [root]="districts"></ion-tab>\n    <ion-tab tabTitle="Centers" [root]="centers"></ion-tab>\n  </ion-tabs>\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/centers-page/centers-page.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */]])
+    ], CentersPage);
+    return CentersPage;
+}());
+
+//# sourceMappingURL=centers-page.js.map
+
+/***/ }),
+
+/***/ 481:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4729,7 +4810,7 @@ var CourseMappingPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 481:
+/***/ 482:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4859,76 +4940,6 @@ var DistrictEdit = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=district-edit.js.map
-
-/***/ }),
-
-/***/ 482:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CentersPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_tab_area_tab__ = __webpack_require__(246);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__branches_tab_branches_tab__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__district_tab_district_tab__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__states_tab_states_tab__ = __webpack_require__(254);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-var CentersPage = /** @class */ (function () {
-    function CentersPage(vibration, navCtrl, navParams, modalCtrl, toastCtrl, alertCtrl, loadingCtrl) {
-        this.vibration = vibration;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.modalCtrl = modalCtrl;
-        this.toastCtrl = toastCtrl;
-        this.alertCtrl = alertCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.view = __WEBPACK_IMPORTED_MODULE_4__branches_tab_branches_tab__["a" /* BranchesTab */];
-        this.states = __WEBPACK_IMPORTED_MODULE_6__states_tab_states_tab__["a" /* StatesTab */];
-        this.districts = __WEBPACK_IMPORTED_MODULE_5__district_tab_district_tab__["a" /* DistrictTab */];
-        this.centers = __WEBPACK_IMPORTED_MODULE_3__area_tab_area_tab__["a" /* AreaTab */];
-        console.log("States Page");
-    }
-    CentersPage.prototype.showAlert = function () {
-        var alert = this.alertCtrl.create({
-            title: "Information",
-            subTitle: "\n          <br/>\n          Click on icons or Name to open Accordion. <br/> <br/>\n          &nbsp;  Green: Active  <br/> \n          &nbsp;  Red: Inactive  <br/> <br/>\n          Click on Edit to edit. <br/>\n        ",
-            buttons: ["OK"]
-        });
-        alert.present();
-    };
-    CentersPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "centers-page",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/centers-page/centers-page.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{ \'State / Centers Master\' | translate }}</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only menuToggle (click)="showAlert()">\n        <a class="icon-circle">\n          <ion-icon name="information"></ion-icon>\n        </a>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-tabs tabsPlacement="top">\n    <ion-tab tabTitle="View" [root]="view"></ion-tab>\n    <ion-tab tabTitle="States" [root]="states"></ion-tab>\n    <ion-tab tabTitle="Districts" [root]="districts"></ion-tab>\n    <ion-tab tabTitle="Centers" [root]="centers"></ion-tab>\n  </ion-tabs>\n\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/centers-page/centers-page.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */]])
-    ], CentersPage);
-    return CentersPage;
-}());
-
-//# sourceMappingURL=centers-page.js.map
 
 /***/ }),
 
@@ -5537,259 +5548,6 @@ var FranchiseEnquiryEditPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FranchiseEnquiryViewPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-var FranchiseEnquiryViewPage = /** @class */ (function () {
-    function FranchiseEnquiryViewPage(navCtrl, viewCtrl, formBuilder, camera, programs, toastCtrl, center, program, users, franchise, element, storage, navParams) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.viewCtrl = viewCtrl;
-        this.camera = camera;
-        this.programs = programs;
-        this.toastCtrl = toastCtrl;
-        this.center = center;
-        this.program = program;
-        this.users = users;
-        this.franchise = franchise;
-        this.element = element;
-        this.storage = storage;
-        this.navParams = navParams;
-        this.isReadyToSave = false;
-        this.states = [];
-        this.districts = [];
-        this.areas = [];
-        this.branches = [];
-        this.programmes = [];
-        this.allFranchisees = [];
-        this.allUsers = [];
-        this.counter = 0;
-        this.professionOptions = [
-            "Accountant",
-            "Architect",
-            "Artist",
-            "Banker",
-            "Bookkeeper",
-            "Builder",
-            "Businessperson",
-            "Chef",
-            "Coach",
-            "Designer",
-            "Doctor",
-            "Economist",
-            "Engineer",
-            "Farmer",
-            "Fisherman",
-            "Judge",
-            "Lawyer",
-            "Mechanic",
-            "Pharmacist",
-            "Photographer",
-            "Physician",
-            "Pilot",
-            "Police",
-            "Politician",
-            "Professor",
-            "Salesperson",
-            "Service",
-            "Teacher",
-            "Writer",
-            "Others"
-        ];
-        this.referralOptions = [
-            "Radio",
-            "TV",
-            "Print",
-            "Outdoor",
-            "From a Friend",
-            "Direct Walk In",
-            "Others"
-        ];
-        this.isStateDisabled = false;
-        this.isDistrictDisabled = false;
-        var franchisee = navParams.get("franchiseEnquiry");
-        this.center.query().subscribe(function (res) {
-            _this.branches = res;
-        }, function (err) {
-            console.error("ERROR", err);
-        });
-        this.program.query().subscribe(function (res) {
-            _this.programmes = res;
-        }, function (err) {
-            console.error("ERROR", err);
-        });
-        this.users.users_list().subscribe(function (res) {
-            _this.allUsers = res;
-        }, function (err) {
-            console.log("ERROR", err);
-        });
-        this.form = formBuilder.group({
-            name: [franchisee.name, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            franchise_type: [
-                franchisee.franchise_type,
-                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])
-            ],
-            franchise_state: [franchisee.franchise_state],
-            franchise_district: [franchisee.franchise_district],
-            franchise_area: [franchisee.franchise_area],
-            address: [franchisee.address, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            pincode: [
-                franchisee.pincode,
-                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required,
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(7),
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].minLength(2)
-                ])
-            ],
-            mobile_no: [
-                franchisee.mobile_no,
-                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required,
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(10),
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].minLength(10),
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern("[0-9]*")
-                ])
-            ],
-            whatsapp_no: [
-                franchisee.whatsapp_no,
-                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(10),
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].minLength(10),
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern("[0-9]*")
-                ])
-            ],
-            email_id: [
-                franchisee.email_id,
-                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required,
-                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
-                ])
-            ],
-            dob: [franchisee.dob],
-            present_occupation: [franchisee.present_occupation],
-            business_type: [franchisee.business_type],
-            capital: [franchisee.capital],
-            qualification: [franchisee.qualification],
-            start_timeframe: [franchisee.start_timeframe],
-            programs_interested: [franchisee.programs_interested],
-            working_hours: [franchisee.working_hours],
-            reference_source: [
-                franchisee.reference_source,
-                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])
-            ],
-            referral: [franchisee.referral],
-            status: [franchisee.status, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            remarks: [franchisee.remarks],
-            active: [franchisee.active, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            address_proof: [franchisee.address_proof],
-            id_proof: [franchisee.id_proof],
-            gst_certificate: [franchisee.gst_certificate],
-            pan_card: [franchisee.pan_card],
-            registration_certificate: [franchisee.registration_certificate],
-            partnership_deed: [franchisee.partnership_deed],
-            photo: [franchisee.photo],
-            follow_up: [franchisee.follow_up],
-            enquiry_by: [franchisee.enquiry_by],
-            enquiry_datetime: [franchisee.enquiry_datetime]
-        });
-        this.storage.get("user").then(function (value) {
-            _this.user = value;
-        });
-        this.center.query().subscribe(function (res) {
-            _this.branches = res;
-            _this.states = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](res, function (item) {
-                return item.center_type == "state";
-            });
-            _this.onFranchiseStateChange(franchisee.franchise_state);
-        }, function (err) {
-            console.error("ERROR", err);
-        });
-    }
-    FranchiseEnquiryViewPage.prototype.ionViewDidLoad = function () { };
-    FranchiseEnquiryViewPage.prototype.cancel = function () {
-        this.viewCtrl.dismiss();
-    };
-    FranchiseEnquiryViewPage.prototype.getBranchName = function (id) {
-        var branch = __WEBPACK_IMPORTED_MODULE_4_lodash__["indexOf"](this.branches, id);
-        if (branch < 0)
-            return id;
-        return this.branches[branch].center_name;
-    };
-    FranchiseEnquiryViewPage.prototype.getProgramNames = function (id) {
-        var temp = [];
-        for (var i = 0; i < id.length; i++) {
-            var index = __WEBPACK_IMPORTED_MODULE_4_lodash__["indexOf"](this.programmes, id[i]);
-            if (index < 0)
-                temp.push(id);
-            else
-                temp.push(this.programmes[index].program_name);
-        }
-    };
-    FranchiseEnquiryViewPage.prototype.getUserName = function (id) {
-        var index = __WEBPACK_IMPORTED_MODULE_4_lodash__["indexOf"](this.allUsers, id);
-        if (index < 0)
-            return id;
-        return this.allUsers[id].name;
-    };
-    FranchiseEnquiryViewPage.prototype.onFranchiseStateChange = function (ev) {
-        this.districts = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return item.center_type == "district" && item.center_parent == ev;
-        });
-        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return item.center_type == "unit" && item.center_parent == ev;
-        });
-    };
-    FranchiseEnquiryViewPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "franchiseenquiry-view",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/franchiseenquiry-view/franchiseenquiry-view.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'View Franchise Enquiry\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form [formGroup]="form">\n    <ion-list>\n\n      <ion-item>\n        <ion-label floating>{{ \'Name\' | translate }} </ion-label>\n        <ion-input type="text" formControlName="name" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Franchise Type\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="franchise_type" disabled="true">\n          <ion-option value="unit">Unit Franchise</ion-option>\n          <ion-option value="district" *ngIf="!isDistrictDisabled">District Franchise</ion-option>\n          <ion-option value="state" *ngIf="!isStateDisabled">Master Franchise</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'State\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="franchise_state" disabled="true"\n          *ngIf="form.value.franchise_type != \'state\'">\n          <ion-option value={{state._id}} *ngFor="let state of states">{{state.center_name}}</ion-option>\n        </ion-select>\n        <ion-input type="text" formControlName="franchise_state" *ngIf="form.value.franchise_type == \'state\'" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item *ngIf="form.value.franchise_type == \'district\' || form.value.franchise_type == \'unit\'">\n        <ion-label floating>{{ \'District\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="franchise_district" disabled="true"\n          *ngIf="form.value.franchise_type != \'district\'">\n          <ion-option value={{state._id}} *ngFor="let state of districts">{{state.center_name}}</ion-option>\n        </ion-select>\n        <ion-input type="text" formControlName="franchise_district" disabled="true" *ngIf="form.value.franchise_type == \'district\'"></ion-input>\n      </ion-item>\n\n      <ion-item *ngIf="form.value.franchise_type == \'unit\'">\n        <ion-label floating>{{ \'Area\' | translate }} </ion-label>\n        <ion-input type="text" formControlName="franchise_area" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Address\' | translate }} </ion-label>\n        <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="address" disabled="true"></ion-textarea>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Pincode\' | translate }} </ion-label>\n        <ion-input type="number" formControlName="pincode" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Mobile No\' | translate }} </ion-label>\n        <ion-input type="number" formControlName="mobile_no" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Whatsapp No\' | translate }} </ion-label>\n        <ion-input type="number" formControlName="whatsapp_no" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Email ID\' | translate }} </ion-label>\n        <ion-input type="text" formControlName="email_id" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Date Of Birth\' | translate }}</ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" formControlName="dob" disabled="true"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Present Occupation\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="present_occupation" disabled="true">\n          <ion-option value={{profession}} *ngFor="let profession of professionOptions">{{profession}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Nature Of Business\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="business_type" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Capital To Invest\' | translate }}</ion-label>\n        <ion-input type="number" formControlName="capital" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Qualification\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="qualification" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Time Frame To Start\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="start_timeframe" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Programs Interested In\' | translate }}</ion-label>\n        <ion-select multiple="true" cancelText="Cancel" okText="Okay" disabled="true" formControlName="programs_interested">\n          <ion-option value={{program._id}} *ngFor="let program of programmes">{{program.program_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Best Time To Contact\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="working_hours" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'How Did You Hear About Us\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="reference_source" disabled="true">\n          <ion-option value={{option}} *ngFor="let option of referralOptions">{{option}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Referral\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="referral" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Remarks\' | translate }}</ion-label>\n        <ion-textarea #myInput1 id="myInput1" rows="2" maxLength="5000" (keyup)="resize()" formControlName="remarks" disabled="true"></ion-textarea>\n      </ion-item>\n\n    </ion-list>\n  </form>\n\n</ion-content>\n'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/franchiseenquiry-view/franchiseenquiry-view.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */],
-            __WEBPACK_IMPORTED_MODULE_6__providers__["j" /* Programs */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["o" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_6__providers__["b" /* Center */],
-            __WEBPACK_IMPORTED_MODULE_6__providers__["j" /* Programs */],
-            __WEBPACK_IMPORTED_MODULE_6__providers__["m" /* User */],
-            __WEBPACK_IMPORTED_MODULE_6__providers__["d" /* Franchise */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */],
-            __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* NavParams */]])
-    ], FranchiseEnquiryViewPage);
-    return FranchiseEnquiryViewPage;
-}());
-
-//# sourceMappingURL=franchiseenquiry-view.js.map
-
-/***/ }),
-
-/***/ 487:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FranchiseEnquiryListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
@@ -6102,6 +5860,259 @@ var FranchiseEnquiryListPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=franchiseenquiry-list.js.map
+
+/***/ }),
+
+/***/ 487:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FranchiseEnquiryViewPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var FranchiseEnquiryViewPage = /** @class */ (function () {
+    function FranchiseEnquiryViewPage(navCtrl, viewCtrl, formBuilder, camera, programs, toastCtrl, center, program, users, franchise, element, storage, navParams) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.viewCtrl = viewCtrl;
+        this.camera = camera;
+        this.programs = programs;
+        this.toastCtrl = toastCtrl;
+        this.center = center;
+        this.program = program;
+        this.users = users;
+        this.franchise = franchise;
+        this.element = element;
+        this.storage = storage;
+        this.navParams = navParams;
+        this.isReadyToSave = false;
+        this.states = [];
+        this.districts = [];
+        this.areas = [];
+        this.branches = [];
+        this.programmes = [];
+        this.allFranchisees = [];
+        this.allUsers = [];
+        this.counter = 0;
+        this.professionOptions = [
+            "Accountant",
+            "Architect",
+            "Artist",
+            "Banker",
+            "Bookkeeper",
+            "Builder",
+            "Businessperson",
+            "Chef",
+            "Coach",
+            "Designer",
+            "Doctor",
+            "Economist",
+            "Engineer",
+            "Farmer",
+            "Fisherman",
+            "Judge",
+            "Lawyer",
+            "Mechanic",
+            "Pharmacist",
+            "Photographer",
+            "Physician",
+            "Pilot",
+            "Police",
+            "Politician",
+            "Professor",
+            "Salesperson",
+            "Service",
+            "Teacher",
+            "Writer",
+            "Others"
+        ];
+        this.referralOptions = [
+            "Radio",
+            "TV",
+            "Print",
+            "Outdoor",
+            "From a Friend",
+            "Direct Walk In",
+            "Others"
+        ];
+        this.isStateDisabled = false;
+        this.isDistrictDisabled = false;
+        var franchisee = navParams.get("franchiseEnquiry");
+        this.center.query().subscribe(function (res) {
+            _this.branches = res;
+        }, function (err) {
+            console.error("ERROR", err);
+        });
+        this.program.query().subscribe(function (res) {
+            _this.programmes = res;
+        }, function (err) {
+            console.error("ERROR", err);
+        });
+        this.users.users_list().subscribe(function (res) {
+            _this.allUsers = res;
+        }, function (err) {
+            console.log("ERROR", err);
+        });
+        this.form = formBuilder.group({
+            name: [franchisee.name, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            franchise_type: [
+                franchisee.franchise_type,
+                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])
+            ],
+            franchise_state: [franchisee.franchise_state],
+            franchise_district: [franchisee.franchise_district],
+            franchise_area: [franchisee.franchise_area],
+            address: [franchisee.address, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            pincode: [
+                franchisee.pincode,
+                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required,
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(7),
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].minLength(2)
+                ])
+            ],
+            mobile_no: [
+                franchisee.mobile_no,
+                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required,
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(10),
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].minLength(10),
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern("[0-9]*")
+                ])
+            ],
+            whatsapp_no: [
+                franchisee.whatsapp_no,
+                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(10),
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].minLength(10),
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern("[0-9]*")
+                ])
+            ],
+            email_id: [
+                franchisee.email_id,
+                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required,
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
+                ])
+            ],
+            dob: [franchisee.dob],
+            present_occupation: [franchisee.present_occupation],
+            business_type: [franchisee.business_type],
+            capital: [franchisee.capital],
+            qualification: [franchisee.qualification],
+            start_timeframe: [franchisee.start_timeframe],
+            programs_interested: [franchisee.programs_interested],
+            working_hours: [franchisee.working_hours],
+            reference_source: [
+                franchisee.reference_source,
+                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])
+            ],
+            referral: [franchisee.referral],
+            status: [franchisee.status, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            remarks: [franchisee.remarks],
+            active: [franchisee.active, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            address_proof: [franchisee.address_proof],
+            id_proof: [franchisee.id_proof],
+            gst_certificate: [franchisee.gst_certificate],
+            pan_card: [franchisee.pan_card],
+            registration_certificate: [franchisee.registration_certificate],
+            partnership_deed: [franchisee.partnership_deed],
+            photo: [franchisee.photo],
+            follow_up: [franchisee.follow_up],
+            enquiry_by: [franchisee.enquiry_by],
+            enquiry_datetime: [franchisee.enquiry_datetime]
+        });
+        this.storage.get("user").then(function (value) {
+            _this.user = value;
+        });
+        this.center.query().subscribe(function (res) {
+            _this.branches = res;
+            _this.states = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](res, function (item) {
+                return item.center_type == "state";
+            });
+            _this.onFranchiseStateChange(franchisee.franchise_state);
+        }, function (err) {
+            console.error("ERROR", err);
+        });
+    }
+    FranchiseEnquiryViewPage.prototype.ionViewDidLoad = function () { };
+    FranchiseEnquiryViewPage.prototype.cancel = function () {
+        this.viewCtrl.dismiss();
+    };
+    FranchiseEnquiryViewPage.prototype.getBranchName = function (id) {
+        var branch = __WEBPACK_IMPORTED_MODULE_4_lodash__["indexOf"](this.branches, id);
+        if (branch < 0)
+            return id;
+        return this.branches[branch].center_name;
+    };
+    FranchiseEnquiryViewPage.prototype.getProgramNames = function (id) {
+        var temp = [];
+        for (var i = 0; i < id.length; i++) {
+            var index = __WEBPACK_IMPORTED_MODULE_4_lodash__["indexOf"](this.programmes, id[i]);
+            if (index < 0)
+                temp.push(id);
+            else
+                temp.push(this.programmes[index].program_name);
+        }
+    };
+    FranchiseEnquiryViewPage.prototype.getUserName = function (id) {
+        var index = __WEBPACK_IMPORTED_MODULE_4_lodash__["indexOf"](this.allUsers, id);
+        if (index < 0)
+            return id;
+        return this.allUsers[id].name;
+    };
+    FranchiseEnquiryViewPage.prototype.onFranchiseStateChange = function (ev) {
+        this.districts = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
+            return item.center_type == "district" && item.center_parent == ev;
+        });
+        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
+            return item.center_type == "unit" && item.center_parent == ev;
+        });
+    };
+    FranchiseEnquiryViewPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: "franchiseenquiry-view",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/franchiseenquiry-view/franchiseenquiry-view.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'View Franchise Enquiry\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form [formGroup]="form">\n    <ion-list>\n\n      <ion-item>\n        <ion-label floating>{{ \'Name\' | translate }} </ion-label>\n        <ion-input type="text" formControlName="name" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Franchise Type\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="franchise_type" disabled="true">\n          <ion-option value="unit">Unit Franchise</ion-option>\n          <ion-option value="district" *ngIf="!isDistrictDisabled">District Franchise</ion-option>\n          <ion-option value="state" *ngIf="!isStateDisabled">Master Franchise</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'State\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="franchise_state" disabled="true"\n          *ngIf="form.value.franchise_type != \'state\'">\n          <ion-option value={{state._id}} *ngFor="let state of states">{{state.center_name}}</ion-option>\n        </ion-select>\n        <ion-input type="text" formControlName="franchise_state" *ngIf="form.value.franchise_type == \'state\'" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item *ngIf="form.value.franchise_type == \'district\' || form.value.franchise_type == \'unit\'">\n        <ion-label floating>{{ \'District\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="franchise_district" disabled="true"\n          *ngIf="form.value.franchise_type != \'district\'">\n          <ion-option value={{state._id}} *ngFor="let state of districts">{{state.center_name}}</ion-option>\n        </ion-select>\n        <ion-input type="text" formControlName="franchise_district" disabled="true" *ngIf="form.value.franchise_type == \'district\'"></ion-input>\n      </ion-item>\n\n      <ion-item *ngIf="form.value.franchise_type == \'unit\'">\n        <ion-label floating>{{ \'Area\' | translate }} </ion-label>\n        <ion-input type="text" formControlName="franchise_area" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Address\' | translate }} </ion-label>\n        <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="address" disabled="true"></ion-textarea>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Pincode\' | translate }} </ion-label>\n        <ion-input type="number" formControlName="pincode" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Mobile No\' | translate }} </ion-label>\n        <ion-input type="number" formControlName="mobile_no" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Whatsapp No\' | translate }} </ion-label>\n        <ion-input type="number" formControlName="whatsapp_no" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Email ID\' | translate }} </ion-label>\n        <ion-input type="text" formControlName="email_id" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Date Of Birth\' | translate }}</ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" formControlName="dob" disabled="true"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Present Occupation\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="present_occupation" disabled="true">\n          <ion-option value={{profession}} *ngFor="let profession of professionOptions">{{profession}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Nature Of Business\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="business_type" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Capital To Invest\' | translate }}</ion-label>\n        <ion-input type="number" formControlName="capital" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Qualification\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="qualification" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Time Frame To Start\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="start_timeframe" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Programs Interested In\' | translate }}</ion-label>\n        <ion-select multiple="true" cancelText="Cancel" okText="Okay" disabled="true" formControlName="programs_interested">\n          <ion-option value={{program._id}} *ngFor="let program of programmes">{{program.program_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Best Time To Contact\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="working_hours" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'How Did You Hear About Us\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="reference_source" disabled="true">\n          <ion-option value={{option}} *ngFor="let option of referralOptions">{{option}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Referral\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="referral" disabled="true"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Remarks\' | translate }}</ion-label>\n        <ion-textarea #myInput1 id="myInput1" rows="2" maxLength="5000" (keyup)="resize()" formControlName="remarks" disabled="true"></ion-textarea>\n      </ion-item>\n\n    </ion-list>\n  </form>\n\n</ion-content>\n'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/franchiseenquiry-view/franchiseenquiry-view.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["j" /* Programs */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["o" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["b" /* Center */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["j" /* Programs */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["m" /* User */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["d" /* Franchise */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* NavParams */]])
+    ], FranchiseEnquiryViewPage);
+    return FranchiseEnquiryViewPage;
+}());
+
+//# sourceMappingURL=franchiseenquiry-view.js.map
 
 /***/ }),
 
@@ -7038,9 +7049,9 @@ var InstructorEnquiryViewPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__poshop_tab_poshop_tab__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pokart_tab_pokart_tab__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__popayment_tab_popayment_tab__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__poshop_tab_poshop_tab__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pokart_tab_pokart_tab__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__popayment_tab_popayment_tab__ = __webpack_require__(277);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7111,118 +7122,6 @@ var PostOrderAddPage = /** @class */ (function () {
 /***/ }),
 
 /***/ 493:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramAddPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_lodash__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-var ProgramAddPage = /** @class */ (function () {
-    function ProgramAddPage(navCtrl, viewCtrl, formBuilder, camera, programs, toastCtrl) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.viewCtrl = viewCtrl;
-        this.camera = camera;
-        this.programs = programs;
-        this.toastCtrl = toastCtrl;
-        this.isReadyToSave = false;
-        this.isDuplicate = false;
-        this.registration_kit = [];
-        this.programs.query().subscribe(function (res) {
-            _this.programList = res;
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        this.form = formBuilder.group({
-            program_name: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            program_code: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            no_of_sessions: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
-            months_per_level: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
-            total_levels: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
-            active: [true, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required],
-            registration_kit: []
-        });
-        // Watch the form for changes, and
-        this.form.valueChanges.subscribe(function (v) {
-            _this.isReadyToSave = _this.form.valid;
-        });
-    }
-    ProgramAddPage.prototype.ionViewDidLoad = function () {
-    };
-    ProgramAddPage.prototype.cancel = function () {
-        this.viewCtrl.dismiss();
-    };
-    ProgramAddPage.prototype.createProgram = function () {
-        var _this = this;
-        for (var k = 0; k < this.registration_kit.length; k++) {
-            if (this.registration_kit[k] == '') {
-                this.registration_kit.splice(k, 1);
-                k--;
-            }
-        }
-        this.form.controls['registration_kit'].setValue(this.registration_kit);
-        this.programs.add(this.form.value).subscribe(function (resp) {
-            _this.viewCtrl.dismiss();
-        }, function (err) {
-            var toast = _this.toastCtrl.create({
-                message: "Error in adding the Program. Please try again.",
-                duration: 3000,
-                position: 'top'
-            });
-            toast.present();
-        });
-    };
-    ProgramAddPage.prototype.addRegisterationKit = function () {
-        this.registration_kit.push('');
-    };
-    ProgramAddPage.prototype.removeRegisterationKit = function (i) {
-        this.registration_kit.splice(i, 1);
-    };
-    ProgramAddPage.prototype.onRegisterationCodeChange = function (ev) {
-        var program = __WEBPACK_IMPORTED_MODULE_5_lodash__["filter"](this.programList, function (item) {
-            return (item.program_code.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0);
-        });
-        this.isDuplicate = program.length > 0;
-    };
-    ProgramAddPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'program-create',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/program -create/program-create.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>{{ \'New Program\' | translate }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <form [formGroup]="form">\n\n    <ion-list>\n      <ion-item>\n        <ion-label floating>{{ \'Program Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="program_name"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Program Code\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="program_code"\n          (ionChange)="onRegisterationCodeChange($event)"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'No Of Sessions\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="no_of_sessions"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Months Per Level\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" formControlName="months_per_level"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Total Levels\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" formControlName="total_levels"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Active\' | translate }} </ion-label>\n        <ion-toggle color="primary" formControlName="active"></ion-toggle>\n      </ion-item>\n    </ion-list>\n\n  </form>\n\n  <ion-grid>\n    <ion-row>\n      <ion-title>{{ \'Registration Kit:\' | translate }}</ion-title>\n      <ion-buttons right>\n        <button ion-button icon-only (click)="addRegisterationKit()" color="success">\n          <ion-icon name="add"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid class="looping-reg">\n    <ion-row *ngFor="let item of registration_kit; let i = index">\n      <ion-input type="text" placeholder="Kit {{i}}" [(ngModel)]="registration_kit[i]" name="kit_{{i}}"></ion-input>\n        <ion-buttons right>\n          <button ion-button icon-only (click)="removeRegisterationKit(i)" color="danger">\n            <ion-icon name="close"></ion-icon>\n          </button>\n        </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n  <p class="error-validation-msg" *ngIf="isDuplicate"> There already exists a Program with same Code. Please change\n    Code. </p>\n\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="createProgram()" [disabled]="!isReadyToSave || isDuplicate">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/program -create/program-create.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */],
-            __WEBPACK_IMPORTED_MODULE_4__providers__["j" /* Programs */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["o" /* ToastController */]])
-    ], ProgramAddPage);
-    return ProgramAddPage;
-}());
-
-//# sourceMappingURL=program-create.js.map
-
-/***/ }),
-
-/***/ 494:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7402,7 +7301,7 @@ var PostOrderListPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 495:
+/***/ 494:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7469,7 +7368,7 @@ var ProgramDetailPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 496:
+/***/ 495:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7594,7 +7493,7 @@ var ProgramEditPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 497:
+/***/ 496:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7603,7 +7502,7 @@ var ProgramEditPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__ = __webpack_require__(285);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7733,16 +7632,18 @@ var ProgramsListPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 498:
+/***/ 497:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StatesEdit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramAddPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_lodash__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7757,119 +7658,93 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var StatesEdit = /** @class */ (function () {
-    function StatesEdit(vibration, navCtrl, navParams, modalCtrl, toastCtrl, alertCtrl, loadingCtrl, centers, program, formBuilder, nav) {
+
+var ProgramAddPage = /** @class */ (function () {
+    function ProgramAddPage(navCtrl, viewCtrl, formBuilder, camera, programs, toastCtrl) {
         var _this = this;
-        this.vibration = vibration;
         this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.camera = camera;
+        this.programs = programs;
         this.toastCtrl = toastCtrl;
-        this.alertCtrl = alertCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.centers = centers;
-        this.program = program;
-        this.formBuilder = formBuilder;
-        this.nav = nav;
         this.isReadyToSave = false;
-        this.centers.query().subscribe(function (res) {
-            _this.branches = res;
+        this.isDuplicate = false;
+        this.registration_kit = [];
+        this.programs.query().subscribe(function (res) {
+            _this.programList = res;
         }, function (err) {
-            console.error("ERROR", err);
-        });
-        this.program.query().subscribe(function (res) {
-            _this.courses = res;
-        }, function (err) {
-            console.log('ERROR', err);
+            console.error('ERROR', err);
         });
         this.form = formBuilder.group({
-            _id: [""],
-            center_id: ["", __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            center_name: ["", __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            center_type: ["state"],
-            center_parent: [""],
-            active: [true, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
-            programs: [[], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required]
+            program_name: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            program_code: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            no_of_sessions: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
+            months_per_level: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
+            total_levels: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
+            active: [true, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required],
+            registration_kit: []
         });
         // Watch the form for changes, and
         this.form.valueChanges.subscribe(function (v) {
             _this.isReadyToSave = _this.form.valid;
         });
-        var center = navParams.get("branch");
-        this.form.controls["_id"].setValue(center._id);
-        this.form.controls["center_id"].setValue(center.center_id);
-        this.form.controls["center_name"].setValue(center.center_name);
-        this.form.controls["center_type"].setValue(center.center_type);
-        this.form.controls["center_parent"].setValue(center.center_parent);
-        this.form.controls["active"].setValue(center.active);
-        this.form.controls["programs"].setValue(center.programs);
     }
-    StatesEdit.prototype.ionViewDidLoad = function () { };
-    StatesEdit.prototype.createState = function () {
+    ProgramAddPage.prototype.ionViewDidLoad = function () {
+    };
+    ProgramAddPage.prototype.cancel = function () {
+        this.viewCtrl.dismiss();
+    };
+    ProgramAddPage.prototype.createProgram = function () {
         var _this = this;
-        this.centers.update(this.form.value).subscribe(function (resp) {
-            if (!_this.form.value.active) {
-                for (var b = 0; b < _this.branches.length; b++) {
-                    if (_this.branches[b].center_parent == _this.form.value._id) {
-                        _this.branches[b].active = false;
-                        _this.centers.update(_this.branches[b]).subscribe(function (resp) {
-                            console.log(resp);
-                            for (var bb = 0; bb < _this.branches.length; bb++) {
-                                if (_this.branches[bb].center_parent == _this.branches[b]._id) {
-                                    _this.branches[bb].active = false;
-                                    _this.centers.update(_this.branches[bb]).subscribe(function (resp) {
-                                        console.log(resp);
-                                    }, function (err) {
-                                        console.log(err);
-                                    });
-                                }
-                            }
-                        }, function (err) {
-                            console.log(err);
-                        });
-                    }
-                }
+        for (var k = 0; k < this.registration_kit.length; k++) {
+            if (this.registration_kit[k] == '') {
+                this.registration_kit.splice(k, 1);
+                k--;
             }
-            var toast = _this.toastCtrl.create({
-                message: "Successfully updated State",
-                duration: 3000,
-                position: "top"
-            });
-            toast.present();
-            _this.navCtrl.push("BranchesTab");
+        }
+        this.form.controls['registration_kit'].setValue(this.registration_kit);
+        this.programs.add(this.form.value).subscribe(function (resp) {
+            _this.viewCtrl.dismiss();
         }, function (err) {
             var toast = _this.toastCtrl.create({
-                message: "Error in adding the State. Please try again.",
+                message: "Error in adding the Program. Please try again.",
                 duration: 3000,
-                position: "top"
+                position: 'top'
             });
             toast.present();
         });
     };
-    StatesEdit = __decorate([
+    ProgramAddPage.prototype.addRegisterationKit = function () {
+        this.registration_kit.push('');
+    };
+    ProgramAddPage.prototype.removeRegisterationKit = function (i) {
+        this.registration_kit.splice(i, 1);
+    };
+    ProgramAddPage.prototype.onRegisterationCodeChange = function (ev) {
+        var program = __WEBPACK_IMPORTED_MODULE_5_lodash__["filter"](this.programList, function (item) {
+            return (item.program_code.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0);
+        });
+        this.isDuplicate = program.length > 0;
+    };
+    ProgramAddPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "states-edit",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/states-edit/states-edit.html"*/'<ion-content>\n    <form [formGroup]="form">\n\n        <ion-list>\n            <ion-item>\n                <ion-label floating>{{ \'State Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-input type="text" formControlName="center_name"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>{{ \'State Code\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-input type="text" formControlName="center_id" disabled="true"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating> {{ \'Programs:\' | translate }}  <span class="mandatory-field"> * </span> </ion-label>\n                <ion-select formControlName="programs" multiple="true" style="min-width: 100%;">\n                    <ion-option value={{course._id}} *ngFor="let course of courses">{{course.program_name}}</ion-option>\n                </ion-select>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'Active:\' | translate }} </ion-label>\n                <ion-toggle color="primary" formControlName="active"></ion-toggle>\n            </ion-item>\n        </ion-list>\n\n    </form>\n</ion-content>\n\n<ion-footer no-border>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/states-edit/states-edit.html"*/
+            selector: 'program-create',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/program -create/program-create.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>{{ \'New Program\' | translate }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <form [formGroup]="form">\n\n    <ion-list>\n      <ion-item>\n        <ion-label floating>{{ \'Program Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="program_name"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Program Code\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="program_code"\n          (ionChange)="onRegisterationCodeChange($event)"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'No Of Sessions\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="no_of_sessions"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Months Per Level\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" formControlName="months_per_level"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>{{ \'Total Levels\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" formControlName="total_levels"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label fixed>{{ \'Active\' | translate }} </ion-label>\n        <ion-toggle color="primary" formControlName="active"></ion-toggle>\n      </ion-item>\n    </ion-list>\n\n  </form>\n\n  <ion-grid>\n    <ion-row>\n      <ion-title>{{ \'Registration Kit:\' | translate }}</ion-title>\n      <ion-buttons right>\n        <button ion-button icon-only (click)="addRegisterationKit()" color="success">\n          <ion-icon name="add"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n  <ion-grid class="looping-reg">\n    <ion-row *ngFor="let item of registration_kit; let i = index">\n      <ion-input type="text" placeholder="Kit {{i}}" [(ngModel)]="registration_kit[i]" name="kit_{{i}}"></ion-input>\n        <ion-buttons right>\n          <button ion-button icon-only (click)="removeRegisterationKit(i)" color="danger">\n            <ion-icon name="close"></ion-icon>\n          </button>\n        </ion-buttons>\n    </ion-row>\n  </ion-grid>\n\n  <p class="error-validation-msg" *ngIf="isDuplicate"> There already exists a Program with same Code. Please change\n    Code. </p>\n\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="createProgram()" [disabled]="!isReadyToSave || isDuplicate">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/program -create/program-create.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */],
-            __WEBPACK_IMPORTED_MODULE_4__providers__["b" /* Center */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */],
             __WEBPACK_IMPORTED_MODULE_4__providers__["j" /* Programs */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */]])
-    ], StatesEdit);
-    return StatesEdit;
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["o" /* ToastController */]])
+    ], ProgramAddPage);
+    return ProgramAddPage;
 }());
 
-//# sourceMappingURL=states-edit.js.map
+//# sourceMappingURL=program-create.js.map
 
 /***/ }),
 
-/***/ 499:
+/***/ 498:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8068,7 +7943,348 @@ var StudentEnquiryAddPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 499:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StatesEdit; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var StatesEdit = /** @class */ (function () {
+    function StatesEdit(vibration, navCtrl, navParams, modalCtrl, toastCtrl, alertCtrl, loadingCtrl, centers, program, formBuilder, nav) {
+        var _this = this;
+        this.vibration = vibration;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
+        this.toastCtrl = toastCtrl;
+        this.alertCtrl = alertCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.centers = centers;
+        this.program = program;
+        this.formBuilder = formBuilder;
+        this.nav = nav;
+        this.isReadyToSave = false;
+        this.centers.query().subscribe(function (res) {
+            _this.branches = res;
+        }, function (err) {
+            console.error("ERROR", err);
+        });
+        this.program.query().subscribe(function (res) {
+            _this.courses = res;
+        }, function (err) {
+            console.log('ERROR', err);
+        });
+        this.form = formBuilder.group({
+            _id: [""],
+            center_id: ["", __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            center_name: ["", __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            center_type: ["state"],
+            center_parent: [""],
+            active: [true, __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required],
+            programs: [[], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required]
+        });
+        // Watch the form for changes, and
+        this.form.valueChanges.subscribe(function (v) {
+            _this.isReadyToSave = _this.form.valid;
+        });
+        var center = navParams.get("branch");
+        this.form.controls["_id"].setValue(center._id);
+        this.form.controls["center_id"].setValue(center.center_id);
+        this.form.controls["center_name"].setValue(center.center_name);
+        this.form.controls["center_type"].setValue(center.center_type);
+        this.form.controls["center_parent"].setValue(center.center_parent);
+        this.form.controls["active"].setValue(center.active);
+        this.form.controls["programs"].setValue(center.programs);
+    }
+    StatesEdit.prototype.ionViewDidLoad = function () { };
+    StatesEdit.prototype.createState = function () {
+        var _this = this;
+        this.centers.update(this.form.value).subscribe(function (resp) {
+            if (!_this.form.value.active) {
+                for (var b = 0; b < _this.branches.length; b++) {
+                    if (_this.branches[b].center_parent == _this.form.value._id) {
+                        _this.branches[b].active = false;
+                        _this.centers.update(_this.branches[b]).subscribe(function (resp) {
+                            console.log(resp);
+                            for (var bb = 0; bb < _this.branches.length; bb++) {
+                                if (_this.branches[bb].center_parent == _this.branches[b]._id) {
+                                    _this.branches[bb].active = false;
+                                    _this.centers.update(_this.branches[bb]).subscribe(function (resp) {
+                                        console.log(resp);
+                                    }, function (err) {
+                                        console.log(err);
+                                    });
+                                }
+                            }
+                        }, function (err) {
+                            console.log(err);
+                        });
+                    }
+                }
+            }
+            var toast = _this.toastCtrl.create({
+                message: "Successfully updated State",
+                duration: 3000,
+                position: "top"
+            });
+            toast.present();
+            _this.navCtrl.push("BranchesTab");
+        }, function (err) {
+            var toast = _this.toastCtrl.create({
+                message: "Error in adding the State. Please try again.",
+                duration: 3000,
+                position: "top"
+            });
+            toast.present();
+        });
+    };
+    StatesEdit = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: "states-edit",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/states-edit/states-edit.html"*/'<ion-content>\n    <form [formGroup]="form">\n\n        <ion-list>\n            <ion-item>\n                <ion-label floating>{{ \'State Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-input type="text" formControlName="center_name"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>{{ \'State Code\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n                <ion-input type="text" formControlName="center_id" disabled="true"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating> {{ \'Programs:\' | translate }}  <span class="mandatory-field"> * </span> </ion-label>\n                <ion-select formControlName="programs" multiple="true" style="min-width: 100%;">\n                    <ion-option value={{course._id}} *ngFor="let course of courses">{{course.program_name}}</ion-option>\n                </ion-select>\n            </ion-item>\n            <ion-item>\n                <ion-label fixed>{{ \'Active:\' | translate }} </ion-label>\n                <ion-toggle color="primary" formControlName="active"></ion-toggle>\n            </ion-item>\n        </ion-list>\n\n    </form>\n</ion-content>\n\n<ion-footer no-border>\n    <ion-toolbar transparent>\n        <button ion-button full (click)="createState()" ng-disabled="!isReadyToSave">\n            {{ \'SAVE\' | translate }}\n        </button>\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/states-edit/states-edit.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_4__providers__["b" /* Center */],
+            __WEBPACK_IMPORTED_MODULE_4__providers__["j" /* Programs */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */]])
+    ], StatesEdit);
+    return StatesEdit;
+}());
+
+//# sourceMappingURL=states-edit.js.map
+
+/***/ }),
+
 /***/ 500:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StudentEnquiryEditPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var StudentEnquiryEditPage = /** @class */ (function () {
+    function StudentEnquiryEditPage(navCtrl, viewCtrl, formBuilder, camera, programs, toastCtrl, center, program, element, storage, instructor, students, navParams) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.viewCtrl = viewCtrl;
+        this.camera = camera;
+        this.programs = programs;
+        this.toastCtrl = toastCtrl;
+        this.center = center;
+        this.program = program;
+        this.element = element;
+        this.storage = storage;
+        this.instructor = instructor;
+        this.students = students;
+        this.navParams = navParams;
+        this.isReadyToSave = false;
+        this.isStateDisabled = false;
+        this.isDistrictDisabled = false;
+        this.isAreaDisabled = false;
+        this.counter = 0;
+        this.referralOptions = ['Radio', 'TV', 'Print', 'Outdoor', 'From a Friend', 'Direct Walk In', 'Others'];
+        this.resize = function () {
+            var ta = _this.element.nativeElement.querySelector("textarea");
+            if (ta !== undefined && ta !== null) {
+                ta.style.overflow = "hidden";
+                ta.style.height = "auto";
+                ta.style.height = ta.scrollHeight + "px";
+            }
+        };
+        var student = navParams.get('student');
+        this.form = formBuilder.group({
+            _id: [student._id],
+            name: [student.name, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            state: [student.state, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            district: [student.district],
+            area: [student.area, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            program: [student.program, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            address: [student.address, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            mobile_no: [student.mobile_no, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(10), __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].minLength(10), __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
+            whatsapp_no: [student.whatsapp_no, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(10), __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].minLength(10), __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
+            email_id: [student.email_id, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")])],
+            dob: [student.dob, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            parent_name: [student.parent_name, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            school_name: [student.school_name],
+            school_address: [student.school_address],
+            grade: [student.grade, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(4), __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
+            status: [student.status, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            contact_time: [student.contact_time],
+            referral: [student.referral],
+            remarks: [student.remarks],
+            active: [student.active, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
+            photo: [student.photo],
+            enquiry_by: [student.enquiry_by],
+            enquiry_datetime: [student.enquiry_datetime]
+        });
+        // Watch the form for changes, and
+        this.form.valueChanges.subscribe(function (v) {
+            _this.isReadyToSave = _this.form.valid;
+        });
+        this.center.query().subscribe(function (res) {
+            _this.branches = res;
+            _this.states = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](res, function (item) {
+                return (item.center_type == 'state');
+            });
+            _this.onStateChange(_this.form.controls['state'].value);
+            _this.onDistrictChange(_this.form.controls['district'].value);
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        this.program.query().subscribe(function (res) {
+            _this.programmes = res;
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        this.storage.get('user').then(function (value) {
+            _this.user = value;
+            _this.form.controls['enquiry_by'].setValue(_this.user._id);
+            if (_this.user.role == 'master') {
+                _this.isStateDisabled = true;
+                _this.form.controls['state'].setValue(_this.user.user_state);
+                _this.districts = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](_this.branches, function (item) {
+                    return (item.center_type == 'district' && item.center_parent == this.user.user_state);
+                });
+                _this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](_this.branches, function (item) {
+                    return (item.center_type == 'unit' && item.center_parent == this.user.user_state);
+                });
+            }
+            else if (_this.user.role == 'district') {
+                _this.isStateDisabled = true;
+                _this.isDistrictDisabled = true;
+                _this.form.controls['state'].setValue(_this.user.user_state);
+                _this.form.controls['district'].setValue(_this.user.user_district);
+                _this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](_this.branches, function (item) {
+                    return (item.center_type == 'unit' && item.center_parent == this.user.user_district);
+                });
+            }
+            else if (_this.user.role == 'unit') {
+                _this.isStateDisabled = true;
+                _this.isDistrictDisabled = true;
+                _this.isAreaDisabled = true;
+                _this.form.controls['state'].setValue(_this.user.user_state);
+                _this.form.controls['district'].setValue(_this.user.user_district);
+                _this.form.controls['area'].setValue(_this.user.user_center);
+            }
+        });
+        this.students.query().subscribe(function (res) {
+            _this.allStudents = res;
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+    }
+    StudentEnquiryEditPage.prototype.ionViewDidLoad = function () {
+    };
+    StudentEnquiryEditPage.prototype.cancel = function () {
+        this.viewCtrl.dismiss();
+    };
+    StudentEnquiryEditPage.prototype.onStateChange = function (ev) {
+        this.districts = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
+            return (item.center_type == 'district' && item.center_parent == ev);
+        });
+        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
+            return (item.center_type == 'unit' && item.center_parent == ev);
+        });
+    };
+    StudentEnquiryEditPage.prototype.onDistrictChange = function (ev) {
+        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
+            return (item.center_type == 'unit' && item.center_parent == ev);
+        });
+    };
+    StudentEnquiryEditPage.prototype.save = function () {
+        var _this = this;
+        this.students.update(this.form.value).subscribe(function (resp) {
+            _this.viewCtrl.dismiss();
+        }, function (err) {
+            var toast = _this.toastCtrl.create({
+                message: "Error in updating the Student Enquiry. Please try again.",
+                duration: 3000,
+                position: 'top'
+            });
+            toast.present();
+        });
+    };
+    StudentEnquiryEditPage.prototype.onPhoneOrEmailChange = function (ev) {
+        var inst = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.allStudents, function (item) {
+            if (item.whatsapp_no != undefined && item.whatsapp_no != '' && item.whatsapp_no == ev.value) {
+                return true;
+            }
+            return (item.mobile_no == ev.value || item.email_id == ev.value);
+        });
+        this.counter = inst.length;
+    };
+    StudentEnquiryEditPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'studentenquiry-update',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/studentenquiry-update/studentenquiry-update.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'Student Enquiries\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form [formGroup]="form">\n    <ion-list>\n\n      <ion-item>\n        <ion-label floating>{{ \'Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="name"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'State\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="state" (ionChange)="onStateChange($event)"\n          [disabled]="isStateDisabled">\n          <ion-option value={{state._id}} *ngFor="let state of states">{{state.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'District\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="district"\n          (ionChange)="onDistrictChange($event)" [disabled]="isDistrictDisabled">\n          <ion-option value={{district._id}} *ngFor="let district of districts">{{district.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Area\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="area" [disabled]="isAreaDisabled">\n          <ion-option value={{area._id}} *ngFor="let area of areas">{{area.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Address\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="address"></ion-textarea>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Mobile No\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" formControlName="mobile_no" (ionChange)="onPhoneOrEmailChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Whatsapp No\' | translate }} </ion-label>\n        <ion-input type="number" formControlName="whatsapp_no" (ionChange)="onPhoneOrEmailChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Email ID\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="email_id" (ionChange)="onPhoneOrEmailChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Date Of Birth\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" formControlName="dob"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Parent Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="parent_name"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'School Name\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="school_name"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'School Address\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="school_address"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Grade\' | translate }}</ion-label>\n        <ion-input type="number" formControlName="grade"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Programs Interested In\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="true" cancelText="Cancel" okText="Okay" formControlName="program">\n          <ion-option value={{program._id}} *ngFor="let program of programmes">{{program.program_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Best Time To Contact\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="contact_time"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Referral\' | translate }}</ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="referral">\n          <ion-option value={{referral}} *ngFor="let referral of referralOptions">{{referral}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Remarks\' | translate }}</ion-label>\n        <ion-textarea #myInput1 id="myInput1" rows="2" maxLength="5000" (keyup)="resize()" formControlName="remarks"></ion-textarea>\n      </ion-item>\n\n    </ion-list>\n  </form>\n\n</ion-content>\n\n<ion-footer no-border>\n  <p style="color: red;" *ngIf="counter > 0">There already exists an Enquiry with same details from same or different\n    center. Hence, cannot save it. Please contact Head Office.</p>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="save()" [disabled]="!isReadyToSave || counter > 0">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/studentenquiry-update/studentenquiry-update.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["j" /* Programs */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["o" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["b" /* Center */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["j" /* Programs */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["e" /* Instructor */],
+            __WEBPACK_IMPORTED_MODULE_6__providers__["l" /* Students */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* NavParams */]])
+    ], StudentEnquiryEditPage);
+    return StudentEnquiryEditPage;
+}());
+
+//# sourceMappingURL=studentenquiry-update.js.map
+
+/***/ }),
+
+/***/ 501:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8421,484 +8637,7 @@ var StudentEnquiryListPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 501:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var SignupPage = /** @class */ (function () {
-    function SignupPage(navCtrl, user, center, toastCtrl, translateService, viewCtrl) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.user = user;
-        this.center = center;
-        this.toastCtrl = toastCtrl;
-        this.translateService = translateService;
-        this.viewCtrl = viewCtrl;
-        this.account = {
-            name: '',
-            user_name: '',
-            email: '',
-            password: '',
-            confirm_password: '',
-            phone_no: '',
-            whatsapp_no: '',
-            gender: 'male',
-            role: '',
-            dob: new Date(),
-            profile_pic: '',
-            user_state: '',
-            user_district: '',
-            user_center: '',
-            active: true
-        };
-        this.isReadyToSave = false;
-        this.isDuplicate = false;
-        this.isPasswordMatch = false;
-        this.states = [];
-        this.districts = [];
-        this.areas = [];
-        this.user.users_list().subscribe(function (res) {
-            _this.usersList = res;
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        this.center.query().subscribe(function (res) {
-            _this.branches = res;
-            _this.states = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](res, function (item) {
-                return (item.center_type == 'state');
-            });
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        this.translateService.get('SIGNUP_ERROR').subscribe(function (value) {
-            _this.signupErrorString = value;
-        });
-    }
-    SignupPage.prototype.doSignup = function () {
-        var _this = this;
-        this.account.dob = new Date(this.account.dob);
-        this.user.signup(this.account).subscribe(function (resp) {
-            _this.viewCtrl.dismiss();
-        }, function (err) {
-            var toast = _this.toastCtrl.create({
-                message: "Error in adding the User. Please try again.",
-                duration: 3000,
-                position: 'top'
-            });
-            toast.present();
-        });
-    };
-    SignupPage.prototype.cancel = function () {
-        this.viewCtrl.dismiss();
-    };
-    SignupPage.prototype.onChange = function (ev) {
-        this.isReadyToSave = (this.account.name != '' && this.account.user_name != '' && this.account.email != '' &&
-            this.account.password != '' && this.account.confirm_password != '' && this.account.phone_no != '' &&
-            this.account.gender != '' && this.account.role != '');
-        this.isPasswordMatch = (this.account.password == this.account.confirm_password);
-        // let user = _.filter(this.usersList, function (item) {
-        //   return ((item.user_name.toUpperCase().indexOf(this.account.user_name.toUpperCase()) >= 0)
-        //     || (item.email.toUpperCase().indexOf(this.account.email.toUpperCase()) >= 0))
-        // });
-        // this.isDuplicate = (user.length > 0);
-    };
-    SignupPage.prototype.onStateChange = function (ev) {
-        this.districts = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return (item.center_type == 'district' && item.center_parent == ev);
-        });
-        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return (item.center_type == 'unit' && item.center_parent == ev);
-        });
-    };
-    SignupPage.prototype.onDistrictChange = function (ev) {
-        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return (item.center_type == 'unit' && item.center_parent == ev);
-        });
-    };
-    SignupPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-signup',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/user-add/signup.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'Create User\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form>\n    <ion-list>\n\n      <ion-item>\n        <ion-label floating>{{ \'Full Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" [(ngModel)]="account.name" name="name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'User Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Phone No\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Whatsapp No\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" [(ngModel)]="account.whatsapp_no" name="whatsapp_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Email\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="email" [(ngModel)]="account.email" name="email" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Password\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="password" [(ngModel)]="account.password" name="password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Confirm Password\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Date Of Birth\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" (ionChange)="onChange($event)"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Gender\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select [(ngModel)]="account.gender" name="gender" (ionChange)="onChange($event)">\n          <ion-option value="female">Female</ion-option>\n          <ion-option value="male">Male</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Role\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select [(ngModel)]="account.role" name="role" (ionChange)="onChange($event)">\n          <ion-option value="admin">Admin</ion-option>\n          <ion-option value="master">Master Franchise</ion-option>\n          <ion-option value="district">District Franchise</ion-option>\n          <ion-option value="unit">Unit Franchise</ion-option>\n          <ion-option value="instructor">Instructor</ion-option>\n          <ion-option value="student">Student</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'admin\'">\n        <ion-label floating>{{ \'State\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_state" name="user_state" (ionChange)="onStateChange($event)">\n          <ion-option value={{state._id}} *ngFor="let state of states">{{state.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'master\' && account.role != \'admin\'">\n        <ion-label floating>{{ \'District\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_district" name="user_district"\n          (ionChange)="onDistrictChange($event)">\n          <ion-option value={{district._id}} *ngFor="let district of districts">{{district.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'master\' && account.role != \'admin\' && account.role != \'district\'">\n        <ion-label floating>{{ \'Area\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_center" name="user_center">\n          <ion-option value={{area._id}} *ngFor="let area of areas">{{area.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label>{{ \'Active:\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" (ionChange)="onChange($event)"></ion-toggle>\n      </ion-item>\n\n    </ion-list>\n  </form>\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="doSignup()" disabled="(isDuplicate || !isPasswordMatch)">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/user-add/signup.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_3__providers__["m" /* User */],
-            __WEBPACK_IMPORTED_MODULE_3__providers__["b" /* Center */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["p" /* ViewController */]])
-    ], SignupPage);
-    return SignupPage;
-}());
-
-//# sourceMappingURL=signup.js.map
-
-/***/ }),
-
 /***/ 502:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StudentEnquiryEditPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-var StudentEnquiryEditPage = /** @class */ (function () {
-    function StudentEnquiryEditPage(navCtrl, viewCtrl, formBuilder, camera, programs, toastCtrl, center, program, element, storage, instructor, students, navParams) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.viewCtrl = viewCtrl;
-        this.camera = camera;
-        this.programs = programs;
-        this.toastCtrl = toastCtrl;
-        this.center = center;
-        this.program = program;
-        this.element = element;
-        this.storage = storage;
-        this.instructor = instructor;
-        this.students = students;
-        this.navParams = navParams;
-        this.isReadyToSave = false;
-        this.isStateDisabled = false;
-        this.isDistrictDisabled = false;
-        this.isAreaDisabled = false;
-        this.counter = 0;
-        this.referralOptions = ['Radio', 'TV', 'Print', 'Outdoor', 'From a Friend', 'Direct Walk In', 'Others'];
-        this.resize = function () {
-            var ta = _this.element.nativeElement.querySelector("textarea");
-            if (ta !== undefined && ta !== null) {
-                ta.style.overflow = "hidden";
-                ta.style.height = "auto";
-                ta.style.height = ta.scrollHeight + "px";
-            }
-        };
-        var student = navParams.get('student');
-        this.form = formBuilder.group({
-            _id: [student._id],
-            name: [student.name, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            state: [student.state, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            district: [student.district],
-            area: [student.area, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            program: [student.program, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            address: [student.address, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            mobile_no: [student.mobile_no, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(10), __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].minLength(10), __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
-            whatsapp_no: [student.whatsapp_no, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(10), __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].minLength(10), __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
-            email_id: [student.email_id, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")])],
-            dob: [student.dob, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            parent_name: [student.parent_name, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            school_name: [student.school_name],
-            school_address: [student.school_address],
-            grade: [student.grade, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].maxLength(4), __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].pattern('[0-9]*')])],
-            status: [student.status, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            contact_time: [student.contact_time],
-            referral: [student.referral],
-            remarks: [student.remarks],
-            active: [student.active, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].compose([__WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* Validators */].required])],
-            photo: [student.photo],
-            enquiry_by: [student.enquiry_by],
-            enquiry_datetime: [student.enquiry_datetime]
-        });
-        // Watch the form for changes, and
-        this.form.valueChanges.subscribe(function (v) {
-            _this.isReadyToSave = _this.form.valid;
-        });
-        this.center.query().subscribe(function (res) {
-            _this.branches = res;
-            _this.states = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](res, function (item) {
-                return (item.center_type == 'state');
-            });
-            _this.onStateChange(_this.form.controls['state'].value);
-            _this.onDistrictChange(_this.form.controls['district'].value);
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        this.program.query().subscribe(function (res) {
-            _this.programmes = res;
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        this.storage.get('user').then(function (value) {
-            _this.user = value;
-            _this.form.controls['enquiry_by'].setValue(_this.user._id);
-            if (_this.user.role == 'master') {
-                _this.isStateDisabled = true;
-                _this.form.controls['state'].setValue(_this.user.user_state);
-                _this.districts = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](_this.branches, function (item) {
-                    return (item.center_type == 'district' && item.center_parent == this.user.user_state);
-                });
-                _this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](_this.branches, function (item) {
-                    return (item.center_type == 'unit' && item.center_parent == this.user.user_state);
-                });
-            }
-            else if (_this.user.role == 'district') {
-                _this.isStateDisabled = true;
-                _this.isDistrictDisabled = true;
-                _this.form.controls['state'].setValue(_this.user.user_state);
-                _this.form.controls['district'].setValue(_this.user.user_district);
-                _this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](_this.branches, function (item) {
-                    return (item.center_type == 'unit' && item.center_parent == this.user.user_district);
-                });
-            }
-            else if (_this.user.role == 'unit') {
-                _this.isStateDisabled = true;
-                _this.isDistrictDisabled = true;
-                _this.isAreaDisabled = true;
-                _this.form.controls['state'].setValue(_this.user.user_state);
-                _this.form.controls['district'].setValue(_this.user.user_district);
-                _this.form.controls['area'].setValue(_this.user.user_center);
-            }
-        });
-        this.students.query().subscribe(function (res) {
-            _this.allStudents = res;
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-    }
-    StudentEnquiryEditPage.prototype.ionViewDidLoad = function () {
-    };
-    StudentEnquiryEditPage.prototype.cancel = function () {
-        this.viewCtrl.dismiss();
-    };
-    StudentEnquiryEditPage.prototype.onStateChange = function (ev) {
-        this.districts = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return (item.center_type == 'district' && item.center_parent == ev);
-        });
-        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return (item.center_type == 'unit' && item.center_parent == ev);
-        });
-    };
-    StudentEnquiryEditPage.prototype.onDistrictChange = function (ev) {
-        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return (item.center_type == 'unit' && item.center_parent == ev);
-        });
-    };
-    StudentEnquiryEditPage.prototype.save = function () {
-        var _this = this;
-        this.students.update(this.form.value).subscribe(function (resp) {
-            _this.viewCtrl.dismiss();
-        }, function (err) {
-            var toast = _this.toastCtrl.create({
-                message: "Error in updating the Student Enquiry. Please try again.",
-                duration: 3000,
-                position: 'top'
-            });
-            toast.present();
-        });
-    };
-    StudentEnquiryEditPage.prototype.onPhoneOrEmailChange = function (ev) {
-        var inst = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.allStudents, function (item) {
-            if (item.whatsapp_no != undefined && item.whatsapp_no != '' && item.whatsapp_no == ev.value) {
-                return true;
-            }
-            return (item.mobile_no == ev.value || item.email_id == ev.value);
-        });
-        this.counter = inst.length;
-    };
-    StudentEnquiryEditPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'studentenquiry-update',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/studentenquiry-update/studentenquiry-update.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'Student Enquiries\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form [formGroup]="form">\n    <ion-list>\n\n      <ion-item>\n        <ion-label floating>{{ \'Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="name"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'State\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="state" (ionChange)="onStateChange($event)"\n          [disabled]="isStateDisabled">\n          <ion-option value={{state._id}} *ngFor="let state of states">{{state.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'District\' | translate }} </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="district"\n          (ionChange)="onDistrictChange($event)" [disabled]="isDistrictDisabled">\n          <ion-option value={{district._id}} *ngFor="let district of districts">{{district.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Area\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="area" [disabled]="isAreaDisabled">\n          <ion-option value={{area._id}} *ngFor="let area of areas">{{area.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Address\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="address"></ion-textarea>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Mobile No\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" formControlName="mobile_no" (ionChange)="onPhoneOrEmailChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Whatsapp No\' | translate }} </ion-label>\n        <ion-input type="number" formControlName="whatsapp_no" (ionChange)="onPhoneOrEmailChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Email ID\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="email_id" (ionChange)="onPhoneOrEmailChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Date Of Birth\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" formControlName="dob"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Parent Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" formControlName="parent_name"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'School Name\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="school_name"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'School Address\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="school_address"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Grade\' | translate }}</ion-label>\n        <ion-input type="number" formControlName="grade"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Programs Interested In\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="true" cancelText="Cancel" okText="Okay" formControlName="program">\n          <ion-option value={{program._id}} *ngFor="let program of programmes">{{program.program_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Best Time To Contact\' | translate }}</ion-label>\n        <ion-input type="text" formControlName="contact_time"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Referral\' | translate }}</ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="referral">\n          <ion-option value={{referral}} *ngFor="let referral of referralOptions">{{referral}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Remarks\' | translate }}</ion-label>\n        <ion-textarea #myInput1 id="myInput1" rows="2" maxLength="5000" (keyup)="resize()" formControlName="remarks"></ion-textarea>\n      </ion-item>\n\n    </ion-list>\n  </form>\n\n</ion-content>\n\n<ion-footer no-border>\n  <p style="color: red;" *ngIf="counter > 0">There already exists an Enquiry with same details from same or different\n    center. Hence, cannot save it. Please contact Head Office.</p>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="save()" [disabled]="!isReadyToSave || counter > 0">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/studentenquiry-update/studentenquiry-update.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */],
-            __WEBPACK_IMPORTED_MODULE_6__providers__["j" /* Programs */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["o" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_6__providers__["b" /* Center */],
-            __WEBPACK_IMPORTED_MODULE_6__providers__["j" /* Programs */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */],
-            __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_6__providers__["e" /* Instructor */],
-            __WEBPACK_IMPORTED_MODULE_6__providers__["l" /* Students */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* NavParams */]])
-    ], StudentEnquiryEditPage);
-    return StudentEnquiryEditPage;
-}());
-
-//# sourceMappingURL=studentenquiry-update.js.map
-
-/***/ }),
-
-/***/ 503:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserUpdatePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var UserUpdatePage = /** @class */ (function () {
-    function UserUpdatePage(navCtrl, user, toastCtrl, translateService, navParams, viewCtrl, center) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.user = user;
-        this.toastCtrl = toastCtrl;
-        this.translateService = translateService;
-        this.navParams = navParams;
-        this.viewCtrl = viewCtrl;
-        this.center = center;
-        this.account = {
-            name: '',
-            user_name: '',
-            email: '',
-            password: '',
-            confirm_password: '',
-            phone_no: '',
-            whatsapp_no: '',
-            gender: 'male',
-            role: '',
-            dob: new Date(),
-            profile_pic: '',
-            user_state: '',
-            user_district: '',
-            user_center: '',
-            active: true
-        };
-        this.isReadyToSave = false;
-        this.isDuplicate = false;
-        this.isPasswordMatch = false;
-        this.states = [];
-        this.districts = [];
-        this.areas = [];
-        this.account = navParams.get('user');
-        this.account.confirm_password = this.account.password;
-        this.user.users_list().subscribe(function (res) {
-            _this.usersList = res;
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        this.center.query().subscribe(function (res) {
-            _this.branches = res;
-            _this.states = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](res, function (item) {
-                return (item.center_type == 'state');
-            });
-            _this.onStateChange(_this.account.user_state);
-            _this.onDistrictChange(_this.account.user_district);
-        }, function (err) {
-            console.error('ERROR', err);
-        });
-        this.translateService.get('SIGNUP_ERROR').subscribe(function (value) {
-            _this.signupErrorString = value;
-        });
-    }
-    UserUpdatePage.prototype.cancel = function () {
-        this.viewCtrl.dismiss();
-    };
-    UserUpdatePage.prototype.doSignup = function () {
-        var _this = this;
-        this.account.dob = new Date(this.account.dob);
-        this.user.update_user(this.account).subscribe(function (resp) {
-            _this.viewCtrl.dismiss();
-        }, function (err) {
-            var toast = _this.toastCtrl.create({
-                message: "Error in updating the User. Please try again.",
-                duration: 3000,
-                position: 'top'
-            });
-            toast.present();
-        });
-    };
-    UserUpdatePage.prototype.onChange = function (ev) {
-        this.isReadyToSave = (this.account.name != '' && this.account.user_name != '' && this.account.email != '' &&
-            this.account.password != '' && this.account.confirm_password != '' && this.account.phone_no != '' &&
-            this.account.gender != '' && this.account.role != '');
-        this.isPasswordMatch = (this.account.password == this.account.confirm_password);
-        // let user = _.filter(this.usersList, function (item) {
-        //   return ((item.user_name.toUpperCase().indexOf(this.account.user_name.toUpperCase()) >= 0)
-        //     || (item.email.toUpperCase().indexOf(this.account.email.toUpperCase()) >= 0))
-        // });
-        // this.isDuplicate = (user.length > 0);
-    };
-    UserUpdatePage.prototype.onStateChange = function (ev) {
-        this.districts = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return (item.center_type == 'district' && item.center_parent == ev);
-        });
-        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return (item.center_type == 'unit' && item.center_parent == ev);
-        });
-    };
-    UserUpdatePage.prototype.onDistrictChange = function (ev) {
-        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
-            return (item.center_type == 'unit' && item.center_parent == ev);
-        });
-    };
-    UserUpdatePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'user-update',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/user-update/user-update.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'Update User\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form>\n    <ion-list>\n\n      <ion-item>\n        <ion-label floating>{{ \'Full Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" [(ngModel)]="account.name" name="name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'User Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Phone No\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Whatsapp No\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" [(ngModel)]="account.whatsapp_no" name="whatsapp_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Email\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="email" [(ngModel)]="account.email" name="email" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Password\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="password" [(ngModel)]="account.password" name="password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Confirm Password\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Date Of Birth\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" (ionChange)="onChange($event)"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Gender\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select [(ngModel)]="account.gender" name="gender" (ionChange)="onChange($event)">\n          <ion-option value="female">Female</ion-option>\n          <ion-option value="male">Male</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Role\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select [(ngModel)]="account.role" name="role" (ionChange)="onChange($event)">\n          <ion-option value="admin">Admin</ion-option>\n          <ion-option value="master">Master Franchise</ion-option>\n          <ion-option value="district">District Franchise</ion-option>\n          <ion-option value="unit">Unit Franchise</ion-option>\n          <ion-option value="instructor">Instructor</ion-option>\n          <ion-option value="student">Student</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'admin\'">\n        <ion-label floating>{{ \'State\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_state" name="user_state" (ionChange)="onStateChange($event)">\n          <ion-option value={{state._id}} *ngFor="let state of states">{{state.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'master\' && account.role != \'admin\'">\n        <ion-label floating>{{ \'District\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_district" name="user_district"\n          (ionChange)="onDistrictChange($event)">\n          <ion-option value={{district._id}} *ngFor="let district of districts">{{district.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'master\' && account.role != \'admin\' && account.role != \'district\'">\n        <ion-label floating>{{ \'Area\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_center" name="user_center">\n          <ion-option value={{area._id}} *ngFor="let area of areas">{{area.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label>{{ \'Active:\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" (ionChange)="onChange($event)"></ion-toggle>\n      </ion-item>\n\n    </ion-list>\n  </form>\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="doSignup()">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/user-update/user-update.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_3__providers__["m" /* User */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["p" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_3__providers__["b" /* Center */]])
-    ], UserUpdatePage);
-    return UserUpdatePage;
-}());
-
-//# sourceMappingURL=user-update.js.map
-
-/***/ }),
-
-/***/ 504:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9081,7 +8820,155 @@ var StudentEnquiryViewPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 505:
+/***/ 503:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var SignupPage = /** @class */ (function () {
+    function SignupPage(navCtrl, user, center, toastCtrl, translateService, viewCtrl, loadingCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.user = user;
+        this.center = center;
+        this.toastCtrl = toastCtrl;
+        this.translateService = translateService;
+        this.viewCtrl = viewCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.account = {
+            name: '',
+            user_name: '',
+            email: '',
+            password: '',
+            confirm_password: '',
+            phone_no: '',
+            whatsapp_no: '',
+            gender: 'male',
+            role: '',
+            dob: new Date(),
+            profile_pic: '',
+            user_state: '',
+            user_district: '',
+            user_center: '',
+            active: true
+        };
+        this.isReadyToSave = true;
+        this.isDuplicate = false;
+        this.isPasswordMatch = true;
+        this.states = [];
+        this.districts = [];
+        this.areas = [];
+        this.user.users_list().subscribe(function (res) {
+            _this.usersList = res;
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        this.center.query().subscribe(function (res) {
+            _this.branches = res;
+            _this.states = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](res, function (item) {
+                return (item.center_type == 'state');
+            });
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        this.translateService.get('SIGNUP_ERROR').subscribe(function (value) {
+            _this.signupErrorString = value;
+        });
+    }
+    SignupPage.prototype.doSignup = function () {
+        var _this = this;
+        var loading = this.loadingCtrl.create({
+            content: "Processing ..."
+        });
+        loading.present();
+        this.account.dob = new Date(this.account.dob);
+        this.user.signup(this.account).subscribe(function (resp) {
+            loading.dismiss();
+            _this.viewCtrl.dismiss();
+        }, function (err) {
+            console.log(err);
+            loading.dismiss();
+            var toast = _this.toastCtrl.create({
+                message: "Error in adding the User. Please try again.",
+                duration: 3000,
+                position: 'top'
+            });
+            toast.present();
+        });
+    };
+    SignupPage.prototype.cancel = function () {
+        this.viewCtrl.dismiss();
+    };
+    SignupPage.prototype.onChange = function (ev) {
+        if (this.account.name != '' && this.account.user_name != '' && this.account.email != '' &&
+            this.account.password != '' && this.account.confirm_password != '' && this.account.phone_no != '' &&
+            this.account.gender != '' && this.account.role != '') {
+            if (this.account.password == this.account.confirm_password) {
+                this.isReadyToSave = false;
+            }
+        }
+        else {
+            this.isReadyToSave = true;
+        }
+        // let user = _.filter(this.usersList, function (item) {
+        //   return ((item.user_name.toUpperCase().indexOf(this.account.user_name.toUpperCase()) >= 0)
+        //     || (item.email.toUpperCase().indexOf(this.account.email.toUpperCase()) >= 0))
+        // });
+        // this.isDuplicate = (user.length > 0);
+    };
+    SignupPage.prototype.onStateChange = function (ev) {
+        this.districts = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
+            return (item.center_type == 'district' && item.center_parent == ev);
+        });
+        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
+            return (item.center_type == 'unit' && item.center_parent == ev);
+        });
+    };
+    SignupPage.prototype.onDistrictChange = function (ev) {
+        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
+            return (item.center_type == 'unit' && item.center_parent == ev);
+        });
+    };
+    SignupPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-signup',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/user-add/signup.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'Create User\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form>\n    <ion-list>\n\n      <ion-item>\n        <ion-label floating>{{ \'Full Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" [(ngModel)]="account.name" name="name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'User Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Phone No\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Whatsapp No\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" [(ngModel)]="account.whatsapp_no" name="whatsapp_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Email\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="email" [(ngModel)]="account.email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Password\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="password" [(ngModel)]="account.password" name="password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Confirm Password\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Date Of Birth\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" (ionChange)="onChange($event)"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Gender\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select [(ngModel)]="account.gender" name="gender" (ionChange)="onChange($event)">\n          <ion-option value="female">Female</ion-option>\n          <ion-option value="male">Male</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Role\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select [(ngModel)]="account.role" name="role" (ionChange)="onChange($event)">\n          <ion-option value="admin">Admin</ion-option>\n          <ion-option value="master">Master Franchise</ion-option>\n          <ion-option value="district">District Franchise</ion-option>\n          <ion-option value="unit">Unit Franchise</ion-option>\n          <ion-option value="instructor">Instructor</ion-option>\n          <ion-option value="student">Student</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'admin\'">\n        <ion-label floating>{{ \'State\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_state" name="user_state" (ionChange)="onStateChange($event)">\n          <ion-option value={{state._id}} *ngFor="let state of states">{{state.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'master\' && account.role != \'admin\'">\n        <ion-label floating>{{ \'District\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_district" name="user_district"\n          (ionChange)="onDistrictChange($event)">\n          <ion-option value={{district._id}} *ngFor="let district of districts">{{district.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'master\' && account.role != \'admin\' && account.role != \'district\'">\n        <ion-label floating>{{ \'Area\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_center" name="user_center">\n          <ion-option value={{area._id}} *ngFor="let area of areas">{{area.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label>{{ \'Active:\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" (ionChange)="onChange($event)"></ion-toggle>\n      </ion-item>\n\n    </ion-list>\n  </form>\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="doSignup()" [disabled]="isReadyToSave">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/user-add/signup.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["m" /* User */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["b" /* Center */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* LoadingController */]])
+    ], SignupPage);
+    return SignupPage;
+}());
+
+//# sourceMappingURL=signup.js.map
+
+/***/ }),
+
+/***/ 504:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9170,7 +9057,7 @@ var UserDetailPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 506:
+/***/ 505:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9181,7 +9068,7 @@ var UserDetailPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_call_number_ngx__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__ = __webpack_require__(285);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers__ = __webpack_require__(7);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9453,35 +9340,171 @@ var UsersPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 506:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserUpdatePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var UserUpdatePage = /** @class */ (function () {
+    function UserUpdatePage(navCtrl, user, toastCtrl, translateService, navParams, viewCtrl, center) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.user = user;
+        this.toastCtrl = toastCtrl;
+        this.translateService = translateService;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.center = center;
+        this.account = {
+            name: '',
+            user_name: '',
+            email: '',
+            password: '',
+            phone_no: '',
+            whatsapp_no: '',
+            gender: 'male',
+            role: '',
+            dob: new Date(),
+            profile_pic: '',
+            user_state: '',
+            user_district: '',
+            user_center: '',
+            active: true
+        };
+        this.isReadyToSave = false;
+        this.isDuplicate = false;
+        this.states = [];
+        this.districts = [];
+        this.areas = [];
+        this.account = navParams.get('user');
+        console.log(this.account);
+        this.user.users_list().subscribe(function (res) {
+            _this.usersList = res;
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        this.center.query().subscribe(function (res) {
+            _this.branches = res;
+            _this.states = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](res, function (item) {
+                return (item.center_type == 'state');
+            });
+            _this.onStateChange(_this.account.user_state);
+            _this.onDistrictChange(_this.account.user_district);
+        }, function (err) {
+            console.error('ERROR', err);
+        });
+        this.translateService.get('SIGNUP_ERROR').subscribe(function (value) {
+            _this.signupErrorString = value;
+        });
+    }
+    UserUpdatePage.prototype.cancel = function () {
+        this.viewCtrl.dismiss();
+    };
+    UserUpdatePage.prototype.doSignup = function () {
+        var _this = this;
+        this.account.dob = new Date(this.account.dob);
+        this.user.update_user(this.account).subscribe(function (resp) {
+            _this.viewCtrl.dismiss();
+        }, function (err) {
+            var toast = _this.toastCtrl.create({
+                message: "Error in updating the User. Please try again.",
+                duration: 3000,
+                position: 'top'
+            });
+            toast.present();
+        });
+    };
+    UserUpdatePage.prototype.onChange = function (ev) {
+        this.isReadyToSave = (this.account.name != '' && this.account.user_name != '' && this.account.email != '' &&
+            this.account.password != '' && this.account.phone_no != '' &&
+            this.account.gender != '' && this.account.role != '');
+        // let user = _.filter(this.usersList, function (item) {
+        //   return ((item.user_name.toUpperCase().indexOf(this.account.user_name.toUpperCase()) >= 0)
+        //     || (item.email.toUpperCase().indexOf(this.account.email.toUpperCase()) >= 0))
+        // });
+        // this.isDuplicate = (user.length > 0);
+    };
+    UserUpdatePage.prototype.onStateChange = function (ev) {
+        this.districts = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
+            return (item.center_type == 'district' && item.center_parent == ev);
+        });
+        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
+            return (item.center_type == 'unit' && item.center_parent == ev);
+        });
+    };
+    UserUpdatePage.prototype.onDistrictChange = function (ev) {
+        this.areas = __WEBPACK_IMPORTED_MODULE_4_lodash__["filter"](this.branches, function (item) {
+            return (item.center_type == 'unit' && item.center_parent == ev);
+        });
+    };
+    UserUpdatePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'user-update',template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/user-update/user-update.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>{{ \'Update User\' | translate }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <form>\n    <ion-list>\n\n      <ion-item>\n        <ion-label floating>{{ \'Full Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" [(ngModel)]="account.name" name="name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'User Name\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="text" [(ngModel)]="account.user_name" name="user_name" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Phone No\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" [(ngModel)]="account.phone_no" name="phone_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Whatsapp No\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="number" [(ngModel)]="account.whatsapp_no" name="whatsapp_no" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Email\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="email" [(ngModel)]="account.email" name="email" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Password\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="password" [(ngModel)]="account.password" name="password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item>\n\n      <!-- <ion-item>\n        <ion-label floating>{{ \'Confirm Password\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-input type="password" [(ngModel)]="account.confirm_password" name="confirm_password" (ionChange)="onChange($event)"></ion-input>\n      </ion-item> -->\n\n      <ion-item>\n        <ion-label floating>{{ \'Date Of Birth\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="account.dob" name="dob" (ionChange)="onChange($event)"></ion-datetime>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Gender\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select [(ngModel)]="account.gender" name="gender" (ionChange)="onChange($event)">\n          <ion-option value="female">Female</ion-option>\n          <ion-option value="male">Male</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>{{ \'Role\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select [(ngModel)]="account.role" name="role" (ionChange)="onChange($event)">\n          <ion-option value="admin">Admin</ion-option>\n          <ion-option value="master">Master Franchise</ion-option>\n          <ion-option value="district">District Franchise</ion-option>\n          <ion-option value="unit">Unit Franchise</ion-option>\n          <ion-option value="instructor">Instructor</ion-option>\n          <ion-option value="student">Student</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'admin\'">\n        <ion-label floating>{{ \'State\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_state" name="user_state" (ionChange)="onStateChange($event)">\n          <ion-option value={{state._id}} *ngFor="let state of states">{{state.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'master\' && account.role != \'admin\'">\n        <ion-label floating>{{ \'District\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_district" name="user_district"\n          (ionChange)="onDistrictChange($event)">\n          <ion-option value={{district._id}} *ngFor="let district of districts">{{district.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item *ngIf="account.role != \'master\' && account.role != \'admin\' && account.role != \'district\'">\n        <ion-label floating>{{ \'Area\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-select multiple="false" cancelText="Cancel" okText="Okay" [(ngModel)]="account.user_center" name="user_center">\n          <ion-option value={{area._id}} *ngFor="let area of areas">{{area.center_name}}</ion-option>\n        </ion-select>\n      </ion-item>\n\n      <ion-item>\n        <ion-label>{{ \'Active:\' | translate }} <span class="mandatory-field"> * </span> </ion-label>\n        <ion-toggle color="primary" [(ngModel)]="account.active" name="active" (ionChange)="onChange($event)"></ion-toggle>\n      </ion-item>\n\n    </ion-list>\n  </form>\n</ion-content>\n\n<ion-footer no-border>\n  <ion-toolbar transparent>\n    <button ion-button full (click)="doSignup()" [disabled]="!isReadyToSave">\n      {{ \'SAVE\' | translate }}\n    </button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/user-update/user-update.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["m" /* User */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_3__providers__["b" /* Center */]])
+    ], UserUpdatePage);
+    return UserUpdatePage;
+}());
+
+//# sourceMappingURL=user-update.js.map
+
+/***/ }),
+
 /***/ 7:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_api__ = __webpack_require__(29);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__api_api__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__settings_settings__ = __webpack_require__(467);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__settings_settings__ = __webpack_require__(468);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_1__settings_settings__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_user__ = __webpack_require__(468);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_user__ = __webpack_require__(469);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_2__user_user__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(470);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_3__programs_programs__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__center_center__ = __webpack_require__(470);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__center_center__ = __webpack_require__(471);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_4__center_center__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__franchise_franchise__ = __webpack_require__(471);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__franchise_franchise__ = __webpack_require__(472);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_5__franchise_franchise__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__instructor_instructor__ = __webpack_require__(472);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__instructor_instructor__ = __webpack_require__(473);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_6__instructor_instructor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__students_students__ = __webpack_require__(473);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__students_students__ = __webpack_require__(474);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_7__students_students__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__coursemapping_coursemapping__ = __webpack_require__(474);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__coursemapping_coursemapping__ = __webpack_require__(475);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_8__coursemapping_coursemapping__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__postorder_postorder__ = __webpack_require__(475);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__postorder_postorder__ = __webpack_require__(476);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_9__postorder_postorder__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__notifications_notifications__ = __webpack_require__(476);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__notifications_notifications__ = __webpack_require__(477);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_10__notifications_notifications__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__passbook_passbook__ = __webpack_require__(477);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__passbook_passbook__ = __webpack_require__(478);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_11__passbook_passbook__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__inventory_inventory__ = __webpack_require__(478);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__inventory_inventory__ = __webpack_require__(479);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_12__inventory_inventory__["a"]; });
 
 
@@ -9567,6 +9590,10 @@ var MyApp = /** @class */ (function () {
         this.storage.get("user").then(function (value) {
             _this.user = value;
         });
+        console.log(this.user);
+        this.userSubcription = __WEBPACK_IMPORTED_MODULE_6__providers__["m" /* User */].userChanged.subscribe(function (data) {
+            _this.user = data;
+        });
     }
     MyApp.prototype.ionViewWillEnter = function () {
         var _this = this;
@@ -9640,7 +9667,7 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: "side-main-menu",
-            template: "\n    <ion-menu [content]=\"content\" *ngIf=\"user && user.role\">\n      <ion-content class=\"sideMenuIoncContent\">\n        <ion-list class=\"headerMAin\">\n          <ion-item class=\"headerBackground\">\n            <ion-list class=\"logoImage\">\n              <div\n                class=\"circle-pic\"\n                text-center\n                #profilePic\n                [style.background-image]=\"'url(' + user.profile_pic + ')'\"\n              ></div>\n            </ion-list>\n            <br />\n            <h2 class=\"userName\">Hi {{ user.name }}</h2>\n            <h3 class=\"userDetails\">{{ user.role }}</h3>\n          </ion-item>\n        </ion-list>\n\n        <ion-list list>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            style=\"border-top: 0.55px solid white;\"\n            [class.activeHIghlight]=\"checkActive(pages[1])\"\n            (click)=\"openPage(pages[1])\"\n            class=\"buttonSIdeBAr\"\n          >\n            <ion-icon name=\"home\" class=\"sidebarCss\"></ion-icon>\n            Home\n          </button>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            [class.activeHIghlight]=\"checkActive(pages[2])\"\n            (click)=\"openPage(pages[2])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role != undefined && user.role == 'admin'\"\n          >\n            <ion-icon name=\"bookmarks\" class=\"sidebarCss\"></ion-icon>\n            Programs Master\n          </button>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            [class.activeHIghlight]=\"checkActive(pages[3])\"\n            (click)=\"openPage(pages[3])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role != undefined && user.role == 'admin'\"\n          >\n            <ion-icon name=\"swap\" class=\"sidebarCss\"></ion-icon>\n            State / Centers Master\n          </button>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            [class.activeHIghlight]=\"checkActive(pages[4])\"\n            (click)=\"openPage(pages[4])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role != undefined && user.role == 'admin'\"\n          >\n            <ion-icon name=\"person\" class=\"sidebarCss\"></ion-icon>\n            Users master\n          </button>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            [class.activeHIghlight]=\"checkActive(pages[5])\"\n            (click)=\"openPage(pages[5])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role == 'admin' || user.role == 'master' || user.role == 'district'\"\n          >\n            <ion-icon name=\"briefcase\" class=\"sidebarCss\"></ion-icon>\n            Franchise Enquiry\n          </button>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            [class.activeHIghlight]=\"checkActive(pages[6])\"\n            (click)=\"openPage(pages[6])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role == 'admin' || user.role == 'master' || user.role == 'district' || user.role == 'unit'\"\n          >\n            <ion-icon name=\"walk\" class=\"sidebarCss\"></ion-icon>\n            Instructor Enquiry\n          </button>\n          <button \n            menuClose \n            ion-item \n            no-lines \n            [class.activeHIghlight]=\"checkActive(pages[7])\" \n            (click)=\"openPage(pages[7])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role == 'admin' || user.role == 'master' || user.role == 'district' || user.role == 'unit'\"\n          >\n              <ion-icon name=\"school\" class=\"sidebarCss\"></ion-icon>\n              Student Enquiry\n          </button>\n          <button \n            menuClose \n            ion-item \n            no-lines \n            [class.activeHIghlight]=\"checkActive(pages[8])\" \n            (click)=\"openPage(pages[8])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role == 'admin'\"\n          >\n              <ion-icon name=\"barcode\" class=\"sidebarCss\"></ion-icon>\n              Course Price Mapping\n          </button>\n          <button \n            menuClose \n            ion-item \n            no-lines \n            [class.activeHIghlight]=\"checkActive(pages[9])\" \n            (click)=\"openPage(pages[9])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role == 'admin' || user.role == 'master' || user.role == 'district' || user.role == 'unit'\"\n          >\n              <ion-icon name=\"basket\" class=\"sidebarCss\"></ion-icon>\n              Post Order\n          </button>\n          <button\n            menuClose\n            no-lines\n            ion-item\n            [class.activeHIghlight]=\"checkActive(pages[0])\"\n            (click)=\"openPage(pages[0])\"\n            class=\"buttonSIdeBAr\"\n          >\n            <ion-icon class=\"sidebarCss\" name=\"power\"></ion-icon>\n            Logout\n          </button>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n    <ion-nav #content [root]=\"rootPage\"></ion-nav>\n  "
+            template: "\n    <ion-menu [content]=\"content\" *ngIf=\"user != null\">\n      <ion-content class=\"sideMenuIoncContent\">\n        <ion-list class=\"headerMAin\">\n          <ion-item class=\"headerBackground\">\n            <ion-list class=\"logoImage\">\n              <div\n                class=\"circle-pic\"\n                text-center\n                #profilePic\n                [style.background-image]=\"'url(' + user.profile_pic + ')'\"\n              ></div>\n            </ion-list>\n            <br />\n            <h2 class=\"userName\">Hi {{ user.name }}</h2>\n            <h3 class=\"userDetails\">{{ user.role }}</h3>\n          </ion-item>\n        </ion-list>\n\n        <ion-list list>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            style=\"border-top: 0.55px solid white;\"\n            [class.activeHIghlight]=\"checkActive(pages[1])\"\n            (click)=\"openPage(pages[1])\"\n            class=\"buttonSIdeBAr\"\n          >\n            <ion-icon name=\"home\" class=\"sidebarCss\"></ion-icon>\n            Home\n          </button>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            [class.activeHIghlight]=\"checkActive(pages[2])\"\n            (click)=\"openPage(pages[2])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role != undefined && user.role == 'admin'\"\n          >\n            <ion-icon name=\"bookmarks\" class=\"sidebarCss\"></ion-icon>\n            Programs Master\n          </button>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            [class.activeHIghlight]=\"checkActive(pages[3])\"\n            (click)=\"openPage(pages[3])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role != undefined && user.role == 'admin'\"\n          >\n            <ion-icon name=\"swap\" class=\"sidebarCss\"></ion-icon>\n            State / Centers Master\n          </button>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            [class.activeHIghlight]=\"checkActive(pages[4])\"\n            (click)=\"openPage(pages[4])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role != undefined && user.role == 'admin'\"\n          >\n            <ion-icon name=\"person\" class=\"sidebarCss\"></ion-icon>\n            Users master\n          </button>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            [class.activeHIghlight]=\"checkActive(pages[5])\"\n            (click)=\"openPage(pages[5])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role == 'admin' || user.role == 'master' || user.role == 'district'\"\n          >\n            <ion-icon name=\"briefcase\" class=\"sidebarCss\"></ion-icon>\n            Franchise Enquiry\n          </button>\n          <button\n            menuClose\n            ion-item\n            no-lines\n            [class.activeHIghlight]=\"checkActive(pages[6])\"\n            (click)=\"openPage(pages[6])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role == 'admin' || user.role == 'master' || user.role == 'district' || user.role == 'unit'\"\n          >\n            <ion-icon name=\"walk\" class=\"sidebarCss\"></ion-icon>\n            Instructor Enquiry\n          </button>\n          <button \n            menuClose \n            ion-item \n            no-lines \n            [class.activeHIghlight]=\"checkActive(pages[7])\" \n            (click)=\"openPage(pages[7])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role == 'admin' || user.role == 'master' || user.role == 'district' || user.role == 'unit'\"\n          >\n              <ion-icon name=\"school\" class=\"sidebarCss\"></ion-icon>\n              Student Enquiry\n          </button>\n          <button \n            menuClose \n            ion-item \n            no-lines \n            [class.activeHIghlight]=\"checkActive(pages[8])\" \n            (click)=\"openPage(pages[8])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role == 'admin'\"\n          >\n              <ion-icon name=\"barcode\" class=\"sidebarCss\"></ion-icon>\n              Course Price Mapping\n          </button>\n          <button \n            menuClose \n            ion-item \n            no-lines \n            [class.activeHIghlight]=\"checkActive(pages[9])\" \n            (click)=\"openPage(pages[9])\"\n            class=\"buttonSIdeBAr\"\n            *ngIf=\"user.role == 'admin' || user.role == 'master' || user.role == 'district' || user.role == 'unit'\"\n          >\n              <ion-icon name=\"basket\" class=\"sidebarCss\"></ion-icon>\n              Post Order\n          </button>\n          <button\n            menuClose\n            no-lines\n            ion-item\n            [class.activeHIghlight]=\"checkActive(pages[0])\"\n            (click)=\"openPage(pages[0])\"\n            class=\"buttonSIdeBAr\"\n          >\n            <ion-icon class=\"sidebarCss\" name=\"power\"></ion-icon>\n            Logout\n          </button>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n    <ion-nav #content [root]=\"rootPage\"></ion-nav>\n  "
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["n" /* Platform */],

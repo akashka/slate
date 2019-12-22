@@ -118,6 +118,7 @@ var WelcomePage = /** @class */ (function () {
         this.storage.get("token").then(function (value) {
             console.log("value", value);
             if (value) {
+                console.log(value);
                 _this.user.checkAuthentication(value).then(function (resp) {
                     loading.dismiss();
                     _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__home_page_home_page__["a" /* HomePage */]);
@@ -136,6 +137,7 @@ var WelcomePage = /** @class */ (function () {
     };
     WelcomePage.prototype.signIn = function () {
         var _this = this;
+        console.log(this.form.value);
         if (!this.form.valid) {
             var toast = this.toastCtrl.create({
                 message: "Email and password both are required to Sign In.",
@@ -151,12 +153,14 @@ var WelcomePage = /** @class */ (function () {
             });
             loading_1.present();
             this.user.login(this.account).subscribe(function (resp) {
+                console.log('resp', resp);
                 loading_1.dismiss();
                 _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__home_page_home_page__["a" /* HomePage */]);
             }, function (err) {
+                console.log(err);
                 loading_1.dismiss();
                 var toast = _this.toastCtrl.create({
-                    message: "Oops ! some issues has occured. Please try again later!",
+                    message: 'Invalid Credentials',
                     duration: 3000,
                     position: "top"
                 });
@@ -178,7 +182,7 @@ var WelcomePage = /** @class */ (function () {
     };
     WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-welcome",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/welcome/welcome.html"*/'<ion-content scroll="false">\n  <div class="fixed-content">\n\n    <div class="logoHeader">\n      <img alt="logo" height="60" style="position: relative" src="../assets/img/icon-512x512.png">\n    </div>\n\n    <h1 class="welcomeHeader"> &nbsp; </h1>\n\n    <form *ngIf="form" [formGroup]="form">\n      <div padding>\n        <ion-input type="email" [(ngModel)]="account.email" class="input-access-code" placeholder="Email"\n          formControlName="user_name"></ion-input>\n        <br>\n        <ion-input [type]="passwordType" [(ngModel)]="account.password" class="input-access-code" placeholder="Password"\n          formControlName="user_pass"></ion-input>\n        <br>\n        <ion-icon item-end [name]="passwordIcon" class="passwordIcon" (click)=\'hideShowPassword()\' style="z-index:9999999;">{{passwordIcon}}\n          Password</ion-icon>\n        <br> <br>\n        <a (click)="signIn()">\n          <button ion-button block class="login" style="color:white !important;">{{ \'LOGIN\' | translate }}</button>\n        </a>\n      </div>\n    </form>\n\n  </div>\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/welcome/welcome.html"*/
+            selector: "page-welcome",template:/*ion-inline-start:"/home/akash/Code/akash/slate/src/pages/welcome/welcome.html"*/'<ion-content scroll="false">\n  <div class="">\n\n    <div class="logoHeader fadeInDownBig">\n      <img alt="logo" height="60" style="position: relative" src="../assets/img/icon-512x512.png">\n    </div>\n\n    <h1 class="welcomeHeader"> &nbsp; </h1>\n\n    <form *ngIf="form" [formGroup]="form">\n      <div padding>\n        <ion-input type="email" [(ngModel)]="account.email" class="input-access-code fadeInLeft" placeholder="Email"\n          formControlName="user_name"></ion-input>\n        <br>\n        <ion-input [type]="passwordType" [(ngModel)]="account.password" class="input-access-code fadeInRight" placeholder="Password"\n          formControlName="user_pass"></ion-input>\n        <br>\n        <ion-icon item-end [name]="passwordIcon" class="passwordIcon fadeInRight" (click)=\'hideShowPassword()\' style="z-index:9999999;">{{passwordIcon}}\n          Password</ion-icon>\n        <br> <br>\n        <a (click)="signIn()">\n          <button ion-button block class="login fadeInUp" style="color:white !important;">{{ \'LOGIN\' | translate }}</button>\n        </a>\n      </div>\n    </form>\n\n  </div>\n</ion-content>'/*ion-inline-end:"/home/akash/Code/akash/slate/src/pages/welcome/welcome.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ToastController */],
