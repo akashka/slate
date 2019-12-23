@@ -256,3 +256,62 @@ ion-searchbar {
 .tabbar{
   background: #a5a5d2 !important;
 }
+
+side-main-menu .sideMenuIoncContent .scroll-content, side-main-menu .headerMAin, side-main-menu .buttonSIdeBAr{
+  background: #7979af !important;
+}
+
+side-main-menu .headerMAin .headerBackground {
+  background: #7879af !important;
+}
+
+side-main-menu .sideMenuIoncContent .headerMAin {
+  background: #7879af !important;
+  margin: 16px 8px;
+}
+
+side-main-menu .circle-pic {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #ffffff !important;
+  font-size: 12px;
+}
+
+h2 {
+  color: #ffffff !important;
+}
+
+side-main-menu .userDetails {
+  color: #ffffff !important;
+  text-align: center;
+  font-family: "sans-serif";
+  font-weight: bold;
+}
+
+side-main-menu .activeHIghlight {
+  background-color: #353669 !important;
+}
+
+ion-footer .button-md {
+  color: white;
+  background-color: #a4a5d2 !important;
+  font-size: 22px;
+}
+
+side-main-menu .toolbar-background {
+  background-color: #9292ef !important;
+}
+
+.tabs-md .tab-button[aria-selected=true] {
+  color: #353668 !important;
+}
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+  color: #353668 !important;
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+}

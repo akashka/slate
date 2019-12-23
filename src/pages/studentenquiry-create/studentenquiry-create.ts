@@ -48,7 +48,7 @@ export class StudentEnquiryAddPage {
     this.form = formBuilder.group({
       name: ['', Validators.compose([Validators.required])],
       state: ['', Validators.compose([Validators.required])],
-      district: ['', Validators.compose([Validators.required])],
+      district: ['', Validators.compose([])],
       area: ['', Validators.compose([Validators.required])],
       program: [[], Validators.compose([Validators.required])],
       address: ['', Validators.compose([Validators.required])],
