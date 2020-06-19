@@ -11,3 +11,4 @@ export { PostOrder } from './postorder/postorder';
 export { Notifications } from './notifications/notifications';
 export { Passbook } from './passbook/passbook';
 export { Inventory } from './inventory/inventory';
+export { Online } from './online/online';

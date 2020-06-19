@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      ONLINE ADMISSIONS
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="download()">
+        <ion-icon name="download"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <div class="search-row search-full">
+      <ion-searchbar [(ngModel)]="myInput" (animated)="true" (placeholder)="Search" (ionInput)="search()">
+      </ion-searchbar>
+    </div>
+
+    <img src="assets/images/emoji-faces.jpg" class="emozi" *ngIf="students && !students.length" />
+    <h1 *ngIf="students && !students.length" class="no_record"> NO RECORDS FOUND </h1>
+
+    <ion-item-sliding *ngFor="let student of students" class="results_list_mobile">
+
+      <button ion-item>
+        <div class="col_left">
+          <div *ngIf="student.photo"><img src={{student.photo}} class="bg_student" /></div>
+          <div *ngIf="!student.photo"><img src="assets/img/avatar.png" class="bg_student" /></div>
+          <div *ngIf="student.paymentStatus === 'SUCCESS' || student.paymentStatus === 'PAID'">
+            <ion-badge color="success" style="width: 100%;background-color: green;">PAID</ion-badge>
+          </div>
+        </div>
+        <div class="col_right">
+          <h2>{{student.txtsname}}</h2>
+          <a (click)="presentActionSheet(student)">
+            <ion-icon name="call"></ion-icon> {{student.txtscontact}}
+          </a>
+          <h3>
+            <ion-icon name="clock"></ion-icon> {{student.txtsdob | date: 'dd/MMM/yyyy'}}
+          </h3>
+          <h3>
+            <ion-icon name="locate"></ion-icon> {{student.txtsadd}}
+          </h3>
+          <p>{{convertArrayToStrings(student.txtprograms)}}</p>
+        </div>
+      </button>
+
+      <ion-item-options side="right">
+        <button ion-button color="secondary" (click)="presentActionSheet(student)">
+          <ion-icon name="call"></ion-icon>
+          Contact
+        </button>
+        <button ion-button color="primary" (click)="action(student)">
+          <ion-icon name="cog"></ion-icon>
+          Actions
+        </button>
+      </ion-item-options>
+
+    </ion-item-sliding>
+
+  </ion-list>
+</ion-content>

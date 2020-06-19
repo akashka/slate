@@ -1,0 +1,74 @@
+<form id="redirectForm" method="post" action="https://www.cashfree.com/checkout/post/submit">
+  <input type="hidden" name="appId" id="appId" value="" />
+  <input type="hidden" name="orderId" id="orderId" value="" />
+  <input type="hidden" name="orderAmount" id="orderAmount" value="" />
+  <input type="hidden" name="orderCurrency" value="INR" />
+  <input type="hidden" name="customerName" id="customerName" value="" />
+  <input type="hidden" name="customerEmail" id="customerEmail" value="" />
+  <input type="hidden" name="customerPhone" id="customerPhone" value="" />
+  <input type="hidden" name="returnUrl" value="https://slate-server.herokuapp.com/api/online/payments" />
+  <input type="hidden" name="notifyUrl" value="https://slate-server.herokuapp.com/api/online/payments" />
+  <input type="hidden" name="signature" id="signature" value="" />
+  <input type="submit" value="pay cashfree" id="payBtn" style="display:none" />
+</form>
+
+<ion-header class="onlne-create-header">
+  <ion-navbar color="primary">
+    <ion-title>{{ 'FEES PAYMENT' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <br />
+  <br />
+
+  <ion-card *ngFor="let item of programs">
+    <ion-card-header>
+      <p><b>{{item}}</b></p>
+      <ion-row>
+        <ion-col>
+          <p>Registration Fee</p>
+        </ion-col>
+        <ion-col>
+          <p>₹ 2000</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p>Level 1 Fee</p>
+        </ion-col>
+        <ion-col>
+          <p>₹ 4500</p>
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+
+  </ion-card>
+
+  <ion-row style="padding: 0 15px;">
+    <ion-col style="flex: 0 0 66%; width: 66%; max-width: 66%;">
+      <h3>TOTAL PAYABLE</h3>
+    </ion-col>
+    <ion-col style="flex: 0 0 33%; width: 33%; max-width: 33%;">
+      <h3 style="float: right;">₹ {{programs.length * 6500}}</h3>
+    </ion-col>
+  </ion-row>
+
+  <br />
+  <p style="text-align: center;">You can <b>Pay Now</b> through our safe payment gateway </p>
+  <p style="text-align: center;">OR</p>
+  <p style="text-align: center;">Pay at our centers by clicking on <b>Pay Later</b> button. </p>
+
+</ion-content>
+
+<ion-footer no-border class="online-create-footer">
+  <ion-toolbar transparent>
+    <button ion-button half (click)="payLater()">
+      {{ 'PAY LATER' | translate }}
+    </button>
+    <button ion-button half (click)="payNow()">
+      {{ 'PAY NOW' | translate }}
+    </button>
+  </ion-toolbar>
+</ion-footer>

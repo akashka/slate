@@ -475,6 +475,14 @@ module.exports = [
     "merges": [
       ""
     ]
+  },
+  {
+    "id": "cordova-plugin-customurlscheme.LaunchMyApp",
+    "file": "plugins/cordova-plugin-customurlscheme/www/android/LaunchMyApp.js",
+    "pluginId": "cordova-plugin-customurlscheme",
+    "clobbers": [
+      "window.plugins.launchmyapp"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -500,7 +508,8 @@ module.exports.metadata =
   "cordova-uxcam": "3.0.2",
   "cordova.plugins.diagnostic": "4.0.12",
   "phonegap-plugin-multidex": "1.0.0",
-  "cordova-plugin-contacts": "3.0.1"
+  "cordova-plugin-contacts": "3.0.1",
+  "cordova-plugin-customurlscheme": "5.0.1"
 };
 // BOTTOM OF METADATA
 });

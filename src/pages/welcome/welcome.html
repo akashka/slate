@@ -1,25 +1,50 @@
-<ion-content scroll="false">
+<ion-content scroll="false" *ngIf="loginRole == ''">
+
+  <div class="student fadeInDownBig" (click)="loginAs('student')">
+    <img src="../../assets/img/imageedit_1_6160473537.png" />
+  </div>
+
+  <div class="franchise fadeInLeft" (click)="loginAs('franchise')">
+    <img src="../../assets/img/imageedit_18_8861331182.png" />
+  </div>
+
+  <div class="admin fadeInRight" (click)="loginAs('admin')">
+    <img src="../../assets/img/imageedit_17_3302521817.png" />
+    </div>
+
+</ion-content>
+
+<ion-content scroll="false" *ngIf="loginRole != ''">
   <div class="">
 
     <div class="logoHeader fadeInDownBig">
       <img alt="logo" height="60" style="position: relative" src="../assets/img/icon-512x512.png">
     </div>
 
-    <h1 class="welcomeHeader"> &nbsp; </h1>
+    <h1 class="welcomeHeader"> 
+      Login as 
+      <a (click)="removeRole()" style="color:#61a842;text-decoration:underline !important;" > {{loginRole}} </a>
+    </h1>
 
     <form *ngIf="form" [formGroup]="form">
       <div padding>
         <ion-input type="email" [(ngModel)]="account.email" class="input-access-code fadeInLeft" placeholder="Email"
           formControlName="user_name"></ion-input>
         <br>
-        <ion-input [type]="passwordType" [(ngModel)]="account.password" class="input-access-code fadeInRight" placeholder="Password"
-          formControlName="user_pass"></ion-input>
+        <ion-input [type]="passwordType" [(ngModel)]="account.password" class="input-access-code fadeInRight"
+          placeholder="Password" formControlName="user_pass"></ion-input>
         <br>
-        <ion-icon item-end [name]="passwordIcon" class="passwordIcon fadeInRight" (click)='hideShowPassword()' style="z-index:9999999;">{{passwordIcon}}
+        <ion-icon item-end [name]="passwordIcon" class="passwordIcon fadeInRight" (click)='hideShowPassword()'
+          style="z-index:9999999;">{{passwordIcon}}
           Password</ion-icon>
-        <br> <br>
+        <br>
         <a (click)="signIn()">
-          <button ion-button block class="login fadeInUp" style="color:white !important;">{{ 'LOGIN' | translate }}</button>
+          <button ion-button block class="login fadeInUp"
+            style="color:white !important;">{{ 'LOGIN' | translate }}</button>
+        </a>
+        <a (click)="registerOnline()" *ngIf="loginRole === 'student'">
+          <button ion-button block class="register fadeInUp"
+            style="color:white !important;">{{ 'REGISTER' | translate }}</button>
         </a>
       </div>
     </form>

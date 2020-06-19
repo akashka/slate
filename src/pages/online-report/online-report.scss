@@ -1,0 +1,25 @@
+.col_left {
+    float: left;
+    width: 25%;
+    padding-top: 5px;
+}
+
+.col_right{
+    float: right;
+    width: 70%;
+    position: relative;
+    height: 105px;
+}
+
+.results_list_mobile .item {
+    padding-left: 0;
+    border-bottom: 3px solid #bcbdd3;
+}
+
+.results_list_mobile .item .item-inner {
+    padding-left: 8px;
+}
+
+.results_list_mobile .label {
+    margin: 10px 0;
+}

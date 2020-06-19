@@ -73,6 +73,13 @@
     },
     "cordova-plugin-contacts": {
       "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-customurlscheme": {
+      "URL_SCHEME": "slatebyalohaindia",
+      "ANDROID_SCHEME": " ",
+      "ANDROID_HOST": " ",
+      "ANDROID_PATHPREFIX": "/",
+      "PACKAGE_NAME": "com.aloha.slate"
     }
   },
   "dependent_plugins": {}

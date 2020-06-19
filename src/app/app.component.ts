@@ -119,12 +119,26 @@ import { Storage } from "@ionic/storage";
               <ion-icon name="school" class="sidebarCss"></ion-icon>
               Student Enquiry
           </button>
+
           <button 
             menuClose 
             ion-item 
             no-lines 
             [class.activeHIghlight]="checkActive(pages[8])" 
             (click)="openPage(pages[8])"
+            class="buttonSIdeBAr"
+            *ngIf="user.role == 'admin'"
+          >
+              <ion-icon name="globe" class="sidebarCss"></ion-icon>
+              Online Report
+          </button>
+
+          <button 
+            menuClose 
+            ion-item 
+            no-lines 
+            [class.activeHIghlight]="checkActive(pages[9])" 
+            (click)="openPage(pages[9])"
             class="buttonSIdeBAr"
             *ngIf="user.role == 'admin'"
           >
@@ -135,8 +149,8 @@ import { Storage } from "@ionic/storage";
             menuClose 
             ion-item 
             no-lines 
-            [class.activeHIghlight]="checkActive(pages[9])" 
-            (click)="openPage(pages[9])"
+            [class.activeHIghlight]="checkActive(pages[10])" 
+            (click)="openPage(pages[10])"
             class="buttonSIdeBAr"
             *ngIf="user.role == 'admin' || user.role == 'master' || user.role == 'district' || user.role == 'unit'"
           >
@@ -183,6 +197,7 @@ export class MyApp {
     { title: "Franchise Enquiry", component: "FranchiseEnquiryListPage" },
     { title: "Instructor Enquiry", component: "InstructorEnquiryListPage" },
     { title: 'Student Enquiry', component: 'StudentEnquiryListPage' },
+    { title: 'Online Report', component: 'OnlineReportPage' },
     { title: 'Course Price Mapping', component: 'CourseMappingPage' },
     { title: 'Post Order', component: 'PostOrderListPage' },
     // { title: 'Signup', component: 'LoginPage' },

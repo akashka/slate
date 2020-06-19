@@ -36455,7 +36455,7 @@ side-main-menu .logoImage {
 
 side-main-menu .circle-pic {
   display: inline-block;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 100px;
@@ -36528,6 +36528,11 @@ side-main-menu .menu-inner {
 page-welcome .text-input-md {
   color: #1ABC9C !important;
   text-align: left !important;
+}
+
+page-welcome .input-access-code {
+  border: none !important;
+  border-bottom: 1.5px solid #0b4877 !important;
 }
 
 .branchtab .list .item .item-accordion {
@@ -36670,6 +36675,17 @@ ion-card:last-of-type {
 
 ion-item {
   background-color: #fff;
+}
+
+.uploadDocuments ion-item {
+  min-height: 75px;
+}
+
+.uploadDocuments .sm-label {
+  color: grey;
+  font-size: 14px;
+  position: absolute;
+  margin: 25px 0;
 }
 
 .franchise-enquiry {
@@ -36830,6 +36846,134 @@ ion-item {
 
 .instructor-confirm {
   color: green;
+}
+
+.onlne-create-header .back-button {
+  display: none !important;
+}
+
+.onlne-create-header .toolbar-content {
+  text-align: center !important;
+}
+
+.online-create-footer .button {
+  width: 48%;
+}
+
+.online-upload {
+  padding: 2rem !important;
+  background: cadetblue;
+  border-radius: 15rem;
+}
+
+.online-image-display {
+  margin: 0;
+  height: 150px !important;
+  width: 150px !important;
+  float: right;
+  border-radius: 0 !important;
+}
+
+.col_left {
+  float: left;
+  width: 25%;
+  padding-top: 5px;
+}
+
+.col_right {
+  float: right;
+  width: 70%;
+  position: relative;
+  height: 105px;
+}
+
+.results_list_mobile .item {
+  padding-left: 0;
+  border-bottom: 3px solid #bcbdd3;
+}
+
+.results_list_mobile .item .item-inner {
+  padding-left: 8px;
+}
+
+.results_list_mobile .label {
+  margin: 10px 0;
+}
+
+.onlne-create-header .back-button {
+  display: none !important;
+}
+
+.onlne-create-header .toolbar-content {
+  text-align: center !important;
+}
+
+.online-create-footer .button {
+  width: 48%;
+}
+
+.online-upload {
+  padding: 2rem !important;
+  background: cadetblue;
+  border-radius: 15rem;
+}
+
+.online-image-display {
+  margin: 0;
+  height: 150px !important;
+  width: 150px !important;
+  float: right;
+  border-radius: 0 !important;
+}
+
+.summary_row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: -15px;
+  width: 107.5%;
+}
+
+.summarycell {
+  width: 25%;
+}
+
+.summary_row:first-child .summarycell {
+  font-weight: bold;
+  text-align: center;
+}
+
+.cell {
+  overflow: auto;
+  word-wrap: break-word;
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 10px;
+  text-align: right;
+  font-size: 15px;
+}
+
+.summarycell1 {
+  width: 35%;
+}
+
+.summarycell2 {
+  width: 20%;
+}
+
+.summarycell3 {
+  width: 20%;
+}
+
+.summarycell4 {
+  width: 25%;
 }
 
 profile-page .profile-image-wrapper {
@@ -37113,13 +37257,13 @@ page-welcome img {
 }
 
 page-welcome .fixed-content {
-  background-image: url(http://www.alohaindia.com/wp-content/uploads/img/cloud.jpg);
+  background-image: url(../assets/img/abstract-blue-backgrounds-34_1920x1200_71451.jpg);
   background-size: cover;
+  opacity: 0.75;
 }
 
 page-welcome .logoHeader {
   text-align: center !important;
-  margin-top: 10% !important;
 }
 
 page-welcome .splash-bg {
@@ -37176,12 +37320,14 @@ page-welcome .splash-intro {
 page-welcome button.login {
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  background: #1ABC9C !important;
+  background: #61a842 !important;
   padding: 22px !important;
+  font-weight: bolder;
+  font-size: 22px;
 }
 
 page-welcome button.login.activated {
-  background-color: #1ABC9C;
+  background-color: #42cafc;
 }
 
 page-welcome button.signup {
@@ -37191,31 +37337,34 @@ page-welcome button.signup {
   padding: 19px !important;
 }
 
-page-welcome input, page-welcome select, page-welcome textarea {
-  color: #1ABC9C !important;
-  text-align: center !important;
+page-welcome input,
+page-welcome select,
+page-welcome textarea {
+  color: !important;
+  font-weight: bold;
+  font-size: large;
 }
 
 page-welcome ::-webkit-input-placeholder {
-  text-align: center;
-  color: #1ABC9C !important;
+  color: !important;
+  font-weight: bolder;
 }
 
 page-welcome :-moz-placeholder {
   /* Firefox 18- */
-  text-align: center;
-  color: #1ABC9C !important;
+  color: !important;
+  font-weight: bolder;
 }
 
 page-welcome ::-moz-placeholder {
   /* Firefox 19+ */
-  text-align: center;
-  color: #1ABC9C !important;
+  color: !important;
+  font-weight: bolder;
 }
 
 page-welcome :-ms-input-placeholder {
-  text-align: center;
-  color: #1ABC9C !important;
+  color: !important;
+  font-weight: bolder;
 }
 
 page-welcome .scroll-content {
@@ -37225,17 +37374,22 @@ page-welcome .scroll-content {
 }
 
 page-welcome .input-access-code {
-  border: 3px solid #1ABC9C !important;
+  border: 1px solid #60a842 !important;
+  border-bottom: 3px solid #60a842 !important;
 }
 
 page-welcome .content-md {
-  background-color: black !important;
+  background-color: white !important;
 }
 
 page-welcome .welcomeHeader {
   text-align: center;
   color: #1ABC9C;
   font-family: "sans-serif";
+  font-weight: bold;
+  color: #343434;
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 page-welcome .content-ios {
@@ -37252,7 +37406,14 @@ page-welcome .create_account {
   padding-top: 8%;
 }
 
-page-welcome .login disable-hover button button-ios button-default button-default-ios button-block button-block-ios {
+page-welcome .login
+disable-hover
+button
+button-ios
+button-default
+button-default-ios
+button-block
+button-block-ios {
   background-color: #1ABC9C;
 }
 
@@ -37261,12 +37422,13 @@ page-welcome .login disable-hover button button-ios button-default button-defaul
   padding: 0;
   margin: 0;
   float: right;
-  color: #488aff !important;
-  text-decoration: underline;
+  color: blue !important;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 ion-header {
-  background-image: url(http://www.alohaindia.com/wp-content/uploads/img/cloud.jpg);
+  background-image: url();
 }
 
 .welcome-footer {
@@ -37285,4 +37447,238 @@ ion-header {
   color: black;
   text-align: center;
   width: 100%;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDownBig {
+  -webkit-animation: fadeInDown 1s ease 0.5s;
+  animation: fadeInDown 1s ease 0.5s;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation: fadeInLeft 1s ease 0.4s;
+  animation: fadeInLeft 1s ease 0.4s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation: fadeInRight 1s ease 0.4s;
+  animation: fadeInRight 1s ease 0.4s;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation: fadeInUp 1s ease 0.5s;
+  animation: fadeInUp 1s ease 0.5s;
+}
+
+side-main-menu .toolbar-background {
+  background-color: #0e2f8e !important;
+}
+
+ion-searchbar {
+  background: #c4c4dc !important;
+}
+
+.tabbar {
+  background: #a5a5d2 !important;
+}
+
+.register {
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  background: #6e6a52 !important;
+  padding: 22px !important;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.register.activated {
+  background-color: #58ae4e;
+}
+
+.student img {
+  width: 100% !important;
+}
+
+.student h4 {
+  position: absolute;
+  top: 1em;
+  background: #37553e;
+  color: white;
+  left: 6em;
+}
+
+.student h3 {
+  position: absolute;
+  top: 2em;
+  background: #37553e;
+  color: white;
+  left: 9.5em;
+}
+
+.student h2 {
+  position: absolute;
+  top: 2.7em;
+  color: #e7f5f8 !important;
+  left: 7.25em;
+  background: #37553e;
+}
+
+.franchise img {
+  width: 100% !important;
+}
+
+.franchise h4 {
+  position: absolute;
+  top: 9em;
+  background: #314b33;
+  color: white;
+  left: 5em;
+}
+
+.franchise h3 {
+  position: absolute;
+  top: 9.5em;
+  background: #314b33;
+  color: white;
+  left: 8em;
+}
+
+.franchise h5 {
+  position: absolute;
+  top: 14em;
+  color: white !important;
+  left: 5.5em;
+  background: #314b33;
+}
+
+.admin img {
+  width: 100% !important;
+}
+
+.admin h4 {
+  position: absolute;
+  top: 18em;
+  color: white;
+  left: 5em;
+}
+
+.admin h3 {
+  position: absolute;
+  top: 18em;
+  color: white;
+  left: 5em;
+}
+
+.admin h2 {
+  position: absolute;
+  top: 18em;
+  color: #e7f5f8 !important;
+  left: 3.75em;
+}
+
+page-welcome .text-input-md {
+  color: black !important;
 }

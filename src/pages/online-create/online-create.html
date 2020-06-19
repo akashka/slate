@@ -1,0 +1,203 @@
+<ion-header class="onlne-create-header" *ngIf="order > 0">
+  <ion-navbar color="primary">
+    <ion-title *ngIf="order === 1">{{ 'Student Details' | translate }}</ion-title>
+    <ion-title *ngIf="order === 2">{{ 'Family Details' | translate }}</ion-title>
+    <ion-title *ngIf="order === 3">{{ 'Upload Details' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content *ngIf="order > 0">
+  <form [formGroup]="form">
+    <ion-list>
+
+      <div *ngIf="order === 1">
+        <ion-item>
+          <ion-label floating>{{ 'Name Of Student' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-input type="text" formControlName="txtsname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Date Of Birth' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-datetime displayFormat="DD MMM YYYY" formControlName="txtsdob"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Address of Student' | translate }} <span class="mandatory-field"> * </span>
+          </ion-label>
+          <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="txtsadd">
+          </ion-textarea>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Contact No' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-input type="number" formControlName="txtscontact" (ionChange)="onPhoneChange($event)"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Email ID' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-input type="text" formControlName="txtsemail"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Language' | translate }} </ion-label>
+          <ion-input type="text" formControlName="txtlanguage"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Interests' | translate }} </ion-label>
+          <ion-input type="text" formControlName="txtinterest"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Name Of School' | translate }} </ion-label>
+          <ion-input type="text" formControlName="txtschool"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Address of School' | translate }} </ion-label>
+          <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()"
+            formControlName="txtschooladd">
+          </ion-textarea>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'Programs' | translate }} <span class="mandatory-field"> * </span>
+          </ion-label>
+          <ion-select multiple="true" cancelText="Cancel" okText="Okay" formControlName="txtprograms">
+            <ion-option value={{program}} *ngFor="let program of programmes">{{program}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ 'How do you know Aloha?' | translate }} </ion-label>
+          <ion-select multiple="true" cancelText="Cancel" okText="Okay" formControlName="txthdyk">
+            <ion-option value={{referral}} *ngFor="let referral of referralOptions">{{referral}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "Referral Code" | translate }} <span class="mandatory-field"> * </span> </ion-label>
+          <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="referralcode">
+            <ion-option value={{referralCode}} *ngFor="let referralCode of referralCodeOptions">{{referralCode}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+      </div>
+
+      <div *ngIf="order === 2">
+        <ion-item>
+          <ion-label floating>{{ "Father's Name" | translate }} </ion-label>
+          <ion-input type="text" formControlName="txtfname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "Father's Occupation" | translate }} </ion-label>
+          <ion-input type="text" formControlName="txtfoccupation"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "Father's Office Address" | translate }} </ion-label>
+          <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="txtfoffadd">
+          </ion-textarea>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "Father's Contact No" | translate }} </ion-label>
+          <ion-input type="number" formControlName="txtfoffcontact"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "Father's Email" | translate }} </ion-label>
+          <ion-input type="string" formControlName="txtfmail"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "Mother's Name" | translate }} </ion-label>
+          <ion-input type="text" formControlName="txtmname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "Mother's Occupation" | translate }} </ion-label>
+          <ion-input type="text" formControlName="txtmoccupation"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "Mother's Office Address" | translate }} </ion-label>
+          <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="txtmoffadd">
+          </ion-textarea>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "Mother's Contact No" | translate }} </ion-label>
+          <ion-input type="number" formControlName="txtmoffcontact"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>{{ "Mother's Email" | translate }} </ion-label>
+          <ion-input type="string" formControlName="txtmmail"></ion-input>
+        </ion-item>
+      </div>
+
+      <div *ngIf="order === 3">
+        <ion-item style="height: 200px;">
+          <!-- <ion-label>{{ "Upload Photo" | translate }} </ion-label> -->
+          <button ion-button color="secondary" class="online-upload" (click)="upload('photo')" *ngIf="form.controls.photo.value === ''">
+            Upload Photo
+          </button>
+          <button ion-button color="secondary" class="online-upload" (click)="upload('photo')" *ngIf="form.controls.photo.value !== ''">
+            Replace Photo
+          </button>
+          <img src={{form.controls.photo.value}} *ngIf="form.controls.photo.value !== ''" class="online-image-display" />
+          <img src="https://identix.state.gov/qotw/images/no-photo.gif" *ngIf="form.controls.photo.value === ''" class="online-image-display" />
+        </ion-item>
+
+        <ion-item style="height: 200px;">
+          <!-- <ion-label>{{ "Upload ID Proof" | translate }} </ion-label> -->
+          <button ion-button color="secondary" class="online-upload" (click)="upload('idproof')" *ngIf="form.controls.idproof.value === ''">
+            Upload ID Proof
+          </button>
+          <button ion-button color="secondary" class="online-upload" (click)="upload('idproof')" *ngIf="form.controls.idproof.value !== ''">
+            Replace ID Proof
+          </button>
+          <img src={{form.controls.idproof.value}} *ngIf="form.controls.idproof.value !== ''" class="online-image-display" />
+          <img src="https://identix.state.gov/qotw/images/no-photo.gif" *ngIf="form.controls.idproof.value === ''" class="online-image-display" />
+        </ion-item>
+
+      </div>
+
+    </ion-list>
+  </form>
+
+  <p style="color: red; font-weight: bolder;">{{errorMsg}}</p>
+</ion-content>
+
+<ion-footer no-border class="online-create-footer" *ngIf="order > 0">
+  <ion-toolbar transparent>
+    <button ion-button half (click)="cancel()" *ngIf="order === 1">
+      {{ 'CANCEL' | translate }}
+    </button>
+    <button ion-button half (click)="next(2)" [disabled]="!isReadyToSave1" *ngIf="order === 1">
+      {{ 'NEXT' | translate }}
+    </button>
+
+    <button ion-button half (click)="next(1)" [disabled]="!isReadyToSave1" *ngIf="order === 2">
+      {{ 'BACK' | translate }}
+    </button>
+    <button ion-button half (click)="next(3)" *ngIf="order === 2 && !isReadyToSave2">
+      {{ 'SKIP' | translate }}
+    </button>
+    <button ion-button half (click)="next(3)" *ngIf="order === 2 && isReadyToSave2">
+      {{ 'NEXT' | translate }}
+    </button>
+
+    <button ion-button half (click)="next(2)" *ngIf="order === 3">
+      {{ 'BACK' | translate }}
+    </button>
+    <button ion-button half (click)="save()" *ngIf="order === 3 && !isReadyToSave3">
+      {{ 'SAVE' | translate }}
+    </button>
+    <button ion-button half (click)="save()" *ngIf="order === 3 && isReadyToSave3">
+      {{ 'SAVE' | translate }}
+    </button>
+  </ion-toolbar>
+</ion-footer>

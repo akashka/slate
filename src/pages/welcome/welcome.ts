@@ -5,13 +5,16 @@ import {
   NavController,
   ToastController,
   LoadingController,
-  ViewController
+  ViewController,
+  Platform
 } from "ionic-angular";
 import { TranslateService } from "@ngx-translate/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { User } from "../../providers";
 import { UsersPage } from "../users-lists/users_lists";
 import { HomePage } from "../home-page/home-page";
+import { OnlineAddPage } from "../online-create/online-create";
+import { PaymentIntegrationPage } from "../payment-integration/payment-integration";
 import { Storage } from "@ionic/storage";
 import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
 
@@ -24,6 +27,7 @@ export class WelcomePage {
   form: FormGroup;
   isReadyToSave: boolean;
   falsemsg: string;
+  loginRole = '';
 
   // @ViewChild(Nav) nav: Nav;
   pages: any[] = [{ title: "Users Lists", component: "UsersPage" }];
@@ -73,8 +77,20 @@ export class WelcomePage {
     public app: App,
     public user: User,
     public storage: Storage,
-    public iab: InAppBrowser
+    public iab: InAppBrowser,
+    public platform: Platform
   ) {
+    this.platform.backButton.subscribe(() => {
+      this.storage.remove('selectedUserRole');
+      this.loginRole = '';  
+    });
+
+    this.storage.get("selectedUserRole").then(val => {
+      if (val) {
+        this.loginRole = val;
+      }
+    });
+
     this.isLoggedIn();
 
     this.form = formBuilder.group({
@@ -134,6 +150,20 @@ export class WelcomePage {
     }
   }
 
+  loginAs(role) {
+    this.storage.set('selectedUserRole', role);
+    this.loginRole = role;
+  }
+
+  removeRole() {
+    this.storage.remove('selectedUserRole');
+    this.loginRole = '';  
+  }
+
+  registerOnline() {
+    this.navCtrl.push(OnlineAddPage);    
+  }
+
   contactUs() {
     const browser = this.iab.create("http://www.alohaindia.com/contact-us/");
     browser.show();
@@ -148,4 +178,5 @@ export class WelcomePage {
     const browser = this.iab.create("http://www.alohaindia.com/faq/");
     browser.show();
   }
+
 }

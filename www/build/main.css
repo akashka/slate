@@ -36848,6 +36848,84 @@ ion-item {
   color: green;
 }
 
+.onlne-create-header .back-button {
+  display: none !important;
+}
+
+.onlne-create-header .toolbar-content {
+  text-align: center !important;
+}
+
+.online-create-footer .button {
+  width: 48%;
+}
+
+.online-upload {
+  padding: 2rem !important;
+  background: cadetblue;
+  border-radius: 15rem;
+}
+
+.online-image-display {
+  margin: 0;
+  height: 150px !important;
+  width: 150px !important;
+  float: right;
+  border-radius: 0 !important;
+}
+
+.col_left {
+  float: left;
+  width: 25%;
+  padding-top: 5px;
+}
+
+.col_right {
+  float: right;
+  width: 70%;
+  position: relative;
+  height: 105px;
+}
+
+.results_list_mobile .item {
+  padding-left: 0;
+  border-bottom: 3px solid #bcbdd3;
+}
+
+.results_list_mobile .item .item-inner {
+  padding-left: 8px;
+}
+
+.results_list_mobile .label {
+  margin: 10px 0;
+}
+
+.onlne-create-header .back-button {
+  display: none !important;
+}
+
+.onlne-create-header .toolbar-content {
+  text-align: center !important;
+}
+
+.online-create-footer .button {
+  width: 48%;
+}
+
+.online-upload {
+  padding: 2rem !important;
+  background: cadetblue;
+  border-radius: 15rem;
+}
+
+.online-image-display {
+  margin: 0;
+  height: 150px !important;
+  width: 150px !important;
+  float: right;
+  border-radius: 0 !important;
+}
+
 .summary_row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -37179,13 +37257,13 @@ page-welcome img {
 }
 
 page-welcome .fixed-content {
-  background-image: url(http://imgs.mi9.com/uploads/abstract/4147/abstract-blue-backgrounds-34_1920x1200_71451.jpg);
+  background-image: url(../assets/img/abstract-blue-backgrounds-34_1920x1200_71451.jpg);
   background-size: cover;
+  opacity: 0.75;
 }
 
 page-welcome .logoHeader {
   text-align: center !important;
-  margin-top: 10% !important;
 }
 
 page-welcome .splash-bg {
@@ -37242,8 +37320,10 @@ page-welcome .splash-intro {
 page-welcome button.login {
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  background: #42cafc !important;
+  background: #61a842 !important;
   padding: 22px !important;
+  font-weight: bolder;
+  font-size: 22px;
 }
 
 page-welcome button.login.activated {
@@ -37257,7 +37337,9 @@ page-welcome button.signup {
   padding: 19px !important;
 }
 
-page-welcome input, page-welcome select, page-welcome textarea {
+page-welcome input,
+page-welcome select,
+page-welcome textarea {
   color: !important;
   font-weight: bold;
   font-size: large;
@@ -37292,8 +37374,8 @@ page-welcome .scroll-content {
 }
 
 page-welcome .input-access-code {
-  border: 1px solid #42cafc !important;
-  border-bottom: 3px solid #42cafc !important;
+  border: 1px solid #60a842 !important;
+  border-bottom: 3px solid #60a842 !important;
 }
 
 page-welcome .content-md {
@@ -37304,6 +37386,10 @@ page-welcome .welcomeHeader {
   text-align: center;
   color: #1ABC9C;
   font-family: "sans-serif";
+  font-weight: bold;
+  color: #343434;
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 page-welcome .content-ios {
@@ -37320,7 +37406,14 @@ page-welcome .create_account {
   padding-top: 8%;
 }
 
-page-welcome .login disable-hover button button-ios button-default button-default-ios button-block button-block-ios {
+page-welcome .login
+disable-hover
+button
+button-ios
+button-default
+button-default-ios
+button-block
+button-block-ios {
   background-color: #1ABC9C;
 }
 
@@ -37329,8 +37422,9 @@ page-welcome .login disable-hover button button-ios button-default button-defaul
   padding: 0;
   margin: 0;
   float: right;
-  color: #42cafc !important;
+  color: blue !important;
   text-decoration: none;
+  font-size: 1em;
 }
 
 ion-header {
@@ -37489,4 +37583,102 @@ ion-searchbar {
 
 .tabbar {
   background: #a5a5d2 !important;
+}
+
+.register {
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  background: #6e6a52 !important;
+  padding: 22px !important;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.register.activated {
+  background-color: #58ae4e;
+}
+
+.student img {
+  width: 100% !important;
+}
+
+.student h4 {
+  position: absolute;
+  top: 1em;
+  background: #37553e;
+  color: white;
+  left: 6em;
+}
+
+.student h3 {
+  position: absolute;
+  top: 2em;
+  background: #37553e;
+  color: white;
+  left: 9.5em;
+}
+
+.student h2 {
+  position: absolute;
+  top: 2.7em;
+  color: #e7f5f8 !important;
+  left: 7.25em;
+  background: #37553e;
+}
+
+.franchise img {
+  width: 100% !important;
+}
+
+.franchise h4 {
+  position: absolute;
+  top: 9em;
+  background: #314b33;
+  color: white;
+  left: 5em;
+}
+
+.franchise h3 {
+  position: absolute;
+  top: 9.5em;
+  background: #314b33;
+  color: white;
+  left: 8em;
+}
+
+.franchise h5 {
+  position: absolute;
+  top: 14em;
+  color: white !important;
+  left: 5.5em;
+  background: #314b33;
+}
+
+.admin img {
+  width: 100% !important;
+}
+
+.admin h4 {
+  position: absolute;
+  top: 18em;
+  color: white;
+  left: 5em;
+}
+
+.admin h3 {
+  position: absolute;
+  top: 18em;
+  color: white;
+  left: 5em;
+}
+
+.admin h2 {
+  position: absolute;
+  top: 18em;
+  color: #e7f5f8 !important;
+  left: 3.75em;
+}
+
+page-welcome .text-input-md {
+  color: black !important;
 }

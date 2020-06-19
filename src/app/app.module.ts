@@ -26,7 +26,8 @@ import {
   PostOrder,
   Notifications,
   Passbook,
-  Inventory
+  Inventory,
+  Online
 } from '../providers';
 
 import { MyApp } from './app.component';
@@ -81,6 +82,11 @@ import { POKartTabModule } from '../pages/pokart-tab/pokart-tab.module';
 import { POPaymentTabModule } from '../pages/popayment-tab/popayment-tab.module';
 import { POShopTabModule } from '../pages/poshop-tab/poshop-tab.module';
 
+import { OnlineAddPageModule } from '../pages/online-create/online-create.module';
+import { OnlineReportPageModule } from '../pages/online-report/online-report.module';
+import { OnlineViewPageModule } from '../pages/online-view/online-view.module';
+
+import { PaymentIntegrationPageModule } from '../pages/payment-integration/payment-integration.module';
 // Module imported here and bottom
 
 export function createTranslateLoader(http: HttpClient) {
@@ -156,6 +162,12 @@ export function provideSettings(storage: Storage) {
     POPaymentTabModule,
     POShopTabModule,
 
+    OnlineAddPageModule,
+    OnlineReportPageModule,
+    OnlineViewPageModule,
+
+    PaymentIntegrationPageModule,
+
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -192,6 +204,7 @@ export function provideSettings(storage: Storage) {
     Notifications,
     Passbook,
     Inventory,  
+    Online,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
