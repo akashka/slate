@@ -1,0 +1,95 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "call-number": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-android-support-gradle-release": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-customurlscheme": {
+      "URL_SCHEME": "slatebyalohaindia",
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-email-composer": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-sms-plugin": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-uxcam": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "phonegap-plugin-multidex": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-filepath": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    }
+  }
+}

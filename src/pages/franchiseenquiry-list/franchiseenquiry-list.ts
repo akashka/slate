@@ -16,7 +16,7 @@ import * as _ from 'lodash';
 import { Programs, Franchise, User, Center } from '../../providers';
 import { Storage } from '@ionic/storage';
 import { isGeneratedFile } from '@angular/compiler/src/aot/util';
-import { CallNumber } from '@ionic-native/call-number/ngx';
+import { CallNumber } from '@ionic-native/call-number';
 
 @IonicPage()
 @Component({

@@ -80,6 +80,15 @@
       "ANDROID_HOST": " ",
       "ANDROID_PATHPREFIX": "/",
       "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-sms-plugin": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.aloha.slate"
     }
   },
   "dependent_plugins": {}

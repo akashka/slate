@@ -63,6 +63,18 @@
             {
               "xml": "<feature name=\"LaunchMyApp\"><param name=\"android-package\" value=\"nl.xservices.plugins.LaunchMyApp\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"Battery\"><param name=\"android-package\" value=\"org.apache.cordova.batterystatus.BatteryListener\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Sms\"><param name=\"android-package\" value=\"com.cordova.plugins.sms.Sms\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Permissions\"><param name=\"android-package\" value=\"com.android.plugins.Permissions\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -116,6 +128,10 @@
           "/manifest": [
             {
               "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.telephony\" android:required=\"false\" />",
               "count": 1
             }
           ],
@@ -292,6 +308,15 @@
       "ANDROID_SCHEME": " ",
       "ANDROID_HOST": " ",
       "ANDROID_PATHPREFIX": "/",
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-sms-plugin": {
+      "PACKAGE_NAME": "com.aloha.slate"
+    },
+    "cordova-plugin-android-permissions": {
       "PACKAGE_NAME": "com.aloha.slate"
     }
   },
@@ -780,6 +805,30 @@
       "clobbers": [
         "window.plugins.launchmyapp"
       ]
+    },
+    {
+      "id": "cordova-plugin-battery-status.battery",
+      "file": "plugins/cordova-plugin-battery-status/www/battery.js",
+      "pluginId": "cordova-plugin-battery-status",
+      "clobbers": [
+        "navigator.battery"
+      ]
+    },
+    {
+      "id": "cordova-sms-plugin.Sms",
+      "file": "plugins/cordova-sms-plugin/www/sms.js",
+      "pluginId": "cordova-sms-plugin",
+      "clobbers": [
+        "window.sms"
+      ]
+    },
+    {
+      "id": "cordova-plugin-android-permissions.Permissions",
+      "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
+      "pluginId": "cordova-plugin-android-permissions",
+      "clobbers": [
+        "cordova.plugins.permissions"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -804,6 +853,9 @@
     "cordova.plugins.diagnostic": "4.0.12",
     "phonegap-plugin-multidex": "1.0.0",
     "cordova-plugin-contacts": "3.0.1",
-    "cordova-plugin-customurlscheme": "5.0.1"
+    "cordova-plugin-customurlscheme": "5.0.1",
+    "cordova-plugin-battery-status": "2.0.3",
+    "cordova-sms-plugin": "1.0.0",
+    "cordova-plugin-android-permissions": "1.0.2"
   }
 }

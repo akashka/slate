@@ -28,7 +28,7 @@
       <p><b>{{item}}</b></p>
       <ion-row>
         <ion-col>
-          <p>Registration Fee</p>
+          <p>{{ 'Registration Fee' | translate }}</p>
         </ion-col>
         <ion-col>
           <p>₹ 2000</p>
@@ -48,7 +48,7 @@
 
   <ion-row style="padding: 0 15px;">
     <ion-col style="flex: 0 0 66%; width: 66%; max-width: 66%;">
-      <h3>TOTAL PAYABLE</h3>
+      <h3>{{ 'TOTAL PAYABLE' | translate }}</h3>
     </ion-col>
     <ion-col style="flex: 0 0 33%; width: 33%; max-width: 33%;">
       <h3 style="float: right;">₹ {{programs.length * 6500}}</h3>
@@ -56,9 +56,9 @@
   </ion-row>
 
   <br />
-  <p style="text-align: center;">You can <b>Pay Now</b> through our safe payment gateway </p>
-  <p style="text-align: center;">OR</p>
-  <p style="text-align: center;">Pay at our centers by clicking on <b>Pay Later</b> button. </p>
+  <p style="text-align: center;">{{ 'You can' | translate }}<b> {{ 'Pay Now' | translate }} </b>{{ 'through our safe payment gateway' | translate }} </p>
+  <p style="text-align: center;">{{ 'OR' | translate }}</p>
+  <p style="text-align: center;">{{ 'Pay at our centers by clicking on' | translate }} <b> {{ 'Pay Later' | translate }} </b> {{ 'button' | translate }}. </p>
 
 </ion-content>
 

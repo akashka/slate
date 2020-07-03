@@ -483,6 +483,30 @@ module.exports = [
     "clobbers": [
       "window.plugins.launchmyapp"
     ]
+  },
+  {
+    "id": "cordova-plugin-battery-status.battery",
+    "file": "plugins/cordova-plugin-battery-status/www/battery.js",
+    "pluginId": "cordova-plugin-battery-status",
+    "clobbers": [
+      "navigator.battery"
+    ]
+  },
+  {
+    "id": "cordova-sms-plugin.Sms",
+    "file": "plugins/cordova-sms-plugin/www/sms.js",
+    "pluginId": "cordova-sms-plugin",
+    "clobbers": [
+      "window.sms"
+    ]
+  },
+  {
+    "id": "cordova-plugin-android-permissions.Permissions",
+    "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
+    "pluginId": "cordova-plugin-android-permissions",
+    "clobbers": [
+      "cordova.plugins.permissions"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -509,7 +533,10 @@ module.exports.metadata =
   "cordova.plugins.diagnostic": "4.0.12",
   "phonegap-plugin-multidex": "1.0.0",
   "cordova-plugin-contacts": "3.0.1",
-  "cordova-plugin-customurlscheme": "5.0.1"
+  "cordova-plugin-customurlscheme": "5.0.1",
+  "cordova-plugin-battery-status": "2.0.3",
+  "cordova-sms-plugin": "1.0.0",
+  "cordova-plugin-android-permissions": "1.0.2"
 };
 // BOTTOM OF METADATA
 });

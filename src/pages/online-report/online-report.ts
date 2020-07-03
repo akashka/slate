@@ -4,9 +4,10 @@ import { IonicPage, NavController, ViewController, ToastController, Form, Loadin
 import * as _ from 'lodash';
 import { Storage } from '@ionic/storage';
 import { Online } from '../../providers';
-import { CallNumber } from "@ionic-native/call-number/ngx";
 import { File } from '@ionic-native/file';
 import { OnlineViewPage } from '../online-view/online-view';
+import { CallNumber } from '@ionic-native/call-number';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
 
 @IonicPage()
 @Component({
@@ -32,7 +33,8 @@ export class OnlineReportPage {
     public actionSheetController: ActionSheetController,
     public loadingController: LoadingController,
     public callNumber: CallNumber,
-    // public file: File,
+    public androidPermissions: AndroidPermissions,
+    public file: File,
   ) {
     this.online.query().subscribe((resp) => {
       this.allStudents = resp;
@@ -47,7 +49,7 @@ export class OnlineReportPage {
       var result = [];
       for (var i = 0; i < this.allStudents.length; i++) {
         if (
-          this.allStudents[i].txtsname && 
+          this.allStudents[i].txtsname &&
           this.allStudents[i].txtsname.toUpperCase().indexOf(this.myInput.toUpperCase()) >= 0
         ) {
           result.push(this.allStudents[i]);
@@ -70,23 +72,28 @@ export class OnlineReportPage {
           text: "Call",
           icon: "call",
           handler: () => {
-            this.callNumber.callNumber(student.txtscontact, false)
-              .then(() => console.log("Launched dialer!"))
-              .catch(() => console.log("Error launching dialer"));
+            this.callNumber.callNumber(student.txtscontact, true);
           }
         },
         {
           text: "Whatsapp",
           icon: "logo-whatsapp",
           handler: () => {
-            window.open(("https://wa.me/91" + student.txtscontact), "_blank");
+            window.open(("https://wa.me/91" + Number(student.txtscontact)), "_system");
           }
         },
         {
           text: "SMS",
           icon: "text",
           handler: () => {
-            window.open("sms://" + student.txtscontact);
+            window.open("sms://" + Number(student.txtscontact), "_system");
+          }
+        },
+        {
+          text: "Email",
+          icon: "mail",
+          handler: () => {
+            window.open("mailto://" + student.txtsemail, "_system");
           }
         },
         {
@@ -116,53 +123,43 @@ export class OnlineReportPage {
   download() {
     var csv: any = this.convertToCSV(this.allStudents);
     var fileName: any = "online_students.csv";
-    File.writeFile(File.externalRootDirectory, fileName, csv).then(_ => {
+    this.file.writeFile(this.file.externalRootDirectory, fileName, csv).then(_ => {
       let toast = this.toastCtrl.create({
-        message: "File saved successfully",
+        message: "File " + fileName + " saved successfully.",
         duration: 3000,
         position: 'top'
       });
       toast.present();
     }).catch(err => {
-      File.writeExistingFile(File.externalRootDirectory, fileName, csv).then(_ => {
+      this.file.writeExistingFile(this.file.externalRootDirectory, fileName, csv).then(_ => {
         let toast = this.toastCtrl.create({
-          message: "File saved successfully.",
+          message: "File " + fileName + " saved successfully.",
           duration: 3000,
           position: 'top'
         });
         toast.present();
       }).catch(err => {
-        alert('Failure');
+        let toast = this.toastCtrl.create({
+          message: JSON.stringify(err),
+          duration: 6000,
+          position: 'top'
+        });
+        toast.present();
       });
     })
   }
 
   convertToCSV(teams) {
-    var csv: any = ''
-    var line: any = ''
-
-    var SpT = teams[0].length
-    var anzahlTeams = teams.length
-
-    //Header
-    for (var i = 0; i < anzahlTeams; i++) {
-      if (line != '') line += ';'
-      line += "Team " + (i + 1)
-    }
-    csv += line + '\r\n';
-
-    //Teams
-    for (var i = 0; i < SpT; i++) {
-      line = ''
-      for (var j = 0; j < anzahlTeams; j++) {
-        if (line != '') line += ';'
-
-        line += teams[j][i]
-
-      }
-      csv += line + '\r\n'
-    }
-
+    var json = teams;
+    var fields = Object.keys(json[0])
+    var replacer = function (key, value) { return value === null ? '' : value }
+    var csv = json.map(function (row) {
+      return fields.map(function (fieldName) {
+        return JSON.stringify(row[fieldName], replacer)
+      }).join(',')
+    })
+    csv.unshift(fields.join(',')) // add header column
+    csv = csv.join('\r\n');
     return csv
   }
 

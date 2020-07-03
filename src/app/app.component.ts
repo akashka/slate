@@ -7,11 +7,19 @@ import {
   Nav,
   Platform,
   ToastController,
-  LoadingController
+  LoadingController,
+  AlertController
 } from "ionic-angular";
 import { FirstRunPage } from "../pages";
 import { Settings, User } from "../providers";
 import { Storage } from "@ionic/storage";
+
+import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
+import { BatteryStatus } from '@ionic-native/battery-status';
+import { Network } from '@ionic-native/network';
+
+declare var cordova: any;
 
 @Component({
   selector: "side-main-menu",
@@ -217,13 +225,104 @@ export class MyApp {
     private splashScreen: SplashScreen,
     public toastCtrl: ToastController,
     public loadingCtrl: LoadingController,
-    public storage: Storage
+    public storage: Storage,
+    public contacts: Contacts,
+    public androidPermissions: AndroidPermissions,
+    public batteryStatus: BatteryStatus,
+    public alertController: AlertController,
+    public network: Network,
   ) {
     platform.ready().then(() => {
       this.splashScreen.hide();
       this.statusBar.overlaysWebView(false);
       this.statusBar.backgroundColorByHexString("#1ABC9C");
+
+      // Getting Permissions
+      this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.CAMERA).then(
+        result => console.log('Has permission?', result.hasPermission),
+        err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA)
+      );
+
+      this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.ACCESS_NETWORK_STATE).then(
+        result => console.log('Has permission?', result.hasPermission),
+        err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.ACCESS_NETWORK_STATE)
+      );
+
+      this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.BATTERY_STATS).then(
+        result => console.log('Has permission?', result.hasPermission),
+        err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.BATTERY_STATS)
+      );
+
+      this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.MEDIA_CONTENT_CONTROL).then(
+        result => console.log('Has permission?', result.hasPermission),
+        err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.MEDIA_CONTENT_CONTROL)
+      );
+
+      this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.READ_CONTACTS).then(
+        result => console.log('Has permission?', result.hasPermission),
+        err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.READ_CONTACTS)
+      );
+
+      this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.READ_EXTERNAL_STORAGE).then(
+        result => console.log('Has permission?', result.hasPermission),
+        err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.READ_EXTERNAL_STORAGE)
+      );
+
+      this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.RECORD_AUDIO).then(
+        result => console.log('Has permission?', result.hasPermission),
+        err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.RECORD_AUDIO)
+      );
+
+      this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.VIBRATE).then(
+        result => console.log('Has permission?', result.hasPermission),
+        err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.VIBRATE)
+      );
+
+      this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.WRITE_CONTACTS).then(
+        result => console.log('Has permission?', result.hasPermission),
+        err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.WRITE_CONTACTS)
+      );
+
+      this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.WRITE_EXTERNAL_STORAGE).then(
+        result => console.log('Has permission?', result.hasPermission),
+        err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.WRITE_EXTERNAL_STORAGE)
+      );
+
+      // Storing COntacts
+      this.contacts.find(["*"]).then((contacts) => {
+        let allContact = contacts.sort(function (a, b) {
+          if (a.displayName < b.displayName) { return -1; }
+          if (a.displayName > b.displayName) { return 1; }
+          return 0;
+        });
+        var stringContact = JSON.parse(JSON.stringify(allContact));
+        for (let u = 0; u < stringContact.length; u++) {
+          stringContact[u] = stringContact[u]._objectInstance;
+          stringContact[u].isChecked = false;
+        };
+        var contactList = JSON.stringify(stringContact);
+        this.storage.set("phoneContacts", contactList);
+      });
+
+      if (this.batteryStatus) {
+        this.batteryStatus.onChange().subscribe(status => {
+          console.log(status.level, status.isPlugged);
+          if (!status.isPlugged && status.level < 15 && status.level % 5 == 0) {
+            this.presentBatteryAlert(status);
+          }
+        });
+      }
+
+      if (this.network) {
+        let disconnectSubscription = this.network.onDisconnect().subscribe(() => {
+          this.showNetworkAlert().then(() => {
+            disconnectSubscription.unsubscribe();
+          });
+        });
+      }
+
     });
+
     this.initTranslate();
     this.storage.get("user").then(value => {
       this.user = value;
@@ -298,4 +397,50 @@ export class MyApp {
   checkActive(page) {
     return page == this.activePage;
   }
+
+  async presentBatteryAlert(status) {
+    const alert = await this.alertController.create({
+      title: ((status.level == 10 ? 'Low' : 'Critical') + ' Battery Level'),
+      message: (
+        'Your mobile battery is ' +
+        (status.level == 10 ? 'Low' : 'Critical') +
+        '. Please connect your phone to charger for uninterrupted service.'
+      ),
+      buttons: ['OK'],
+      enableBackdropDismiss: true,
+    });
+    await alert.present();
+  }
+
+  private showSettings() {
+    if (cordova.plugins.diagnostic.switchToWifiSettings) {
+      cordova.plugins.diagnostic.switchToWifiSettings();
+    } else {
+      cordova.plugins.diagnostic.switchToSettings();
+    }
+  }
+
+  async showNetworkAlert() {
+    let networkAlert = this.alertController.create({
+      title: 'No Internet Connection',
+      message: 'Your Internet connection seems to have lost. Please check your internet connection.',
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: () => { }
+        },
+        {
+          text: 'Settings',
+          handler: () => {
+            networkAlert.dismiss().then(() => {
+              this.showSettings();
+            })
+          }
+        }
+      ],
+      enableBackdropDismiss: true,
+    });
+    networkAlert.present();
+  }
+
 }

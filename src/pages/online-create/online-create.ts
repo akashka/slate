@@ -9,6 +9,7 @@ import swal from 'sweetalert';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { PaymentIntegrationPage } from '../payment-integration/payment-integration';
 // import { File } from '@ionic-native/file';
+import { TranslateService } from '@ngx-translate/core';
 
 @IonicPage()
 @Component({
@@ -30,7 +31,7 @@ export class OnlineAddPage {
     'Aloha English Smart', "Aloha Kid's Art", 'Aloha Third Brain'];
   referralOptions = ['Friends', 'News Paper', 'School', 'Others'];
   referralCodeOptions = ['1101	Goa Rep', '2202	Whatsapp Promo', '3303	FB Paid', '4404	FB Link', '5505	SMS Promo',
-      '6606	Karnataka Promo', '7707	ALOHA 1', '8808	ALOHA 2', '9909	ALOHA 3'];
+    '6606	Karnataka Promo', '7707	ALOHA 1', '8808	ALOHA 2', '9909	ALOHA 3'];
 
   constructor(
     public navCtrl: NavController,
@@ -44,6 +45,7 @@ export class OnlineAddPage {
     public alertController: AlertController,
     public actionSheetController: ActionSheetController,
     public loadingController: LoadingController,
+    private translate: TranslateService
     // public file: File,
   ) {
 
@@ -95,7 +97,7 @@ export class OnlineAddPage {
         } else if (this.form.controls['txtprograms'].value.length <= 0) {
           this.errorMsg = 'Please select atleast one Program';
           this.isReadyToSave1 = false;
-        }  else if (this.form.controls['referralcode'].value.length <= 0) {
+        } else if (this.form.controls['referralcode'].value.length <= 0) {
           this.errorMsg = 'Please select a Referral Code';
           this.isReadyToSave1 = false;
         } else {
@@ -302,6 +304,77 @@ export class OnlineAddPage {
       this.presentToast(err);
       this.loading.dismiss();
     });
+  }
+
+  setLanguage(setLang) {
+    this.translate.use(setLang);
+  }
+
+  async changeLanguage() {
+    const actionSheet = await this.actionSheetController.create({
+      buttons: [
+        {
+          text: "English",
+          handler: () => {
+            this.setLanguage('en');
+          }
+        },
+        {
+          text: "Hindi",
+          handler: () => {
+            this.setLanguage('hi');
+          }
+        },
+        {
+          text: "Bengali",
+          handler: () => {
+            this.setLanguage('ben');
+          }
+        },
+        {
+          text: "Gujarati",
+          handler: () => {
+            this.setLanguage('guj');
+          }
+        },
+        {
+          text: "Kannada",
+          handler: () => {
+            this.setLanguage('kan');
+          }
+        },
+        {
+          text: "Marathi",
+          handler: () => {
+            this.setLanguage('mar');
+          }
+        },
+        {
+          text: "Tamil",
+          handler: () => {
+            this.setLanguage('tam');
+          }
+        },
+        {
+          text: "Telugu",
+          handler: () => {
+            this.setLanguage('tel');
+          }
+        },
+        {
+          text: "Cancel",
+          role: "cancel",
+          handler: () => {
+            console.log("Cancel clicked");
+          }
+        }
+      ]
+    });
+    await actionSheet.present();
+  }
+
+  componentWillUnmount() {
+    this.translate.use("en");
   }
 
 }

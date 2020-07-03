@@ -1,9 +1,15 @@
 <ion-header class="onlne-create-header" *ngIf="order > 0">
-  <ion-navbar color="primary">
+  <ion-navbar color="primary" style="float: left;">
     <ion-title *ngIf="order === 1">{{ 'Student Details' | translate }}</ion-title>
     <ion-title *ngIf="order === 2">{{ 'Family Details' | translate }}</ion-title>
     <ion-title *ngIf="order === 3">{{ 'Upload Details' | translate }}</ion-title>
   </ion-navbar>
+  <ion-buttons end style="position: absolute; right: 0;">
+    <button ion-button icon-only (click)="changeLanguage()" 
+          style="background: transparent; padding-top: 10px; box-shadow: none;">
+      <ion-icon name="settings"></ion-icon>
+    </button>
+  </ion-buttons>
 </ion-header>
 
 <ion-content *ngIf="order > 0">
@@ -78,7 +84,8 @@
         <ion-item>
           <ion-label floating>{{ "Referral Code" | translate }} <span class="mandatory-field"> * </span> </ion-label>
           <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="referralcode">
-            <ion-option value={{referralCode}} *ngFor="let referralCode of referralCodeOptions">{{referralCode}}</ion-option>
+            <ion-option value={{referralCode}} *ngFor="let referralCode of referralCodeOptions">{{referralCode}}
+            </ion-option>
           </ion-select>
         </ion-item>
 
@@ -141,26 +148,34 @@
       <div *ngIf="order === 3">
         <ion-item style="height: 200px;">
           <!-- <ion-label>{{ "Upload Photo" | translate }} </ion-label> -->
-          <button ion-button color="secondary" class="online-upload" (click)="upload('photo')" *ngIf="form.controls.photo.value === ''">
-            Upload Photo
+          <button ion-button color="secondary" class="online-upload" (click)="upload('photo')"
+            *ngIf="form.controls.photo.value === ''">
+            {{ 'UPLOAD PHOTO' | translate }}
           </button>
-          <button ion-button color="secondary" class="online-upload" (click)="upload('photo')" *ngIf="form.controls.photo.value !== ''">
-            Replace Photo
+          <button ion-button color="secondary" class="online-upload" (click)="upload('photo')"
+            *ngIf="form.controls.photo.value !== ''">
+            {{ 'REPLACE PHOTO' | translate }}
           </button>
-          <img src={{form.controls.photo.value}} *ngIf="form.controls.photo.value !== ''" class="online-image-display" />
-          <img src="https://identix.state.gov/qotw/images/no-photo.gif" *ngIf="form.controls.photo.value === ''" class="online-image-display" />
+          <img src={{form.controls.photo.value}} *ngIf="form.controls.photo.value !== ''"
+            class="online-image-display" />
+          <img src="https://identix.state.gov/qotw/images/no-photo.gif" *ngIf="form.controls.photo.value === ''"
+            class="online-image-display" />
         </ion-item>
 
         <ion-item style="height: 200px;">
           <!-- <ion-label>{{ "Upload ID Proof" | translate }} </ion-label> -->
-          <button ion-button color="secondary" class="online-upload" (click)="upload('idproof')" *ngIf="form.controls.idproof.value === ''">
-            Upload ID Proof
+          <button ion-button color="secondary" class="online-upload" (click)="upload('idproof')"
+            *ngIf="form.controls.idproof.value === ''">
+            {{ 'UPLOAD ID PROOF' | translate }}
           </button>
-          <button ion-button color="secondary" class="online-upload" (click)="upload('idproof')" *ngIf="form.controls.idproof.value !== ''">
-            Replace ID Proof
+          <button ion-button color="secondary" class="online-upload" (click)="upload('idproof')"
+            *ngIf="form.controls.idproof.value !== ''">
+            {{ 'REPLACE ID PROOF' | translate }}
           </button>
-          <img src={{form.controls.idproof.value}} *ngIf="form.controls.idproof.value !== ''" class="online-image-display" />
-          <img src="https://identix.state.gov/qotw/images/no-photo.gif" *ngIf="form.controls.idproof.value === ''" class="online-image-display" />
+          <img src={{form.controls.idproof.value}} *ngIf="form.controls.idproof.value !== ''"
+            class="online-image-display" />
+          <img src="https://identix.state.gov/qotw/images/no-photo.gif" *ngIf="form.controls.idproof.value === ''"
+            class="online-image-display" />
         </ion-item>
 
       </div>

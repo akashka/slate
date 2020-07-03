@@ -17,7 +17,7 @@ import {
   FileTransfer,
   FileUploadOptions,
   FileTransferObject
-} from "@ionic-native/file-transfer/ngx";
+} from "@ionic-native/file-transfer";
 import { File } from "@ionic-native/file";
 
 @IonicPage()
@@ -39,7 +39,8 @@ export class ProgramsListPage {
     public toastCtrl: ToastController,
     private alertCtrl: AlertController,
     public loadingCtrl: LoadingController,
-    public programs: Programs
+    public programs: Programs,
+    public file: File,
   ) {}
 
   ionViewDidLoad() {
@@ -103,12 +104,12 @@ export class ProgramsListPage {
     var csv: any = this.convertToCSV(this.currentItems);
     var fileName: any = "programs.csv";
 
-    File.writeFile(File.externalRootDirectory, fileName, csv)
+    this.file.writeFile(this.file.externalRootDirectory, fileName, csv)
       .then(_ => {
         alert("Success ;-)");
       })
       .catch(err => {
-        File.writeExistingFile(File.externalRootDirectory, fileName, csv)
+        this.file.writeExistingFile(this.file.externalRootDirectory, fileName, csv)
           .then(_ => {
             alert("Success ;-)");
           })

@@ -9,9 +9,13 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { Vibration } from '@ionic-native/vibration';
-import { CallNumber } from '@ionic-native/call-number/ngx';
-import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts/ngx';
+import { CallNumber } from '@ionic-native/call-number';
 import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
+import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
+import { BatteryStatus } from '@ionic-native/battery-status';
+import { Network } from '@ionic-native/network';
+import { File } from '@ionic-native/file';
 
 import {
   Settings,
@@ -205,6 +209,11 @@ export function provideSettings(storage: Storage) {
     Passbook,
     Inventory,  
     Online,
+    Contacts,
+    AndroidPermissions,
+    BatteryStatus,
+    Network,
+    File,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]

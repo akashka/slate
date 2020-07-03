@@ -37,6 +37,12 @@
           <div *ngIf="student.paymentStatus === 'SUCCESS' || student.paymentStatus === 'PAID'">
             <ion-badge color="success" style="width: 100%;background-color: green;">PAID</ion-badge>
           </div>
+          <div *ngIf="student.paymentStatus === 'PENDING'">
+            <ion-badge color="warning" style="width: 100%;background-color: yellow;">ONGOING</ion-badge>
+          </div>
+          <div *ngIf="student.paymentStatus === 'FAILED' || student.paymentStatus === 'CANCELLED'">
+            <ion-badge color="danger" style="width: 100%;background-color: red;">FAILED</ion-badge>
+          </div>
         </div>
         <div class="col_right">
           <h2>{{student.txtsname}}</h2>

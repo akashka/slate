@@ -10,14 +10,14 @@ import {
   ActionSheetController
 } from "ionic-angular";
 import { Vibration } from "@ionic-native/vibration";
-import { CallNumber } from "@ionic-native/call-number/ngx";
+import { CallNumber } from "@ionic-native/call-number";
 import * as _ from 'lodash';
 
 import {
   FileTransfer,
   FileUploadOptions,
   FileTransferObject
-} from "@ionic-native/file-transfer/ngx";
+} from "@ionic-native/file-transfer";
 import { File } from "@ionic-native/file";
 
 import { User, Center } from "../../providers";
@@ -44,6 +44,7 @@ export class UsersPage {
     public users: User,
     public centers: Center,
     private callNumber: CallNumber,
+    private file: File,
     private actionSheetController: ActionSheetController
   ) {
     
@@ -147,12 +148,12 @@ export class UsersPage {
     var csv: any = this.convertToCSV(this.currentItems);
     var fileName: any = "users.csv";
 
-    File.writeFile(File.externalRootDirectory, fileName, csv)
+    this.file.writeFile(this.file.externalRootDirectory, fileName, csv)
       .then(_ => {
         alert("Success ;-)");
       })
       .catch(err => {
-        File.writeExistingFile(File.externalRootDirectory, fileName, csv)
+        this.file.writeExistingFile(this.file.externalRootDirectory, fileName, csv)
           .then(_ => {
             alert("Success ;-)");
           })
