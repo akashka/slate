@@ -148,40 +148,44 @@ export class UsersPage {
     var csv: any = this.convertToCSV(this.currentItems);
     var fileName: any = "users.csv";
 
-    this.file.writeFile(this.file.externalRootDirectory, fileName, csv)
-      .then(_ => {
-        alert("Success ;-)");
-      })
-      .catch(err => {
-        this.file.writeExistingFile(this.file.externalRootDirectory, fileName, csv)
-          .then(_ => {
-            alert("Success ;-)");
-          })
-          .catch(err => {
-            alert("Failure");
-          });
+    this.file.writeFile(this.file.externalRootDirectory, fileName, csv).then(_ => {
+      let toast = this.toastCtrl.create({
+        message: "File " + fileName + " saved successfully.",
+        duration: 3000,
+        position: 'top'
       });
+      toast.present();
+    }).catch(err => {
+      this.file.writeExistingFile(this.file.externalRootDirectory, fileName, csv).then(_ => {
+        let toast = this.toastCtrl.create({
+          message: "File " + fileName + " saved successfully.",
+          duration: 3000,
+          position: 'top'
+        });
+        toast.present();
+      }).catch(err => {
+        let toast = this.toastCtrl.create({
+          message: JSON.stringify(err),
+          duration: 6000,
+          position: 'top'
+        });
+        toast.present();
+      });
+    })
   }
 
   convertToCSV(teams) {
-    var csv: any = "";
-    var line: any = "";
-
-    for (let i = 0; i < teams.length; i++) {
-      if (line != "") line += ";";
-      line += "Team " + (i + 1);
-    }
-    csv += line + "\r\n";
-
-    for (let i = 0; i < teams[0].length; i++) {
-      line = "";
-      for (var j = 0; j < teams.length; j++) {
-        if (line != "") line += ";";
-        line += teams[j][i];
-      }
-      csv += line + "\r\n";
-    }
-    return csv;
+    var json = teams;
+    var fields = Object.keys(json[0])
+    var replacer = function (key, value) { return value === null ? '' : value }
+    var csv = json.map(function (row) {
+      return fields.map(function (fieldName) {
+        return JSON.stringify(row[fieldName], replacer)
+      }).join(',')
+    })
+    csv.unshift(fields.join(',')) // add header column
+    csv = csv.join('\r\n');
+    return csv
   }
 
   async contact(user, slidingItem: ItemSliding) {

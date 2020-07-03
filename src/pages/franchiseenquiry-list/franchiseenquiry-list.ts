@@ -248,5 +248,47 @@ export class FranchiseEnquiryListPage {
     val = val[0];
     return (val && val['center_name']) ? val['center_name'] : '';
   }
+  saveAsCsv() {
+    var csv: any = this.convertToCSV(this.currentItems);
+    var fileName: any = "programs.csv";
 
+    this.file.writeFile(this.file.externalRootDirectory, fileName, csv).then(_ => {
+      let toast = this.toastCtrl.create({
+        message: "File " + fileName + " saved successfully.",
+        duration: 3000,
+        position: 'top'
+      });
+      toast.present();
+    }).catch(err => {
+      this.file.writeExistingFile(this.file.externalRootDirectory, fileName, csv).then(_ => {
+        let toast = this.toastCtrl.create({
+          message: "File " + fileName + " saved successfully.",
+          duration: 3000,
+          position: 'top'
+        });
+        toast.present();
+      }).catch(err => {
+        let toast = this.toastCtrl.create({
+          message: JSON.stringify(err),
+          duration: 6000,
+          position: 'top'
+        });
+        toast.present();
+      });
+    })
+  }
+
+  convertToCSV(teams) {
+    var json = teams;
+    var fields = Object.keys(json[0])
+    var replacer = function (key, value) { return value === null ? '' : value }
+    var csv = json.map(function (row) {
+      return fields.map(function (fieldName) {
+        return JSON.stringify(row[fieldName], replacer)
+      }).join(',')
+    })
+    csv.unshift(fields.join(',')) // add header column
+    csv = csv.join('\r\n');
+    return csv
+  }
 }
