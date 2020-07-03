@@ -45,5 +45,12 @@
     "OR": "किंवा",
     "Pay at our centers by clicking on": "आमच्या केंद्रावर क्लिक करुन पैसे द्या",
     "Pay Later": "नंतर पैसे द्या",
-    "button": "बटण"
+    "button": "बटण",
+    "Please input the valid Student Name": "कृपया वैध विद्यार्थ्याचे नाव इनपुट करा",
+    "Please input the valid Student Date Of Birth": "कृपया वैध विद्यार्थी जन्मतारीख इनपुट करा",
+    "Please input the valid Address": "कृपया वैध पत्ता इनपुट करा",
+    "Please input the valid 10 digit Contact Number": "कृपया वैध 10 अंकी संपर्क क्रमांक इनपुट करा",
+    "Please input the valid Email ID": "कृपया वैध ईमेल आयडी इनपुट करा",
+    "Please select atleast one Program": "कृपया किमान एक कार्यक्रम निवडा",
+    "Please select a Referral Code": "कृपया एक संदर्भ कोड निवडा"
 }

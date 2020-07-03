@@ -45,5 +45,12 @@
     "OR": "અથવા",
     "Pay at our centers by clicking on": "અમારા કેન્દ્રો પર ક્લિક કરીને ચૂકવણી કરો",
     "Pay Later": "પછી ચૂકવણી કરો",
-    "button": "બટન"
+    "button": "બટન",
+    "Please input the valid Student Name": "કૃપા કરીને માન્ય વિદ્યાર્થી નામ દાખલ કરો",
+    "Please input the valid Student Date Of Birth": "કૃપા કરીને માન્ય જન્મ તારીખની તારીખ દાખલ કરો",
+    "Please input the valid Address": "કૃપા કરીને માન્ય સરનામું ઇનપુટ કરો",
+    "Please input the valid 10 digit Contact Number": "કૃપા કરી માન્ય 10 અંકનો સંપર્ક નંબર દાખલ કરો",
+    "Please input the valid Email ID": "કૃપા કરીને માન્ય ઇમેઇલ આઈડી ઇનપુટ કરો",
+    "Please select atleast one Program": "કૃપા કરીને ઓછામાં ઓછો એક પ્રોગ્રામ પસંદ કરો",
+    "Please select a Referral Code": "કૃપા કરીને રેફરલ કોડ પસંદ કરો"
 }

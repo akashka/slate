@@ -112,5 +112,13 @@
 	"OR": "OR",
 	"Pay at our centers by clicking on": "Pay at our centers by clicking on",
 	"Pay Later": "Pay Later",
-	"button": "button"
+	"button": "button",
+	"Please input the valid Student Name": "Please input the valid Student Name",
+	"Please input the valid Student Date Of Birth": "Please input the valid Student Date Of Birth",
+	"Please input the valid Address": "Please input a valid address",
+	"Please input the valid 10 digit Contact Number": "Please input to Valid 10 digit contact number",
+	"Please input the valid Email ID": "Please input the valid Email ID",
+	"Please select atleast one Program": "Please select atleast one Program",
+	"Please select a Referral Code": "Please select a Referral Code"
+
 }

@@ -45,5 +45,12 @@
     "OR": "OR",
     "Pay at our centers by clicking on": "క్లిక్ చేయడం ద్వారా మా కేంద్రాల్లో చెల్లించండి",
     "Pay Later": "తరు వా త చెల్లిం చు ",
-    "button": "బటన్"
+    "button": "బటన్",
+    "Please input the valid Student Name": "దయచేసి చెల్లుబాటు అయ్యే విద్యార్థి పేరును ఇన్పుట్ చేయండి",
+    "Please input the valid Student Date Of Birth": "దయచేసి చెల్లుబాటు అయ్యే విద్యార్థి పుట్టిన తేదీని ఇన్పుట్ చేయండి",
+    "Please input the valid Address": "దయచేసి చెల్లుబాటు అయ్యే చిరునామాను ఇన్పుట్ చేయండి",
+    "Please input the valid 10 digit Contact Number": "దయచేసి చెల్లుబాటు అయ్యే 10 అంకెల సంప్రదింపు సంఖ్యను ఇన్పుట్ చేయండి",
+    "Please input the valid Email ID": "దయచేసి చెల్లుబాటు అయ్యే ఇమెయిల్ ID ని ఇన్పుట్ చేయండి",
+    "Please select atleast one Program": "దయచేసి కనీసం ఒక ప్రోగ్రామ్‌ను ఎంచుకోండి",
+    "Please select a Referral Code": "దయచేసి రెఫరల్ కోడ్‌ను ఎంచుకోండి"
 }

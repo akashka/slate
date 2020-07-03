@@ -45,5 +45,12 @@
     "OR": "ಅಥವಾ",
     "Pay at our centers by clicking on": "ಕ್ಲಿಕ್ ಮಾಡುವ ಮೂಲಕ ನಮ್ಮ ಕೇಂದ್ರಗಳಲ್ಲಿ ಪಾವತಿಸಿ",
     "Pay Later": "ನಂತರ ಪಾವತಿಸಿ",
-    "button": "ಬಟನ್"
+    "button": "ಬಟನ್",
+    "Please input the valid Student Name": "ದಯವಿಟ್ಟು ಮಾನ್ಯ ವಿದ್ಯಾರ್ಥಿ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+    "Please input the valid Student Date Of Birth": "ದಯವಿಟ್ಟು ಮಾನ್ಯ ವಿದ್ಯಾರ್ಥಿ ಹುಟ್ಟಿದ ದಿನಾಂಕವನ್ನು ನಮೂದಿಸಿ",
+    "Please input the valid Address": "ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ",
+    "Please input the valid 10 digit Contact Number": "ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ 10 ಅಂಕಿಯ ಸಂಪರ್ಕ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+    "Please input the valid Email ID": "ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ಇಮೇಲ್ ID ಅನ್ನು ನಮೂದಿಸಿ",
+    "Please select atleast one Program": "ದಯವಿಟ್ಟು ಕನಿಷ್ಠ ಒಂದು ಪ್ರೋಗ್ರಾಂ ಆಯ್ಕೆಮಾಡಿ",
+    "Please select a Referral Code": "ದಯವಿಟ್ಟು ರೆಫರಲ್ ಕೋಡ್ ಆಯ್ಕೆಮಾಡಿ"
 }

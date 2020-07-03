@@ -16,7 +16,7 @@
 
 <ion-content>
 
-  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'Search Franchise' | translate }}"></ion-searchbar>
+  <ion-searchbar (ionChange)="getItems($event)" placeholder="{{ 'Search Franchise' | translate }}"></ion-searchbar>
 
   <ion-list>
     <ion-item-sliding *ngFor="let item of currentItems" #slidingItem>
@@ -41,13 +41,16 @@
         <button ion-button color="info" (click)="view(item, slidingItem)">
           <ion-icon name="eye"></ion-icon> View
         </button>
-        <button ion-button color="danger" (click)="reject(item, slidingItem)" *ngIf="user && user.role == 'admin' && item.status == 'enquiry'">
+        <button ion-button color="danger" (click)="reject(item, slidingItem)"
+          *ngIf="user && user.role == 'admin' && item.status == 'enquiry'">
           <ion-icon name="thumbs-down"></ion-icon> Reject
         </button>
-        <button ion-button color="success" (click)="confirm(item, slidingItem)" *ngIf="user && user.role == 'admin' && item.status == 'enquiry'">
+        <button ion-button color="success" (click)="confirm(item, slidingItem)"
+          *ngIf="user && user.role == 'admin' && item.status == 'enquiry'">
           <ion-icon name="thumbs-up"></ion-icon> Confirm
         </button>
-        <button ion-button color="success" (click)="confirm(item, slidingItem)" *ngIf="user && user.role == 'admin' && item.status == 'confirm'">
+        <button ion-button color="success" (click)="confirm(item, slidingItem)"
+          *ngIf="user && user.role == 'admin' && item.status == 'confirm'">
           <ion-icon name="cloud-upload"></ion-icon> Documents
         </button>
       </ion-item-options>

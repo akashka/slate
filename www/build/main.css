@@ -36874,6 +36874,32 @@ ion-item {
   border-radius: 0 !important;
 }
 
+.onlne-create-header .back-button {
+  display: none !important;
+}
+
+.onlne-create-header .toolbar-content {
+  text-align: center !important;
+}
+
+.online-create-footer .button {
+  width: 48%;
+}
+
+.online-upload {
+  padding: 2rem !important;
+  background: cadetblue;
+  border-radius: 15rem;
+}
+
+.online-image-display {
+  margin: 0;
+  height: 150px !important;
+  width: 150px !important;
+  float: right;
+  border-radius: 0 !important;
+}
+
 .col_left {
   float: left;
   width: 25%;

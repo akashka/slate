@@ -45,5 +45,12 @@
     "OR": "அல்லது",
     "Pay at our centers by clicking on": "கிளிக் செய்வதன் மூலம் எங்கள் மையங்களில் பணம் செலுத்துங்கள்",
     "Pay Later": "பின்னர் செலுத்துங்கள்",
-    "button": "பொத்தானை"
+    "button": "பொத்தானை",
+    "Please input the valid Student Name": "செல்லுபடியாகும் மாணவர் பெயரை உள்ளிடவும்",
+    "Please input the valid Student Date Of Birth": "செல்லுபடியாகும் மாணவர் பிறந்த தேதியை உள்ளிடவும்",
+    "Please input the valid Address": "செல்லுபடியாகும் முகவரியை உள்ளிடவும்",
+    "Please input the valid 10 digit Contact Number": "செல்லுபடியாகும் 10 இலக்க தொடர்பு எண்ணை உள்ளிடவும்",
+    "Please input the valid Email ID": "செல்லுபடியாகும் மின்னஞ்சல் ஐடியை உள்ளிடவும்",
+    "Please select atleast one Program": "குறைந்தபட்சம் ஒரு நிரலைத் தேர்ந்தெடுக்கவும்",
+    "Please select a Referral Code": "தயவுசெய்து ஒரு பரிந்துரை குறியீட்டைத் தேர்ந்தெடுக்கவும்"
 }

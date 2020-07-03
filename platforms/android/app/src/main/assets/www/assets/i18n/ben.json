@@ -28,7 +28,7 @@
 	"REPLACE PHOTO": "প্রতিস্থাপন ফটো",
 	"UPLOAD ID PROOF": "আপলোড আইডি প্রুফ",
 	"REPLACE ID PROOF": "প্রতিস্থাপন আইডি প্রুফ",
-	"CANCEL": "CANCEL",
+	"CANCEL": "বাতিল",
 	"NEXT": "পরবর্তী",
 	"BACK": "পেছনে",
 	"SKIP": "এড়িয়ে যান",
@@ -45,5 +45,12 @@
 	"OR": "বা",
 	"Pay at our centers by clicking on": "আমাদের কেন্দ্রগুলিতে ক্লিক করে অর্থ প্রদান করুন",
 	"Pay Later": "পরে দিবে",
-	"button": "বাটনে"
+	"button": "বাটনে",
+	"Please input the valid Student Name": "দয়া করে বৈধ শিক্ষার্থীর নাম ইনপুট করুন",
+	"Please input the valid Student Date Of Birth": "দয়া করে বৈধ শিক্ষার্থীর জন্ম তারিখ ইনপুট করুন",
+	"Please input the valid Address": "বৈধ ঠিকানা ইনপুট করুন",
+	"Please input the valid 10 digit Contact Number": "দয়া করে বৈধ 10 ডিজিটের যোগাযোগ নম্বরটি ইনপুট করুন",
+	"Please input the valid Email": "বৈধ ইমেল আইডি ইনপুট করুন",
+	"Please select atleast one Program": "কমপক্ষে একটি প্রোগ্রাম নির্বাচন করুন",
+	"Please select a Referral Code": "একটি রেফারেল কোড নির্বাচন করুন"
 }

@@ -5,163 +5,176 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <form [formGroup]="form">
+    <ion-list>
 
-    <ion-item *ngIf="student.txtsname !== ''">
-      <ion-label floating>{{ 'Name Of Student' | translate }} </ion-label>
-      <ion-input type="text" disabled="true" [(ngModel)]="student.txtsname"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'Name Of Student' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-input type="text" formControlName="txtsname"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtsdob !== ''">
-      <ion-label floating>{{ 'Date Of Birth' | translate }} </ion-label>
-      <ion-datetime displayFormat="DD MMM YYYY" disabled="true" [(ngModel)]="student.txtsdob"></ion-datetime>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'Date Of Birth' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-datetime displayFormat="DD MMM YYYY" formControlName="txtsdob"></ion-datetime>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtsadd !== ''">
-      <ion-label floating>{{ 'Address of Student' | translate }} </ion-label>
-      <ion-textarea disabled="true" [(ngModel)]="student.txtsadd"></ion-textarea>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'Address of Student' | translate }} <span class="mandatory-field"> * </span>
+        </ion-label>
+        <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="txtsadd">
+        </ion-textarea>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtscontact !== ''">
-      <ion-label floating>{{ 'Contact No' | translate }} </ion-label>
-      <ion-input type="number" disabled="true" [(ngModel)]="student.txtscontact"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'Contact No' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-input type="number" formControlName="txtscontact"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtsemail !== ''">
-      <ion-label floating>{{ 'Email ID' | translate }} </ion-label>
-      <ion-input type="text" disabled="true" [(ngModel)]="student.txtsemail"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'Email ID' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-input type="text" formControlName="txtsemail"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtlanguage !== ''">
-      <ion-label floating>{{ 'Language' | translate }} </ion-label>
-      <ion-input type="text" disabled="true" [(ngModel)]="student.txtlanguage"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'Language' | translate }} </ion-label>
+        <ion-input type="text" formControlName="txtlanguage"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtinterest !== ''">
-      <ion-label floating>{{ 'Interests' | translate }} </ion-label>
-      <ion-input type="text" disabled="true" [(ngModel)]="student.txtinterest"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'Interests' | translate }} </ion-label>
+        <ion-input type="text" formControlName="txtinterest"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtschool !== ''">
-      <ion-label floating>{{ 'Name Of School' | translate }} </ion-label>
-      <ion-input type="text" disabled="true" [(ngModel)]="student.txtschool"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'Name Of School' | translate }} </ion-label>
+        <ion-input type="text" formControlName="txtschool"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtschooladd !== ''">
-      <ion-label floating>{{ 'Address of School' | translate }} </ion-label>
-      <ion-textarea disabled="true" [(ngModel)]="student.txtschooladd"></ion-textarea>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'Address of School' | translate }} </ion-label>
+        <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="txtschooladd">
+        </ion-textarea>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtprograms !== ''">
-      <ion-label floating>{{ 'Programs' | translate }} </ion-label>
-      <ion-textarea disabled="true" [(ngModel)]="student.txtprograms"></ion-textarea>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'Programs' | translate }} <span class="mandatory-field"> * </span>
+        </ion-label>
+        <ion-select multiple="true" cancelText="Cancel" okText="Okay" formControlName="txtprograms">
+          <ion-option value={{program}} *ngFor="let program of programmes">{{program}}</ion-option>
+        </ion-select>
+      </ion-item>
 
-    <ion-item *ngIf="student.txthdyk !== ''">
-      <ion-label floating>{{ 'How do you know Aloha?' | translate }} </ion-label>
-      <ion-textarea disabled="true" [(ngModel)]="student.txthdyk"></ion-textarea>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'How do you know Aloha?' | translate }} </ion-label>
+        <ion-select multiple="true" cancelText="Cancel" okText="Okay" formControlName="txthdyk">
+          <ion-option value={{referral}} *ngFor="let referral of referralOptions">{{referral}}</ion-option>
+        </ion-select>
+      </ion-item>
 
-    <ion-item *ngIf="student.referralcode !== ''">
-      <ion-label floating>{{ "Referral Code" | translate }} </ion-label>
-      <ion-input disabled="true" [(ngModel)]="student.referralcode"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ "Referral Code" | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="referralcode">
+          <ion-option value={{referralCode}} *ngFor="let referralCode of referralCodeOptions">{{referralCode}}
+          </ion-option>
+        </ion-select>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtfname !== ''">
-      <ion-label floating>{{ "Father's Name" | translate }} </ion-label>
-      <ion-input type="text" disabled="true" [(ngModel)]="student.txtfname"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ "Father's Name" | translate }} </ion-label>
+        <ion-input type="text" formControlName="txtfname"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtfoccupation !== ''">
-      <ion-label floating>{{ "Father's Occupation" | translate }} </ion-label>
-      <ion-input type="text" disabled="true" [(ngModel)]="student.txtfoccupation"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ "Father's Occupation" | translate }} </ion-label>
+        <ion-input type="text" formControlName="txtfoccupation"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtfoffadd !== ''">
-      <ion-label floating>{{ "Father's Office Address" | translate }} </ion-label>
-      <ion-textarea disabled="true" [(ngModel)]="student.txtfoffadd"></ion-textarea>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ "Father's Office Address" | translate }} </ion-label>
+        <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="txtfoffadd">
+        </ion-textarea>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtfoffcontact !== ''">
-      <ion-label floating>{{ "Father's Contact No" | translate }} </ion-label>
-      <ion-input type="number" disabled="true" [(ngModel)]="student.txtfoffcontact"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ "Father's Contact No" | translate }} </ion-label>
+        <ion-input type="number" formControlName="txtfoffcontact"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtfmail !== ''">
-      <ion-label floating>{{ "Father's Email" | translate }} </ion-label>
-      <ion-input type="string" disabled="true" [(ngModel)]="student.txtfmail"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ "Father's Email" | translate }} </ion-label>
+        <ion-input type="string" formControlName="txtfmail"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtmname !== ''">
-      <ion-label floating>{{ "Mother's Name" | translate }} </ion-label>
-      <ion-input type="text" disabled="true" [(ngModel)]="student.txtmname"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ "Mother's Name" | translate }} </ion-label>
+        <ion-input type="text" formControlName="txtmname"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtmoccupation !== ''">
-      <ion-label floating>{{ "Mother's Occupation" | translate }} </ion-label>
-      <ion-input type="text" disabled="true" [(ngModel)]="student.txtmoccupation"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ "Mother's Occupation" | translate }} </ion-label>
+        <ion-input type="text" formControlName="txtmoccupation"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtmoffadd !== ''">
-      <ion-label floating>{{ "Mother's Office Address" | translate }} </ion-label>
-      <ion-textarea disabled="true" [(ngModel)]="student.txtmoffadd"></ion-textarea>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ "Mother's Office Address" | translate }} </ion-label>
+        <ion-textarea #myInput id="myInput" rows="2" maxLength="500" (keyup)="resize()" formControlName="txtmoffadd">
+        </ion-textarea>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtmoffcontact !== ''">
-      <ion-label floating>{{ "Mother's Contact No" | translate }} </ion-label>
-      <ion-input type="number" disabled="true" [(ngModel)]="student.txtmoffcontact"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ "Mother's Contact No" | translate }} </ion-label>
+        <ion-input type="number" formControlName="txtmoffcontact"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.txtmmail !== ''">
-      <ion-label floating>{{ "Mother's Email" | translate }} </ion-label>
-      <ion-input type="string" disabled="true" [(ngModel)]="student.txtmmail"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>{{ "Mother's Email" | translate }} </ion-label>
+        <ion-input type="string" formControlName="txtmmail"></ion-input>
+      </ion-item>
 
-    <ion-item *ngIf="student.paymentStatus !== ''">
-      <ion-label floating>{{ "Payment Status" | translate }} </ion-label>
-      <ion-input type="string" disabled="true" [(ngModel)]="student.paymentStatus"></ion-input>
-    </ion-item>
-
-    <ion-item *ngIf="student.paymentDetails && student.paymentDetails.orderAmount !== ''">
-      <ion-label floating>{{ "Amount" | translate }} </ion-label>
-      <ion-input type="string" disabled="true" [(ngModel)]="student.paymentDetails.orderAmount"></ion-input>
-    </ion-item>
-
-    <ion-item *ngIf="!student.paymentDetails || student.paymentDetails.orderAmount === ''">
-      <ion-label floating>{{ "Amount" | translate }} </ion-label>
-      <ion-input type="string" disabled="true" value={{6500*student.txtprograms.length}}></ion-input>
-    </ion-item>
-
-    <ion-item *ngIf="student.paymentDetails && student.paymentDetails.orderId !== ''">
-      <ion-label floating>{{ "Order ID" | translate }} </ion-label>
-      <ion-input type="string" disabled="true" [(ngModel)]="student.paymentDetails.orderId"></ion-input>
-    </ion-item>
-
-    <ion-item *ngIf="student.paymentStatus === 'PAID'">
-      <ion-label floating>{{ "PAID THROUGH" | translate }} </ion-label>
-      <ion-input type="string" disabled="true" value="DIRECT"></ion-input>
-    </ion-item>
-
-    <ion-item *ngIf="student.paymentStatus !== 'PAID'">
-      <ion-label floating>{{ "PAID THROUGH" | translate }} </ion-label>
-      <ion-input type="string" disabled="true" value="CASHFREE"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <div style="width: 50%;display: block; float: left;">
-        <p>Photo</p>
-        <img src={{student.photo}} *ngIf="student.photo !== ''" class="online-image-display" />
-        <img src="https://identix.state.gov/qotw/images/no-photo.gif" *ngIf="student.photo === ''"
+      <ion-item style="height: 200px;">
+        <!-- <ion-label>{{ "Upload Photo" | translate }} </ion-label> -->
+        <button ion-button color="secondary" class="online-upload" (click)="upload('photo')"
+          *ngIf="form.controls.photo.value === ''">
+          {{ 'UPLOAD PHOTO' | translate }}
+        </button>
+        <button ion-button color="secondary" class="online-upload" (click)="upload('photo')"
+          *ngIf="form.controls.photo.value !== ''">
+          {{ 'REPLACE PHOTO' | translate }}
+        </button>
+        <img src={{form.controls.photo.value}} *ngIf="form.controls.photo.value !== ''" class="online-image-display" />
+        <img src="https://identix.state.gov/qotw/images/no-photo.gif" *ngIf="form.controls.photo.value === ''"
           class="online-image-display" />
-      </div>
-      <div style="width: 50%;display: block; float: left;">
-        <p>ID Proof</p>
-        <img src={{student.idproof}} *ngIf="student.idproof !== ''" class="online-image-display" />
-        <img src="https://identix.state.gov/qotw/images/no-photo.gif" *ngIf="student.idproof === ''"
+      </ion-item>
+
+      <ion-item style="height: 200px;">
+        <!-- <ion-label>{{ "Upload ID Proof" | translate }} </ion-label> -->
+        <button ion-button color="secondary" class="online-upload" (click)="upload('idproof')"
+          *ngIf="form.controls.idproof.value === ''">
+          {{ 'UPLOAD ID PROOF' | translate }}
+        </button>
+        <button ion-button color="secondary" class="online-upload" (click)="upload('idproof')"
+          *ngIf="form.controls.idproof.value !== ''">
+          {{ 'REPLACE ID PROOF' | translate }}
+        </button>
+        <img src={{form.controls.idproof.value}} *ngIf="form.controls.idproof.value !== ''"
           class="online-image-display" />
-      </div>
-    </ion-item>
+        <img src="https://identix.state.gov/qotw/images/no-photo.gif" *ngIf="form.controls.idproof.value === ''"
+          class="online-image-display" />
+      </ion-item>
 
-  </ion-list>
+    </ion-list>
+  </form>
 
+  <p style="color: red; font-weight: bolder;">{{errorMsg}}</p>
 </ion-content>
+
+<ion-footer no-border class="online-create-footer">
+  <ion-toolbar transparent>
+    <button ion-button half (click)="cancel()">
+      {{ 'CANCEL' | translate }}
+    </button>
+    <button ion-button half (click)="save()" [disabled]="!isReadyToSave1">
+      {{ 'SAVE' | translate }}
+    </button>
+  </ion-toolbar>
+</ion-footer>

@@ -89,6 +89,7 @@ import { POShopTabModule } from '../pages/poshop-tab/poshop-tab.module';
 import { OnlineAddPageModule } from '../pages/online-create/online-create.module';
 import { OnlineReportPageModule } from '../pages/online-report/online-report.module';
 import { OnlineViewPageModule } from '../pages/online-view/online-view.module';
+import { OnlineEditPageModule } from '../pages/online-edit/online-edit.module';
 
 import { PaymentIntegrationPageModule } from '../pages/payment-integration/payment-integration.module';
 // Module imported here and bottom
@@ -169,6 +170,7 @@ export function provideSettings(storage: Storage) {
     OnlineAddPageModule,
     OnlineReportPageModule,
     OnlineViewPageModule,
+    OnlineEditPageModule,
 
     PaymentIntegrationPageModule,
 

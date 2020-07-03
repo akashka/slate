@@ -6,6 +6,7 @@ import { Storage } from '@ionic/storage';
 import { Online } from '../../providers';
 import { File } from '@ionic-native/file';
 import { OnlineViewPage } from '../online-view/online-view';
+import { OnlineEditPage } from '../online-edit/online-edit';
 import { CallNumber } from '@ionic-native/call-number';
 import { AndroidPermissions } from '@ionic-native/android-permissions';
 
@@ -210,7 +211,9 @@ export class OnlineReportPage {
   }
 
   edit(student) {
-
+    this.navCtrl.push(OnlineEditPage, {
+      student: student
+    });
   }
 
   async pay(student) {
