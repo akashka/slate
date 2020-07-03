@@ -202,23 +202,23 @@ export class UsersPage {
           icon: "logo-whatsapp",
           handler: () => {
             if(user.whatsapp_no != undefined && user.whatsapp_no != '' && user.whatsapp_no != null) 
-              window.open(("https://wa.me/91"+user.whatsapp_no), "_blank");
+              window.open(("https://wa.me/91"+user.whatsapp_no), "_system");
             else
-              window.open(("https://wa.me/91"+user.phone_no), "_blank");
+              window.open(("https://wa.me/91"+user.phone_no), "_system");
           }
         },
         {
           text: "SMS",
           icon: "text",
           handler: () => {
-            window.open("sms://"+user.phone_no);
+            window.open("sms://"+user.phone_no, "_system");
           }
         },
         {
           text: "Email",
           icon: "mail",
           handler: () => {
-            window.open("mailto://"+user.email);
+            window.open("mailto://"+user.email, "_system");
           }
         },
         {

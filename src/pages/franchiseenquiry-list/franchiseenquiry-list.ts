@@ -139,23 +139,23 @@ export class FranchiseEnquiryListPage {
           icon: "logo-whatsapp",
           handler: () => {
             if(franchiseEnquiry.whatsapp_no != undefined && franchiseEnquiry.whatsapp_no != '' && franchiseEnquiry.whatsapp_no != null) 
-              window.open(("https://wa.me/91"+franchiseEnquiry.whatsapp_no), "_blank");
+              window.open(("https://wa.me/91"+franchiseEnquiry.whatsapp_no), "_system");
             else
-              window.open(("https://wa.me/91"+franchiseEnquiry.mobile_no), "_blank");
+              window.open(("https://wa.me/91"+franchiseEnquiry.mobile_no), "_system");
           }
         },
         {
           text: "SMS",
           icon: "text",
           handler: () => {
-            window.open("sms://"+franchiseEnquiry.mobile_no);
+            window.open("sms://"+franchiseEnquiry.mobile_no, "_system");
           }
         },
         {
           text: "Email",
           icon: "mail",
           handler: () => {
-            window.open("mailto://"+franchiseEnquiry.email_id);
+            window.open("mailto://"+franchiseEnquiry.email_id, "_system");
           }
         },
         {

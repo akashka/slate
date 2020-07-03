@@ -150,23 +150,23 @@ export class StudentEnquiryListPage {
           icon: "logo-whatsapp",
           handler: () => {
             if(student.whatsapp_no != undefined && student.whatsapp_no != '' && student.whatsapp_no != null) 
-              window.open(("https://wa.me/91"+student.whatsapp_no), "_blank");
+              window.open(("https://wa.me/91"+student.whatsapp_no), "_system");
             else
-              window.open(("https://wa.me/91"+student.mobile_no), "_blank");
+              window.open(("https://wa.me/91"+student.mobile_no), "_system");
           }
         },
         {
           text: "SMS",
           icon: "text",
           handler: () => {
-            window.open("sms://"+student.mobile_no);
+            window.open("sms://"+student.mobile_no, "_system");
           }
         },
         {
           text: "Email",
           icon: "mail",
           handler: () => {
-            window.open("mailto://"+student.email_id);
+            window.open("mailto://"+student.email_id, "_system");
           }
         },
         {
