@@ -72,16 +72,16 @@ export class UsersPage {
   }
 
   getItems(ev) {
-    let val = ev.target.value.toUpperCase();
+    let val = ev.value.toUpperCase();
     if (!val || !val.trim()) {
       this.currentItems = this.allItems;
       return;
     }
     this.currentItems = this.allItems.filter(item => {
       return (
-        item.user_name.toUpperCase().indexOf(ev.data) >= 0 ||
-        item.name.toUpperCase().indexOf(ev.data) >= 0 ||
-        item.email_id.toUpperCase().indexOf(ev.data) >= 0
+        item.user_name.toUpperCase().indexOf(ev.value) >= 0 ||
+        item.name.toUpperCase().indexOf(ev.value) >= 0 ||
+        item.email_id.toUpperCase().indexOf(ev.value) >= 0
       );
     });
   }
@@ -148,40 +148,44 @@ export class UsersPage {
     var csv: any = this.convertToCSV(this.currentItems);
     var fileName: any = "users.csv";
 
-    this.file.writeFile(this.file.externalRootDirectory, fileName, csv)
-      .then(_ => {
-        alert("Success ;-)");
-      })
-      .catch(err => {
-        this.file.writeExistingFile(this.file.externalRootDirectory, fileName, csv)
-          .then(_ => {
-            alert("Success ;-)");
-          })
-          .catch(err => {
-            alert("Failure");
-          });
+    this.file.writeFile(this.file.externalRootDirectory, fileName, csv).then(_ => {
+      let toast = this.toastCtrl.create({
+        message: "File " + fileName + " saved successfully.",
+        duration: 3000,
+        position: 'top'
       });
+      toast.present();
+    }).catch(err => {
+      this.file.writeExistingFile(this.file.externalRootDirectory, fileName, csv).then(_ => {
+        let toast = this.toastCtrl.create({
+          message: "File " + fileName + " saved successfully.",
+          duration: 3000,
+          position: 'top'
+        });
+        toast.present();
+      }).catch(err => {
+        let toast = this.toastCtrl.create({
+          message: JSON.stringify(err),
+          duration: 6000,
+          position: 'top'
+        });
+        toast.present();
+      });
+    })
   }
 
   convertToCSV(teams) {
-    var csv: any = "";
-    var line: any = "";
-
-    for (let i = 0; i < teams.length; i++) {
-      if (line != "") line += ";";
-      line += "Team " + (i + 1);
-    }
-    csv += line + "\r\n";
-
-    for (let i = 0; i < teams[0].length; i++) {
-      line = "";
-      for (var j = 0; j < teams.length; j++) {
-        if (line != "") line += ";";
-        line += teams[j][i];
-      }
-      csv += line + "\r\n";
-    }
-    return csv;
+    var json = teams;
+    var fields = Object.keys(json[0])
+    var replacer = function (key, value) { return value === null ? '' : value }
+    var csv = json.map(function (row) {
+      return fields.map(function (fieldName) {
+        return JSON.stringify(row[fieldName], replacer)
+      }).join(',')
+    })
+    csv.unshift(fields.join(',')) // add header column
+    csv = csv.join('\r\n');
+    return csv
   }
 
   async contact(user, slidingItem: ItemSliding) {
@@ -202,23 +206,23 @@ export class UsersPage {
           icon: "logo-whatsapp",
           handler: () => {
             if(user.whatsapp_no != undefined && user.whatsapp_no != '' && user.whatsapp_no != null) 
-              window.open(("https://wa.me/91"+user.whatsapp_no), "_blank");
+              window.open(("https://wa.me/91"+user.whatsapp_no), "_system");
             else
-              window.open(("https://wa.me/91"+user.phone_no), "_blank");
+              window.open(("https://wa.me/91"+user.phone_no), "_system");
           }
         },
         {
           text: "SMS",
           icon: "text",
           handler: () => {
-            window.open("sms://"+user.phone_no);
+            window.open("sms://"+user.phone_no, "_system");
           }
         },
         {
           text: "Email",
           icon: "mail",
           handler: () => {
-            window.open("mailto://"+user.email);
+            window.open("mailto://"+user.email, "_system");
           }
         },
         {

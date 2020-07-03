@@ -7,6 +7,11 @@
     </ion-buttons>
     <ion-title>{{ 'Instructor List' | translate }}</ion-title>
     <ion-buttons right>
+      <button ion-button icon-only (click)="saveAsCsv()">
+        <ion-icon name="download"></ion-icon>
+      </button>
+    </ion-buttons>  
+    <ion-buttons right>
       <button ion-button icon-only (click)="add()">
         <ion-icon name="add"></ion-icon>
       </button>
@@ -16,7 +21,7 @@
 
 <ion-content>
 
-  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'Search Instructor' | translate }}"></ion-searchbar>
+  <ion-searchbar (ionChange)="getItems($event)" placeholder="{{ 'Search Instructor' | translate }}"></ion-searchbar>
 
   <ion-list>
     <ion-item-sliding *ngFor="let item of currentItems" #slidingItem>

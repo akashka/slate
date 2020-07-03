@@ -95,21 +95,21 @@ export class StudentEnquiryListPage {
   }
 
   getItems(ev) {
-    let val = ev.data.toUpperCase();
+    let val = ev.value.toUpperCase();
     if (!val || !val.trim()) {
       this.currentItems = this.tempCurrentItems;
       return;
     }
     this.currentItems = _.filter(this.tempCurrentItems, function(item) {
       return (
-        item.name.toUpperCase().indexOf(ev.data.toUpperCase()) >= 0 ||
-        item.franchise_state.toUpperCase().indexOf(ev.data.toUpperCase()) >=
+        item.name.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0 ||
+        item.franchise_state.toUpperCase().indexOf(ev.value.toUpperCase()) >=
           0 ||
-        item.franchise_district.toUpperCase().indexOf(ev.data.toUpperCase()) >=
+        item.franchise_district.toUpperCase().indexOf(ev.value.toUpperCase()) >=
           0 ||
-        item.franchise_area.toUpperCase().indexOf(ev.data.toUpperCase()) >= 0 ||
-        item.mobile_no.toUpperCase().indexOf(ev.data.toUpperCase()) >= 0 ||
-        item.email_id.toUpperCase().indexOf(ev.data.toUpperCase()) >= 0
+        item.franchise_area.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0 ||
+        item.mobile_no.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0 ||
+        item.email_id.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0
       );
     });
   }
@@ -150,23 +150,23 @@ export class StudentEnquiryListPage {
           icon: "logo-whatsapp",
           handler: () => {
             if(student.whatsapp_no != undefined && student.whatsapp_no != '' && student.whatsapp_no != null) 
-              window.open(("https://wa.me/91"+student.whatsapp_no), "_blank");
+              window.open(("https://wa.me/91"+student.whatsapp_no), "_system");
             else
-              window.open(("https://wa.me/91"+student.mobile_no), "_blank");
+              window.open(("https://wa.me/91"+student.mobile_no), "_system");
           }
         },
         {
           text: "SMS",
           icon: "text",
           handler: () => {
-            window.open("sms://"+student.mobile_no);
+            window.open("sms://"+student.mobile_no, "_system");
           }
         },
         {
           text: "Email",
           icon: "mail",
           handler: () => {
-            window.open("mailto://"+student.email_id);
+            window.open("mailto://"+student.email_id, "_system");
           }
         },
         {
@@ -286,5 +286,48 @@ export class StudentEnquiryListPage {
     });
     toast.present();
   }
+  
+  saveAsCsv() {
+    var csv: any = this.convertToCSV(this.currentItems);
+    var fileName: any = "programs.csv";
 
+    this.file.writeFile(this.file.externalRootDirectory, fileName, csv).then(_ => {
+      let toast = this.toastCtrl.create({
+        message: "File " + fileName + " saved successfully.",
+        duration: 3000,
+        position: 'top'
+      });
+      toast.present();
+    }).catch(err => {
+      this.file.writeExistingFile(this.file.externalRootDirectory, fileName, csv).then(_ => {
+        let toast = this.toastCtrl.create({
+          message: "File " + fileName + " saved successfully.",
+          duration: 3000,
+          position: 'top'
+        });
+        toast.present();
+      }).catch(err => {
+        let toast = this.toastCtrl.create({
+          message: JSON.stringify(err),
+          duration: 6000,
+          position: 'top'
+        });
+        toast.present();
+      });
+    })
+  }
+
+  convertToCSV(teams) {
+    var json = teams;
+    var fields = Object.keys(json[0])
+    var replacer = function (key, value) { return value === null ? '' : value }
+    var csv = json.map(function (row) {
+      return fields.map(function (fieldName) {
+        return JSON.stringify(row[fieldName], replacer)
+      }).join(',')
+    })
+    csv.unshift(fields.join(',')) // add header column
+    csv = csv.join('\r\n');
+    return csv
+  }
 }
