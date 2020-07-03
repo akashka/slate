@@ -72,16 +72,16 @@ export class UsersPage {
   }
 
   getItems(ev) {
-    let val = ev.target.value.toUpperCase();
+    let val = ev.value.toUpperCase();
     if (!val || !val.trim()) {
       this.currentItems = this.allItems;
       return;
     }
     this.currentItems = this.allItems.filter(item => {
       return (
-        item.user_name.toUpperCase().indexOf(ev.data) >= 0 ||
-        item.name.toUpperCase().indexOf(ev.data) >= 0 ||
-        item.email_id.toUpperCase().indexOf(ev.data) >= 0
+        item.user_name.toUpperCase().indexOf(ev.value) >= 0 ||
+        item.name.toUpperCase().indexOf(ev.value) >= 0 ||
+        item.email_id.toUpperCase().indexOf(ev.value) >= 0
       );
     });
   }

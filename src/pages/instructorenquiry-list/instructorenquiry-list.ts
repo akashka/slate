@@ -89,21 +89,21 @@ export class InstructorEnquiryListPage {
   }
 
   getItems(ev) {
-    let val = ev.data.toUpperCase();
+    let val = ev.value.toUpperCase();
     if (!val || !val.trim()) {
       this.currentItems = this.tempCurrentItems;
       return;
     }
     this.currentItems = _.filter(this.tempCurrentItems, function(item) {
       return (
-        item.name.toUpperCase().indexOf(ev.name.toUpperCase()) >= 0 ||
-        item.franchise_state.toUpperCase().indexOf(ev.name.toUpperCase()) >=
+        item.name.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0 ||
+        item.franchise_state.toUpperCase().indexOf(ev.value.toUpperCase()) >=
           0 ||
-        item.franchise_district.toUpperCase().indexOf(ev.name.toUpperCase()) >=
+        item.franchise_district.toUpperCase().indexOf(ev.value.toUpperCase()) >=
           0 ||
-        item.franchise_area.toUpperCase().indexOf(ev.name.toUpperCase()) >= 0 ||
-        item.mobile_no.toUpperCase().indexOf(ev.name.toUpperCase()) >= 0 ||
-        item.email_id.toUpperCase().indexOf(ev.name.toUpperCase()) >= 0
+        item.franchise_area.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0 ||
+        item.mobile_no.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0 ||
+        item.email_id.toUpperCase().indexOf(ev.value.toUpperCase()) >= 0
       );
     });
   }
