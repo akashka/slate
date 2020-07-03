@@ -7,17 +7,18 @@ import {
   Nav,
   Platform,
   ToastController,
+  ActionSheetController,
   LoadingController,
-  AlertController
+  AlertController,
 } from "ionic-angular";
 import { FirstRunPage } from "../pages";
-import { Settings, User } from "../providers";
+import { Online, Settings, User } from "../providers";
 import { Storage } from "@ionic/storage";
-
 import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts';
 import { AndroidPermissions } from '@ionic-native/android-permissions';
 import { BatteryStatus } from '@ionic-native/battery-status';
 import { Network } from '@ionic-native/network';
+import { Camera, CameraOptions } from '@ionic-native/camera';
 
 declare var cordova: any;
 
@@ -35,9 +36,14 @@ declare var cordova: any;
                 #profilePic
                 [style.background-image]="'url(' + user.profile_pic + ')'"
               ></div>
+              <ion-fab top left fixed (click)="changePicture()" style="margin: -1.5rem;" menuClose>
+                <button ion-fab mini dark>
+                  <ion-icon name="brush"></ion-icon>
+                </button>
+              </ion-fab>
             </ion-list>
             <br />
-            <h2 class="userName">Hi {{ user.name }}</h2>
+            <h2 class="userName">{{ user.name }}</h2>
             <h3 class="userDetails">{{ user.role }}</h3>
           </ion-item>
         </ion-list>
@@ -165,6 +171,17 @@ declare var cordova: any;
               <ion-icon name="basket" class="sidebarCss"></ion-icon>
               Post Order
           </button>
+          <button 
+            menuClose 
+            ion-item 
+            no-lines 
+            [class.activeHIghlight]="checkActive(pages[11])" 
+            (click)="openPage(pages[11])"
+            class="buttonSIdeBAr"
+          >
+              <ion-icon name="bulb" class="sidebarCss"></ion-icon>
+              Information Center
+          </button>
           <button
             menuClose
             no-lines
@@ -208,6 +225,7 @@ export class MyApp {
     { title: 'Online Report', component: 'OnlineReportPage' },
     { title: 'Course Price Mapping', component: 'CourseMappingPage' },
     { title: 'Post Order', component: 'PostOrderListPage' },
+    { title: 'Information Center', component: 'StaticPages' },
     // { title: 'Signup', component: 'LoginPage' },
     // { title: 'Master Detail', component: 'ListMasterPage' },
     // { title: 'News Feed', component: 'NewsFeed' },
@@ -231,6 +249,10 @@ export class MyApp {
     public batteryStatus: BatteryStatus,
     public alertController: AlertController,
     public network: Network,
+    public actionSheetController: ActionSheetController,
+    public camera: Camera,
+    public online: Online,
+    public users: User,
   ) {
     platform.ready().then(() => {
       this.splashScreen.hide();
@@ -441,6 +463,88 @@ export class MyApp {
       enableBackdropDismiss: true,
     });
     networkAlert.present();
+  }
+
+  // Upload 
+  async changePicture() {
+    const actionSheet = await this.actionSheetController.create({
+      buttons: [
+        {
+          text: 'Camera',
+          icon: 'camera',
+          handler: () => {
+            this.cameraUpload('CAMERA');
+          }
+        }, {
+          text: 'Gallery',
+          icon: 'folder',
+          handler: () => {
+            this.cameraUpload('PHOTOLIBRARY');
+          }
+        }, {
+          text: 'Cancel',
+          icon: 'close',
+          role: 'cancel',
+          handler: () => {
+            actionSheet.dismiss();
+          }
+        }
+      ]
+    });
+    await actionSheet.present();
+  }
+
+  loading: any;
+  showLoader(content) {
+    this.loading = this.loadingCtrl.create({
+      content: content
+    });
+    this.loading.present();
+  }
+
+  cameraUpload(imageSrc) {
+    const options: CameraOptions = {
+      quality: 100,
+      sourceType: this.camera.PictureSourceType[imageSrc],
+      allowEdit: false,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE,
+      saveToPhotoAlbum: false
+    };
+    this.camera.getPicture(options).then((imageData) => {
+      this.showLoader('Uploading...');
+      var fileName = 'profile_pic_' + new Date() + '_.jpeg';
+      let base64Image = 'data:image/jpeg;base64,' + imageData;
+      this.online.uploadToS3(base64Image, fileName, 'jpeg').subscribe((result: any) => {
+        
+        // Update user with the location
+        this.user.profile_pic  = result.Location;
+        this.users.update_user(this.user).subscribe((resp) => {
+          this.presentToast('Profile picture updated Successfully');
+          this.loading.dismiss();
+        }, (err) => {
+          this.presentToast(err);
+          this.loading.dismiss();
+        });
+
+      }, (err) => {
+        this.presentToast(err);
+        this.loading.dismiss();
+      });
+    }, (err) => {
+      this.presentToast(err);
+      this.loading.dismiss();
+    });
+  }
+
+  presentToast(msg) {
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'top'
+    });
+    toast.present();
   }
 
 }

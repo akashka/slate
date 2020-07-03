@@ -7,14 +7,15 @@ import {
   ToastController,
   AlertController,
   LoadingController,
-  ViewController
+  ViewController,
+  ActionSheetController
 } from "ionic-angular";
 import { Vibration } from "@ionic-native/vibration";
-import { Programs, User } from "../../providers";
+import { Programs, User, Online } from "../../providers";
 import { ItemSliding } from "ionic-angular/umd";
-import { Camera } from "@ionic-native/camera";
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Storage } from "@ionic/storage";
+import { Camera, CameraOptions } from '@ionic-native/camera';
 
 @IonicPage()
 @Component({
@@ -40,6 +41,8 @@ export class ProfileTab {
     public toastCtrl: ToastController,
     public loadingCtrl: LoadingController,
     public storage: Storage,
+    public actionSheetController: ActionSheetController,
+    public online: Online
   ) {
     this.storage.get("user").then(value => {
       console.log(value);
@@ -90,7 +93,7 @@ export class ProfileTab {
         toast.present();
         this.caption_name = "EDIT";
         this.isDisabled = true;
-        }, (err) => {
+      }, (err) => {
         let toast = this.toastCtrl.create({
           message: "Error in adding the User. Please try again.",
           duration: 3000,
@@ -106,29 +109,84 @@ export class ProfileTab {
     }
   }
 
-  ionViewDidLoad() {}
-
-  getPicture() {
-    if (Camera["installed"]()) {
-      this.camera.getPicture({
-        destinationType: this.camera.DestinationType.DATA_URL,
-        targetWidth: 96,
-        targetHeight: 96
-      }).then(
-        data => {
-          this.form.patchValue({ profile_pic: "data:image/jpg;base64," + data });
-        },
-        err => {
-          alert("Unable to take photo");
-        }
-      );
-    } else {
-      this.fileInput.nativeElement.click();
-    }
-  }
+  ionViewDidLoad() { }
 
   getProfileImageStyle() {
     return "url(" + this.form.controls["profile_pic"].value + ")";
   }
+
+
+  // Upload 
+  async changePicture() {
+    const actionSheet = await this.actionSheetController.create({
+      buttons: [
+        {
+          text: 'Camera',
+          icon: 'camera',
+          handler: () => {
+            this.cameraUpload('CAMERA');
+          }
+        }, {
+          text: 'Gallery',
+          icon: 'folder',
+          handler: () => {
+            this.cameraUpload('PHOTOLIBRARY');
+          }
+        }, {
+          text: 'Cancel',
+          icon: 'close',
+          role: 'cancel',
+          handler: () => {
+            actionSheet.dismiss();
+          }
+        }
+      ]
+    });
+    await actionSheet.present();
+  }
+
+  loading: any;
+  showLoader(content) {
+    this.loading = this.loadingCtrl.create({
+      content: content
+    });
+    this.loading.present();
+  }
+
+  cameraUpload(imageSrc) {
+    const options: CameraOptions = {
+      quality: 100,
+      sourceType: this.camera.PictureSourceType[imageSrc],
+      allowEdit: false,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE,
+      saveToPhotoAlbum: false
+    };
+    this.camera.getPicture(options).then((imageData) => {
+      this.showLoader('Uploading...');
+      var fileName = 'profile_pic_' + new Date() + '_.jpeg';
+      let base64Image = 'data:image/jpeg;base64,' + imageData;
+      this.online.uploadToS3(base64Image, fileName, 'jpeg').subscribe((result: any) => {
+        this.form.controls['profile_pic'].setValue(result.Location);
+      }, (err) => {
+        this.presentToast(err);
+        this.loading.dismiss();
+      });
+    }, (err) => {
+      this.presentToast(err);
+      this.loading.dismiss();
+    });
+  }
+
+  presentToast(msg) {
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'top'
+    });
+    toast.present();
+  }
+
 
 }

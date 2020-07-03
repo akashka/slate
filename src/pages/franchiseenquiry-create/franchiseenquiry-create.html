@@ -32,7 +32,7 @@
       </ion-item>
 
       <ion-item *ngIf="form.value.franchise_type == 'district' || form.value.franchise_type == 'unit'">
-        <ion-label floating>{{ 'District' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-label floating>{{ 'District' | translate }} </ion-label>
         <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="franchise_district" (ionChange)="onFranchiseDistrictChange($event)"
           [disabled]="isDistrictDisabled" *ngIf="form.value.franchise_type != 'district'">
           <ion-option value={{state._id}} *ngFor="let state of districts">{{state.center_name}}</ion-option>

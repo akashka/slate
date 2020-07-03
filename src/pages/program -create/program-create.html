@@ -17,8 +17,8 @@
       </ion-item>
       <ion-item>
         <ion-label floating>{{ 'Program Code' | translate }} <span class="mandatory-field"> * </span> </ion-label>
-        <ion-input type="text" formControlName="program_code"
-          (ionChange)="onRegisterationCodeChange($event)"></ion-input>
+        <ion-input type="text" formControlName="program_code" (ionChange)="onRegisterationCodeChange($event)">
+        </ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>{{ 'No Of Sessions' | translate }} <span class="mandatory-field"> * </span> </ion-label>
@@ -51,16 +51,16 @@
     </ion-row>
   </ion-grid>
 
-  <ion-grid class="looping-reg">
-    <ion-row *ngFor="let item of registration_kit; let i = index">
-      <ion-input type="text" placeholder="Kit {{i}}" [(ngModel)]="registration_kit[i]" name="kit_{{i}}"></ion-input>
-        <ion-buttons right>
-          <button ion-button icon-only (click)="removeRegisterationKit(i)" color="danger">
-            <ion-icon name="close"></ion-icon>
-          </button>
-        </ion-buttons>
+  <ion-list class="looping-reg">
+    <ion-row *ngFor="let item of registration_kit; let i = index; trackBy:trackByFn" style="padding-right: 15px; padding-left: 15px;">
+      <ion-input type="text" placeholder="Kit {{i}}" [(ngModel)]="registration_kit[i]"></ion-input>
+      <ion-buttons right>
+        <button ion-button icon-only (click)="removeRegisterationKit(i)" color="danger">
+          <ion-icon name="close"></ion-icon>
+        </button>
+      </ion-buttons>
     </ion-row>
-  </ion-grid>
+  </ion-list>
 
   <p class="error-validation-msg" *ngIf="isDuplicate"> There already exists a Program with same Code. Please change
     Code. </p>

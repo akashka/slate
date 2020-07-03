@@ -17,6 +17,7 @@ import { Programs, User, Center, Instructor } from "../../providers";
 import { Storage } from "@ionic/storage";
 import { isGeneratedFile } from "@angular/compiler/src/aot/util";
 import { CallNumber } from "@ionic-native/call-number";
+import { File } from '@ionic-native/file';
 
 @IonicPage()
 @Component({
@@ -45,7 +46,8 @@ export class InstructorEnquiryListPage {
     public callNumber: CallNumber,
     public alertController: AlertController,
     public instructorService: Instructor,
-    public actionSheetController: ActionSheetController
+    public actionSheetController: ActionSheetController,
+    public file: File
   ) {
   }
 

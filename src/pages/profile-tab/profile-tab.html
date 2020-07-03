@@ -2,49 +2,77 @@
   <div class="fixed-content">
 
     <form *ngIf="form" [formGroup]="form" (ngSubmit)="saveProfile()">
-      
+
       <ion-list>
         <ion-item>
           <ion-label floating class="label_here">{{ 'User Name' | translate }} :</ion-label>
-          <ion-input class="inputFields" type="text" formControlName="user_name" (keyup)="changedSmtng()" disabled="{{isDisabled}}"></ion-input>
+          <ion-input class="inputFields" type="text" formControlName="user_name" (keyup)="changedSmtng()"
+            disabled="{{isDisabled}}"></ion-input>
         </ion-item>
 
         <ion-item>
-          <ion-label floating class="label_here">{{ 'Name' | translate }} <span class="mandatory-field"> * </span> </ion-label>
-          <ion-input class="inputFields" type="text" formControlName="name" (keyup)="changedSmtng()" disabled="{{isDisabled}}"></ion-input>
+          <ion-label floating class="label_here">{{ 'Name' | translate }} <span class="mandatory-field"> * </span>
+          </ion-label>
+          <ion-input class="inputFields" type="text" formControlName="name" (keyup)="changedSmtng()"
+            disabled="{{isDisabled}}"></ion-input>
         </ion-item>
 
         <ion-item>
-          <ion-label floating class="label_here">{{ 'Phone No' | translate }} <span class="mandatory-field"> * </span> </ion-label>
-          <ion-input class="inputFields" type="number" formControlName="phone_no" (keyup)="changedSmtng()" disabled="{{isDisabled}}"></ion-input>
+          <ion-label floating class="label_here">{{ 'Phone No' | translate }} <span class="mandatory-field"> * </span>
+          </ion-label>
+          <ion-input class="inputFields" type="number" formControlName="phone_no" (keyup)="changedSmtng()"
+            disabled="{{isDisabled}}"></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label floating class="label_here">{{ 'Whatsapp No' | translate }} </ion-label>
-          <ion-input class="inputFields" type="number" formControlName="whatsapp_no" (keyup)="changedSmtng()" disabled="{{isDisabled}}"></ion-input>
+          <ion-input class="inputFields" type="number" formControlName="whatsapp_no" (keyup)="changedSmtng()"
+            disabled="{{isDisabled}}"></ion-input>
         </ion-item>
 
         <ion-item>
-          <ion-label floating class="label_here">{{ 'Date Of Birth' | translate }} <span class="mandatory-field"> * </span> </ion-label>
-          <ion-datetime class="inputFields" displayFormat="DD/MMM/YYYY" formControlName="dob" (ionChange)="changedSmtng()" disabled="{{isDisabled}}"></ion-datetime>
+          <ion-label floating class="label_here">{{ 'Date Of Birth' | translate }} <span class="mandatory-field"> *
+            </span> </ion-label>
+          <ion-datetime class="inputFields" displayFormat="DD/MMM/YYYY" formControlName="dob"
+            (ionChange)="changedSmtng()" disabled="{{isDisabled}}"></ion-datetime>
         </ion-item>
-  
+
         <ion-item>
           <ion-label floating>{{ 'Gender' | translate }} <span class="mandatory-field"> * </span> </ion-label>
-          <ion-select class="inputFields" formControlName="gender" (ionChange)="changedSmtng()" disabled="{{isDisabled}}">
+          <ion-select class="inputFields" formControlName="gender" (ionChange)="changedSmtng()"
+            disabled="{{isDisabled}}">
             <ion-option value="female">Female</ion-option>
             <ion-option value="male">Male</ion-option>
           </ion-select>
         </ion-item>
 
         <ion-item>
-          <ion-label floating class="label_here">{{ 'Email' | translate }} <span class="mandatory-field"> * </span> </ion-label>
-          <ion-input class="inputFields" type="email" formControlName="email" (keyup)="changedSmtng()" disabled="{{isDisabled}}"></ion-input>
+          <ion-label floating class="label_here">{{ 'Email' | translate }} <span class="mandatory-field"> * </span>
+          </ion-label>
+          <ion-input class="inputFields" type="email" formControlName="email" (keyup)="changedSmtng()" disabled="true">
+          </ion-input>
         </ion-item>
 
-        <ion-item>
-          <ion-label floating class="label_here">{{ 'Password' | translate }} <span class="mandatory-field"> * </span> </ion-label>
-          <ion-input class="inputFields" type="password" formControlName="password" (keyup)="changedSmtng()" disabled="{{isDisabled}}"></ion-input>
+        <!-- <ion-item *ngIf="!isDisabled">
+          <ion-label floating class="label_here">{{ 'Password' | translate }} <span class="mandatory-field"> * </span>
+          </ion-label>
+          <ion-input class="inputFields" type="password" formControlName="password" (keyup)="changedSmtng()"
+            disabled="{{isDisabled}}"></ion-input>
+        </ion-item> -->
+
+        <ion-item style="height: 200px;" *ngIf="!isDisabled">
+          <img src={{form.controls.profile_pic.value}} *ngIf="form.controls.profile_pic.value !== ''"
+            class="online-image-display" />
+          <img src="https://identix.state.gov/qotw/images/no-photo.gif" *ngIf="form.controls.profile_pic.value === ''"
+            class="online-image-display" />
+          <button ion-button color="secondary" class="online-upload" (click)="changePicture()"
+            *ngIf="form.controls.profile_pic.value === ''">
+            {{ 'UPLOAD PHOTO' | translate }}
+          </button>
+          <button ion-button color="secondary" class="online-upload" (click)="changePicture()"
+            *ngIf="form.controls.profile_pic.value !== ''">
+            {{ 'REPLACE PHOTO' | translate }}
+          </button>
         </ion-item>
 
       </ion-list>
@@ -52,7 +80,7 @@
     </form>
   </div>
 </ion-content>
- 
+
 <ion-footer no-border>
   <ion-toolbar transparent>
     <button ion-button full (click)="editProfile()" class="editSaveToggleBtn">

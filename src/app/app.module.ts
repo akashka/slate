@@ -92,6 +92,8 @@ import { OnlineViewPageModule } from '../pages/online-view/online-view.module';
 import { OnlineEditPageModule } from '../pages/online-edit/online-edit.module';
 
 import { PaymentIntegrationPageModule } from '../pages/payment-integration/payment-integration.module';
+
+import { StaticPagesModule } from '../pages/staticpages/staticpages.module';
 // Module imported here and bottom
 
 export function createTranslateLoader(http: HttpClient) {
@@ -174,6 +176,8 @@ export function provideSettings(storage: Storage) {
 
     PaymentIntegrationPageModule,
 
+    StaticPagesModule,
+  
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

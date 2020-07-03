@@ -92,5 +92,8 @@ export class ProgramAddPage {
     this.isDuplicate = program.length > 0;
   }
 
+  trackByFn(index: any, item: any) {
+    return index;
+  }
 
 }

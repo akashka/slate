@@ -17,6 +17,7 @@ import { Programs, Franchise, User, Center } from '../../providers';
 import { Storage } from '@ionic/storage';
 import { isGeneratedFile } from '@angular/compiler/src/aot/util';
 import { CallNumber } from '@ionic-native/call-number';
+import { File } from '@ionic-native/file';
 
 @IonicPage()
 @Component({
@@ -47,6 +48,7 @@ export class FranchiseEnquiryListPage {
     public callNumber: CallNumber,
     public alertController: AlertController,
     public actionSheetController: ActionSheetController,
+    public file: File
   ) {
   }
 
