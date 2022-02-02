@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { IonicPage, NavController, ToastController, ViewController } from 'ionic-angular';
+import { IonicPage, NavController, ToastController, ViewController, LoadingController } from 'ionic-angular';
 import { User, Center } from '../../providers';
 import { FirstRunPage } from '../';
 import * as _ from 'lodash';
@@ -29,9 +29,9 @@ export class SignupPage {
     active: true
   };
 
-  isReadyToSave: Boolean = false;
+  isReadyToSave: Boolean = true;
   isDuplicate: Boolean = false;
-  isPasswordMatch: Boolean = false;
+  isPasswordMatch: Boolean = true;
   usersList;
   branches;
 
@@ -47,7 +47,8 @@ export class SignupPage {
     public center: Center,
     public toastCtrl: ToastController,
     public translateService: TranslateService,
-    public viewCtrl: ViewController
+    public viewCtrl: ViewController,
+    public loadingCtrl: LoadingController
   ) {
     this.user.users_list().subscribe((res: any) => {
       this.usersList = res; 
@@ -70,10 +71,17 @@ export class SignupPage {
   }
 
   doSignup() {
+    let loading = this.loadingCtrl.create({
+      content: "Processing ..."
+    });
+    loading.present();
     this.account.dob = new Date(this.account.dob);
     this.user.signup(this.account).subscribe((resp) => {
+      loading.dismiss();
       this.viewCtrl.dismiss();
     }, (err) => {
+      console.log(err)
+      loading.dismiss();
       let toast = this.toastCtrl.create({
         message: "Error in adding the User. Please try again.",
         duration: 3000,
@@ -88,11 +96,17 @@ export class SignupPage {
   }
 
   onChange(ev) {
-    this.isReadyToSave = (this.account.name != '' && this.account.user_name != '' && this.account.email != '' &&
+    if(this.account.name != '' && this.account.user_name != '' && this.account.email != '' &&
       this.account.password != '' && this.account.confirm_password != '' && this.account.phone_no != '' &&
-      this.account.gender != '' && this.account.role != '');
+      this.account.gender != '' && this.account.role != ''){
+        if(this.account.password == this.account.confirm_password){
+          this.isReadyToSave = false;
+        }
+      }
+    else{
+      this.isReadyToSave = true;
+    }
 
-    this.isPasswordMatch = (this.account.password == this.account.confirm_password);
 
     // let user = _.filter(this.usersList, function (item) {
     //   return ((item.user_name.toUpperCase().indexOf(this.account.user_name.toUpperCase()) >= 0)

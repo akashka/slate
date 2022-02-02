@@ -17,7 +17,6 @@ export class UserUpdatePage {
     user_name: '',
     email: '',
     password: '',
-    confirm_password: '',
     phone_no: '',
     whatsapp_no: '',
     gender: 'male',
@@ -32,7 +31,6 @@ export class UserUpdatePage {
 
   isReadyToSave: Boolean = false;
   isDuplicate: Boolean = false;
-  isPasswordMatch: Boolean = false;
   usersList;
   allBranches;
   branches;
@@ -51,7 +49,7 @@ export class UserUpdatePage {
     public center: Center,
   ) {
     this.account = navParams.get('user');
-    this.account.confirm_password = this.account.password;
+    console.log(this.account);
     this.user.users_list().subscribe((res: any) => {
       this.usersList = res; 
     }, err => {
@@ -94,11 +92,8 @@ export class UserUpdatePage {
 
   onChange(ev) {
     this.isReadyToSave = (this.account.name != '' && this.account.user_name != '' && this.account.email != '' &&
-      this.account.password != '' && this.account.confirm_password != '' && this.account.phone_no != '' &&
+      this.account.password != '' && this.account.phone_no != '' &&
       this.account.gender != '' && this.account.role != '');
-
-    this.isPasswordMatch = (this.account.password == this.account.confirm_password);
-
     // let user = _.filter(this.usersList, function (item) {
     //   return ((item.user_name.toUpperCase().indexOf(this.account.user_name.toUpperCase()) >= 0)
     //     || (item.email.toUpperCase().indexOf(this.account.email.toUpperCase()) >= 0))

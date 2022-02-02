@@ -45,7 +45,7 @@ export class InstructorEnquiryAddPage {
     this.form = formBuilder.group({
       name: ['', Validators.compose([Validators.required])],
       instructor_state: ['', Validators.compose([Validators.required])],
-      instructor_district: ['', Validators.compose([Validators.required])],
+      instructor_district: ['', Validators.compose([])],
       instructor_area: ['', Validators.compose([Validators.required])],
       program: [[], Validators.compose([Validators.required])],
       address: ['', Validators.compose([Validators.required])],

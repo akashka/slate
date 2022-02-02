@@ -22,7 +22,7 @@
       </ion-item>
 
       <ion-item>
-        <ion-label floating>{{ 'District' | translate }} <span class="mandatory-field"> * </span> </ion-label>
+        <ion-label floating>{{ 'District' | translate }}</ion-label>
         <ion-select multiple="false" cancelText="Cancel" okText="Okay" formControlName="district"
           (ionChange)="onDistrictChange($event)" [disabled]="isDistrictDisabled">
           <ion-option value={{district._id}} *ngFor="let district of districts">{{district.center_name}}</ion-option>

@@ -10,13 +10,13 @@ import {
   LoadingController
 } from "ionic-angular";
 import { FirstRunPage } from "../pages";
-import { Settings } from "../providers";
+import { Settings, User } from "../providers";
 import { Storage } from "@ionic/storage";
 
 @Component({
   selector: "side-main-menu",
   template: `
-    <ion-menu [content]="content">
+    <ion-menu [content]="content" *ngIf="user != null">
       <ion-content class="sideMenuIoncContent">
         <ion-list class="headerMAin">
           <ion-item class="headerBackground">
@@ -148,6 +148,8 @@ export class MyApp {
     profile_pic: ""
   };
 
+  userSubcription;
+
   pages: any[] = [
     { title: "Welcome", component: "WelcomePage" },
     { title: "Home", component: "HomePage" },
@@ -185,6 +187,11 @@ export class MyApp {
     this.storage.get("user").then(value => {
       this.user = value;
     });
+    console.log(this.user);
+    this.userSubcription = User.userChanged.subscribe(data => {
+      this.user = data;
+    }
+    )
   }
 
   ionViewWillEnter() {
